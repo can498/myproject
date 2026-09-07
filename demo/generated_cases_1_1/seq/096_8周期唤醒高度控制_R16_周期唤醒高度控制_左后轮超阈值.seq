@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="5b4c5946-46e3-4c6c-b095-e7acbac7facc" name="周期唤醒高度控制_左后轮超阈值" describle="来源：8周期唤醒高度控制 A16:M21" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="295e053d-312e-449e-a2eb-e4b545a79410"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="1b123ab9-8956-489b-8122-674e8c5732a7"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="55d1f2e9-e097-4f31-99b1-348b30b439c7" name="周期唤醒高度控制_左后轮超阈值">
+    <children xmi:type="tae:Initialization" xmi:id="e4126c17-b3d8-40c8-8cb4-3ca9fa318443" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="1cbab236-635c-4535-86ae-f7668b316295" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:Write" xmi:id="c0c88293-2025-46ed-b56e-1baf02c2b8e6" sourceMapping="LoChrgSts" value="1" name="Write LoChrgSts" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="e69b72bb-2de0-4db6-aefa-0c33bc09ec65"/>
+      </children>
+      <children xmi:type="tae:Write" xmi:id="f925796f-695c-4ba0-8796-9a5cc8c2d349" sourceMapping="LoChrgSts" value="1" name="Write LoChrgSts" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="cdbda3bb-7441-44ee-b5a4-5135b978b257"/>
+      </children>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="6701c125-a692-42bd-8127-751909811230" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

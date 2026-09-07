@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generator="com.hirain.tae.generator" xmi:id="f80e0737-3f98-4834-9d92-25749a60be75" name="闭锁后，收到调节指令，控制器需完成调节" describle="来源：9下电延迟管理功能 A9:K11" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="510f26b2-7653-4916-854c-823ed320feae"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="f22b8254-1780-4c67-a1f7-84428772e8a7"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="26e3ebe2-1ea8-4799-bc6f-61ba2c065c66" name="闭锁后，收到调节指令，控制器需完成调节">
+    <children xmi:type="tae:Initialization" xmi:id="08ba406b-75f6-44a5-930c-3fb32c9bb06f" name="Initialization">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="ac0b6c81-9416-471e-bf6c-8fbd983adb12" name="powerOn" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOn"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="89c34d9e-1fe6-4426-982b-dffdc4be2007" name="StraightRoadTest" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Group" xmi:id="2846fe70-c1af-4828-b956-3b39884c2c1c" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:ScriptBlock" xmi:id="9b7ff9b5-d24b-4b02-adc9-446d1b6909a8" name="write#闭锁信号？" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:Wait" xmi:id="208685fc-fc8a-4963-9d99-9364f1bdedd5" unit="ms" name="Wait" describle=""/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="20cd324b-94d5-4eed-840f-7cf38733b331" name="write#空簧模式请求信号？" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:Wait" xmi:id="e2306fdc-9521-4255-b9f4-4f32cc38cdd1" unit="ms" name="Wait" describle=""/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="e8f3e692-b85a-4af9-b163-e979e8480f0f" name="read#高度信号？" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="4dccffea-1cea-45bf-b349-bc16d353337d" name="空簧模式信号？" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="b4c7463d-2fc7-4295-88b2-8f1511cd2f86" name="控制器有报文" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="d4a1a499-b32e-4f4a-b954-b05c000ce0fe" name="未收到指令信号？" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="6a66e10c-e0c3-4803-bfbf-64a0ecc5bc9e" name="控制器报文为空" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="aae814fb-d440-46f3-b0c5-24056ecc026e" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

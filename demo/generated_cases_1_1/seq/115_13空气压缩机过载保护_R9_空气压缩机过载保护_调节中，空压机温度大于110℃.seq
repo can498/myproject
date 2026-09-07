@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="f343d60c-a632-431c-a7bb-2ca09d9bf979" name="空气压缩机过载保护_调节中，空压机温度大于110℃" describle="来源：13空气压缩机过载保护 A9:K13" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="e39add5e-7c23-4940-bcf1-b9ba39446438"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="10932acb-cd6b-4c79-8f4a-81c813d54d7d"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="0b82f6f3-e4d8-4042-b320-874c68e52c42" name="空气压缩机过载保护_调节中，空压机温度大于110℃">
+    <children xmi:type="tae:Initialization" xmi:id="012ebec3-cf25-40a3-af64-09bf666ef007" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="b52d5950-eb1d-4386-a0cd-9b64e4d6f9b2" name="Test Step &amp; Expected Result"/>
+    <children xmi:type="tae:Cleanup" xmi:id="63c6403b-d98f-48c1-9d6b-e32d5a46db1a" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

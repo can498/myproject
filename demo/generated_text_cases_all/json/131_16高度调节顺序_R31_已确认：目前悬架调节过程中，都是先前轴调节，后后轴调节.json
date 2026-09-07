@@ -1,0 +1,20 @@
+{
+  "caseId": "131_16高度调节顺序_R31",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "16高度调节顺序",
+    "range": "A31:I31",
+    "mode": "text-to-signal"
+  },
+  "caseName": "已确认：目前悬架调节过程中，都是先前轴调节，后后轴调节",
+  "testLevel": "",
+  "concreteSettings": "1、抬升控制：以车桥为单位先抬升前桥再抬升后桥，单次升降过程可以分2-3次交替完成每次交替抬升高度最大15mm,保证调节过程中后桥与前桥的高度差小于15mm\n                2、除迎宾模式外的降低控制：以车桥为单位先降低前桥再降低后桥，单次升降过程可以分2-3次交替完成，每次交替降低高度最大15mm，保证调节过程中后桥与前桥的高度差小于15mm",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [],
+  "signalCatalogSize": 10
+}

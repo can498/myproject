@@ -1,0 +1,18 @@
+{
+  "caseId": "116_13空气压缩机过载保护_R14",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "13空气压缩机过载保护",
+    "range": "A14:K18"
+  },
+  "caseName": "空气压缩机过载保护_单次连续运行时间大于300秒",
+  "testLevel": "P2",
+  "concreteSettings": "/·",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": []
+}

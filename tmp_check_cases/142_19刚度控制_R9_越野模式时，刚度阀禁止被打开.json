@@ -1,0 +1,18 @@
+{
+  "caseId": "142_19刚度控制_R9",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "19刚度控制",
+    "range": "A9:K12"
+  },
+  "caseName": "越野模式时，刚度阀禁止被打开",
+  "testLevel": "P1",
+  "concreteSettings": "/·",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": []
+}

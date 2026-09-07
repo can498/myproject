@@ -1,0 +1,187 @@
+{
+  "caseId": "022_2维修模式_R10",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "2维修模式",
+    "range": "A10:M15"
+  },
+  "caseName": "被动进入维修模式，空簧高度超限",
+  "testLevel": "P2",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row11"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row11"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row11"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row11"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row11"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row11"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "9",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row12"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "9",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row13"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row14"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row14"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row14"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row14"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row14"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row14"
+    }
+  ],
+  "cleanup": [],
+  "requiredMappings": [
+    "ECASActLvlFL",
+    "ECASActLvlFR",
+    "ECASActLvlRL",
+    "ECASActLvlRR",
+    "EcasModeFB",
+    "EcasModeReq"
+  ],
+  "warnings": [
+    "M11: Read断言使用单个'='，已按'=='处理",
+    "M11: Read断言使用单个'='，已按'=='处理",
+    "M11: Read断言使用单个'='，已按'=='处理",
+    "M11: Read断言使用单个'='，已按'=='处理",
+    "M11: Read断言使用单个'='，已按'=='处理",
+    "M12: Read断言使用单个'='，已按'=='处理",
+    "M13: Read断言使用单个'='，已按'=='处理",
+    "M14: Read断言使用单个'='，已按'=='处理",
+    "M14: Read断言使用单个'='，已按'=='处理",
+    "M14: Read断言使用单个'='，已按'=='处理",
+    "M14: Read断言使用单个'='，已按'=='处理",
+    "M14: Read断言使用单个'='，已按'=='处理"
+  ]
+}

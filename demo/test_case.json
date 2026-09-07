@@ -1,0 +1,46 @@
+{
+  "caseName": "信号a读写测试",
+  "mappings": [
+    {
+      "name": "a",
+      "type": "ModelMapping",
+      "deviceName": "HIL",
+      "path": "param/a",
+      "dataType": "VALUE",
+      "description": "",
+      "reference": ""
+    }
+  ],
+  "initialization": [
+    {
+      "action": "Write",
+      "signal": "a",
+      "value": "2",
+      "accessMode": "PhysicalValue"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Wait",
+      "time": 200,
+      "unit": "ms"
+    },
+    {
+      "action": "Read",
+      "signal": "a",
+      "expectType": "Number",
+      "operator": "GreaterThan",
+      "expectValue": "0",
+      "timeout": "1000",
+      "timeoutUnit": "ms"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "Write",
+      "signal": "a",
+      "value": "0",
+      "accessMode": "PhysicalValue"
+    }
+  ]
+}

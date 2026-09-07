@@ -1,0 +1,26 @@
+{
+  "caseId": "107_11斜坡检测功能_R10",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "11斜坡检测功能",
+    "range": "A10:K15"
+  },
+  "caseName": "C679_ECAS_SDM_002",
+  "testLevel": "1",
+  "concreteSettings": "指定横向加速度值",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "设置横向加速度为指定横向加速度值",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H10: 未知动作已生成占位节点：'设置横向加速度为指定横向加速度值'"
+  ]
+}

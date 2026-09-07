@@ -1,0 +1,187 @@
+{
+  "caseId": "029_3.2.5_脉冲阻尼控制_R5",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+    "sheet": "3.2.5 脉冲阻尼控制",
+    "range": "A5:K11"
+  },
+  "caseName": "前轴左车轮簧下加速度大于标定值激活脉冲阻尼控制_凸块",
+  "testLevel": "P1",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "BumpRoadTest",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "D",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "D",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCPVC_K_AzWhlth_mps2_f",
+      "value": "20",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Write",
+      "signal": "TargetVehSpd",
+      "value": "60",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "EspVehSpd",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "60",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Wait",
+      "time": 10,
+      "unit": "s",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Read",
+      "signal": "ECDCSP_I_AzWhlFL_uls_s16",
+      "expectType": "Number",
+      "operator": "GreaterThan",
+      "expectValue": "20",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Read",
+      "signal": "FLPeakFindflg_uls_b",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "1",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Write",
+      "signal": "TargetVehSpd",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Read",
+      "signal": "EspVehSpd",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "P",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step6"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step6"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "P",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step6"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step7"
+    }
+  ],
+  "requiredMappings": [
+    "ECDCPVC_K_AzWhlth_mps2_f",
+    "ECDCSP_I_AzWhlFL_uls_s16",
+    "EspVehSpd",
+    "FLPeakFindflg_uls_b",
+    "GearLever",
+    "TargetVehSpd",
+    "VcuGearPosn"
+  ],
+  "warnings": [
+    "H5: 未知动作已生成占位节点：'BumpRoadTest'",
+    "J7: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+    "J9: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'"
+  ]
+}

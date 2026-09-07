@@ -1,0 +1,154 @@
+{
+  "caseId": "094_8周期唤醒高度控制_R4",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "8周期唤醒高度控制",
+    "range": "A4:I9",
+    "mode": "text-to-signal"
+  },
+  "caseName": "周期唤醒高度控制_左前轮超阈值",
+  "testLevel": "P1",
+  "concreteSettings": "指定阈值",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERDOWN"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、车辆静止",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Placeholder",
+      "name": "设置使控制器唤醒",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "设置使控制器唤醒"
+    },
+    {
+      "action": "Placeholder",
+      "name": "检测控制器已唤醒",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "检测控制器已唤醒"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置智能补电运行状态为running",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "设置智能补电运行状态为running"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置左前轮悬架高度变化为指定阈值",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "设置左前轮悬架高度变化为指定阈值"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度为“指定实际空簧模式对应高度±26”",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测实际空簧高度为“指定实际空簧模式对应高度±26”\n2、检测实际空簧模式保持为指定实际空簧模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、检测实际空簧模式保持为指定实际空簧模式",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测实际空簧高度为“指定实际空簧模式对应高度±26”\n2、检测实际空簧模式保持为指定实际空簧模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "等待1s",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "等待1s"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度开始调节",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "1、检测实际空簧高度开始调节\n2、等待调节完成后,检测实际空簧高度为指定实际空簧模式对应高度,且到目标高度±5mm公差范围内调节完成\n3、检测实际空簧模式保持为指定实际空簧模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、等待调节完成后,检测实际空簧高度为指定实际空簧模式对应高度,且到目标高度±5mm公差范围内调节完成",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "1、检测实际空簧高度开始调节\n2、等待调节完成后,检测实际空簧高度为指定实际空簧模式对应高度,且到目标高度±5mm公差范围内调节完成\n3、检测实际空簧模式保持为指定实际空簧模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、检测实际空簧模式保持为指定实际空簧模式",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "1、检测实际空簧高度开始调节\n2、等待调节完成后,检测实际空簧高度为指定实际空簧模式对应高度,且到目标高度±5mm公差范围内调节完成\n3、检测实际空簧模式保持为指定实际空簧模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置悬架高度为默认标定值",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step5",
+      "sourceText": "设置悬架高度为默认标定值\n设置智能补电运行状态为idle"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置智能补电运行状态为idle",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step5",
+      "sourceText": "设置悬架高度为默认标定值\n设置智能补电运行状态为idle"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step6",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [],
+  "warnings": [
+    "F4: 未识别文本动作：2、控制器无故障",
+    "F4: 未识别文本动作：3、车辆静止",
+    "F4: 未知动作已生成占位节点：'2、控制器无故障'",
+    "F4: 未知动作已生成占位节点：'3、车辆静止'",
+    "H4: 未识别文本动作：设置使控制器唤醒",
+    "I4: 未识别文本动作：检测控制器已唤醒",
+    "H4: 未知动作已生成占位节点：'设置使控制器唤醒'",
+    "H4: 未知动作已生成占位节点：'检测控制器已唤醒'",
+    "H5: 未识别文本动作：设置智能补电运行状态为running",
+    "H5: 未知动作已生成占位节点：'设置智能补电运行状态为running'",
+    "H6: 未识别文本动作：设置左前轮悬架高度变化为指定阈值",
+    "I6: 未识别文本动作：1、检测实际空簧高度为“指定实际空簧模式对应高度±26”",
+    "I6: 未识别文本动作：2、检测实际空簧模式保持为指定实际空簧模式",
+    "H6: 未知动作已生成占位节点：'设置左前轮悬架高度变化为指定阈值'",
+    "H6: 未知动作已生成占位节点：'1、检测实际空簧高度为“指定实际空簧模式对应高度±26”'",
+    "H6: 未知动作已生成占位节点：'2、检测实际空簧模式保持为指定实际空簧模式'",
+    "H7: 未识别文本动作：等待1s",
+    "I7: 未识别文本动作：1、检测实际空簧高度开始调节",
+    "I7: 未识别文本动作：2、等待调节完成后,检测实际空簧高度为指定实际空簧模式对应高度,且到目标高度±5mm公差范围内调节完成",
+    "I7: 未识别文本动作：3、检测实际空簧模式保持为指定实际空簧模式",
+    "H7: 未知动作已生成占位节点：'等待1s'",
+    "H7: 未知动作已生成占位节点：'1、检测实际空簧高度开始调节'",
+    "H7: 未知动作已生成占位节点：'2、等待调节完成后,检测实际空簧高度为指定实际空簧模式对应高度,且到目标高度±5mm公差范围内调节完成'",
+    "H7: 未知动作已生成占位节点：'3、检测实际空簧模式保持为指定实际空簧模式'",
+    "H8: 未识别文本动作：设置悬架高度为默认标定值",
+    "H8: 未识别文本动作：设置智能补电运行状态为idle",
+    "H8: 未知动作已生成占位节点：'设置悬架高度为默认标定值'",
+    "H8: 未知动作已生成占位节点：'设置智能补电运行状态为idle'"
+  ],
+  "signalCatalogSize": 10
+}

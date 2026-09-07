@@ -1,0 +1,1852 @@
+{
+  "totalCases": 142,
+  "totalWarnings": 3066,
+  "cases": [
+    {
+      "caseId": "001_1模式管理_R4",
+      "caseName": "P档静止，其它切标准",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A4:I11",
+        "mode": "text-to-signal"
+      },
+      "json": "001_1模式管理_R4_P档静止，其它切标准.json",
+      "actions": 14,
+      "warnings": 14
+    },
+    {
+      "caseId": "002_1模式管理_R12",
+      "caseName": "P档静止，其它切运动",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A12:I19",
+        "mode": "text-to-signal"
+      },
+      "json": "002_1模式管理_R12_P档静止，其它切运动.json",
+      "actions": 14,
+      "warnings": 14
+    },
+    {
+      "caseId": "003_1模式管理_R20",
+      "caseName": "P档静止，其它切越野",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A20:I27",
+        "mode": "text-to-signal"
+      },
+      "json": "003_1模式管理_R20_P档静止，其它切越野.json",
+      "actions": 14,
+      "warnings": 14
+    },
+    {
+      "caseId": "004_1模式管理_R28",
+      "caseName": "P档静止，其它切自适应",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A28:I35",
+        "mode": "text-to-signal"
+      },
+      "json": "004_1模式管理_R28_P档静止，其它切自适应.json",
+      "actions": 14,
+      "warnings": 14
+    },
+    {
+      "caseId": "005_1模式管理_R36",
+      "caseName": "P档静止，其它切迎宾",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A36:I43",
+        "mode": "text-to-signal"
+      },
+      "json": "005_1模式管理_R36_P档静止，其它切迎宾.json",
+      "actions": 14,
+      "warnings": 14
+    },
+    {
+      "caseId": "006_1模式管理_R44",
+      "caseName": "P档静止，其它切装卸",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A44:I51",
+        "mode": "text-to-signal"
+      },
+      "json": "006_1模式管理_R44_P档静止，其它切装卸.json",
+      "actions": 14,
+      "warnings": 14
+    },
+    {
+      "caseId": "007_1模式管理_R52",
+      "caseName": "P档静止，其它切一键调平",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A52:I59",
+        "mode": "text-to-signal"
+      },
+      "json": "007_1模式管理_R52_P档静止，其它切一键调平.json",
+      "actions": 14,
+      "warnings": 14
+    },
+    {
+      "caseId": "008_1模式管理_R60",
+      "caseName": "P档静止，其它切牵引",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A60:I67",
+        "mode": "text-to-signal"
+      },
+      "json": "008_1模式管理_R60_P档静止，其它切牵引.json",
+      "actions": 14,
+      "warnings": 14
+    },
+    {
+      "caseId": "009_1模式管理_R68",
+      "caseName": "P档静止，其它切维修",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A68:I75",
+        "mode": "text-to-signal"
+      },
+      "json": "009_1模式管理_R68_P档静止，其它切维修.json",
+      "actions": 14,
+      "warnings": 14
+    },
+    {
+      "caseId": "010_1模式管理_R76",
+      "caseName": "R档，0km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A76:I87",
+        "mode": "text-to-signal"
+      },
+      "json": "010_1模式管理_R76_R档，0km_h，悬架模式切换.json",
+      "actions": 18,
+      "warnings": 18
+    },
+    {
+      "caseId": "011_1模式管理_R88",
+      "caseName": "R档，20km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A88:I99",
+        "mode": "text-to-signal"
+      },
+      "json": "011_1模式管理_R88_R档，20km_h，悬架模式切换.json",
+      "actions": 22,
+      "warnings": 16
+    },
+    {
+      "caseId": "012_1模式管理_R100",
+      "caseName": "D档，0km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A100:I111",
+        "mode": "text-to-signal"
+      },
+      "json": "012_1模式管理_R100_D档，0km_h，悬架模式切换.json",
+      "actions": 18,
+      "warnings": 18
+    },
+    {
+      "caseId": "013_1模式管理_R112",
+      "caseName": "D档，20km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A112:I123",
+        "mode": "text-to-signal"
+      },
+      "json": "013_1模式管理_R112_D档，20km_h，悬架模式切换.json",
+      "actions": 22,
+      "warnings": 16
+    },
+    {
+      "caseId": "014_1模式管理_R124",
+      "caseName": "D档，60km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A124:I135",
+        "mode": "text-to-signal"
+      },
+      "json": "014_1模式管理_R124_D档，60km_h，悬架模式切换.json",
+      "actions": 22,
+      "warnings": 16
+    },
+    {
+      "caseId": "015_1模式管理_R136",
+      "caseName": "D档，120km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A136:I147",
+        "mode": "text-to-signal"
+      },
+      "json": "015_1模式管理_R136_D档，120km_h，悬架模式切换.json",
+      "actions": 22,
+      "warnings": 16
+    },
+    {
+      "caseId": "016_1模式管理_R148",
+      "caseName": "N档，0km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A148:I159",
+        "mode": "text-to-signal"
+      },
+      "json": "016_1模式管理_R148_N档，0km_h，悬架模式切换.json",
+      "actions": 18,
+      "warnings": 18
+    },
+    {
+      "caseId": "017_1模式管理_R160",
+      "caseName": "N档，20km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A160:I171",
+        "mode": "text-to-signal"
+      },
+      "json": "017_1模式管理_R160_N档，20km_h，悬架模式切换.json",
+      "actions": 25,
+      "warnings": 16
+    },
+    {
+      "caseId": "018_1模式管理_R172",
+      "caseName": "N档，60km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A172:I183",
+        "mode": "text-to-signal"
+      },
+      "json": "018_1模式管理_R172_N档，60km_h，悬架模式切换.json",
+      "actions": 25,
+      "warnings": 16
+    },
+    {
+      "caseId": "019_1模式管理_R184",
+      "caseName": "N档，120km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A184:I195",
+        "mode": "text-to-signal"
+      },
+      "json": "019_1模式管理_R184_N档，120km_h，悬架模式切换.json",
+      "actions": 25,
+      "warnings": 16
+    },
+    {
+      "caseId": "020_1模式管理_R196",
+      "caseName": "悬架模式不可切换（选取部分工况）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "1模式管理",
+        "range": "A196:I202",
+        "mode": "text-to-signal"
+      },
+      "json": "020_1模式管理_R196_悬架模式不可切换（选取部分工况）.json",
+      "actions": 21,
+      "warnings": 18
+    },
+    {
+      "caseId": "021_2维修模式_R4",
+      "caseName": "主动进入维修模式，且空簧高度不能调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "2维修模式",
+        "range": "A4:I9",
+        "mode": "text-to-signal"
+      },
+      "json": "021_2维修模式_R4_主动进入维修模式，且空簧高度不能调节.json",
+      "actions": 22,
+      "warnings": 16
+    },
+    {
+      "caseId": "022_2维修模式_R10",
+      "caseName": "被动进入维修模式，空簧高度超限",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "2维修模式",
+        "range": "A10:I15",
+        "mode": "text-to-signal"
+      },
+      "json": "022_2维修模式_R10_被动进入维修模式，空簧高度超限.json",
+      "actions": 19,
+      "warnings": 14
+    },
+    {
+      "caseId": "023_2维修模式_R16",
+      "caseName": "4.9km/h进入维修模式",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "2维修模式",
+        "range": "A16:I23",
+        "mode": "text-to-signal"
+      },
+      "json": "023_2维修模式_R16_4.9km_h进入维修模式.json",
+      "actions": 28,
+      "warnings": 10
+    },
+    {
+      "caseId": "024_2维修模式_R24",
+      "caseName": "大于等于5km/h禁止进入维修模式",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "2维修模式",
+        "range": "A24:I31",
+        "mode": "text-to-signal"
+      },
+      "json": "024_2维修模式_R24_大于等于5km_h禁止进入维修模式.json",
+      "actions": 27,
+      "warnings": 16
+    },
+    {
+      "caseId": "025_2维修模式_R32",
+      "caseName": "空簧调节过程中，设置维修模式，立即停止调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "2维修模式",
+        "range": "A32:I36",
+        "mode": "text-to-signal"
+      },
+      "json": "025_2维修模式_R32_空簧调节过程中，设置维修模式，立即停止调节.json",
+      "actions": 19,
+      "warnings": 12
+    },
+    {
+      "caseId": "026_3一键调平_R4",
+      "caseName": "完全一键调平，不同轮胎在凸台上",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "3一键调平",
+        "range": "A4:I8",
+        "mode": "text-to-signal"
+      },
+      "json": "026_3一键调平_R4_完全一键调平，不同轮胎在凸台上.json",
+      "actions": 20,
+      "warnings": 18
+    },
+    {
+      "caseId": "027_3一键调平_R9",
+      "caseName": "相对一键调平，不同空簧达到目标高度",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "3一键调平",
+        "range": "A9:I13",
+        "mode": "text-to-signal"
+      },
+      "json": "027_3一键调平_R9_相对一键调平，不同空簧达到目标高度.json",
+      "actions": 20,
+      "warnings": 18
+    },
+    {
+      "caseId": "028_3一键调平_R14",
+      "caseName": "相对一键调平，气囊压力达到预警",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "3一键调平",
+        "range": "A14:I20",
+        "mode": "text-to-signal"
+      },
+      "json": "028_3一键调平_R14_相对一键调平，气囊压力达到预警.json",
+      "actions": 23,
+      "warnings": 22
+    },
+    {
+      "caseId": "029_3一键调平_R21",
+      "caseName": "退出P挡，退出一键调平",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "3一键调平",
+        "range": "A21:I26",
+        "mode": "text-to-signal"
+      },
+      "json": "029_3一键调平_R21_退出P挡，退出一键调平.json",
+      "actions": 21,
+      "warnings": 16
+    },
+    {
+      "caseId": "030_4装卸模式_R4",
+      "caseName": "进入装卸模式",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "4装卸模式",
+        "range": "A4:I11",
+        "mode": "text-to-signal"
+      },
+      "json": "030_4装卸模式_R4_进入装卸模式.json",
+      "actions": 15,
+      "warnings": 16
+    },
+    {
+      "caseId": "031_4装卸模式_R12",
+      "caseName": "退出P档，退出装卸模式",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "4装卸模式",
+        "range": "A12:I17",
+        "mode": "text-to-signal"
+      },
+      "json": "031_4装卸模式_R12_退出P档，退出装卸模式.json",
+      "actions": 22,
+      "warnings": 18
+    },
+    {
+      "caseId": "032_5迎宾模式_R4",
+      "caseName": "进入迎宾模式",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "5迎宾模式",
+        "range": "A4:I11",
+        "mode": "text-to-signal"
+      },
+      "json": "032_5迎宾模式_R4_进入迎宾模式.json",
+      "actions": 16,
+      "warnings": 18
+    },
+    {
+      "caseId": "033_5迎宾模式_R12",
+      "caseName": "调节中打开车门，迎宾模式中断",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "5迎宾模式",
+        "range": "A12:I17",
+        "mode": "text-to-signal"
+      },
+      "json": "033_5迎宾模式_R12_调节中打开车门，迎宾模式中断.json",
+      "actions": 22,
+      "warnings": 18
+    },
+    {
+      "caseId": "034_5迎宾模式_R18",
+      "caseName": "调节前打开车门，不进入迎宾模式",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "5迎宾模式",
+        "range": "A18:I22",
+        "mode": "text-to-signal"
+      },
+      "json": "034_5迎宾模式_R18_调节前打开车门，不进入迎宾模式.json",
+      "actions": 18,
+      "warnings": 14
+    },
+    {
+      "caseId": "035_6随速调节_R4",
+      "caseName": "越野模式，加速时，车速大于等于15kph，高度立即调节，下降至10mm",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A4:I9",
+        "mode": "text-to-signal"
+      },
+      "json": "035_6随速调节_R4_越野模式，加速时，车速大于等于15kph，高度立即调节，下降至10mm.json",
+      "actions": 20,
+      "warnings": 12
+    },
+    {
+      "caseId": "036_6随速调节_R10",
+      "caseName": "越野模式，加速时，车速小于15kph，高度不变",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A10:I15",
+        "mode": "text-to-signal"
+      },
+      "json": "036_6随速调节_R10_越野模式，加速时，车速小于15kph，高度不变.json",
+      "actions": 19,
+      "warnings": 12
+    },
+    {
+      "caseId": "037_6随速调节_R16",
+      "caseName": "越野模式，减速时，车速小于5kph，高度2s后调节，恢复至30mm",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A16:I22",
+        "mode": "text-to-signal"
+      },
+      "json": "037_6随速调节_R16_越野模式，减速时，车速小于5kph，高度2s后调节，恢复至30mm.json",
+      "actions": 25,
+      "warnings": 20
+    },
+    {
+      "caseId": "038_6随速调节_R23",
+      "caseName": "越野模式，减速时，车速大于等于5kph，高度不变",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A23:I29",
+        "mode": "text-to-signal"
+      },
+      "json": "038_6随速调节_R23_越野模式，减速时，车速大于等于5kph，高度不变.json",
+      "actions": 25,
+      "warnings": 20
+    },
+    {
+      "caseId": "039_6随速调节_R30",
+      "caseName": "标准模式，加速时，车速大于等于100kph，高度30s后调节，下降至-15mm",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A30:I35",
+        "mode": "text-to-signal"
+      },
+      "json": "039_6随速调节_R30_标准模式，加速时，车速大于等于100kph，高度30s后调节，下降至-15mm.json",
+      "actions": 21,
+      "warnings": 16
+    },
+    {
+      "caseId": "040_6随速调节_R36",
+      "caseName": "标准模式，加速时，车速小于100kph，高度不变",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A36:I41",
+        "mode": "text-to-signal"
+      },
+      "json": "040_6随速调节_R36_标准模式，加速时，车速小于100kph，高度不变.json",
+      "actions": 21,
+      "warnings": 16
+    },
+    {
+      "caseId": "041_6随速调节_R42",
+      "caseName": "标准模式，减速时，车速小于70kph，高度120s后调节，恢复至0mm",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A42:I48",
+        "mode": "text-to-signal"
+      },
+      "json": "041_6随速调节_R42_标准模式，减速时，车速小于70kph，高度120s后调节，恢复至0mm.json",
+      "actions": 25,
+      "warnings": 20
+    },
+    {
+      "caseId": "042_6随速调节_R49",
+      "caseName": "标准模式，减速时，车速大于等于70kph，高度不变",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A49:I55",
+        "mode": "text-to-signal"
+      },
+      "json": "042_6随速调节_R49_标准模式，减速时，车速大于等于70kph，高度不变.json",
+      "actions": 25,
+      "warnings": 20
+    },
+    {
+      "caseId": "043_6随速调节_R56",
+      "caseName": "标准模式，紧急制动时，车速小于5kph，高度立即调节，恢复至0mm",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A56:I62",
+        "mode": "text-to-signal"
+      },
+      "json": "043_6随速调节_R56_标准模式，紧急制动时，车速小于5kph，高度立即调节，恢复至0mm.json",
+      "actions": 24,
+      "warnings": 18
+    },
+    {
+      "caseId": "044_6随速调节_R63",
+      "caseName": "标准模式，紧急制动时，车速大于等于5kph，高度不变",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A63:I69",
+        "mode": "text-to-signal"
+      },
+      "json": "044_6随速调节_R63_标准模式，紧急制动时，车速大于等于5kph，高度不变.json",
+      "actions": 24,
+      "warnings": 18
+    },
+    {
+      "caseId": "045_6随速调节_R70",
+      "caseName": "运动模式，加速时，车速大于等于120kph，高度20s后调节，下降至-30mm",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A70:I75",
+        "mode": "text-to-signal"
+      },
+      "json": "045_6随速调节_R70_运动模式，加速时，车速大于等于120kph，高度20s后调节，下降至-30mm.json",
+      "actions": 21,
+      "warnings": 16
+    },
+    {
+      "caseId": "046_6随速调节_R76",
+      "caseName": "运动模式，加速时，车速小于120kph，高度不变",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A76:I81",
+        "mode": "text-to-signal"
+      },
+      "json": "046_6随速调节_R76_运动模式，加速时，车速小于120kph，高度不变.json",
+      "actions": 21,
+      "warnings": 16
+    },
+    {
+      "caseId": "047_6随速调节_R82",
+      "caseName": "运动模式，减速时，车速小于100kph，高度30s后调节，恢复至-25mm",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A82:I88",
+        "mode": "text-to-signal"
+      },
+      "json": "047_6随速调节_R82_运动模式，减速时，车速小于100kph，高度30s后调节，恢复至-25mm.json",
+      "actions": 25,
+      "warnings": 20
+    },
+    {
+      "caseId": "048_6随速调节_R89",
+      "caseName": "运动模式，减速时，车速大于等于100kph，高度不变",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A89:I95",
+        "mode": "text-to-signal"
+      },
+      "json": "048_6随速调节_R89_运动模式，减速时，车速大于等于100kph，高度不变.json",
+      "actions": 25,
+      "warnings": 20
+    },
+    {
+      "caseId": "049_6随速调节_R96",
+      "caseName": "运动模式，紧急制动时，车速小于5kph，高度立即调节，恢复至-25mm",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A96:I102",
+        "mode": "text-to-signal"
+      },
+      "json": "049_6随速调节_R96_运动模式，紧急制动时，车速小于5kph，高度立即调节，恢复至-25mm.json",
+      "actions": 24,
+      "warnings": 18
+    },
+    {
+      "caseId": "050_6随速调节_R103",
+      "caseName": "运动模式，紧急制动时，车速大于等于5kph，高度不变",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A103:I109",
+        "mode": "text-to-signal"
+      },
+      "json": "050_6随速调节_R103_运动模式，紧急制动时，车速大于等于5kph，高度不变.json",
+      "actions": 24,
+      "warnings": 18
+    },
+    {
+      "caseId": "051_6随速调节_R110",
+      "caseName": "自适应模式，加速时，车速大于等于100kph，高度30s后调节，下降至-15mm（小于120kph)",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A110:I115",
+        "mode": "text-to-signal"
+      },
+      "json": "051_6随速调节_R110_自适应模式，加速时，车速大于等于100kph，高度30s后调节，下降至-15mm（小于120kph).json",
+      "actions": 21,
+      "warnings": 16
+    },
+    {
+      "caseId": "052_6随速调节_R116",
+      "caseName": "自适应模式，加速时，车速大于等于120kph，高度20s后调节，下降至-30mm",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A116:I121",
+        "mode": "text-to-signal"
+      },
+      "json": "052_6随速调节_R116_自适应模式，加速时，车速大于等于120kph，高度20s后调节，下降至-30mm.json",
+      "actions": 21,
+      "warnings": 16
+    },
+    {
+      "caseId": "053_6随速调节_R122",
+      "caseName": "自适应模式，加速时，车速小于100kph，持续30s，高度不变",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A122:I127",
+        "mode": "text-to-signal"
+      },
+      "json": "053_6随速调节_R122_自适应模式，加速时，车速小于100kph，持续30s，高度不变.json",
+      "actions": 21,
+      "warnings": 16
+    },
+    {
+      "caseId": "054_6随速调节_R128",
+      "caseName": "自适应模式，加速时，车速小于120kph，持续20s，高度不变",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A128:I133",
+        "mode": "text-to-signal"
+      },
+      "json": "054_6随速调节_R128_自适应模式，加速时，车速小于120kph，持续20s，高度不变.json",
+      "actions": 21,
+      "warnings": 16
+    },
+    {
+      "caseId": "055_6随速调节_R134",
+      "caseName": "自适应模式，减速时，车速小于100kph，高度30s后调节，恢复至-15mm（初始车速130kph)",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A134:I140",
+        "mode": "text-to-signal"
+      },
+      "json": "055_6随速调节_R134_自适应模式，减速时，车速小于100kph，高度30s后调节，恢复至-15mm（初始车速130kph).json",
+      "actions": 25,
+      "warnings": 20
+    },
+    {
+      "caseId": "056_6随速调节_R141",
+      "caseName": "自适应模式，减速时，车速小于70kph，高度120s后调节，恢复至0mm（初始车速110kph）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A141:I147",
+        "mode": "text-to-signal"
+      },
+      "json": "056_6随速调节_R141_自适应模式，减速时，车速小于70kph，高度120s后调节，恢复至0mm（初始车速110kph）.json",
+      "actions": 25,
+      "warnings": 20
+    },
+    {
+      "caseId": "057_6随速调节_R148",
+      "caseName": "自适应模式，减速时，车速大于等于100kph，持续30s，高度不变(初始车速130kph)",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A148:I154",
+        "mode": "text-to-signal"
+      },
+      "json": "057_6随速调节_R148_自适应模式，减速时，车速大于等于100kph，持续30s，高度不变(初始车速130kph).json",
+      "actions": 25,
+      "warnings": 20
+    },
+    {
+      "caseId": "058_6随速调节_R155",
+      "caseName": "自适应模式，减速时，车速大于等于70kph，持续120s，高度不变（初始车速110kph)",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A155:I161",
+        "mode": "text-to-signal"
+      },
+      "json": "058_6随速调节_R155_自适应模式，减速时，车速大于等于70kph，持续120s，高度不变（初始车速110kph).json",
+      "actions": 25,
+      "warnings": 20
+    },
+    {
+      "caseId": "059_6随速调节_R162",
+      "caseName": "自适应模式，紧急制动时，车速小于5kph，高度立即调节，恢复至0mm",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A162:I168",
+        "mode": "text-to-signal"
+      },
+      "json": "059_6随速调节_R162_自适应模式，紧急制动时，车速小于5kph，高度立即调节，恢复至0mm.json",
+      "actions": 24,
+      "warnings": 18
+    },
+    {
+      "caseId": "060_6随速调节_R169",
+      "caseName": "自适应模式，紧急制动时，车速大于等于5kph，高度不变（30s内）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "6随速调节",
+        "range": "A169:I175",
+        "mode": "text-to-signal"
+      },
+      "json": "060_6随速调节_R169_自适应模式，紧急制动时，车速大于等于5kph，高度不变（30s内）.json",
+      "actions": 24,
+      "warnings": 18
+    },
+    {
+      "caseId": "061_7悬架高度调平_R4",
+      "caseName": "不同模式下，P挡静止，四轮变化超过阈值，无开关门，300s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A4:I13",
+        "mode": "text-to-signal"
+      },
+      "json": "061_7悬架高度调平_R4_不同模式下，P挡静止，四轮变化超过阈值，无开关门，300s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "062_7悬架高度调平_R14",
+      "caseName": "不同模式下，P挡静止，四轮变化超过阈值，开关左前门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A14:I23",
+        "mode": "text-to-signal"
+      },
+      "json": "062_7悬架高度调平_R14_不同模式下，P挡静止，四轮变化超过阈值，开关左前门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "063_7悬架高度调平_R24",
+      "caseName": "不同模式下，P挡静止，四轮变化超过阈值，开关右前门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A24:I33",
+        "mode": "text-to-signal"
+      },
+      "json": "063_7悬架高度调平_R24_不同模式下，P挡静止，四轮变化超过阈值，开关右前门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "064_7悬架高度调平_R34",
+      "caseName": "不同模式下，P挡静止，四轮变化超过阈值，开关左后门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A34:I43",
+        "mode": "text-to-signal"
+      },
+      "json": "064_7悬架高度调平_R34_不同模式下，P挡静止，四轮变化超过阈值，开关左后门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "065_7悬架高度调平_R44",
+      "caseName": "不同模式下，P挡静止，四轮变化超过阈值，开关右后门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A44:I53",
+        "mode": "text-to-signal"
+      },
+      "json": "065_7悬架高度调平_R44_不同模式下，P挡静止，四轮变化超过阈值，开关右后门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "066_7悬架高度调平_R54",
+      "caseName": "不同模式下，P挡静止，前轴两轮变化超过阈值，无开关门，300s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A54:I63",
+        "mode": "text-to-signal"
+      },
+      "json": "066_7悬架高度调平_R54_不同模式下，P挡静止，前轴两轮变化超过阈值，无开关门，300s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "067_7悬架高度调平_R64",
+      "caseName": "不同模式下，P挡静止，前轴两轮变化超过阈值，开关左前门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A64:I73",
+        "mode": "text-to-signal"
+      },
+      "json": "067_7悬架高度调平_R64_不同模式下，P挡静止，前轴两轮变化超过阈值，开关左前门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "068_7悬架高度调平_R74",
+      "caseName": "不同模式下，P挡静止，前轴两轮变化超过阈值，开关右前门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A74:I83",
+        "mode": "text-to-signal"
+      },
+      "json": "068_7悬架高度调平_R74_不同模式下，P挡静止，前轴两轮变化超过阈值，开关右前门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "069_7悬架高度调平_R84",
+      "caseName": "不同模式下，P挡静止，前轴两轮变化超过阈值，开关左后门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A84:I93",
+        "mode": "text-to-signal"
+      },
+      "json": "069_7悬架高度调平_R84_不同模式下，P挡静止，前轴两轮变化超过阈值，开关左后门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "070_7悬架高度调平_R94",
+      "caseName": "不同模式下，P挡静止，前轴两轮变化超过阈值，开关右后门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A94:I103",
+        "mode": "text-to-signal"
+      },
+      "json": "070_7悬架高度调平_R94_不同模式下，P挡静止，前轴两轮变化超过阈值，开关右后门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "071_7悬架高度调平_R104",
+      "caseName": "不同模式下，P挡静止，后轴两轮变化超过阈值，无开关门，300s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A104:I113",
+        "mode": "text-to-signal"
+      },
+      "json": "071_7悬架高度调平_R104_不同模式下，P挡静止，后轴两轮变化超过阈值，无开关门，300s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "072_7悬架高度调平_R114",
+      "caseName": "不同模式下，P挡静止，后轴两轮变化超过阈值，开关左前门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A114:I123",
+        "mode": "text-to-signal"
+      },
+      "json": "072_7悬架高度调平_R114_不同模式下，P挡静止，后轴两轮变化超过阈值，开关左前门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "073_7悬架高度调平_R124",
+      "caseName": "不同模式下，P挡静止，后轴两轮变化超过阈值，开关右前门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A124:I133",
+        "mode": "text-to-signal"
+      },
+      "json": "073_7悬架高度调平_R124_不同模式下，P挡静止，后轴两轮变化超过阈值，开关右前门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "074_7悬架高度调平_R134",
+      "caseName": "不同模式下，P挡静止，后轴两轮变化超过阈值，开关左后门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A134:I143",
+        "mode": "text-to-signal"
+      },
+      "json": "074_7悬架高度调平_R134_不同模式下，P挡静止，后轴两轮变化超过阈值，开关左后门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "075_7悬架高度调平_R144",
+      "caseName": "不同模式下，P挡静止，后轴两轮变化超过阈值，开关右后门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A144:I153",
+        "mode": "text-to-signal"
+      },
+      "json": "075_7悬架高度调平_R144_不同模式下，P挡静止，后轴两轮变化超过阈值，开关右后门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "076_7悬架高度调平_R154",
+      "caseName": "不同模式下，P挡静止，前轴左右高度差超过阈值，无开关门，300s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A154:I163",
+        "mode": "text-to-signal"
+      },
+      "json": "076_7悬架高度调平_R154_不同模式下，P挡静止，前轴左右高度差超过阈值，无开关门，300s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "077_7悬架高度调平_R164",
+      "caseName": "不同模式下，P挡静止，前轴左右高度差超过阈值，开关左前门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A164:I173",
+        "mode": "text-to-signal"
+      },
+      "json": "077_7悬架高度调平_R164_不同模式下，P挡静止，前轴左右高度差超过阈值，开关左前门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "078_7悬架高度调平_R174",
+      "caseName": "不同模式下，P挡静止，前轴左右高度差超过阈值，开关右前门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A174:I183",
+        "mode": "text-to-signal"
+      },
+      "json": "078_7悬架高度调平_R174_不同模式下，P挡静止，前轴左右高度差超过阈值，开关右前门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "079_7悬架高度调平_R184",
+      "caseName": "不同模式下，P挡静止，前轴左右高度差超过阈值，开关左后门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A184:I193",
+        "mode": "text-to-signal"
+      },
+      "json": "079_7悬架高度调平_R184_不同模式下，P挡静止，前轴左右高度差超过阈值，开关左后门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "080_7悬架高度调平_R194",
+      "caseName": "不同模式下，P挡静止，前轴左右高度差超过阈值，开关右后门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A194:I203",
+        "mode": "text-to-signal"
+      },
+      "json": "080_7悬架高度调平_R194_不同模式下，P挡静止，前轴左右高度差超过阈值，开关右后门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "081_7悬架高度调平_R204",
+      "caseName": "不同模式下，P挡静止，后轴左右高度差超过阈值，无开关门，300s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A204:I213",
+        "mode": "text-to-signal"
+      },
+      "json": "081_7悬架高度调平_R204_不同模式下，P挡静止，后轴左右高度差超过阈值，无开关门，300s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "082_7悬架高度调平_R214",
+      "caseName": "不同模式下，P挡静止，后轴左右高度差超过阈值，开关左前门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A214:I223",
+        "mode": "text-to-signal"
+      },
+      "json": "082_7悬架高度调平_R214_不同模式下，P挡静止，后轴左右高度差超过阈值，开关左前门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "083_7悬架高度调平_R224",
+      "caseName": "不同模式下，P挡静止，后轴左右高度差超过阈值，开关右前门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A224:I233",
+        "mode": "text-to-signal"
+      },
+      "json": "083_7悬架高度调平_R224_不同模式下，P挡静止，后轴左右高度差超过阈值，开关右前门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "084_7悬架高度调平_R234",
+      "caseName": "不同模式下，P挡静止，后轴左右高度差超过阈值，开关左后门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A234:I243",
+        "mode": "text-to-signal"
+      },
+      "json": "084_7悬架高度调平_R234_不同模式下，P挡静止，后轴左右高度差超过阈值，开关左后门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "085_7悬架高度调平_R244",
+      "caseName": "不同模式下，P挡静止，后轴左右高度差超过阈值，开关右后门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A244:I253",
+        "mode": "text-to-signal"
+      },
+      "json": "085_7悬架高度调平_R244_不同模式下，P挡静止，后轴左右高度差超过阈值，开关右后门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "086_7悬架高度调平_R254",
+      "caseName": "不同模式下，P挡静止，后轴左右高度差超过阈值，开关尾门，3s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A254:I263",
+        "mode": "text-to-signal"
+      },
+      "json": "086_7悬架高度调平_R254_不同模式下，P挡静止，后轴左右高度差超过阈值，开关尾门，3s后调节.json",
+      "actions": 20,
+      "warnings": 32
+    },
+    {
+      "caseId": "087_7悬架高度调平_R264",
+      "caseName": "不同模式下，P挡静止，上升时，先同轴调节，再调节较低轮_前轴",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A264:I273",
+        "mode": "text-to-signal"
+      },
+      "json": "087_7悬架高度调平_R264_不同模式下，P挡静止，上升时，先同轴调节，再调节较低轮_前轴.json",
+      "actions": 21,
+      "warnings": 34
+    },
+    {
+      "caseId": "088_7悬架高度调平_R274",
+      "caseName": "不同模式下，P挡静止，上升时，先同轴调节，再调节较低轮_后轴",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A274:I283",
+        "mode": "text-to-signal"
+      },
+      "json": "088_7悬架高度调平_R274_不同模式下，P挡静止，上升时，先同轴调节，再调节较低轮_后轴.json",
+      "actions": 21,
+      "warnings": 34
+    },
+    {
+      "caseId": "089_7悬架高度调平_R284",
+      "caseName": "不同模式下，P挡静止，下降时，先同轴调节，再调节较高轮_前轴",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A284:I293",
+        "mode": "text-to-signal"
+      },
+      "json": "089_7悬架高度调平_R284_不同模式下，P挡静止，下降时，先同轴调节，再调节较高轮_前轴.json",
+      "actions": 21,
+      "warnings": 34
+    },
+    {
+      "caseId": "090_7悬架高度调平_R294",
+      "caseName": "不同模式下，P挡静止，下降时，先同轴调节，再调节较高轮_后轴",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A294:I303",
+        "mode": "text-to-signal"
+      },
+      "json": "090_7悬架高度调平_R294_不同模式下，P挡静止，下降时，先同轴调节，再调节较高轮_后轴.json",
+      "actions": 21,
+      "warnings": 34
+    },
+    {
+      "caseId": "091_7悬架高度调平_R304",
+      "caseName": "不同模式下，D挡20kph行驶，四轮变化超过阈值，10s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A304:I313",
+        "mode": "text-to-signal"
+      },
+      "json": "091_7悬架高度调平_R304_不同模式下，D挡20kph行驶，四轮变化超过阈值，10s后调节.json",
+      "actions": 32,
+      "warnings": 32
+    },
+    {
+      "caseId": "092_7悬架高度调平_R314",
+      "caseName": "不同模式下，D挡20kph行驶，前轴两轮变化超过阈值，10s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A314:I323",
+        "mode": "text-to-signal"
+      },
+      "json": "092_7悬架高度调平_R314_不同模式下，D挡20kph行驶，前轴两轮变化超过阈值，10s后调节.json",
+      "actions": 32,
+      "warnings": 32
+    },
+    {
+      "caseId": "093_7悬架高度调平_R324",
+      "caseName": "不同模式下，D挡20kph行驶，后轴两轮变化超过阈值，10s后调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "7悬架高度调平",
+        "range": "A324:I333",
+        "mode": "text-to-signal"
+      },
+      "json": "093_7悬架高度调平_R324_不同模式下，D挡20kph行驶，后轴两轮变化超过阈值，10s后调节.json",
+      "actions": 32,
+      "warnings": 32
+    },
+    {
+      "caseId": "094_8周期唤醒高度控制_R4",
+      "caseName": "周期唤醒高度控制_左前轮超阈值",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "8周期唤醒高度控制",
+        "range": "A4:I9",
+        "mode": "text-to-signal"
+      },
+      "json": "094_8周期唤醒高度控制_R4_周期唤醒高度控制_左前轮超阈值.json",
+      "actions": 16,
+      "warnings": 28
+    },
+    {
+      "caseId": "095_8周期唤醒高度控制_R10",
+      "caseName": "周期唤醒高度控制_右前轮超阈值",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "8周期唤醒高度控制",
+        "range": "A10:I15",
+        "mode": "text-to-signal"
+      },
+      "json": "095_8周期唤醒高度控制_R10_周期唤醒高度控制_右前轮超阈值.json",
+      "actions": 16,
+      "warnings": 28
+    },
+    {
+      "caseId": "096_8周期唤醒高度控制_R16",
+      "caseName": "周期唤醒高度控制_左后轮超阈值",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "8周期唤醒高度控制",
+        "range": "A16:I21",
+        "mode": "text-to-signal"
+      },
+      "json": "096_8周期唤醒高度控制_R16_周期唤醒高度控制_左后轮超阈值.json",
+      "actions": 16,
+      "warnings": 28
+    },
+    {
+      "caseId": "097_8周期唤醒高度控制_R22",
+      "caseName": "周期唤醒高度控制_右后轮超阈值",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "8周期唤醒高度控制",
+        "range": "A22:I27",
+        "mode": "text-to-signal"
+      },
+      "json": "097_8周期唤醒高度控制_R22_周期唤醒高度控制_右后轮超阈值.json",
+      "actions": 16,
+      "warnings": 28
+    },
+    {
+      "caseId": "098_9下电延迟管理功能_R4",
+      "caseName": "闭锁后，控制器在一定时间内未收到指令进入休眠",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "9下电延迟管理功能",
+        "range": "A4:G5",
+        "mode": "text-to-signal"
+      },
+      "json": "098_9下电延迟管理功能_R4_闭锁后，控制器在一定时间内未收到指令进入休眠.json",
+      "actions": 6,
+      "warnings": 10
+    },
+    {
+      "caseId": "099_9下电延迟管理功能_R6",
+      "caseName": "闭锁后，悬架正在调节，控制器需维持",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "9下电延迟管理功能",
+        "range": "A6:G8",
+        "mode": "text-to-signal"
+      },
+      "json": "099_9下电延迟管理功能_R6_闭锁后，悬架正在调节，控制器需维持.json",
+      "actions": 11,
+      "warnings": 16
+    },
+    {
+      "caseId": "100_9下电延迟管理功能_R9",
+      "caseName": "闭锁后，收到调节指令，控制器需完成调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "9下电延迟管理功能",
+        "range": "A9:G11",
+        "mode": "text-to-signal"
+      },
+      "json": "100_9下电延迟管理功能_R9_闭锁后，收到调节指令，控制器需完成调节.json",
+      "actions": 10,
+      "warnings": 14
+    },
+    {
+      "caseId": "101_10路缘检测功能_R4",
+      "caseName": "路缘检测_左前轮",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "10路缘检测功能",
+        "range": "A4:I6",
+        "mode": "text-to-signal"
+      },
+      "json": "101_10路缘检测功能_R4_路缘检测_左前轮.json",
+      "actions": 10,
+      "warnings": 10
+    },
+    {
+      "caseId": "102_10路缘检测功能_R7",
+      "caseName": "路缘检测_右前轮",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "10路缘检测功能",
+        "range": "A7:I9",
+        "mode": "text-to-signal"
+      },
+      "json": "102_10路缘检测功能_R7_路缘检测_右前轮.json",
+      "actions": 10,
+      "warnings": 10
+    },
+    {
+      "caseId": "103_10路缘检测功能_R10",
+      "caseName": "路缘检测_左后轮",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "10路缘检测功能",
+        "range": "A10:I12",
+        "mode": "text-to-signal"
+      },
+      "json": "103_10路缘检测功能_R10_路缘检测_左后轮.json",
+      "actions": 10,
+      "warnings": 10
+    },
+    {
+      "caseId": "104_10路缘检测功能_R13",
+      "caseName": "路缘检测_右后轮",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "10路缘检测功能",
+        "range": "A13:I15",
+        "mode": "text-to-signal"
+      },
+      "json": "104_10路缘检测功能_R13_路缘检测_右后轮.json",
+      "actions": 10,
+      "warnings": 10
+    },
+    {
+      "caseId": "105_11斜坡检测功能_R3",
+      "caseName": "斜坡检测Slope Detection Module",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "11斜坡检测功能",
+        "range": "A3:I3",
+        "mode": "text-to-signal"
+      },
+      "json": "105_11斜坡检测功能_R3_斜坡检测Slope_Detection_Module.json",
+      "actions": 0,
+      "warnings": 0
+    },
+    {
+      "caseId": "106_11斜坡检测功能_R4",
+      "caseName": "C679_ECAS_SDM_001",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "11斜坡检测功能",
+        "range": "A4:I9",
+        "mode": "text-to-signal"
+      },
+      "json": "106_11斜坡检测功能_R4_C679_ECAS_SDM_001.json",
+      "actions": 18,
+      "warnings": 22
+    },
+    {
+      "caseId": "107_11斜坡检测功能_R10",
+      "caseName": "C679_ECAS_SDM_002",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "11斜坡检测功能",
+        "range": "A10:I15",
+        "mode": "text-to-signal"
+      },
+      "json": "107_11斜坡检测功能_R10_C679_ECAS_SDM_002.json",
+      "actions": 18,
+      "warnings": 22
+    },
+    {
+      "caseId": "108_11斜坡检测功能_R16",
+      "caseName": "C679_ECAS_SDM_003",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "11斜坡检测功能",
+        "range": "A16:I19",
+        "mode": "text-to-signal"
+      },
+      "json": "108_11斜坡检测功能_R16_C679_ECAS_SDM_003.json",
+      "actions": 13,
+      "warnings": 12
+    },
+    {
+      "caseId": "109_12车身保护功能_R4",
+      "caseName": "车速大于5kph时，高度调节中，开门后关门，始终禁止调节_标准切越野",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "12车身保护功能",
+        "range": "A4:I11",
+        "mode": "text-to-signal"
+      },
+      "json": "109_12车身保护功能_R4_车速大于5kph时，高度调节中，开门后关门，始终禁止调节_标准切越野.json",
+      "actions": 27,
+      "warnings": 18
+    },
+    {
+      "caseId": "110_12车身保护功能_R12",
+      "caseName": "车速小于等于5kph时，高度调节中，开门后关门，禁止后恢复调节_标准切越野",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "12车身保护功能",
+        "range": "A12:I19",
+        "mode": "text-to-signal"
+      },
+      "json": "110_12车身保护功能_R12_车速小于等于5kph时，高度调节中，开门后关门，禁止后恢复调节_标准切越野.json",
+      "actions": 28,
+      "warnings": 20
+    },
+    {
+      "caseId": "111_12车身保护功能_R20",
+      "caseName": "静态时，高度调节中，开门后关门，禁止后恢复调节_标准切越野",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "12车身保护功能",
+        "range": "A20:I24",
+        "mode": "text-to-signal"
+      },
+      "json": "111_12车身保护功能_R20_静态时，高度调节中，开门后关门，禁止后恢复调节_标准切越野.json",
+      "actions": 19,
+      "warnings": 18
+    },
+    {
+      "caseId": "112_12车身保护功能_R25",
+      "caseName": "静态时，车门打开，可切换至高度升高的模式_标准切越野",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "12车身保护功能",
+        "range": "A25:I30",
+        "mode": "text-to-signal"
+      },
+      "json": "112_12车身保护功能_R25_静态时，车门打开，可切换至高度升高的模式_标准切越野.json",
+      "actions": 18,
+      "warnings": 14
+    },
+    {
+      "caseId": "113_12车身保护功能_R31",
+      "caseName": "静态时，车门打开，禁止切换至高度降低的模式_标准切运动",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "12车身保护功能",
+        "range": "A31:I36",
+        "mode": "text-to-signal"
+      },
+      "json": "113_12车身保护功能_R31_静态时，车门打开，禁止切换至高度降低的模式_标准切运动.json",
+      "actions": 18,
+      "warnings": 14
+    },
+    {
+      "caseId": "114_13空气压缩机过载保护_R4",
+      "caseName": "空气压缩机过载保护_调节前，空压机温度大于110℃",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "13空气压缩机过载保护",
+        "range": "A4:G8",
+        "mode": "text-to-signal"
+      },
+      "json": "114_13空气压缩机过载保护_R4_空气压缩机过载保护_调节前，空压机温度大于110℃.json",
+      "actions": 13,
+      "warnings": 22
+    },
+    {
+      "caseId": "115_13空气压缩机过载保护_R9",
+      "caseName": "空气压缩机过载保护_调节中，空压机温度大于110℃",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "13空气压缩机过载保护",
+        "range": "A9:G13",
+        "mode": "text-to-signal"
+      },
+      "json": "115_13空气压缩机过载保护_R9_空气压缩机过载保护_调节中，空压机温度大于110℃.json",
+      "actions": 16,
+      "warnings": 28
+    },
+    {
+      "caseId": "116_13空气压缩机过载保护_R14",
+      "caseName": "空气压缩机过载保护_单次连续运行时间大于300秒",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "13空气压缩机过载保护",
+        "range": "A14:G18",
+        "mode": "text-to-signal"
+      },
+      "json": "116_13空气压缩机过载保护_R14_空气压缩机过载保护_单次连续运行时间大于300秒.json",
+      "actions": 15,
+      "warnings": 26
+    },
+    {
+      "caseId": "117_14车身过高故障报警_R4",
+      "caseName": "FL车身过高故障报警",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "14车身过高故障报警",
+        "range": "A4:G8",
+        "mode": "text-to-signal"
+      },
+      "json": "117_14车身过高故障报警_R4_FL车身过高故障报警.json",
+      "actions": 17,
+      "warnings": 30
+    },
+    {
+      "caseId": "118_14车身过高故障报警_R9",
+      "caseName": "FR车身过高故障报警",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "14车身过高故障报警",
+        "range": "A9:G13",
+        "mode": "text-to-signal"
+      },
+      "json": "118_14车身过高故障报警_R9_FR车身过高故障报警.json",
+      "actions": 17,
+      "warnings": 30
+    },
+    {
+      "caseId": "119_14车身过高故障报警_R14",
+      "caseName": "RL车身过高故障报警",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "14车身过高故障报警",
+        "range": "A14:G18",
+        "mode": "text-to-signal"
+      },
+      "json": "119_14车身过高故障报警_R14_RL车身过高故障报警.json",
+      "actions": 17,
+      "warnings": 30
+    },
+    {
+      "caseId": "120_14车身过高故障报警_R19",
+      "caseName": "RR车身过高故障报警",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "14车身过高故障报警",
+        "range": "A19:G23",
+        "mode": "text-to-signal"
+      },
+      "json": "120_14车身过高故障报警_R19_RR车身过高故障报警.json",
+      "actions": 17,
+      "warnings": 30
+    },
+    {
+      "caseId": "121_14车身过高故障报警_R24",
+      "caseName": "车身过高故障报警_压力过大故障报警",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "14车身过高故障报警",
+        "range": "A24:G28",
+        "mode": "text-to-signal"
+      },
+      "json": "121_14车身过高故障报警_R24_车身过高故障报警_压力过大故障报警.json",
+      "actions": 17,
+      "warnings": 30
+    },
+    {
+      "caseId": "122_14车身过高故障报警_R29",
+      "caseName": "车身过高故障报警_下电后上电恢复",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "14车身过高故障报警",
+        "range": "A29:G33",
+        "mode": "text-to-signal"
+      },
+      "json": "122_14车身过高故障报警_R29_车身过高故障报警_下电后上电恢复.json",
+      "actions": 16,
+      "warnings": 26
+    },
+    {
+      "caseId": "123_14车身过高故障报警_R34",
+      "caseName": "车身过高故障报警_周期性恢复",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "14车身过高故障报警",
+        "range": "A34:G38",
+        "mode": "text-to-signal"
+      },
+      "json": "123_14车身过高故障报警_R34_车身过高故障报警_周期性恢复.json",
+      "actions": 16,
+      "warnings": 28
+    },
+    {
+      "caseId": "124_15控制系统失效模式_R4",
+      "caseName": "控制系统失效模式",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "15控制系统失效模式",
+        "range": "A4:G7",
+        "mode": "text-to-signal"
+      },
+      "json": "124_15控制系统失效模式_R4_控制系统失效模式.json",
+      "actions": 16,
+      "warnings": 28
+    },
+    {
+      "caseId": "125_16高度调节顺序_R4",
+      "caseName": "P挡静止，高度调节顺序，抬升控制",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "16高度调节顺序",
+        "range": "A4:I7",
+        "mode": "text-to-signal"
+      },
+      "json": "125_16高度调节顺序_R4_P挡静止，高度调节顺序，抬升控制.json",
+      "actions": 18,
+      "warnings": 28
+    },
+    {
+      "caseId": "126_16高度调节顺序_R8",
+      "caseName": "60kph行驶，高度调节顺序，抬升控制",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "16高度调节顺序",
+        "range": "A8:I12",
+        "mode": "text-to-signal"
+      },
+      "json": "126_16高度调节顺序_R8_60kph行驶，高度调节顺序，抬升控制.json",
+      "actions": 21,
+      "warnings": 26
+    },
+    {
+      "caseId": "127_16高度调节顺序_R13",
+      "caseName": "P挡静止，高度调节顺序，除迎宾模式外的降低控制",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "16高度调节顺序",
+        "range": "A13:I16",
+        "mode": "text-to-signal"
+      },
+      "json": "127_16高度调节顺序_R13_P挡静止，高度调节顺序，除迎宾模式外的降低控制.json",
+      "actions": 18,
+      "warnings": 28
+    },
+    {
+      "caseId": "128_16高度调节顺序_R17",
+      "caseName": "60kph行驶，高度调节顺序，除迎宾模式外的降低控制",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "16高度调节顺序",
+        "range": "A17:I21",
+        "mode": "text-to-signal"
+      },
+      "json": "128_16高度调节顺序_R17_60kph行驶，高度调节顺序，除迎宾模式外的降低控制.json",
+      "actions": 21,
+      "warnings": 26
+    },
+    {
+      "caseId": "129_16高度调节顺序_R22",
+      "caseName": "P挡静止，高度调节顺序，迎宾模式下降控制",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "16高度调节顺序",
+        "range": "A22:I25",
+        "mode": "text-to-signal"
+      },
+      "json": "129_16高度调节顺序_R22_P挡静止，高度调节顺序，迎宾模式下降控制.json",
+      "actions": 17,
+      "warnings": 20
+    },
+    {
+      "caseId": "130_16高度调节顺序_R30",
+      "caseName": "与悬架调平先一起调，后单独调矛盾？",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "16高度调节顺序",
+        "range": "A30:I30",
+        "mode": "text-to-signal"
+      },
+      "json": "130_16高度调节顺序_R30_与悬架调平先一起调，后单独调矛盾？.json",
+      "actions": 0,
+      "warnings": 0
+    },
+    {
+      "caseId": "131_16高度调节顺序_R31",
+      "caseName": "已确认：目前悬架调节过程中，都是先前轴调节，后后轴调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "16高度调节顺序",
+        "range": "A31:I31",
+        "mode": "text-to-signal"
+      },
+      "json": "131_16高度调节顺序_R31_已确认：目前悬架调节过程中，都是先前轴调节，后后轴调节.json",
+      "actions": 0,
+      "warnings": 0
+    },
+    {
+      "caseId": "132_17主动保护_R4",
+      "caseName": "60kph行驶，纵向加速度超阈值，禁止调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "17主动保护",
+        "range": "A4:I10",
+        "mode": "text-to-signal"
+      },
+      "json": "132_17主动保护_R4_60kph行驶，纵向加速度超阈值，禁止调节.json",
+      "actions": 23,
+      "warnings": 24
+    },
+    {
+      "caseId": "133_17主动保护_R11",
+      "caseName": "不同车速行驶，横向加速度超阈值，禁止调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "17主动保护",
+        "range": "A11:I19",
+        "mode": "text-to-signal"
+      },
+      "json": "133_17主动保护_R11_不同车速行驶，横向加速度超阈值，禁止调节.json",
+      "actions": 28,
+      "warnings": 28
+    },
+    {
+      "caseId": "134_17主动保护_R20",
+      "caseName": "不同车速行驶，转向角度超阈值，禁止调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "17主动保护",
+        "range": "A20:I28",
+        "mode": "text-to-signal"
+      },
+      "json": "134_17主动保护_R20_不同车速行驶，转向角度超阈值，禁止调节.json",
+      "actions": 28,
+      "warnings": 28
+    },
+    {
+      "caseId": "135_17主动保护_R29",
+      "caseName": "60kph行驶，转向速率超阈值，禁止调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "17主动保护",
+        "range": "A29:I37",
+        "mode": "text-to-signal"
+      },
+      "json": "135_17主动保护_R29_60kph行驶，转向速率超阈值，禁止调节.json",
+      "actions": 28,
+      "warnings": 26
+    },
+    {
+      "caseId": "136_17主动保护_R38",
+      "caseName": "P挡静止，转向角度超阈值，禁止调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "17主动保护",
+        "range": "A38:I43",
+        "mode": "text-to-signal"
+      },
+      "json": "136_17主动保护_R38_P挡静止，转向角度超阈值，禁止调节.json",
+      "actions": 21,
+      "warnings": 24
+    },
+    {
+      "caseId": "137_17主动保护_R44",
+      "caseName": "P挡静止，转向速率超阈值，禁止调节",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "17主动保护",
+        "range": "A44:I49",
+        "mode": "text-to-signal"
+      },
+      "json": "137_17主动保护_R44_P挡静止，转向速率超阈值，禁止调节.json",
+      "actions": 21,
+      "warnings": 24
+    },
+    {
+      "caseId": "138_18车辆高速行驶的稳定控制_R4",
+      "caseName": "车辆高速行驶时，刚度阀关闭",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "18车辆高速行驶的稳定控制",
+        "range": "A4:G6",
+        "mode": "text-to-signal"
+      },
+      "json": "138_18车辆高速行驶的稳定控制_R4_车辆高速行驶时，刚度阀关闭.json",
+      "actions": 8,
+      "warnings": 12
+    },
+    {
+      "caseId": "139_18车辆高速行驶的稳定控制_R7",
+      "caseName": "车辆高速行驶后缓慢减速，刚度阀打开",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "18车辆高速行驶的稳定控制",
+        "range": "A7:G10",
+        "mode": "text-to-signal"
+      },
+      "json": "139_18车辆高速行驶的稳定控制_R7_车辆高速行驶后缓慢减速，刚度阀打开.json",
+      "actions": 10,
+      "warnings": 16
+    },
+    {
+      "caseId": "140_18车辆高速行驶的稳定控制_R11",
+      "caseName": "车辆高速行驶后迅速减速，刚度阀打开",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "18车辆高速行驶的稳定控制",
+        "range": "A11:G14",
+        "mode": "text-to-signal"
+      },
+      "json": "140_18车辆高速行驶的稳定控制_R11_车辆高速行驶后迅速减速，刚度阀打开.json",
+      "actions": 10,
+      "warnings": 16
+    },
+    {
+      "caseId": "141_19刚度控制_R4",
+      "caseName": "刚度阀故障关闭，禁止切换到越野模式",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "19刚度控制",
+        "range": "A4:G8",
+        "mode": "text-to-signal"
+      },
+      "json": "141_19刚度控制_R4_刚度阀故障关闭，禁止切换到越野模式.json",
+      "actions": 13,
+      "warnings": 22
+    },
+    {
+      "caseId": "142_19刚度控制_R9",
+      "caseName": "越野模式时，刚度阀禁止被打开",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+        "sheet": "19刚度控制",
+        "range": "A9:G12",
+        "mode": "text-to-signal"
+      },
+      "json": "142_19刚度控制_R9_越野模式时，刚度阀禁止被打开.json",
+      "actions": 11,
+      "warnings": 18
+    }
+  ]
+}

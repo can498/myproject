@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="f95e1e3c-c99f-4447-a0c4-1d02817671ed" name="空气压缩机过载保护_单次连续运行时间大于300秒" describle="来源：13空气压缩机过载保护 A14:K18" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="c7f57dbb-53e7-4437-85d4-c7261cd13f90"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="f8799bf0-5b58-46cc-b4cd-637df0a92966"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="1d04205e-24e1-4ea6-b976-9ae708b1c03e" name="空气压缩机过载保护_单次连续运行时间大于300秒">
+    <children xmi:type="tae:Initialization" xmi:id="1eae150f-ecf5-4401-8163-786f7ce7790f" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="50123915-7be0-4f74-8f5a-1d3be209f807" name="Test Step &amp; Expected Result"/>
+    <children xmi:type="tae:Cleanup" xmi:id="54690f50-3a44-4b13-b979-f21ae0c7bcf5" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

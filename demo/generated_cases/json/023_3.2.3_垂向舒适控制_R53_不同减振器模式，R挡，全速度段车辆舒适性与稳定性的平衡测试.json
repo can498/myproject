@@ -1,0 +1,332 @@
+{
+  "caseId": "023_3.2.3_垂向舒适控制_R53",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+    "sheet": "3.2.3 垂向舒适控制",
+    "range": "A53:K60"
+  },
+  "caseName": "不同减振器模式，R挡，全速度段车辆舒适性与稳定性的平衡测试",
+  "testLevel": "P2",
+  "concreteSettings": "减振器模式=舒适/标准/运动\n1、舒适\n2、标准\n3、运动",
+  "offlineMode": true,
+  "variables": [
+    {
+      "name": "ECDCMODE",
+      "type": "NumberVariableValue",
+      "value": 0,
+      "description": "参数占位值0，待具体场景展开或项目参数定义"
+    },
+    {
+      "name": "VMC_Actul_O_DAMP_FL_15",
+      "type": "NumberVariableValue",
+      "value": 0,
+      "description": "比较目标占位值0，原用例引用了另一个变量"
+    },
+    {
+      "name": "VMC_Actul_O_DAMP_FR_15",
+      "type": "NumberVariableValue",
+      "value": 0,
+      "description": "比较目标占位值0，原用例引用了另一个变量"
+    },
+    {
+      "name": "VMC_Actul_O_DAMP_RL_15",
+      "type": "NumberVariableValue",
+      "value": 0,
+      "description": "比较目标占位值0，原用例引用了另一个变量"
+    },
+    {
+      "name": "VMC_Actul_O_DAMP_RR_15",
+      "type": "NumberVariableValue",
+      "value": 0,
+      "description": "比较目标占位值0，原用例引用了另一个变量"
+    }
+  ],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "StraightLaneTest",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "R",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "R",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCmodereq",
+      "value": "ECDCMODE",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_EcdcMode",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "ECDCMODE",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCFDA_K_BaseCurrentSwitch_uls_b",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step3 "
+    },
+    {
+      "action": "Write",
+      "signal": "TargetVehSpd",
+      "value": "15",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "EspVehSpd",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "15",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FL_15",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "原用例仅要求读取，未定义断言",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FR_15",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "原用例仅要求读取，未定义断言",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RL_15",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "原用例仅要求读取，未定义断言",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RR_15",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "原用例仅要求读取，未定义断言",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Write",
+      "signal": "TargetVehSpd",
+      "value": "30",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "EspVehSpd",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "30",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FL_30",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "VMC_Actul_O_DAMP_FL_15",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FR_30",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "VMC_Actul_O_DAMP_FR_15",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RL_30",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "VMC_Actul_O_DAMP_RL_15",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RR_30",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "VMC_Actul_O_DAMP_RR_15",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Write",
+      "signal": "TargetVehSpd",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step6"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step6"
+    },
+    {
+      "action": "Read",
+      "signal": "EspVehSpd",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step6"
+    },
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "P",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step7"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step7"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "P",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step7"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step8"
+    }
+  ],
+  "requiredMappings": [
+    "ECDCFDA_K_BaseCurrentSwitch_uls_b",
+    "ECDCmodereq",
+    "EspVehSpd",
+    "GearLever",
+    "TargetVehSpd",
+    "VMC_Actul_O_DAMP_FL_15",
+    "VMC_Actul_O_DAMP_FL_30",
+    "VMC_Actul_O_DAMP_FR_15",
+    "VMC_Actul_O_DAMP_FR_30",
+    "VMC_Actul_O_DAMP_RL_15",
+    "VMC_Actul_O_DAMP_RL_30",
+    "VMC_Actul_O_DAMP_RR_15",
+    "VMC_Actul_O_DAMP_RR_30",
+    "VMC_EcdcMode",
+    "VcuGearPosn"
+  ],
+  "warnings": [
+    "H53: 未知动作已生成占位节点：'StraightLaneTest'",
+    "J56: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+    "K56: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_15'",
+    "K56: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_15'",
+    "K56: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_15'",
+    "K56: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_15'",
+    "J57: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+    "J58: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+    "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+    "参数'VMC_Actul_O_DAMP_FL_15'未给出具体值，当前离线框图使用占位值0",
+    "参数'VMC_Actul_O_DAMP_FR_15'未给出具体值，当前离线框图使用占位值0",
+    "参数'VMC_Actul_O_DAMP_RL_15'未给出具体值，当前离线框图使用占位值0",
+    "参数'VMC_Actul_O_DAMP_RR_15'未给出具体值，当前离线框图使用占位值0"
+  ]
+}

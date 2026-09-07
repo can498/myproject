@@ -1,0 +1,26 @@
+{
+  "caseId": "027_3一键调平_R9",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "3一键调平",
+    "range": "A9:K13"
+  },
+  "caseName": "相对一键调平，不同空簧达到目标高度",
+  "testLevel": "1",
+  "concreteSettings": "FL轮胎凸台高度\nFR轮胎凸台高度\nRL轮胎凸台高度\nRR轮胎凸台高度",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "设置空簧模式请求为标准",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H9: 未知动作已生成占位节点：'设置空簧模式请求为标准'"
+  ]
+}

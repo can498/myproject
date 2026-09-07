@@ -1,0 +1,241 @@
+{
+  "caseId": "019_3.2.3_垂向舒适控制_R21",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+    "sheet": "3.2.3 垂向舒适控制",
+    "range": "A21:K28"
+  },
+  "caseName": "不同减振器模式，不同车速下，一阶振动侧倾控制功能",
+  "testLevel": "P1/P2",
+  "concreteSettings": "车速=车速15kph/30kph/60kph\n减振器模式=舒适/标准/运动\n1、车速15kph，舒适\n2、车速15kph，标准\n3、车速15kph，运动\n4、车速30kph，舒适(P1)\n5、车速30kph，标准(P1)\n6、车速30kph，运动(P1)\n7、车速60kph，舒适\n8、车速60kph，标准\n9、车速60kph，运动",
+  "offlineMode": true,
+  "variables": [
+    {
+      "name": "ECDCMODE",
+      "type": "NumberVariableValue",
+      "value": 0,
+      "description": "参数占位值0，待具体场景展开或项目参数定义"
+    },
+    {
+      "name": "SPEED",
+      "type": "NumberVariableValue",
+      "value": 0,
+      "description": "参数占位值0，待具体场景展开或项目参数定义"
+    }
+  ],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "WaveRoadTest",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "D",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "D",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCmodereq",
+      "value": "ECDCMODE",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_EcdcMode",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "ECDCMODE",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Write",
+      "signal": "TargetVehSpd",
+      "value": "SPEED",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "EspVehSpd",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "SPEED",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCVCC_K_VccCtrlSwitch_uls_b",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCVCC_K_RollCtrlSwitch_uls_b",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Read",
+      "signal": "ECDCSP_O_RollRate_degps_f",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "较大",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCVCC_K_VccCtrlSwitch_uls_b",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCVCC_K_RollCtrlSwitch_uls_b",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Read",
+      "signal": "ECDCSP_O_RollRate_degps_f",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "较小",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Write",
+      "signal": "TargetVehSpd",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step6"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step6"
+    },
+    {
+      "action": "Read",
+      "signal": "EspVehSpd",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step6"
+    },
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "P",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step7"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step7"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "P",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step7"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step8"
+    }
+  ],
+  "requiredMappings": [
+    "ECDCSP_O_RollRate_degps_f",
+    "ECDCVCC_K_RollCtrlSwitch_uls_b",
+    "ECDCVCC_K_VccCtrlSwitch_uls_b",
+    "ECDCmodereq",
+    "EspVehSpd",
+    "GearLever",
+    "TargetVehSpd",
+    "VMC_EcdcMode",
+    "VcuGearPosn"
+  ],
+  "warnings": [
+    "H21: 未知动作已生成占位节点：'WaveRoadTest'",
+    "J23: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+    "J26: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+    "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+    "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+  ]
+}

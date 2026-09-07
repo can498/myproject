@@ -1,0 +1,18 @@
+{
+  "caseId": "121_14车身过高故障报警_R24",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "14车身过高故障报警",
+    "range": "A24:K28"
+  },
+  "caseName": "车身过高故障报警_压力过大故障报警",
+  "testLevel": "P1",
+  "concreteSettings": "/·",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": []
+}

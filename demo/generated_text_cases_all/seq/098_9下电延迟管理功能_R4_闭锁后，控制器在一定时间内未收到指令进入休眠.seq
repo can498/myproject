@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generator="com.hirain.tae.generator" xmi:id="0b96defb-7631-4d9a-98f1-aa0a47c832d4" name="闭锁后，控制器在一定时间内未收到指令进入休眠" describle="来源：9下电延迟管理功能 A4:G5" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="1bbbe63a-9b27-47a5-a07a-f2aa85defdbd"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="77e2573d-6d4f-40bf-baf4-6bf95b46b431"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="281ceb2c-b296-42b9-bf75-772057501fd5" name="闭锁后，控制器在一定时间内未收到指令进入休眠">
+    <children xmi:type="tae:Initialization" xmi:id="eb930aa7-6e1a-44f3-a4b1-241bd07e4c83" name="Initialization">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="54f785d3-3a5f-42e6-8a3f-83363cf6eeb3" name="powerOn" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOn"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="853b75ad-2b00-4786-9cbd-7311e0cc95e0" name="2、控制器无故障" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="cb440aa2-a97b-4888-ba83-629d71fe130e" name="3、车辆静止" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Group" xmi:id="3c34e5f5-ddc0-454c-a9b0-333e238adc6d" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:ScriptBlock" xmi:id="2a32146c-1310-4db7-874c-7f2f3a58deed" name="闭锁后" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="30d89fb5-1505-46b4-8beb-bf8fc6203014" name="控制器在一定时间内未收到指令" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="cc4ef040-0b74-4ec0-a196-d4c507860aec" name="控制器休眠" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="ca60a34c-a8f5-4ac2-9268-1987b320cc16" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

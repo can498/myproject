@@ -1,0 +1,498 @@
+{
+  "totalCases": 41,
+  "totalWarnings": 361,
+  "cases": [
+    {
+      "caseId": "001_3.1_驾驶模式_R4",
+      "caseName": "不同车速下，设置不同减振器模式",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.1 驾驶模式",
+        "range": "A4:K10"
+      },
+      "json": "001_3.1_驾驶模式_R4_不同车速下，设置不同减振器模式.json",
+      "actions": 20,
+      "warnings": 7
+    },
+    {
+      "caseId": "002_3.2.1_信号处理_R4",
+      "caseName": "车辆上电后，各加速度传感器有效性为有效",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.1 信号处理",
+        "range": "A4:K5"
+      },
+      "json": "002_3.2.1_信号处理_R4_车辆上电后，各加速度传感器有效性为有效.json",
+      "actions": 7,
+      "warnings": 0
+    },
+    {
+      "caseId": "003_3.2.1_信号处理_R6",
+      "caseName": "车辆行驶在振动路面上，各加速度传感器值有正负值波动",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.1 信号处理",
+        "range": "A6:K8"
+      },
+      "json": "003_3.2.1_信号处理_R6_车辆行驶在振动路面上，各加速度传感器值有正负值波动.json",
+      "actions": 14,
+      "warnings": 6
+    },
+    {
+      "caseId": "004_3.2.2模式管理_R5",
+      "caseName": "静态切换减振器模式（非D挡）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.2模式管理",
+        "range": "A5:K10"
+      },
+      "json": "004_3.2.2模式管理_R5_静态切换减振器模式（非D挡）.json",
+      "actions": 20,
+      "warnings": 10
+    },
+    {
+      "caseId": "005_3.2.2模式管理_R11",
+      "caseName": "动态切换减振器模式（D挡，车速等于0，小电流切换大电流）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.2模式管理",
+        "range": "A11:K16"
+      },
+      "json": "005_3.2.2模式管理_R11_动态切换减振器模式（D挡，车速等于0，小电流切换大电流）.json",
+      "actions": 24,
+      "warnings": 12
+    },
+    {
+      "caseId": "006_3.2.2模式管理_R17",
+      "caseName": "动态切换减振器模式（N挡，车速大于0，小电流切换大电流）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.2模式管理",
+        "range": "A17:K26"
+      },
+      "json": "006_3.2.2模式管理_R17_动态切换减振器模式（N挡，车速大于0，小电流切换大电流）.json",
+      "actions": 36,
+      "warnings": 15
+    },
+    {
+      "caseId": "007_3.2.2模式管理_R27",
+      "caseName": "动态切换减振器模式（R挡，车速大于0，小电流切换大电流）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.2模式管理",
+        "range": "A27:K34"
+      },
+      "json": "007_3.2.2模式管理_R27_动态切换减振器模式（R挡，车速大于0，小电流切换大电流）.json",
+      "actions": 30,
+      "warnings": 15
+    },
+    {
+      "caseId": "008_3.2.2模式管理_R35",
+      "caseName": "动态切换减振器模式（ECDCFDA_K_StandstillSwitch_uls_b = 0，小电流切换大电流）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.2模式管理",
+        "range": "A35:K39"
+      },
+      "json": "008_3.2.2模式管理_R35_动态切换减振器模式（ECDCFDA_K_StandstillSwitch_uls_b_=_0，小电流切换大电流）.json",
+      "actions": 18,
+      "warnings": 12
+    },
+    {
+      "caseId": "009_3.2.2模式管理_R40",
+      "caseName": "动态切换减振器模式（ECDCFDA_K_GearLogicSwitch_uls_b = 0，小电流切换大电流）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.2模式管理",
+        "range": "A40:K44"
+      },
+      "json": "009_3.2.2模式管理_R40_动态切换减振器模式（ECDCFDA_K_GearLogicSwitch_uls_b_=_0，小电流切换大电流）.json",
+      "actions": 18,
+      "warnings": 12
+    },
+    {
+      "caseId": "010_3.2.2模式管理_R45",
+      "caseName": "动态切换减振器模式（D挡，车速大于0，小电流切换大电流）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.2模式管理",
+        "range": "A45:K52"
+      },
+      "json": "010_3.2.2模式管理_R45_动态切换减振器模式（D挡，车速大于0，小电流切换大电流）.json",
+      "actions": 30,
+      "warnings": 15
+    },
+    {
+      "caseId": "011_3.2.2模式管理_R53",
+      "caseName": "动态切换减振器模式（D挡，车速等于0，大电流切换小电流）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.2模式管理",
+        "range": "A53:K58"
+      },
+      "json": "011_3.2.2模式管理_R53_动态切换减振器模式（D挡，车速等于0，大电流切换小电流）.json",
+      "actions": 24,
+      "warnings": 12
+    },
+    {
+      "caseId": "012_3.2.2模式管理_R59",
+      "caseName": "动态切换减振器模式（N挡，车速大于0，大电流切换小电流）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.2模式管理",
+        "range": "A59:K68"
+      },
+      "json": "012_3.2.2模式管理_R59_动态切换减振器模式（N挡，车速大于0，大电流切换小电流）.json",
+      "actions": 36,
+      "warnings": 15
+    },
+    {
+      "caseId": "013_3.2.2模式管理_R69",
+      "caseName": "动态切换减振器模式（R挡，车速大于0，大电流切换小电流）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.2模式管理",
+        "range": "A69:K76"
+      },
+      "json": "013_3.2.2模式管理_R69_动态切换减振器模式（R挡，车速大于0，大电流切换小电流）.json",
+      "actions": 30,
+      "warnings": 15
+    },
+    {
+      "caseId": "014_3.2.2模式管理_R77",
+      "caseName": "动态切换减振器模式（ECDCFDA_K_StandstillSwitch_uls_b = 0，大电流切换小电流）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.2模式管理",
+        "range": "A77:K81"
+      },
+      "json": "014_3.2.2模式管理_R77_动态切换减振器模式（ECDCFDA_K_StandstillSwitch_uls_b_=_0，大电流切换小电流）.json",
+      "actions": 18,
+      "warnings": 12
+    },
+    {
+      "caseId": "015_3.2.2模式管理_R82",
+      "caseName": "动态切换减振器模式（ECDCFDA_K_GearLogicSwitch_uls_b = 0，大电流切换小电流）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.2模式管理",
+        "range": "A82:K86"
+      },
+      "json": "015_3.2.2模式管理_R82_动态切换减振器模式（ECDCFDA_K_GearLogicSwitch_uls_b_=_0，大电流切换小电流）.json",
+      "actions": 18,
+      "warnings": 12
+    },
+    {
+      "caseId": "016_3.2.2模式管理_R87",
+      "caseName": "动态切换减振器模式（D挡，车速大于0，大电流切换小电流）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.2模式管理",
+        "range": "A87:K94"
+      },
+      "json": "016_3.2.2模式管理_R87_动态切换减振器模式（D挡，车速大于0，大电流切换小电流）.json",
+      "actions": 30,
+      "warnings": 15
+    },
+    {
+      "caseId": "017_3.2.3_垂向舒适控制_R5",
+      "caseName": "不同减振器模式，不同车速下，一阶振动垂向控制功能",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.3 垂向舒适控制",
+        "range": "A5:K12"
+      },
+      "json": "017_3.2.3_垂向舒适控制_R5_不同减振器模式，不同车速下，一阶振动垂向控制功能.json",
+      "actions": 30,
+      "warnings": 5
+    },
+    {
+      "caseId": "018_3.2.3_垂向舒适控制_R13",
+      "caseName": "不同减振器模式，不同车速下，一阶振动俯仰控制功能",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.3 垂向舒适控制",
+        "range": "A13:K20"
+      },
+      "json": "018_3.2.3_垂向舒适控制_R13_不同减振器模式，不同车速下，一阶振动俯仰控制功能.json",
+      "actions": 24,
+      "warnings": 5
+    },
+    {
+      "caseId": "019_3.2.3_垂向舒适控制_R21",
+      "caseName": "不同减振器模式，不同车速下，一阶振动侧倾控制功能",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.3 垂向舒适控制",
+        "range": "A21:K28"
+      },
+      "json": "019_3.2.3_垂向舒适控制_R21_不同减振器模式，不同车速下，一阶振动侧倾控制功能.json",
+      "actions": 24,
+      "warnings": 5
+    },
+    {
+      "caseId": "020_3.2.3_垂向舒适控制_R29",
+      "caseName": "不同减振器模式，不同车速下，二阶振动控制功能（平滑水泥路面）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.3 垂向舒适控制",
+        "range": "A29:K36"
+      },
+      "json": "020_3.2.3_垂向舒适控制_R29_不同减振器模式，不同车速下，二阶振动控制功能（平滑水泥路面）.json",
+      "actions": 24,
+      "warnings": 5
+    },
+    {
+      "caseId": "021_3.2.3_垂向舒适控制_R37",
+      "caseName": "不同减振器模式，不同车速下，二阶振动控制功能（破损水泥路面）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.3 垂向舒适控制",
+        "range": "A37:K44"
+      },
+      "json": "021_3.2.3_垂向舒适控制_R37_不同减振器模式，不同车速下，二阶振动控制功能（破损水泥路面）.json",
+      "actions": 24,
+      "warnings": 5
+    },
+    {
+      "caseId": "022_3.2.3_垂向舒适控制_R45",
+      "caseName": "不同减振器模式，D挡，全速度段车辆舒适性与稳定性的平衡测试",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.3 垂向舒适控制",
+        "range": "A45:K52"
+      },
+      "json": "022_3.2.3_垂向舒适控制_R45_不同减振器模式，D挡，全速度段车辆舒适性与稳定性的平衡测试.json",
+      "actions": 30,
+      "warnings": 13
+    },
+    {
+      "caseId": "023_3.2.3_垂向舒适控制_R53",
+      "caseName": "不同减振器模式，R挡，全速度段车辆舒适性与稳定性的平衡测试",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.3 垂向舒适控制",
+        "range": "A53:K60"
+      },
+      "json": "023_3.2.3_垂向舒适控制_R53_不同减振器模式，R挡，全速度段车辆舒适性与稳定性的平衡测试.json",
+      "actions": 30,
+      "warnings": 13
+    },
+    {
+      "caseId": "024_3.2.4_垂向操稳控制_R5",
+      "caseName": "不同减振器模式，不同车速下，0.1s内急减速俯仰姿态控制",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.4 垂向操稳控制",
+        "range": "A5:K12"
+      },
+      "json": "024_3.2.4_垂向操稳控制_R5_不同减振器模式，不同车速下，0.1s内急减速俯仰姿态控制.json",
+      "actions": 35,
+      "warnings": 6
+    },
+    {
+      "caseId": "025_3.2.4_垂向操稳控制_R13",
+      "caseName": "不同减振器模式，不同车速下，1s内急减速俯仰姿态控制",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.4 垂向操稳控制",
+        "range": "A13:K20"
+      },
+      "json": "025_3.2.4_垂向操稳控制_R13_不同减振器模式，不同车速下，1s内急减速俯仰姿态控制.json",
+      "actions": 35,
+      "warnings": 6
+    },
+    {
+      "caseId": "026_3.2.4_垂向操稳控制_R21",
+      "caseName": "不同减振器模式，不同车速下，0.1s内急加速俯仰姿态控制",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.4 垂向操稳控制",
+        "range": "A21:K28"
+      },
+      "json": "026_3.2.4_垂向操稳控制_R21_不同减振器模式，不同车速下，0.1s内急加速俯仰姿态控制.json",
+      "actions": 32,
+      "warnings": 6
+    },
+    {
+      "caseId": "027_3.2.4_垂向操稳控制_R29",
+      "caseName": "不同减振器模式，不同车速下，1s内急加速俯仰姿态控制",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.4 垂向操稳控制",
+        "range": "A29:K36"
+      },
+      "json": "027_3.2.4_垂向操稳控制_R29_不同减振器模式，不同车速下，1s内急加速俯仰姿态控制.json",
+      "actions": 32,
+      "warnings": 6
+    },
+    {
+      "caseId": "028_3.2.4_垂向操稳控制_R37",
+      "caseName": "不同减振器模式，不同车速下(方向盘转角速率），侧倾姿态控制",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.4 垂向操稳控制",
+        "range": "A37:K45"
+      },
+      "json": "028_3.2.4_垂向操稳控制_R37_不同减振器模式，不同车速下(方向盘转角速率），侧倾姿态控制.json",
+      "actions": 30,
+      "warnings": 8
+    },
+    {
+      "caseId": "029_3.2.5_脉冲阻尼控制_R5",
+      "caseName": "前轴左车轮簧下加速度大于标定值激活脉冲阻尼控制_凸块",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.5 脉冲阻尼控制",
+        "range": "A5:K11"
+      },
+      "json": "029_3.2.5_脉冲阻尼控制_R5_前轴左车轮簧下加速度大于标定值激活脉冲阻尼控制_凸块.json",
+      "actions": 20,
+      "warnings": 3
+    },
+    {
+      "caseId": "030_3.2.5_脉冲阻尼控制_R12",
+      "caseName": "前轴左车轮簧下加速度大于标定值激活脉冲阻尼控制_凹坑",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.5 脉冲阻尼控制",
+        "range": "A12:K18"
+      },
+      "json": "030_3.2.5_脉冲阻尼控制_R12_前轴左车轮簧下加速度大于标定值激活脉冲阻尼控制_凹坑.json",
+      "actions": 20,
+      "warnings": 3
+    },
+    {
+      "caseId": "031_3.2.5_脉冲阻尼控制_R19",
+      "caseName": "前轴右车轮簧下加速度大于标定值激活脉冲阻尼控制_凸块",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.5 脉冲阻尼控制",
+        "range": "A19:K25"
+      },
+      "json": "031_3.2.5_脉冲阻尼控制_R19_前轴右车轮簧下加速度大于标定值激活脉冲阻尼控制_凸块.json",
+      "actions": 20,
+      "warnings": 3
+    },
+    {
+      "caseId": "032_3.2.5_脉冲阻尼控制_R26",
+      "caseName": "前轴右车轮簧下加速度大于标定值激活脉冲阻尼控制_凹坑",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.5 脉冲阻尼控制",
+        "range": "A26:K32"
+      },
+      "json": "032_3.2.5_脉冲阻尼控制_R26_前轴右车轮簧下加速度大于标定值激活脉冲阻尼控制_凹坑.json",
+      "actions": 20,
+      "warnings": 3
+    },
+    {
+      "caseId": "033_3.2.5_脉冲阻尼控制_R33",
+      "caseName": "左前轮脉冲激励激活，同轴车轮减振器电流取大控制",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.5 脉冲阻尼控制",
+        "range": "A33:K39"
+      },
+      "json": "033_3.2.5_脉冲阻尼控制_R33_左前轮脉冲激励激活，同轴车轮减振器电流取大控制.json",
+      "actions": 21,
+      "warnings": 4
+    },
+    {
+      "caseId": "034_3.2.5_脉冲阻尼控制_R40",
+      "caseName": "右前轮脉冲激励激活，同轴车轮减振器电流取大控制",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.5 脉冲阻尼控制",
+        "range": "A40:K46"
+      },
+      "json": "034_3.2.5_脉冲阻尼控制_R40_右前轮脉冲激励激活，同轴车轮减振器电流取大控制.json",
+      "actions": 21,
+      "warnings": 4
+    },
+    {
+      "caseId": "035_3.2.6_路况预测_R5",
+      "caseName": "减速带和距离激活预瞄功能",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.6 路况预测",
+        "range": "A5:K11"
+      },
+      "json": "035_3.2.6_路况预测_R5_减速带和距离激活预瞄功能.json",
+      "actions": 22,
+      "warnings": 4
+    },
+    {
+      "caseId": "036_3.2.7_安全控制_R5",
+      "caseName": "ABS激活，不同车速下，电流变化",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.7 安全控制",
+        "range": "A5:K12"
+      },
+      "json": "036_3.2.7_安全控制_R5_ABS激活，不同车速下，电流变化.json",
+      "actions": 29,
+      "warnings": 11
+    },
+    {
+      "caseId": "037_3.2.7_安全控制_R13",
+      "caseName": "ABS激活，不同模式下，电流变化",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.7 安全控制",
+        "range": "A13:K20"
+      },
+      "json": "037_3.2.7_安全控制_R13_ABS激活，不同模式下，电流变化.json",
+      "actions": 33,
+      "warnings": 12
+    },
+    {
+      "caseId": "038_3.2.7_安全控制_R21",
+      "caseName": "TCS激活，不同车速下，电流变化",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.7 安全控制",
+        "range": "A21:K28"
+      },
+      "json": "038_3.2.7_安全控制_R21_TCS激活，不同车速下，电流变化.json",
+      "actions": 29,
+      "warnings": 11
+    },
+    {
+      "caseId": "039_3.2.7_安全控制_R29",
+      "caseName": "TCS激活，不同模式下，电流变化",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.7 安全控制",
+        "range": "A29:K36"
+      },
+      "json": "039_3.2.7_安全控制_R29_TCS激活，不同模式下，电流变化.json",
+      "actions": 33,
+      "warnings": 12
+    },
+    {
+      "caseId": "040_3.2.7_安全控制_R37",
+      "caseName": "ESP激活，不同车速下，电流变化",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.7 安全控制",
+        "range": "A37:K44"
+      },
+      "json": "040_3.2.7_安全控制_R37_ESP激活，不同车速下，电流变化.json",
+      "actions": 29,
+      "warnings": 11
+    },
+    {
+      "caseId": "041_3.2.7_安全控制_R45",
+      "caseName": "ESP激活，不同模式下，电流变化",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+        "sheet": "3.2.7 安全控制",
+        "range": "A45:K52"
+      },
+      "json": "041_3.2.7_安全控制_R45_ESP激活，不同模式下，电流变化.json",
+      "actions": 33,
+      "warnings": 12
+    }
+  ]
+}

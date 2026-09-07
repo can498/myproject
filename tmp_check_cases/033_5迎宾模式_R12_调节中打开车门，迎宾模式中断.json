@@ -1,0 +1,26 @@
+{
+  "caseId": "033_5迎宾模式_R12",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "5迎宾模式",
+    "range": "A12:K17"
+  },
+  "caseName": "调节中打开车门，迎宾模式中断",
+  "testLevel": "1",
+  "concreteSettings": "FL车门\nFR车门\nRL车门\nRR车门",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "设置空簧模式请求为标准",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H12: 未知动作已生成占位节点：'设置空簧模式请求为标准'"
+  ]
+}

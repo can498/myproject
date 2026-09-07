@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generator="com.hirain.tae.generator" xmi:id="94ad28b8-f92a-485b-a05e-54ac6675fd71" name="空气压缩机过载保护_单次连续运行时间大于300秒" describle="来源：13空气压缩机过载保护 A14:G18" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="66fc07bf-d18b-4223-ac30-3fd47cea0a0d"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="f86793fc-7b8f-4edc-a1ff-fa14434308c4"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="a742dd13-d06c-4710-b802-0cb461afe5f9" name="空气压缩机过载保护_单次连续运行时间大于300秒">
+    <children xmi:type="tae:Initialization" xmi:id="b77ca9a4-bc95-4a46-ae02-4a3c66acfc14" name="Initialization">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="f8ae39de-9264-408e-a716-1c57077f4a34" name="powerOn" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOn"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="a6532d00-cf9c-4cb8-95d6-7c3f54e98502" name="2、控制器无故障" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="3db4264b-d177-489c-a4a0-7c92fc174f11" name="3、车辆静止" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="e0589097-1285-44e6-8f20-cda2b00a142d" name="4、ECAS模式为运动" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Group" xmi:id="808a0013-6a4c-4a88-8749-2eaa24bd2da3" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:ScriptBlock" xmi:id="35ba730b-7f63-4c71-81e0-b73d009bb558" name="标定空簧模型使其完成调节时间缓慢,大于300秒" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="f0de571f-3468-4410-9a2c-aaadacce6686" name="请求切换ECAS模式为标准" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="dcc460e3-239f-4485-8e57-1eae442864e4" name="ECAS调节中,且持续301秒" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="dc555b7d-0537-477f-b33c-b0b494c5d4d5" name="故障状态相关信号报出" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="4ff4b145-ee6b-4ec3-972a-8e7a18c811b5" name="ECAS模式保持为运动" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="5fde5a79-5bc5-424d-a439-147904a7bf46" name="检测信号变化情况：DMActrDisLeftSec执行器工作时间过长保护锁定剩余时间" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="cb91e87e-d3a5-496e-acf9-0413506345ab" name="标定空簧模型使其完成调节时间恢复正常,等待61s" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="685e87a8-3999-4b1d-809a-3af0d8ae05c3" name="故障状态相关信号恢复" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="d50c64a5-e9ef-4741-80fc-188b391371bc" name="请求切换ECAS模式为标准" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="d4449b14-4711-4c15-b965-4bfb849f04c0" name="ECAS模式切为标准" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="ec5fe67f-0768-4e06-af1a-e29eaf4167fa" name="Clean Up">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="c83738ba-1a9c-4058-9cb2-0ef0e083598c" name="powerOff" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOff"/>
+    </children>
+  </activitySequence>
+</tae:Process>

@@ -1,0 +1,206 @@
+{
+  "caseId": "128_16高度调节顺序_R17",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "16高度调节顺序",
+    "range": "A17:I21",
+    "mode": "text-to-signal"
+  },
+  "caseName": "60kph行驶，高度调节顺序，除迎宾模式外的降低控制",
+  "testLevel": "P2",
+  "concreteSettings": "指定空簧模式请求1\n指定实际空簧模式对应高度1\n指定实际空簧模式1\n指定空簧模式请求2\n指定实际空簧模式对应高度2\n指定实际空簧模式2",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、车辆静止",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "D",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step1",
+      "sourceText": "挂D挡"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step1",
+      "sourceText": "挂D挡"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "D",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1",
+      "sourceText": "已挂入D挡"
+    },
+    {
+      "action": "Write",
+      "signal": "TargetVehSpd",
+      "value": "60",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step2",
+      "sourceText": "设置车速=60km/h"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step2",
+      "sourceText": "设置车速=60km/h"
+    },
+    {
+      "action": "Read",
+      "signal": "EspVehSpd",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "60",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step2",
+      "sourceText": "检测车速=60km/h"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置空簧模式请求为指定空簧模式请求1",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "设置空簧模式请求为指定空簧模式请求1"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度为指定实际空簧对应高度1",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测实际空簧高度为指定实际空簧对应高度1\n2、检测实际空簧模式为指定实际空簧模式1"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、检测实际空簧模式为指定实际空簧模式1",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测实际空簧高度为指定实际空簧对应高度1\n2、检测实际空簧模式为指定实际空簧模式1"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置空簧模式请求为指定空簧模式请求2",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "设置空簧模式请求为指定空簧模式请求2"
+    },
+    {
+      "action": "Placeholder",
+      "name": "注意观测调节过程中：",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "注意观测调节过程中：\n1、先降低前桥再降低后桥\n2、单次升降过程可以分2-3次交替完成\n3、每次交替降低高度最大15mm\n4、保证调节过程中后桥与前桥的高度差小于15mm\n5、检测实际空簧高度为指定实际空簧对应高度2\n6、检测实际空簧模式为指定实际空簧模式2"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、先降低前桥再降低后桥",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "注意观测调节过程中：\n1、先降低前桥再降低后桥\n2、单次升降过程可以分2-3次交替完成\n3、每次交替降低高度最大15mm\n4、保证调节过程中后桥与前桥的高度差小于15mm\n5、检测实际空簧高度为指定实际空簧对应高度2\n6、检测实际空簧模式为指定实际空簧模式2"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、单次升降过程可以分2-3次交替完成",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "注意观测调节过程中：\n1、先降低前桥再降低后桥\n2、单次升降过程可以分2-3次交替完成\n3、每次交替降低高度最大15mm\n4、保证调节过程中后桥与前桥的高度差小于15mm\n5、检测实际空簧高度为指定实际空簧对应高度2\n6、检测实际空簧模式为指定实际空簧模式2"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、每次交替降低高度最大15mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "注意观测调节过程中：\n1、先降低前桥再降低后桥\n2、单次升降过程可以分2-3次交替完成\n3、每次交替降低高度最大15mm\n4、保证调节过程中后桥与前桥的高度差小于15mm\n5、检测实际空簧高度为指定实际空簧对应高度2\n6、检测实际空簧模式为指定实际空簧模式2"
+    },
+    {
+      "action": "Placeholder",
+      "name": "4、保证调节过程中后桥与前桥的高度差小于15mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "注意观测调节过程中：\n1、先降低前桥再降低后桥\n2、单次升降过程可以分2-3次交替完成\n3、每次交替降低高度最大15mm\n4、保证调节过程中后桥与前桥的高度差小于15mm\n5、检测实际空簧高度为指定实际空簧对应高度2\n6、检测实际空簧模式为指定实际空簧模式2"
+    },
+    {
+      "action": "Placeholder",
+      "name": "5、检测实际空簧高度为指定实际空簧对应高度2",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "注意观测调节过程中：\n1、先降低前桥再降低后桥\n2、单次升降过程可以分2-3次交替完成\n3、每次交替降低高度最大15mm\n4、保证调节过程中后桥与前桥的高度差小于15mm\n5、检测实际空簧高度为指定实际空簧对应高度2\n6、检测实际空簧模式为指定实际空簧模式2"
+    },
+    {
+      "action": "Placeholder",
+      "name": "6、检测实际空簧模式为指定实际空簧模式2",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "注意观测调节过程中：\n1、先降低前桥再降低后桥\n2、单次升降过程可以分2-3次交替完成\n3、每次交替降低高度最大15mm\n4、保证调节过程中后桥与前桥的高度差小于15mm\n5、检测实际空簧高度为指定实际空簧对应高度2\n6、检测实际空簧模式为指定实际空簧模式2"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step5",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [
+    "EspVehSpd",
+    "GearLever",
+    "TargetVehSpd",
+    "VcuGearPosn"
+  ],
+  "warnings": [
+    "F17: 未识别文本动作：2、控制器无故障",
+    "F17: 未识别文本动作：3、车辆静止",
+    "F17: 未知动作已生成占位节点：'2、控制器无故障'",
+    "F17: 未知动作已生成占位节点：'3、车辆静止'",
+    "H19: 未识别文本动作：设置空簧模式请求为指定空簧模式请求1",
+    "I19: 未识别文本动作：1、检测实际空簧高度为指定实际空簧对应高度1",
+    "I19: 未识别文本动作：2、检测实际空簧模式为指定实际空簧模式1",
+    "H19: 未知动作已生成占位节点：'设置空簧模式请求为指定空簧模式请求1'",
+    "H19: 未知动作已生成占位节点：'1、检测实际空簧高度为指定实际空簧对应高度1'",
+    "H19: 未知动作已生成占位节点：'2、检测实际空簧模式为指定实际空簧模式1'",
+    "H20: 未识别文本动作：设置空簧模式请求为指定空簧模式请求2",
+    "I20: 未识别文本动作：注意观测调节过程中：",
+    "I20: 未识别文本动作：1、先降低前桥再降低后桥",
+    "I20: 未识别文本动作：2、单次升降过程可以分2-3次交替完成",
+    "I20: 未识别文本动作：3、每次交替降低高度最大15mm",
+    "I20: 未识别文本动作：4、保证调节过程中后桥与前桥的高度差小于15mm",
+    "I20: 未识别文本动作：5、检测实际空簧高度为指定实际空簧对应高度2",
+    "I20: 未识别文本动作：6、检测实际空簧模式为指定实际空簧模式2",
+    "H20: 未知动作已生成占位节点：'设置空簧模式请求为指定空簧模式请求2'",
+    "H20: 未知动作已生成占位节点：'注意观测调节过程中：'",
+    "H20: 未知动作已生成占位节点：'1、先降低前桥再降低后桥'",
+    "H20: 未知动作已生成占位节点：'2、单次升降过程可以分2-3次交替完成'",
+    "H20: 未知动作已生成占位节点：'3、每次交替降低高度最大15mm'",
+    "H20: 未知动作已生成占位节点：'4、保证调节过程中后桥与前桥的高度差小于15mm'",
+    "H20: 未知动作已生成占位节点：'5、检测实际空簧高度为指定实际空簧对应高度2'",
+    "H20: 未知动作已生成占位节点：'6、检测实际空簧模式为指定实际空簧模式2'"
+  ],
+  "signalCatalogSize": 10
+}

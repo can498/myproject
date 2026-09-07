@@ -1,0 +1,26 @@
+{
+  "caseId": "024_2维修模式_R24",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "2维修模式",
+    "range": "A24:K31"
+  },
+  "caseName": "大于等于5km/h禁止进入维修模式",
+  "testLevel": "1",
+  "concreteSettings": "指定车速",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "挂D挡",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H24: 未知动作已生成占位节点：'挂D挡'"
+  ]
+}

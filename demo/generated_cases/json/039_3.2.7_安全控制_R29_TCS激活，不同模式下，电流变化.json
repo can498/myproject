@@ -1,0 +1,312 @@
+{
+  "caseId": "039_3.2.7_安全控制_R29",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+    "sheet": "3.2.7 安全控制",
+    "range": "A29:K36"
+  },
+  "caseName": "TCS激活，不同模式下，电流变化",
+  "testLevel": "P2",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "D",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "D",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Write",
+      "signal": "EspTcsActvSts",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCmodereq",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_EcdcMode",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "1",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FL_",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "运动模式",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FR_",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "运动模式",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RL_",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "运动模式",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RR_",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "运动模式",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCmodereq",
+      "value": "2",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_EcdcMode",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "2",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FL_",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "标准模式",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FR_",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "标准模式",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RL_",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "标准模式",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RR_",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "标准模式",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCmodereq",
+      "value": "3",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_EcdcMode",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "3",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FL_",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "舒适模式，且与其它模式下的电流不想等",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FR_",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "舒适模式，且与其它模式下的电流不想等",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RL_",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "舒适模式，且与其它模式下的电流不想等",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RR_",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "舒适模式，且与其它模式下的电流不想等",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Write",
+      "signal": "EspTcsActvSts",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step6"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step6"
+    },
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "P",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step7"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step7"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "P",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step7"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step8"
+    }
+  ],
+  "requiredMappings": [
+    "ECDCmodereq",
+    "EspTcsActvSts",
+    "GearLever",
+    "VMC_Actul_O_DAMP_FL_",
+    "VMC_Actul_O_DAMP_FR_",
+    "VMC_Actul_O_DAMP_RL_",
+    "VMC_Actul_O_DAMP_RR_",
+    "VMC_EcdcMode",
+    "VcuGearPosn"
+  ],
+  "warnings": [
+    "K31: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_运动模式'",
+    "K31: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_运动模式'",
+    "K31: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_运动模式'",
+    "K31: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_运动模式'",
+    "K32: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_标准模式'",
+    "K32: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_标准模式'",
+    "K32: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_标准模式'",
+    "K32: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_标准模式'",
+    "K33: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_舒适模式，且与其它模式下的电流不想等'",
+    "K33: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_舒适模式，且与其它模式下的电流不想等'",
+    "K33: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_舒适模式，且与其它模式下的电流不想等'",
+    "K33: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_舒适模式，且与其它模式下的电流不想等'"
+  ]
+}

@@ -1,0 +1,4395 @@
+{
+  "catalogSize": 326,
+  "cases": [
+    {
+      "sheet": "1模式管理",
+      "range": "4-11",
+      "caseName": "P档静止，其它切标准",
+      "rows": [
+        {
+          "row": 4,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "初始状态检测",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERUP"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            },
+            {
+              "text": "车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 6,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式"
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 8,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为标准",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "0x0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧模式为标准",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x0"
+            }
+          ]
+        },
+        {
+          "row": 9,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 10,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 11,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "12-19",
+      "caseName": "P档静止，其它切运动",
+      "rows": [
+        {
+          "row": 12,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "初始状态检测",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERUP"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            },
+            {
+              "text": "车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 14,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式"
+            }
+          ]
+        },
+        {
+          "row": 15,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 16,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式为运动",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "0x1"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为-25±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度-25±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为-25±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度-25±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为-25±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度-25±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为-25±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度-25±5mm"
+            },
+            {
+              "text": "检测实际空簧模式为运动",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x1"
+            }
+          ]
+        },
+        {
+          "row": 17,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 18,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 19,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "20-27",
+      "caseName": "P档静止，其它切越野",
+      "rows": [
+        {
+          "row": 20,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "初始状态检测",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERUP"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            },
+            {
+              "text": "车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 21,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 22,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式"
+            }
+          ]
+        },
+        {
+          "row": 23,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 24,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式为越野",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "0x2"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为30±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "30±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为30±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "30±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为30±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "30±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为30±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "30±5mm"
+            },
+            {
+              "text": "检测实际空簧模式为运动",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x1"
+            }
+          ]
+        },
+        {
+          "row": 25,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 26,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 27,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "28-35",
+      "caseName": "P档静止，其它切自适应",
+      "rows": [
+        {
+          "row": 28,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "初始状态检测",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERUP"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            },
+            {
+              "text": "车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 29,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 30,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式"
+            }
+          ]
+        },
+        {
+          "row": 31,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 32,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式为自适应",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "0x3"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧模式为自适应",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x4"
+            }
+          ]
+        },
+        {
+          "row": 33,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 34,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 35,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "36-43",
+      "caseName": "P档静止，其它切迎宾",
+      "rows": [
+        {
+          "row": 36,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "初始状态检测",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERUP"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            },
+            {
+              "text": "车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 37,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 38,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式"
+            }
+          ]
+        },
+        {
+          "row": 39,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 40,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式为迎宾",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "0x5"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为-35±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-35±5"
+            },
+            {
+              "text": "检测实际空簧高度为-35±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-35±5"
+            },
+            {
+              "text": "检测实际空簧高度为-35±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-35±5"
+            },
+            {
+              "text": "检测实际空簧高度为-35±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-35±5"
+            },
+            {
+              "text": "检测实际空簧模式为迎宾",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x5"
+            }
+          ]
+        },
+        {
+          "row": 41,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 42,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 43,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "44-51",
+      "caseName": "P档静止，其它切装卸",
+      "rows": [
+        {
+          "row": 44,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "初始状态检测",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERUP"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            },
+            {
+              "text": "车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 45,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 46,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式"
+            }
+          ]
+        },
+        {
+          "row": 47,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 48,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式为装卸",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "0x6"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为前轴保持低或中位，后轴-50±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "标准，0mm，标准"
+            },
+            {
+              "text": "检测实际空簧高度为前轴保持低或中位，后轴-50±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "标准，0mm，标准"
+            },
+            {
+              "text": "检测实际空簧模式为迎宾",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x5"
+            }
+          ]
+        },
+        {
+          "row": 49,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 50,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 51,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "52-59",
+      "caseName": "P档静止，其它切一键调平",
+      "rows": [
+        {
+          "row": 52,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "初始状态检测",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERUP"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            },
+            {
+              "text": "车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 53,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 54,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式"
+            }
+          ]
+        },
+        {
+          "row": 55,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 56,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式为一键调平",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "0x7"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为高度实时计算，调整范围-25-60mm",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-25-60"
+            },
+            {
+              "text": "检测实际空簧高度为高度实时计算，调整范围-25-60mm",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-25-60"
+            },
+            {
+              "text": "检测实际空簧高度为高度实时计算，调整范围-25-60mm",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-25-60"
+            },
+            {
+              "text": "检测实际空簧高度为高度实时计算，调整范围-25-60mm",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-25-60"
+            },
+            {
+              "text": "检测实际空簧模式为一键调平",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x7"
+            }
+          ]
+        },
+        {
+          "row": 57,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 58,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 59,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "60-67",
+      "caseName": "P档静止，其它切牵引",
+      "rows": [
+        {
+          "row": 60,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "初始状态检测",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERUP"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            },
+            {
+              "text": "车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 61,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 62,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式"
+            }
+          ]
+        },
+        {
+          "row": 63,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 64,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式为牵引",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "0x6"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧模式为牵引",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x8"
+            }
+          ]
+        },
+        {
+          "row": 65,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 66,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 67,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "68-75",
+      "caseName": "P档静止，其它切维修",
+      "rows": [
+        {
+          "row": 68,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "初始状态检测",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERUP"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            },
+            {
+              "text": "车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 69,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 70,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式"
+            }
+          ]
+        },
+        {
+          "row": 71,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 72,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式为维修",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "0x8"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧模式为维修",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x9"
+            }
+          ]
+        },
+        {
+          "row": 73,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 74,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 75,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "76-87",
+      "caseName": "R档，0km/h，悬架模式切换",
+      "rows": [
+        {
+          "row": 76,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂R挡",
+              "role": "write",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "R"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入R挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "R"
+            }
+          ]
+        },
+        {
+          "row": 77,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 78,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "检测车速",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": ""
+            }
+          ],
+          "expected": [
+            {
+              "text": "车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 79,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 80,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求1",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求1"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式1",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式1"
+            }
+          ]
+        },
+        {
+          "row": 81,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 82,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求2",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求2"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度2(±5mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度2(±5mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度2(±5mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度2(±5mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式2",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式2"
+            }
+          ]
+        },
+        {
+          "row": 83,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 84,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ]
+        },
+        {
+          "row": 85,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 86,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 87,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "88-99",
+      "caseName": "R档，20km/h，悬架模式切换",
+      "rows": [
+        {
+          "row": 88,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂R挡",
+              "role": "write",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "R"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入R挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "R"
+            }
+          ]
+        },
+        {
+          "row": 89,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 90,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=20km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "20"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=20km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "20"
+            }
+          ]
+        },
+        {
+          "row": 91,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 92,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求1",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求1"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式1",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式1"
+            }
+          ]
+        },
+        {
+          "row": 93,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 94,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求2",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求2"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式2",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式2"
+            }
+          ]
+        },
+        {
+          "row": 95,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 96,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=0km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 97,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ]
+        },
+        {
+          "row": 98,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 99,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "100-111",
+      "caseName": "D档，0km/h，悬架模式切换",
+      "rows": [
+        {
+          "row": 100,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 101,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 102,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "检测车速",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": ""
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 103,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 104,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求1",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求1"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式1",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式1"
+            }
+          ]
+        },
+        {
+          "row": 105,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 106,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求2",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求2"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度2(±5mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度2(±5mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度2(±5mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度2(±5mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式2",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式2"
+            }
+          ]
+        },
+        {
+          "row": 107,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 108,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ]
+        },
+        {
+          "row": 109,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 110,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 111,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "112-123",
+      "caseName": "D档，20km/h，悬架模式切换",
+      "rows": [
+        {
+          "row": 112,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 113,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 114,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=20km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "20"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=20km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "20"
+            }
+          ]
+        },
+        {
+          "row": 115,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 116,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求1",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求1"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式1",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式1"
+            }
+          ]
+        },
+        {
+          "row": 117,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 118,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求2",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求2"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式2",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式2"
+            }
+          ]
+        },
+        {
+          "row": 119,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 120,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=0km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 121,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ]
+        },
+        {
+          "row": 122,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 123,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "124-135",
+      "caseName": "D档，60km/h，悬架模式切换",
+      "rows": [
+        {
+          "row": 124,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 125,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 126,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=60km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "60"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=60km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "60"
+            }
+          ]
+        },
+        {
+          "row": 127,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 128,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求1",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求1"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式1",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式1"
+            }
+          ]
+        },
+        {
+          "row": 129,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 130,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求2",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求2"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式2",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式2"
+            }
+          ]
+        },
+        {
+          "row": 131,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 132,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=0km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 133,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ]
+        },
+        {
+          "row": 134,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 135,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "136-147",
+      "caseName": "D档，120km/h，悬架模式切换",
+      "rows": [
+        {
+          "row": 136,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 137,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 138,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=120km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "120"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=120km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "120"
+            }
+          ]
+        },
+        {
+          "row": 139,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 140,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求1",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求1"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式1",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式1"
+            }
+          ]
+        },
+        {
+          "row": 141,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 142,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求2",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求2"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度2"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度2"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度2"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度2"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式2",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式2"
+            }
+          ]
+        },
+        {
+          "row": 143,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 144,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=0km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 145,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ]
+        },
+        {
+          "row": 146,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 147,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "148-159",
+      "caseName": "N档，0km/h，悬架模式切换",
+      "rows": [
+        {
+          "row": 148,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂N挡",
+              "role": "write",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "N"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入N挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "row": 149,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 150,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "检测车速",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": ""
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 151,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 152,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求1",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求1"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度1"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式1",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式1"
+            }
+          ]
+        },
+        {
+          "row": 153,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 154,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求2",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求2"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度2(±5mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度2(±5mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度2(±5mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±5mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度2(±5mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式2",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式2"
+            }
+          ]
+        },
+        {
+          "row": 155,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 156,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ]
+        },
+        {
+          "row": 157,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 158,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 159,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "160-171",
+      "caseName": "N档，20km/h，悬架模式切换",
+      "rows": [
+        {
+          "row": 160,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 161,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 162,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求1",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求1"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式1",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式1"
+            }
+          ]
+        },
+        {
+          "row": 163,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 164,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=20km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "20"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=20km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "20"
+            }
+          ]
+        },
+        {
+          "row": 165,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 166,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂N挡",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "N"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入N挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "row": 167,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 168,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求2",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求2"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式2",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式2"
+            }
+          ]
+        },
+        {
+          "row": 169,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=0km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 170,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ]
+        },
+        {
+          "row": 171,
+          "step": "Step8",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "172-183",
+      "caseName": "N档，60km/h，悬架模式切换",
+      "rows": [
+        {
+          "row": 172,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 173,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 174,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求1",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求1"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式1",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式1"
+            }
+          ]
+        },
+        {
+          "row": 175,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 176,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=60km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "60"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=60km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "60"
+            }
+          ]
+        },
+        {
+          "row": 177,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 178,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂N挡",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "N"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入N挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "row": 179,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 180,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求2",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求2"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式2",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式2"
+            }
+          ]
+        },
+        {
+          "row": 181,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=0km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 182,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ]
+        },
+        {
+          "row": 183,
+          "step": "Step8",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "184-195",
+      "caseName": "N档，120km/h，悬架模式切换",
+      "rows": [
+        {
+          "row": 184,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 185,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 186,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求1",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求1"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度1(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度1(±8mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式1",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式1"
+            }
+          ]
+        },
+        {
+          "row": 187,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 188,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=120km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "120"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=120km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "120"
+            }
+          ]
+        },
+        {
+          "row": 189,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 190,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂N挡",
+              "role": "write",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "N"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入N挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "row": 191,
+          "step": "",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        },
+        {
+          "row": 192,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求2",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求2"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧高度为指定实际空簧对应高度2(±8mm)",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定实际空簧模式对应高度2(±8mm)"
+            },
+            {
+              "text": "检测实际空簧模式为指定实际空簧模式2",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "指定实际空簧模式2"
+            }
+          ]
+        },
+        {
+          "row": 193,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=0km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 194,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ]
+        },
+        {
+          "row": 195,
+          "step": "Step8",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "1模式管理",
+      "range": "196-202",
+      "caseName": "悬架模式不可切换（选取部分工况）",
+      "rows": [
+        {
+          "row": 196,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "设置空簧模式请求为标准",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "0x0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧模式为标准",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x0"
+            }
+          ]
+        },
+        {
+          "row": 197,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置挡位为指定挡位",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "指定挡位"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际挡位为指定挡位",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "指定挡位"
+            }
+          ]
+        },
+        {
+          "row": 198,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ]
+        },
+        {
+          "row": 199,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为指定空簧模式请求",
+              "role": "write",
+              "signalName": "EcasModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "指定空簧模式请求"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度保持为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度保持为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度保持为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧高度保持为0±5mm",
+              "role": "read",
+              "signalName": "ECASActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0±5mm"
+            },
+            {
+              "text": "检测实际空簧模式保持为标准",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x0"
+            }
+          ]
+        },
+        {
+          "row": 200,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速=0km/h",
+              "role": "write",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测车速=0km/h",
+              "role": "read",
+              "signalName": "EspVehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 201,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "GearLever",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入P挡",
+              "role": "read",
+              "signalName": "VcuGearPosnVld",
+              "chineseName": "整车实际挡位有效",
+              "value": "P"
+            }
+          ]
+        },
+        {
+          "row": 202,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "整车下电",
+              "role": "write",
+              "signalName": "__COMMAND__",
+              "chineseName": "",
+              "value": "POWERDOWN"
+            }
+          ],
+          "expected": []
+        }
+      ]
+    }
+  ]
+}

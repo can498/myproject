@@ -1,0 +1,175 @@
+{
+  "caseId": "112_12车身保护功能_R25",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "12车身保护功能",
+    "range": "A25:I30",
+    "mode": "text-to-signal"
+  },
+  "caseName": "静态时，车门打开，可切换至高度升高的模式_标准切越野",
+  "testLevel": "P2",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、车辆静止",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Placeholder",
+      "name": "初始状态检测",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "初始状态检测"
+    },
+    {
+      "action": "Read",
+      "signal": "EspVehSpd",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1",
+      "sourceText": "车速=0km/h"
+    },
+    {
+      "action": "Placeholder",
+      "name": "FL车门打开",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "FL车门打开"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "2",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step3",
+      "sourceText": "设置空簧模式请求为越野"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step3",
+      "sourceText": "设置空簧模式请求为越野"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度为30mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测实际空簧高度为30mm\n2、检测实际空簧模式为越野"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "2",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测实际空簧高度为30mm\n2、检测实际空簧模式为越野"
+    },
+    {
+      "action": "Placeholder",
+      "name": "FL车门关闭",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "FL车门关闭"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step5",
+      "sourceText": "设置空簧模式请求为标准"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step5",
+      "sourceText": "设置空簧模式请求为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度为0mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step5",
+      "sourceText": "1、检测实际空簧高度为0mm\n2、检测实际空簧模式为标准"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step5",
+      "sourceText": "1、检测实际空簧高度为0mm\n2、检测实际空簧模式为标准"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step6",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [
+    "EcasModeFB",
+    "EcasModeReq",
+    "EspVehSpd"
+  ],
+  "warnings": [
+    "F25: 未识别文本动作：2、控制器无故障",
+    "F25: 未识别文本动作：3、车辆静止",
+    "F25: 未知动作已生成占位节点：'2、控制器无故障'",
+    "F25: 未知动作已生成占位节点：'3、车辆静止'",
+    "H25: 未识别文本动作：初始状态检测",
+    "H25: 未知动作已生成占位节点：'初始状态检测'",
+    "H26: 未识别文本动作：FL车门打开",
+    "H26: 未知动作已生成占位节点：'FL车门打开'",
+    "I27: 未识别文本动作：1、检测实际空簧高度为30mm",
+    "H27: 未知动作已生成占位节点：'1、检测实际空簧高度为30mm'",
+    "H28: 未识别文本动作：FL车门关闭",
+    "H28: 未知动作已生成占位节点：'FL车门关闭'",
+    "I29: 未识别文本动作：1、检测实际空簧高度为0mm",
+    "H29: 未知动作已生成占位节点：'1、检测实际空簧高度为0mm'"
+  ],
+  "signalCatalogSize": 10
+}

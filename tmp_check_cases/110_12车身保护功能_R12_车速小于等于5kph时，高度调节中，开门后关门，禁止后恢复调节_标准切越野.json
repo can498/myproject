@@ -1,0 +1,26 @@
+{
+  "caseId": "110_12车身保护功能_R12",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "12车身保护功能",
+    "range": "A12:K19"
+  },
+  "caseName": "车速小于等于5kph时，高度调节中，开门后关门，禁止后恢复调节_标准切越野",
+  "testLevel": "1",
+  "concreteSettings": "指定车速\n指定车门",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "挂D挡",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H12: 未知动作已生成占位节点：'挂D挡'"
+  ]
+}

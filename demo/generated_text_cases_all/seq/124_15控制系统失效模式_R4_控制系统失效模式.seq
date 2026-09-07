@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generator="com.hirain.tae.generator" xmi:id="b460475a-d46e-43cf-9282-846af98bf62b" name="控制系统失效模式" describle="来源：15控制系统失效模式 A4:G7" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="a31a94a1-d58c-424d-b997-8e458360f3c2"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="525c9212-10f2-4550-a500-3bf59bd29416"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="afb8c93b-3559-46b8-93d8-90926cc5e15a" name="控制系统失效模式">
+    <children xmi:type="tae:Initialization" xmi:id="cb21d03e-1ffb-4603-8fbb-fb8164605530" name="Initialization">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="18a23f2b-a07a-449a-bf64-221e0fe13492" name="powerOn" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOn"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="15c5583c-4bea-47a7-804f-11b77714415f" name="2、控制器无故障" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="46276149-dc91-41bf-b623-839dcbe62e87" name="3、车辆静止" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="cb937541-69bc-4ab6-9303-d5bce83fa037" name="4、ECAS模式为运动" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Group" xmi:id="7b2a6d3c-e377-413d-b684-e31af1f28b1d" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:ScriptBlock" xmi:id="d59171af-ffca-4a0b-a65b-ed21dc794f19" name="请求切换ECAS模式为标准" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="036fbb9d-bfa4-481e-a729-9adca7163f71" name="ECAS调节中" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="58b67093-55b3-470f-8696-5ec646e73d57" name="ECAS模式保持为运动" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="83d9c6fd-aa64-4a23-9d13-4aae976789e4" name="注入控制系统失效,等待3s" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="4ca902b5-a0cf-4b85-a1b0-0669004de3a1" name="故障状态相关信号报出" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="c52c6aa4-5ea6-4cf6-a541-b35cd80e006e" name="ECAS停止调节" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="1080fbee-3420-4ec1-a3f1-ca886053c89a" name="ECAS模式保持为运动" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="b8d17e51-cb3a-49aa-b740-15d49b1514be" name="恢复控制系统失效,等待3s" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="3ff0c998-b7b0-4f4e-9f77-5e3ad84de586" name="故障状态相关信号恢复" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="398994ea-9076-4576-b769-234c8d1b9f42" name="ECAS继续调节" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="85be9294-683a-47e9-9b91-c6ce9f97e4cd" name="ECAS模式切换为标准" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="b3b5f201-dc13-4def-8488-a88bf55ed5ea" name="Clean Up">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="5319339e-93ce-47f2-aab4-d9bd1b2875c6" name="powerOff" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOff"/>
+    </children>
+  </activitySequence>
+</tae:Process>

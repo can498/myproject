@@ -1,0 +1,286 @@
+{
+  "caseId": "021_2维修模式_R4",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "2维修模式",
+    "range": "A4:M9"
+  },
+  "caseName": "主动进入维修模式，且空簧高度不能调节",
+  "testLevel": "P1",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row5"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-25",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row5"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-25",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row5"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-25",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row5"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-25",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row5"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "1",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row5"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "9",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row6"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-25",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row6"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-25",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row6"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-25",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row6"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-25",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row6"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "9",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row6"
+    },
+    {
+      "action": "Placeholder",
+      "name": "直接标定模型中的高度",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Row7"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "10",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row7"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "10",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row7"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "10",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row7"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "10",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row7"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row8"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row8"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row8"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row8"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row8"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row8"
+    }
+  ],
+  "cleanup": [],
+  "requiredMappings": [
+    "ECASActLvlFL",
+    "ECASActLvlFR",
+    "ECASActLvlRL",
+    "ECASActLvlRR",
+    "EcasModeFB",
+    "EcasModeReq"
+  ],
+  "warnings": [
+    "M5: Read断言使用单个'='，已按'=='处理",
+    "M5: Read断言使用单个'='，已按'=='处理",
+    "M5: Read断言使用单个'='，已按'=='处理",
+    "M5: Read断言使用单个'='，已按'=='处理",
+    "M5: Read断言使用单个'='，已按'=='处理",
+    "M6: Read断言使用单个'='，已按'=='处理",
+    "M6: Read断言使用单个'='，已按'=='处理",
+    "M6: Read断言使用单个'='，已按'=='处理",
+    "M6: Read断言使用单个'='，已按'=='处理",
+    "M6: Read断言使用单个'='，已按'=='处理",
+    "L7: 未知动作已生成占位节点：'直接标定模型中的高度'",
+    "M7: Read断言使用单个'='，已按'=='处理",
+    "M7: Read断言使用单个'='，已按'=='处理",
+    "M7: Read断言使用单个'='，已按'=='处理",
+    "M7: Read断言使用单个'='，已按'=='处理",
+    "M8: Read断言使用单个'='，已按'=='处理",
+    "M8: Read断言使用单个'='，已按'=='处理",
+    "M8: Read断言使用单个'='，已按'=='处理",
+    "M8: Read断言使用单个'='，已按'=='处理",
+    "M8: Read断言使用单个'='，已按'=='处理"
+  ]
+}

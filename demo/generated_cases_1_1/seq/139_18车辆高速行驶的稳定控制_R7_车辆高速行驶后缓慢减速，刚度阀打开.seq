@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="4c564cdf-b050-4a57-9544-9430fdfc5b45" name="车辆高速行驶后缓慢减速，刚度阀打开" describle="来源：18车辆高速行驶的稳定控制 A7:K10" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="c1f600b6-f8a8-4db7-9f4a-3cccc50de7f1"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="dacdb398-bdee-4cd9-bfb6-213f4c2e5857"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="49cb2f56-b90a-4c98-9fac-93d8d57094e4" name="车辆高速行驶后缓慢减速，刚度阀打开">
+    <children xmi:type="tae:Initialization" xmi:id="7763f75f-c01a-4147-b0fd-070c7fb13e32" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="d75cef47-e68f-441c-8704-1a121ae46512" name="Test Step &amp; Expected Result"/>
+    <children xmi:type="tae:Cleanup" xmi:id="4d273888-aed6-4cf2-8cb6-b8447e287d13" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

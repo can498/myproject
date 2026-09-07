@@ -1,0 +1,161 @@
+{
+  "caseId": "119_14车身过高故障报警_R14",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "14车身过高故障报警",
+    "range": "A14:G18",
+    "mode": "text-to-signal"
+  },
+  "caseName": "RL车身过高故障报警",
+  "testLevel": "P3",
+  "concreteSettings": "/·",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、车辆静止",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "4、ECAS模式为运动",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Placeholder",
+      "name": "请求切换ECAS模式为标准",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "请求切换ECAS模式为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS调节中",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "ECAS调节中\nECAS模式保持为运动"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS模式保持为运动",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "ECAS调节中\nECAS模式保持为运动"
+    },
+    {
+      "action": "Placeholder",
+      "name": "注入RL车身过高,等于71mm并持续5s",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "注入RL车身过高,等于71mm并持续5s"
+    },
+    {
+      "action": "Placeholder",
+      "name": "故障状态相关信号报出",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "故障状态相关信号报出\nECAS停止调节\nECAS模式保持为运动"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS停止调节",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "故障状态相关信号报出\nECAS停止调节\nECAS模式保持为运动"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS模式保持为运动",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "故障状态相关信号报出\nECAS停止调节\nECAS模式保持为运动"
+    },
+    {
+      "action": "Placeholder",
+      "name": "恢复RL车身过高为正常",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "恢复RL车身过高为正常"
+    },
+    {
+      "action": "Placeholder",
+      "name": "故障状态相关信号报出",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "故障状态相关信号报出"
+    },
+    {
+      "action": "Placeholder",
+      "name": "请求切换ECAS模式为标准",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "请求切换ECAS模式为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "故障状态相关信号恢复",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "故障状态相关信号恢复\nECAS模式切为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS模式切为标准",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "故障状态相关信号恢复\nECAS模式切为标准"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step5",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [],
+  "warnings": [
+    "D14: 未识别文本动作：2、控制器无故障",
+    "D14: 未识别文本动作：3、车辆静止",
+    "D14: 未识别文本动作：4、ECAS模式为运动",
+    "D14: 未知动作已生成占位节点：'2、控制器无故障'",
+    "D14: 未知动作已生成占位节点：'3、车辆静止'",
+    "D14: 未知动作已生成占位节点：'4、ECAS模式为运动'",
+    "F14: 未识别文本动作：请求切换ECAS模式为标准",
+    "G14: 未识别文本动作：ECAS调节中",
+    "G14: 未识别文本动作：ECAS模式保持为运动",
+    "F14: 未知动作已生成占位节点：'请求切换ECAS模式为标准'",
+    "F14: 未知动作已生成占位节点：'ECAS调节中'",
+    "F14: 未知动作已生成占位节点：'ECAS模式保持为运动'",
+    "F15: 未识别文本动作：注入RL车身过高,等于71mm并持续5s",
+    "G15: 未识别文本动作：故障状态相关信号报出",
+    "G15: 未识别文本动作：ECAS停止调节",
+    "G15: 未识别文本动作：ECAS模式保持为运动",
+    "F15: 未知动作已生成占位节点：'注入RL车身过高,等于71mm并持续5s'",
+    "F15: 未知动作已生成占位节点：'故障状态相关信号报出'",
+    "F15: 未知动作已生成占位节点：'ECAS停止调节'",
+    "F15: 未知动作已生成占位节点：'ECAS模式保持为运动'",
+    "F16: 未识别文本动作：恢复RL车身过高为正常",
+    "G16: 未识别文本动作：故障状态相关信号报出",
+    "F16: 未知动作已生成占位节点：'恢复RL车身过高为正常'",
+    "F16: 未知动作已生成占位节点：'故障状态相关信号报出'",
+    "F17: 未识别文本动作：请求切换ECAS模式为标准",
+    "G17: 未识别文本动作：故障状态相关信号恢复",
+    "G17: 未识别文本动作：ECAS模式切为标准",
+    "F17: 未知动作已生成占位节点：'请求切换ECAS模式为标准'",
+    "F17: 未知动作已生成占位节点：'故障状态相关信号恢复'",
+    "F17: 未知动作已生成占位节点：'ECAS模式切为标准'"
+  ],
+  "signalCatalogSize": 10
+}

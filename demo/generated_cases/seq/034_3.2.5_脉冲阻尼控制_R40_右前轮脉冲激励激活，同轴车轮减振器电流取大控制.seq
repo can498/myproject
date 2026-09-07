@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generator="com.hirain.tae.generator" xmi:id="9b5fcd33-99a7-4873-b94a-a54cbed5376a" name="右前轮脉冲激励激活，同轴车轮减振器电流取大控制" describle="来源：3.2.5 脉冲阻尼控制 A40:K46" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="5e69d4d3-2608-4f32-bb80-51868674a36c"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="0be2245b-2ae9-4dbd-b537-7a3c00d8b2a1"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="8026f77f-2a6a-4a9a-af1d-24a2b4872a08" name="右前轮脉冲激励激活，同轴车轮减振器电流取大控制">
+    <variables xmi:type="tae:Variable" xmi:id="b47feb6b-7a40-4010-a5e7-a2eb08cdede7" name="VMC_Actul_O_DAMP_FL" describle="参数占位值0，待具体场景展开或项目参数定义">
+      <initialValue xmi:type="tae:NumberVariableValue" xmi:id="a42dbfe5-ca2a-4067-850d-30259389678c"/>
+    </variables>
+    <children xmi:type="tae:Initialization" xmi:id="bfc9798b-2a60-4f04-bb39-e257402c3b16" name="Initialization">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="f25e01fc-7ab9-437c-a2d2-9b6c1771f940" name="powerOn" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOn" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="ea28af5f-be4c-455d-8b46-229db1b57fc2" name="BumpRoadTest" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Group" xmi:id="2c2fbde2-2dc1-407b-a99f-85fb512b7e7c" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:Write" xmi:id="0b5e24c9-6f8d-44c7-84ac-c635e22387d7" sourceMapping="GearLever" value="'D'" name="Write GearLever" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="0ae047b9-f89f-4079-bab3-8d0d8fd643b3" mode="TextValue"/>
+      </children>
+      <children xmi:type="tae:Wait" xmi:id="dd1f29ad-01e4-49b6-8e5f-af1015700156" unit="ms" name="Wait" describle=""/>
+      <children xmi:type="tae:Read" xmi:id="fb890974-f5a2-4a53-9e35-2f377e1e80ba" name="Read VcuGearPosn" describle="@OFFLINE='D'@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="4811ff6c-2db1-444b-bf0a-e8d60e866701" signal="VcuGearPosn"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="966da9d7-0f09-4cc2-908a-898802e752fe" mode="TextValue"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="b9dbf942-8908-4a72-8008-37741fc49d53">
+          <expectation xmi:type="tae:Expectation" xmi:id="f58c6776-96d0-46f0-917d-59e084c8dadf" expectationType="String">
+            <expectationInterface xmi:type="tae:ExpectationModeString" xmi:id="3b2b9c29-afb6-4aaa-9e47-5cafccbc22bd" value="'D'"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="cf7ed441-7984-4d47-a52e-7c9c405e4f05" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Write" xmi:id="e09d0168-505a-4030-bb15-c5cf7d4cd89b" sourceMapping="ECDCPVC_K_AzWhlth_mps2_f" value="20" name="Write ECDCPVC_K_AzWhlth_mps2_f" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="b7be41f1-4288-4d1d-8b71-0a9459ab8bfe"/>
+      </children>
+      <children xmi:type="tae:Wait" xmi:id="e4f594bd-beb0-45bf-889a-8926bb284bd2" unit="ms" name="Wait" describle=""/>
+      <children xmi:type="tae:Write" xmi:id="b0ed5cbc-3889-418f-a599-a4154d026f67" sourceMapping="TargetVehSpd" value="60" name="Write TargetVehSpd" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="67ba3cc2-0fca-400c-8a8d-71ed24efb21c"/>
+      </children>
+      <children xmi:type="tae:Wait" xmi:id="e1b7f294-82b6-40eb-8be7-603833836f60" unit="ms" name="Wait" describle=""/>
+      <children xmi:type="tae:Read" xmi:id="938b935e-9ca2-4aec-ba91-785c64ce15d9" name="Read EspVehSpd" describle="@OFFLINE=60@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="27d3d1c1-55a8-4b65-b714-66ba0e29bbf4" signal="EspVehSpd"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="fef68cd8-4cbf-4b3d-bd7a-8a7232c8ceda"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="40f46ecc-389c-4ae8-99e7-da8a742d87d8">
+          <expectation xmi:type="tae:Expectation" xmi:id="4159a64d-ba52-4d8a-a015-a965afd4152d">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="ad2241aa-f2a8-4f2a-9b23-27e703f3996f" operator="Equal" value="60"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="c0751839-0c55-4473-8c2d-92c3c9e523ed" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Wait" xmi:id="026686d4-f589-485e-a5d5-a1466f45cd0a" time="10" unit="s" name="Wait" describle=""/>
+      <children xmi:type="tae:Read" xmi:id="4d0de6b4-6cf7-41cd-b498-2d33b7d3459d" name="Read ECDCSP_I_AzWhlFR_uls_s16" describle="@OFFLINE=20@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="b59f8d50-a97a-41d9-ae00-1235e4649767" signal="ECDCSP_I_AzWhlFR_uls_s16"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="2240f3b4-4810-42b9-9682-36136ec21104"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="b02f72a1-7192-4b68-b5e6-d4a05685108b">
+          <expectation xmi:type="tae:Expectation" xmi:id="fc790ea9-fea1-4f98-bdc9-1f0ffd68eca9">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="b541e274-3dc1-4d5b-8630-37db055294e2" operator="GreaterThan" value="20"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="ad151c95-0273-4090-8d15-f103c024dbc1" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="1d9c78a5-ce46-491d-9680-b82dc48e7759" name="Read FRPeakFindflg_uls_b" describle="@OFFLINE=1@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="3aaa36ae-03cb-4f6f-9426-23cb264ae450" signal="FRPeakFindflg_uls_b"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="87e2e54b-b32b-4fb8-bd75-a93a1072db3a"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="49ce3d1d-83e8-4afc-b831-cf7a1d7791b4">
+          <expectation xmi:type="tae:Expectation" xmi:id="f2e53f3f-6c31-46ea-85a6-23a2fbc8b51a">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="24f1db35-3112-4ef9-b46d-8f8b40eb1151" operator="Equal" value="1"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="1f4639dc-2fec-4299-8ab0-9a5b3498154b" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="2554feae-32ef-4623-a2fe-bd8e59c060a2" name="Read VMC_Actul_O_DAMP_FR" describle="@OFFLINE=0@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="7e861df5-e053-47a6-8cab-347a936a7b1c" signal="VMC_Actul_O_DAMP_FR"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="d96cc0a2-5226-408c-bfd4-c4a5a920bd95"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="125da320-2949-4e73-9944-272cdc7c9326">
+          <expectation xmi:type="tae:Expectation" xmi:id="71835080-154b-46b9-b393-8efb77bbeeec">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="166361f4-2358-45eb-879d-7040fef080dc" operator="Equal" value="VMC_Actul_O_DAMP_FL"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="b3c04bf1-4c3e-43e5-8daf-fdbee78dbd28" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Write" xmi:id="b99fe5f9-5d4b-4b27-b1c1-01130d9c996a" sourceMapping="TargetVehSpd" value="0" name="Write TargetVehSpd" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="daa13c0e-20a9-4416-92c6-f6b17ef9ff0c"/>
+      </children>
+      <children xmi:type="tae:Wait" xmi:id="7d4a7606-76e9-4590-81f8-9f889895561a" unit="ms" name="Wait" describle=""/>
+      <children xmi:type="tae:Read" xmi:id="4805fa62-5e22-4171-a42f-6619a247bee4" name="Read EspVehSpd" describle="@OFFLINE=0@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="c17bebc9-af6f-401e-8305-2b8045d2866b" signal="EspVehSpd"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="36fd5325-3214-4708-9781-d98860da4f42"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="1c4d8eab-1707-428f-9bdb-5696900b197e">
+          <expectation xmi:type="tae:Expectation" xmi:id="7152e026-cc7c-4297-877a-61afd4c283fd">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="7e7de905-8da8-40a5-9bef-6a6814ac1384" operator="Equal"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="7c253e81-1b60-422d-b966-43e1487aa431" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Write" xmi:id="6beb548a-d550-4fd9-816b-4a178654b0b8" sourceMapping="GearLever" value="'P'" name="Write GearLever" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="2f80a4b4-cce3-4b68-995f-08b6eaf22d4d" mode="TextValue"/>
+      </children>
+      <children xmi:type="tae:Wait" xmi:id="8c0e39ba-93b3-4303-a773-7151eaa84a3d" unit="ms" name="Wait" describle=""/>
+      <children xmi:type="tae:Read" xmi:id="300037b7-dea1-4691-8038-3ab69af3a857" name="Read VcuGearPosn" describle="@OFFLINE='P'@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="e3b17618-6c1a-4af4-9356-5555026a6437" signal="VcuGearPosn"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="9e710bf3-5ac2-455e-b308-92a6596a2edc" mode="TextValue"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="d7e67053-e6ac-4487-8901-ee5e92d89114">
+          <expectation xmi:type="tae:Expectation" xmi:id="5d67860f-e46a-4b00-b3e6-0572ead9e7a6" expectationType="String">
+            <expectationInterface xmi:type="tae:ExpectationModeString" xmi:id="abea10b2-0ca2-48bc-aa09-a6f3ab27ebd5" value="'P'"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="bc5a2a4d-209b-4ccb-b590-7eda99c72c55" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="d9a1d3b4-3944-4857-b234-bb242790ed6c" name="Clean Up">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="9229c6d1-e2ac-4d2f-b9d9-f33f1f256f74" name="powerOff" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOff" skip="true"/>
+    </children>
+  </activitySequence>
+</tae:Process>

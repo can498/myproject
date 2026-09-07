@@ -1,0 +1,26 @@
+{
+  "caseId": "021_2维修模式_R4",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "2维修模式",
+    "range": "A4:K9"
+  },
+  "caseName": "主动进入维修模式，且空簧高度不能调节",
+  "testLevel": "/",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "初始状态检测",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H4: 未知动作已生成占位节点：'初始状态检测'"
+  ]
+}

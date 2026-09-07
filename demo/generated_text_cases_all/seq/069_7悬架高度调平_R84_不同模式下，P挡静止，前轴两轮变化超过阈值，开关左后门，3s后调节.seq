@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generator="com.hirain.tae.generator" xmi:id="39ea9482-1b2f-4258-8021-7aa81997ae4c" name="不同模式下，P挡静止，前轴两轮变化超过阈值，开关左后门，3s后调节" describle="来源：7悬架高度调平 A84:I93" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="91fe5272-91c4-47a1-8f77-f99a92f1d642"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="0e5142f2-5bf7-49ed-8b3d-a631e15ead29"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="1fbadc14-12f0-4595-aae7-1ba8b93c5abc" name="不同模式下，P挡静止，前轴两轮变化超过阈值，开关左后门，3s后调节">
+    <children xmi:type="tae:Initialization" xmi:id="1be2cadf-4970-40e6-9c69-3dd4af2cc9be" name="Initialization">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="20808390-536c-4668-a61d-61edf361f8b9" name="powerOn" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOn"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="33be6dc3-7e16-4325-8e77-0d1d8fa61360" name="2、控制器无故障" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="7cb58ef1-6a71-486d-8578-733bb857b87e" name="3、车辆静止" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="a4b17e24-322d-4536-b64a-a532e0067821" name="4、加速度小于0.1g" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="e37a6885-cffe-48cb-9c9c-f52d180cb7ae" name="5、车轮跳动未达到阈值" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Group" xmi:id="b87af16c-1ff8-4453-9d13-67050100cef5" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:ScriptBlock" xmi:id="88c7a2da-696e-414f-a041-b9b515d7a9d3" name="初始状态检测" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:Read" xmi:id="b4936eb0-9a97-47af-8eaa-2f9d545fb884" name="Read VcuGearPosn" describle="@OFFLINE='P'@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="b402b0b1-008f-421d-8ef2-fd6a5f346ee5" signal="VcuGearPosn"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="39b4c71f-3048-4c32-b9d8-d69ea85abd61" mode="TextValue"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="fbf99d38-dd9e-4d3c-a914-9222ddf5c909">
+          <expectation xmi:type="tae:Expectation" xmi:id="db2d7445-31fe-4e9c-8001-d0f1585a3855" expectationType="String">
+            <expectationInterface xmi:type="tae:ExpectationModeString" xmi:id="2f5b8379-fc62-4cf7-9eed-47238cbdeeb7" value="'P'"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="07edb64f-2b05-4941-bc57-62b32190222b" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="44b8a442-6596-41ec-a494-11a7ab431189" name="Read EspVehSpd" describle="@OFFLINE=0@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="c854df6a-fd13-4749-81b6-05896ff6c967" signal="EspVehSpd"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="1fcf3ed0-956e-4c45-8441-e8c035f36e07"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="a1dd50d1-5a5d-45e9-abf1-7aa5b26c01e9">
+          <expectation xmi:type="tae:Expectation" xmi:id="fe8c75f3-ded0-449a-8542-b2a276a1e27e">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="bead438a-8edf-4be6-ad77-2204d811885b" operator="Equal"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="b61754ec-fda8-45b3-b91c-6a93d717f44b" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:ScriptBlock" xmi:id="abcfcc7e-3898-47b5-bf23-caa23e730aec" name="设置空簧模式请求为指定空簧模式请求" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="8418ba4c-e9f8-4a31-b0be-6d7faf66066f" name="1、检测实际空簧高度为指定实际空簧对应高度" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="cc1f0c1a-36a5-4cf3-bbf0-d7f523d549d4" name="2、检测实际空簧模式为指定实际空簧模式" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="92ea6388-92fc-4c7c-8c21-6ff4d6fc303e" name="设置前轴两轮悬架高度变化为指定阈值" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="cb2c1e89-5850-467f-88f1-b5e6928150d4" name="1、检测实际空簧高度为“指定实际空簧模式对应高度±26”" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="a8a371a1-23c6-4983-b78a-7d1c7cebef78" name="2、检测实际空簧模式保持为指定实际空簧模式" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="2e40e291-228d-477e-9dc9-96458085c47c" name="开关左后门,等待3s" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="555ee5dc-e911-47d7-8b88-58904b9f33a7" name="1、检测实际空簧高度开始调节" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="6428e8c3-6138-47df-b008-63e872f49af7" name="2、等待调节完成后,检测实际空簧高度为指定实际空簧模式对应高度,且到目标高度±5mm公差范围内调节完成" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="e6999371-16af-470b-b83a-0895c06e1ddb" name="3、检测实际空簧模式保持为指定实际空簧模式" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="f529f758-0f52-4312-86f2-f9262ec4c251" name="设置悬架高度为默认标定值" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="b04773c7-3b82-43d0-b456-28ef6670f3dd" name="Clean Up">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="376e2c8a-587f-45b2-9ad1-d9b224c8630d" name="powerOff" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOff"/>
+    </children>
+  </activitySequence>
+</tae:Process>

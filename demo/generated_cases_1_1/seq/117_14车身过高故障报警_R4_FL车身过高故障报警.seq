@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="02087a6e-0f55-4577-a25a-95fd052b1f14" name="FL车身过高故障报警" describle="来源：14车身过高故障报警 A4:K8" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="07921038-58e9-42c9-87b1-1e58b423508b"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="cf5b99f2-4b33-4a89-90ba-ddf870cff4d0"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="0457bd62-e13e-4ea2-a330-8b49d0be64a9" name="FL车身过高故障报警">
+    <children xmi:type="tae:Initialization" xmi:id="5974e185-5f76-467f-8532-12a1cbb3e0b3" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="acab4616-0098-40f1-abbe-e62d3eb1a455" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:Write" xmi:id="835764ba-690d-4d18-985f-bd080478dc3a" sourceMapping="EcasModeReq" value="0" name="Write EcasModeReq" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="567a458e-f41d-48c0-b8df-b2ee52fa2557"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="6547f177-5c2e-4853-807f-d8dcda55e7bb" name="Read ECASActLvl" describle="@OFFLINE=0@ 变化中">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="51972c26-9c17-4691-850e-e6731383f59f" signal="ECASActLvl"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="93bba7f5-e126-4294-8d16-89254b1c2501"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="c7b5d351-bb4c-4159-964b-9c36d695c42f" name="Read EcasModeFB" describle="@OFFLINE=1@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="a36b8d33-3382-40b6-b7ae-b49043f1af83" signal="EcasModeFB"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="2ca20121-1119-4e72-bfa5-f1fc58cb7bbd"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="d7cad313-da52-4cd1-9063-c1422ef75789">
+          <expectation xmi:type="tae:Expectation" xmi:id="0a288e36-7c0d-4e1f-b5f7-488ac285df92">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="f1e21190-9edd-42d6-a7a3-8a9f7158d619" operator="Equal" value="1"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="939002b7-9677-4e88-85aa-ecd5381aabd7" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="f6c4c67c-79ba-4bb3-9ce2-509b8c0ef12b" name="Read ECASL2FSErrInfo" describle="@OFFLINE=0@ 原用例仅要求读取，未定义断言">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="c3b2212b-6e1c-4cb7-a12b-8bbfe5f37b2d" signal="ECASL2FSErrInfo"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="769d2a33-ebfd-4150-abdd-4e6cd95808f1"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="b0605def-6163-4b15-a082-cc320002f29f" name="Read EcasModeCHASts" describle="@OFFLINE=0@ 原用例仅要求读取，未定义断言">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="4b2d80c6-72d8-4e7b-b314-449968772e19" signal="EcasModeCHASts"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="fa5099a7-eadf-4f67-b9dd-a8aa8039cc44"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="532b2653-bacf-4b8f-b8b2-aea3c847a172" name="Read ECAS_LatchReq" describle="@OFFLINE=0@ 原用例仅要求读取，未定义断言">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="8697d067-d48b-4b15-80a0-e3dcc4e83ad3" signal="ECAS_LatchReq"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="adb4ff58-f0a2-4430-8e63-297c3ed94792"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="82255cdd-7ef4-4fe3-bd1e-ad1df6462389" name="Read ECAS_DrvrErrExtECASErrMapBus" describle="@OFFLINE=0@ 原用例仅要求读取，未定义断言">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="593f5b76-d6b4-420c-925e-81f050f2f591" signal="ECAS_DrvrErrExtECASErrMapBus"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="069de8c5-de35-4ecf-a7b7-db597215edad"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="895bbe54-0eb0-4305-b7a6-e5a58a2bcb46" name="Read ECASErrMapECAS" describle="@OFFLINE=0@ 原用例仅要求读取，未定义断言">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="d9aaf6cd-03d6-485d-9f3a-c6512a61c388" signal="ECASErrMapECAS"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="de583ca9-cc60-49e6-97b5-6f7799c84ba2"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="f03ab13c-df87-4588-988e-b1bda51f2dca" name="Read ECASErrMapHw" describle="@OFFLINE=0@ 原用例仅要求读取，未定义断言">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="6ac1f88c-a88d-42d2-a744-84c5bf88d957" signal="ECASErrMapHw"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="0e2498b5-4c1e-436c-9a9b-94222c325409"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="53fb10eb-7cee-4548-8bbb-aa260dafed8a" name="Read ECASErrMapSnsr" describle="@OFFLINE=0@ 原用例仅要求读取，未定义断言">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="56cc99ab-e02f-4e88-b760-9d04b0ac99bc" signal="ECASErrMapSnsr"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="445e8245-df45-48f7-ae10-8f125cbe5a83"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="51d915c0-ce83-4de1-902c-15e08641ebe1" name="Read ECASErrMapSys" describle="@OFFLINE=0@ 原用例仅要求读取，未定义断言">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="0eb31346-7f57-4c06-bf19-8143d9fd64c8" signal="ECASErrMapSys"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="9e6b4e28-0efe-444b-81ac-0e9e910d1b38"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="11a1af28-beb3-43ad-a1cc-fcf4169a2d1a" name="Read ECASerromode" describle="@OFFLINE=0@ 原用例仅要求读取，未定义断言">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="7d4c5187-55af-474e-b099-19a6b7a596b7" signal="ECASerromode"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="45338a06-0e53-4f93-8350-3e40e7941197"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="f3a44501-be52-4024-bd72-a562b1450d20" name="Read ECASFuncDegrdMode" describle="@OFFLINE=0@ 原用例仅要求读取，未定义断言">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="40d770b2-7ff5-42b4-b05d-35fa368a4471" signal="ECASFuncDegrdMode"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="7f4b1f79-3f06-4533-8962-acf7b1592e7e"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="de4dd813-e5a9-4548-8c45-172248a8b42c" name="Read SusfaultlLamp" describle="@OFFLINE=0@ 原用例仅要求读取，未定义断言">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="9072c97f-5662-40e4-9596-694612e4a865" signal="SusfaultlLamp"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="604f7fee-c521-42e1-857a-06eb421b3c27"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="991a980e-9dca-4ad5-b646-16570b77bf6e" name="Read Susfaultred" describle="@OFFLINE=0@ 原用例仅要求读取，未定义断言">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="251405c0-815d-443a-9e93-efa4cc23ce6b" signal="Susfaultred"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="c9ae1db3-e038-49da-ab83-e05fc3ce00cb"/>
+      </children>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="0992b525-5645-4867-b2b9-e2310736d359" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

@@ -1,0 +1,225 @@
+{
+  "caseId": "021_2维修模式_R4",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "2维修模式",
+    "range": "A4:I9",
+    "mode": "text-to-signal"
+  },
+  "caseName": "主动进入维修模式，且空簧高度不能调节",
+  "testLevel": "P1",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、车速<5Km/h",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Placeholder",
+      "name": "初始状态检测",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "初始状态检测"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "P",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1",
+      "sourceText": "已挂入P挡\n车速=0km/h"
+    },
+    {
+      "action": "Read",
+      "signal": "EspVehSpd",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1",
+      "sourceText": "已挂入P挡\n车速=0km/h"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step2",
+      "sourceText": "设置空簧模式为运动"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step2",
+      "sourceText": "设置空簧模式为运动"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度为-25mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "1、检测实际空簧高度为-25mm\n2、检测实际空簧模式为运动"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "1",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step2",
+      "sourceText": "1、检测实际空簧高度为-25mm\n2、检测实际空簧模式为运动"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "9",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step3",
+      "sourceText": "设置空簧模式为维修"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step3",
+      "sourceText": "设置空簧模式为维修"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度保持为-25mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测实际空簧高度保持为-25mm\n2、检测实际空簧模式为维修"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "9",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测实际空簧高度保持为-25mm\n2、检测实际空簧模式为维修"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置四轮悬架高度都为10mm（超过阈值25mm）",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "设置四轮悬架高度都为10mm（超过阈值25mm）"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度保持为10mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "1、检测实际空簧高度保持为10mm\n2、检测实际空簧模式为维修"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "9",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step4",
+      "sourceText": "1、检测实际空簧高度保持为10mm\n2、检测实际空簧模式为维修"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step5",
+      "sourceText": "设置空簧模式请求为运动"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step5",
+      "sourceText": "设置空簧模式请求为运动"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度调整为-25mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step5",
+      "sourceText": "1、检测实际空簧高度调整为-25mm\n2、检测实际空簧模式为运动"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "1",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step5",
+      "sourceText": "1、检测实际空簧高度调整为-25mm\n2、检测实际空簧模式为运动"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step6",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [
+    "EcasModeFB",
+    "EcasModeReq",
+    "EspVehSpd",
+    "VcuGearPosn"
+  ],
+  "warnings": [
+    "F4: 未识别文本动作：2、控制器无故障",
+    "F4: 未识别文本动作：3、车速<5Km/h",
+    "F4: 未知动作已生成占位节点：'2、控制器无故障'",
+    "F4: 未知动作已生成占位节点：'3、车速<5Km/h'",
+    "H4: 未识别文本动作：初始状态检测",
+    "H4: 未知动作已生成占位节点：'初始状态检测'",
+    "I5: 未识别文本动作：1、检测实际空簧高度为-25mm",
+    "H5: 未知动作已生成占位节点：'1、检测实际空簧高度为-25mm'",
+    "I6: 未识别文本动作：1、检测实际空簧高度保持为-25mm",
+    "H6: 未知动作已生成占位节点：'1、检测实际空簧高度保持为-25mm'",
+    "H7: 未识别文本动作：设置四轮悬架高度都为10mm（超过阈值25mm）",
+    "I7: 未识别文本动作：1、检测实际空簧高度保持为10mm",
+    "H7: 未知动作已生成占位节点：'设置四轮悬架高度都为10mm（超过阈值25mm）'",
+    "H7: 未知动作已生成占位节点：'1、检测实际空簧高度保持为10mm'",
+    "I8: 未识别文本动作：1、检测实际空簧高度调整为-25mm",
+    "H8: 未知动作已生成占位节点：'1、检测实际空簧高度调整为-25mm'"
+  ],
+  "signalCatalogSize": 10
+}

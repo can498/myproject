@@ -1,0 +1,98 @@
+{
+  "caseId": "140_18车辆高速行驶的稳定控制_R11",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "18车辆高速行驶的稳定控制",
+    "range": "A11:G14",
+    "mode": "text-to-signal"
+  },
+  "caseName": "车辆高速行驶后迅速减速，刚度阀打开",
+  "testLevel": "P2",
+  "concreteSettings": "/·",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、车辆静止",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "4、ECAS模式为运动",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Placeholder",
+      "name": "切D挡,并加速到100km/h,等待21s",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "切D挡,并加速到100km/h,等待21s"
+    },
+    {
+      "action": "Placeholder",
+      "name": "所有刚度阀关闭",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "所有刚度阀关闭"
+    },
+    {
+      "action": "Placeholder",
+      "name": "迅速减速使车速保持在60km/h",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "迅速减速使车速保持在60km/h"
+    },
+    {
+      "action": "Placeholder",
+      "name": "所有刚度阀打开（减速时不打开）",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "所有刚度阀打开（减速时不打开）"
+    },
+    {
+      "action": "Placeholder",
+      "name": "停车减速至0km/h,切P挡",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "停车减速至0km/h,切P挡"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step4",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [],
+  "warnings": [
+    "D11: 未识别文本动作：2、控制器无故障",
+    "D11: 未识别文本动作：3、车辆静止",
+    "D11: 未识别文本动作：4、ECAS模式为运动",
+    "D11: 未知动作已生成占位节点：'2、控制器无故障'",
+    "D11: 未知动作已生成占位节点：'3、车辆静止'",
+    "D11: 未知动作已生成占位节点：'4、ECAS模式为运动'",
+    "F11: 未识别文本动作：切D挡,并加速到100km/h,等待21s",
+    "G11: 未识别文本动作：所有刚度阀关闭",
+    "F11: 未知动作已生成占位节点：'切D挡,并加速到100km/h,等待21s'",
+    "F11: 未知动作已生成占位节点：'所有刚度阀关闭'",
+    "F12: 未识别文本动作：迅速减速使车速保持在60km/h",
+    "G12: 未识别文本动作：所有刚度阀打开（减速时不打开）",
+    "F12: 未知动作已生成占位节点：'迅速减速使车速保持在60km/h'",
+    "F12: 未知动作已生成占位节点：'所有刚度阀打开（减速时不打开）'",
+    "F13: 未识别文本动作：停车减速至0km/h,切P挡",
+    "F13: 未知动作已生成占位节点：'停车减速至0km/h,切P挡'"
+  ],
+  "signalCatalogSize": 10
+}

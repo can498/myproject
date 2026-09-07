@@ -1,0 +1,18 @@
+{
+  "caseId": "111_12车身保护功能_R20",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "12车身保护功能",
+    "range": "A20:M24"
+  },
+  "caseName": "静态时，高度调节中，开门后关门，禁止后恢复调节_标准切越野",
+  "testLevel": "P1",
+  "concreteSettings": "指定车速\n指定车门",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": []
+}

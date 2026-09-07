@@ -1,0 +1,18 @@
+{
+  "caseId": "130_16高度调节顺序_R30",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "16高度调节顺序",
+    "range": "A30:K30"
+  },
+  "caseName": "与悬架调平先一起调，后单独调矛盾？",
+  "testLevel": "",
+  "concreteSettings": "",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": []
+}

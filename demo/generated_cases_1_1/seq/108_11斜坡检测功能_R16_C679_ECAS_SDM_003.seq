@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="7ab6db46-d456-4664-9468-770185521d47" name="C679_ECAS_SDM_003" describle="来源：11斜坡检测功能 A16:M19" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="0eb54247-1668-42da-ae3d-dc00305ec53b"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="809f5ee4-659c-46e7-a263-87161df845f9"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="59e9d171-bf6a-4d41-bb1e-7af9ab6dc5f8" name="C679_ECAS_SDM_003">
+    <children xmi:type="tae:Initialization" xmi:id="333d4eea-297e-442a-950e-8d27f5eadfab" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="3e782d12-5105-4e49-9277-4dd1018d486e" name="Test Step &amp; Expected Result"/>
+    <children xmi:type="tae:Cleanup" xmi:id="a497b75e-4ea4-492d-bce2-7b957a1998b6" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

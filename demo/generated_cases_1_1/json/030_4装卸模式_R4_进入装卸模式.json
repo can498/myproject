@@ -1,0 +1,163 @@
+{
+  "caseId": "030_4装卸模式_R4",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "4装卸模式",
+    "range": "A4:M11"
+  },
+  "caseName": "进入装卸模式",
+  "testLevel": "P1",
+  "concreteSettings": "指定空簧模式请求\n指定实际空簧模式对应高度\n指定实际空簧模式",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "指定空簧模式请求",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row6"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "指定实际空簧对应高度",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row6"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "指定实际空簧对应高度",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row6"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "指定实际空簧对应高度",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row6"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "指定实际空簧对应高度",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row6"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "指定实际空簧模式",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row6"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "6",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row8"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "保持低或中位",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row8"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "保持低或中位",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row8"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-50",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row8"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-50",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row8"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "6",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row8"
+    }
+  ],
+  "cleanup": [],
+  "requiredMappings": [
+    "ECASActLvlFL",
+    "ECASActLvlFR",
+    "ECASActLvlRL",
+    "ECASActLvlRR",
+    "EcasModeFB",
+    "EcasModeReq"
+  ],
+  "warnings": [
+    "M6: Read断言使用单个'='，已按'=='处理",
+    "M6: Read断言使用单个'='，已按'=='处理",
+    "M6: Read断言使用单个'='，已按'=='处理",
+    "M6: Read断言使用单个'='，已按'=='处理",
+    "M6: Read断言使用单个'='，已按'=='处理",
+    "M8: Read断言使用单个'='，已按'=='处理",
+    "M8: Read断言使用单个'='，已按'=='处理",
+    "M8: Read断言使用单个'='，已按'=='处理",
+    "M8: Read断言使用单个'='，已按'=='处理",
+    "M8: Read断言使用单个'='，已按'=='处理"
+  ]
+}

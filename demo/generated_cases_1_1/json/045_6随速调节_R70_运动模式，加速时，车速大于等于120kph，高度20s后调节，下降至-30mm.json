@@ -1,0 +1,161 @@
+{
+  "caseId": "045_6随速调节_R70",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "6随速调节",
+    "range": "A70:M75"
+  },
+  "caseName": "运动模式，加速时，车速大于等于120kph，高度20s后调节，下降至-30mm",
+  "testLevel": "P1",
+  "concreteSettings": "指定车速",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row71"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-25",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row71"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-25",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row71"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-25",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row71"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-25",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row71"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "1",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row71"
+    },
+    {
+      "action": "Placeholder",
+      "name": "20s内，",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Row72"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlXX",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "未调节",
+      "sourceStep": "Row72"
+    },
+    {
+      "action": "Placeholder",
+      "name": "20s后，",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Row72"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlXX",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "开始调节",
+      "sourceStep": "Row72"
+    },
+    {
+      "action": "Placeholder",
+      "name": "等待调节完成",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Row72"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlXX",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "-30",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row72"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "1",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row72"
+    }
+  ],
+  "cleanup": [],
+  "requiredMappings": [
+    "ECASActLvlFL",
+    "ECASActLvlFR",
+    "ECASActLvlRL",
+    "ECASActLvlRR",
+    "ECASActLvlXX",
+    "EcasModeFB",
+    "EcasModeReq"
+  ],
+  "warnings": [
+    "M71: Read断言使用单个'='，已按'=='处理",
+    "M71: Read断言使用单个'='，已按'=='处理",
+    "M71: Read断言使用单个'='，已按'=='处理",
+    "M71: Read断言使用单个'='，已按'=='处理",
+    "M71: Read断言使用单个'='，已按'=='处理",
+    "M72: 未知动作已生成占位节点：'20s内，'",
+    "M72: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+    "M72: 未知动作已生成占位节点：'20s后，'",
+    "M72: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+    "M72: 未知动作已生成占位节点：'等待调节完成'",
+    "M72: Read断言使用单个'='，已按'=='处理",
+    "M72: Read断言使用单个'='，已按'=='处理"
+  ]
+}

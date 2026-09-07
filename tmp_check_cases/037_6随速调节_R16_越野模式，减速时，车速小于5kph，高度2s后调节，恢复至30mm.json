@@ -1,0 +1,26 @@
+{
+  "caseId": "037_6随速调节_R16",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "6随速调节",
+    "range": "A16:K22"
+  },
+  "caseName": "越野模式，减速时，车速小于5kph，高度2s后调节，恢复至30mm",
+  "testLevel": "1",
+  "concreteSettings": "指定车速",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "挂D挡",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H16: 未知动作已生成占位节点：'挂D挡'"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "caseId": "134_17主动保护_R20",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "17主动保护",
+    "range": "A20:K28"
+  },
+  "caseName": "不同车速行驶，转向角度超阈值，禁止调节",
+  "testLevel": "1",
+  "concreteSettings": "指定车速\n指定转向角度1\n指定转向角度2",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "挂D挡",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H20: 未知动作已生成占位节点：'挂D挡'"
+  ]
+}

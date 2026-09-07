@@ -1,0 +1,26 @@
+{
+  "caseId": "112_12车身保护功能_R25",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "12车身保护功能",
+    "range": "A25:K30"
+  },
+  "caseName": "静态时，车门打开，可切换至高度升高的模式_标准切越野",
+  "testLevel": "/",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "初始状态检测",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H25: 未知动作已生成占位节点：'初始状态检测'"
+  ]
+}

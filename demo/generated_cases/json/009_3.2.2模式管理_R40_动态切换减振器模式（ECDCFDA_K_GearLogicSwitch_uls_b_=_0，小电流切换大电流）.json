@@ -1,0 +1,216 @@
+{
+  "caseId": "009_3.2.2模式管理_R40",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+    "sheet": "3.2.2模式管理",
+    "range": "A40:K44"
+  },
+  "caseName": "动态切换减振器模式（ECDCFDA_K_GearLogicSwitch_uls_b = 0，小电流切换大电流）",
+  "testLevel": "P3",
+  "concreteSettings": "初始减振器模式=舒适/标准\n减振器模式=标准/运动\n1、舒适切标准\n2、舒适切运动\n3、标准切运动",
+  "offlineMode": true,
+  "variables": [
+    {
+      "name": "ECDCMODE",
+      "type": "NumberVariableValue",
+      "value": 0,
+      "description": "参数占位值0，待具体场景展开或项目参数定义"
+    },
+    {
+      "name": "ECDCMODE_INIT",
+      "type": "NumberVariableValue",
+      "value": 0,
+      "description": "参数占位值0，待具体场景展开或项目参数定义"
+    }
+  ],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "ECDCFDA_K_GearLogicSwitch_uls_b",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCmodereq",
+      "value": "ECDCMODE_INIT",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_EcdcMode",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "ECDCMODE_INIT",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "较小",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "较小",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "较小",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "较小",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCmodereq",
+      "value": "ECDCMODE",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_EcdcMode",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "ECDCMODE",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "较大",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "较大",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "较大",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "较大",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCFDA_K_GearLogicSwitch_uls_b",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step4"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step5"
+    }
+  ],
+  "requiredMappings": [
+    "ECDCFDA_K_GearLogicSwitch_uls_b",
+    "ECDCmodereq",
+    "VMC_Actul_O_DAMP_FL",
+    "VMC_Actul_O_DAMP_FR",
+    "VMC_Actul_O_DAMP_RL",
+    "VMC_Actul_O_DAMP_RR",
+    "VMC_EcdcMode"
+  ],
+  "warnings": [
+    "K41: Read断言使用单个'='，已按'=='处理",
+    "K41: Read断言使用单个'='，已按'=='处理",
+    "K41: Read断言使用单个'='，已按'=='处理",
+    "K41: Read断言使用单个'='，已按'=='处理",
+    "K41: Read断言使用单个'='，已按'=='处理",
+    "K42: Read断言使用单个'='，已按'=='处理",
+    "K42: Read断言使用单个'='，已按'=='处理",
+    "K42: Read断言使用单个'='，已按'=='处理",
+    "K42: Read断言使用单个'='，已按'=='处理",
+    "K42: Read断言使用单个'='，已按'=='处理",
+    "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+    "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0"
+  ]
+}

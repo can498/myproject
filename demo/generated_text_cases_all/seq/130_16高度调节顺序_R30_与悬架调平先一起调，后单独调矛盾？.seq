@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="06c45627-0915-476f-b725-6661b05e4568" name="与悬架调平先一起调，后单独调矛盾？" describle="来源：16高度调节顺序 A30:I30" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="336180d7-709e-4511-b389-75513dc938b0"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="815b2f3d-5c18-411c-8724-d6649deba208"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="e4714429-4111-42f4-9f21-f3de0195137b" name="与悬架调平先一起调，后单独调矛盾？">
+    <children xmi:type="tae:Initialization" xmi:id="9b9a6a22-c0d4-436e-b5b7-8400f7682931" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="3f3cb1d0-90d6-481b-8ce8-47e0184dd0c1" name="Test Step &amp; Expected Result"/>
+    <children xmi:type="tae:Cleanup" xmi:id="7050829b-4d34-4583-bc3a-0c5152de8a61" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

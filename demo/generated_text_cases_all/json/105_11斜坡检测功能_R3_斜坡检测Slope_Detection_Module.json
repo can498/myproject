@@ -1,0 +1,20 @@
+{
+  "caseId": "105_11斜坡检测功能_R3",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "11斜坡检测功能",
+    "range": "A3:I3",
+    "mode": "text-to-signal"
+  },
+  "caseName": "斜坡检测Slope Detection Module",
+  "testLevel": "",
+  "concreteSettings": "",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [],
+  "signalCatalogSize": 10
+}

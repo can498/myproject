@@ -1,0 +1,26 @@
+{
+  "caseId": "113_12车身保护功能_R31",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "12车身保护功能",
+    "range": "A31:K36"
+  },
+  "caseName": "静态时，车门打开，禁止切换至高度降低的模式_标准切运动",
+  "testLevel": "/",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "初始状态检测",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H31: 未知动作已生成占位节点：'初始状态检测'"
+  ]
+}

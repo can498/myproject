@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generator="com.hirain.tae.generator" xmi:id="85d0416f-4bba-456c-97fd-accfd02c6d77" name="车辆上电后，各加速度传感器有效性为有效" describle="来源：3.2.1 信号处理 A4:K5" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="5fb85dc0-f8da-4af5-9ff5-2765648d4db6"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="dc349921-aa49-4d41-b6a2-889938adce94"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="cefd1560-d70e-47ba-940e-74361705ae60" name="车辆上电后，各加速度传感器有效性为有效">
+    <children xmi:type="tae:Initialization" xmi:id="d21822f2-27b9-4a04-a9df-f2c86c94c8f1" name="Initialization">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="f68a9c58-457a-4605-9040-16844696b23d" name="powerOn" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOn" skip="true"/>
+    </children>
+    <children xmi:type="tae:Group" xmi:id="3308ad57-60da-4323-a33a-3ee0b4db9f49" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:Read" xmi:id="928823f8-eaac-4469-adf5-bf5fa2191361" name="Read ECDCSP_I_AzWhlFRVld_uls_u8" describle="@OFFLINE=0@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="795c3b6f-9105-4c48-8d80-86cdb1a87f78" signal="ECDCSP_I_AzWhlFRVld_uls_u8"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="d4a61f4a-c92a-4064-9a92-79df535e9604"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="1ccdc43b-3866-4cbf-9c28-4f7634566816">
+          <expectation xmi:type="tae:Expectation" xmi:id="1139ca71-5e04-48f0-8ffb-9faa2f90a2c0">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="8e076c9d-2322-4fc8-9cf7-53c819b57517" operator="Equal"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="c6b1f8d9-d9e3-4caf-897e-b013c128d982" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="11edf4d9-0d0f-4475-8b80-17823661bd5e" name="Read ECDCSP_I_AzWhlFLVld_uls_u8" describle="@OFFLINE=0@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="1209bd42-1607-4456-8070-514a7e070910" signal="ECDCSP_I_AzWhlFLVld_uls_u8"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="75b45c2c-f61a-44eb-8986-cfdbfd17d097"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="d4b5a4fc-aa9c-4b40-a15f-1420ed69e7ba">
+          <expectation xmi:type="tae:Expectation" xmi:id="f5f3efff-6e70-4b85-b2cb-d6ccd090d21b">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="5af63e50-c0bb-4f59-9275-863dae1ba71a" operator="Equal"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="5720ce81-fd99-4105-b8ca-177d3d700c90" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="08258b9e-591a-4e25-a164-28c4729229fc" name="Read ECDCSP_I_AzBodyRearVld_uls_u8" describle="@OFFLINE=0@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="3c35a2b6-a42a-4167-8810-5488f46ef7ec" signal="ECDCSP_I_AzBodyRearVld_uls_u8"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="75a2a482-5d0a-402a-865f-5203773cdb73"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="7871d485-44e9-439b-bc2b-00a47e837d93">
+          <expectation xmi:type="tae:Expectation" xmi:id="8c1ca28d-e8c3-4c69-ae2a-9ec1067d71bb">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="fc56d9a0-09b0-40fe-8488-a0c02cc5ddba" operator="Equal"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="d3cac996-03fc-41f5-9939-d6d41f95b912" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="8ce04ae5-e6bb-486c-b5b6-ac8c6f8645b2" name="Read ECDCSP_I_AzBodyFRVld_uls_u8" describle="@OFFLINE=0@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="7d64c30c-752a-4817-a772-211f1d830e11" signal="ECDCSP_I_AzBodyFRVld_uls_u8"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="6e028af2-3edf-4f9a-9b1b-1e8dd9a66c1e"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="62cc617c-4804-4a45-b099-fe62ae392a75">
+          <expectation xmi:type="tae:Expectation" xmi:id="4abbe640-0607-40ec-87e3-f23f17201c2e">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="6ef8c26f-aaf1-4da8-87cc-c17c5c0ce269" operator="Equal"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="ebf9013e-3d72-4eb9-96d2-3b65f2d9c5e5" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="9eda7a1a-bb83-48f7-8d83-3da76e994243" name="Read ECDCSP_I_AzBodyFLVld_uls_u8" describle="@OFFLINE=0@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="a6030ed7-fdf5-4eb1-941d-6073f0fa4b9c" signal="ECDCSP_I_AzBodyFLVld_uls_u8"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="cab2217c-83c5-4eab-8db6-9aeea50f9151"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="49bb9f16-37d1-4abe-b5ef-98a66562fd1d">
+          <expectation xmi:type="tae:Expectation" xmi:id="9476ac67-91b5-4a83-85e6-dda084381693">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="40b1cc4b-dfc7-4eb7-a006-b41f36d04aa2" operator="Equal"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="90654839-6805-4539-a4e0-668bf6f05e4e" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="009f039a-64c9-4481-a86f-ee10cc7b0fef" name="Clean Up">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="5d3de37c-7acf-41c5-8ee1-2d7fcce0343d" name="powerOff" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOff" skip="true"/>
+    </children>
+  </activitySequence>
+</tae:Process>

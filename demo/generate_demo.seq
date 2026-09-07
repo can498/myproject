@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generator="com.hirain.tae.generator" xmlns:mapping="com.hirain.tae.model.mapping" xmi:id="95b49c97-fa8f-425a-9e68-2d4cf925e125" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="6c0c736d-53e2-4bd1-81ff-42b89f6a7a4c"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="8e9bf39a-1b5f-4ec1-ab25-699f58120a92"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="f4a2fd44-b5a1-414a-a4e2-783d334c4783">
+    <children xmi:type="tae:Initialization" xmi:id="7f0d06ff-7827-4313-b5cb-cf8ca98747fa" name="Initialization">
+      <children xmi:type="tae:Write" xmi:id="a11e3db5-a35a-46f1-ad10-1becfad1d988" sourceMapping="a" value="2">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="26fe635e-b1b7-4788-9092-e5909a0ee30c"/>
+      </children>
+    </children>
+    <children xmi:type="tae:Group" xmi:id="f91841c6-1ff1-48ed-a83b-68e791cd24b6" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:StartCapture" xmi:id="1f51829f-ec4c-48ba-92f3-238d8f2178f8" name="Start Capture" captureName="CaptureDemo"/>
+      <children xmi:type="tae:Wait" xmi:id="4d781853-d2f3-431a-ae07-001dcdce6ee5" time="3" unit="s"/>
+      <children xmi:type="tae:Compute" xmi:id="4dfbd9ff-e74b-46f8-8ae1-3a7738234b8e" expression="variable">
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="6de0d731-2587-4b98-8cfe-5709f1797ed1">
+          <expectation xmi:type="tae:Expectation" xmi:id="68267699-d7d7-4a07-a5ce-6da9ea7a7763">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="b6332bf7-b3b0-40af-b4a8-99159e035edd" operator="LessThanOrEqual" value="1"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="13d5b790-d3c7-4d7f-8dc1-8bf081bcfe3a"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:ScriptBlock" xmi:id="2e72cd13-6321-41f5-be8f-cd33ca2853bb" name="API Read Write" script="&#10;import api&#10;print(api.getVariable(&quot;aaa&quot;))&#10;print(api.getVariable([&quot;aaa&quot;,&quot;bbb&quot;]))&#10;&#10;api.setVariable(&quot;aaa&quot;, 1)&#10;print(api.getVariable(&quot;aaa&quot;))&#10;&#10;api.setVariable({&quot;aaa&quot;: 2, &quot;bbb&quot;:22})&#10;print(api.getVariable([&quot;aaa&quot;,&quot;bbb&quot;]))&#10;"/>
+      <children xmi:type="tae:Read" xmi:id="70f98104-c46c-4893-9af6-4d43a6ab4e01">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="ee71c02e-c0b1-4c98-8111-d48d493df736"/>
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="d87e3828-c55f-4e92-99b7-b3e64dbdf96a" signal="a"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="45819981-7134-4ce0-a1a7-649f68a35f21">
+          <expectation xmi:type="tae:Expectation" xmi:id="5739e56a-0aca-48e4-90fb-ca0f903b8561">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="c5b48c67-cff1-460b-9199-355d5f2b55b0" operator="Equal" value="2"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="b6375e90-6301-4126-af9d-05657dd6ab4a" mode="WaitUntilTrue" timeout="5" timeoutUnit="s"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:If" xmi:id="9d110c7f-9471-4e37-9acc-96be78c362d6" name="If-Else判断" condition="variable != 0">
+        <then xmi:type="tae:Then" xmi:id="caa12d97-b895-4b54-bfe9-0f1d7d28c539">
+          <directactivity xmi:type="tae:Wait" xmi:id="9bed9caf-9b2b-4c56-afcb-6f209f7d3cb2" unit="ms"/>
+        </then>
+        <taeElse xmi:type="tae:Else" xmi:id="a22125f2-e982-40dd-9441-59a75a4a8aa6">
+          <directactivity xmi:type="tae:Wait" xmi:id="54642616-be30-4cd3-a240-6c8f527a9593" time="200" unit="ms"/>
+        </taeElse>
+      </children>
+      <children xmi:type="tae:StopCapture" xmi:id="9919147c-517f-40f6-8b0f-ec26102a680a" name="Stop Capture" captureName="CaptureDemo"/>
+      <children xmi:type="tae:AddCaptureToReport" xmi:id="e9096c25-5695-4e5c-a931-ee8fe994b79d" name="Add Capture To Report" captureName="CaptureDemo" title="demo title">
+        <plots xmi:type="tae:Chart" xmi:id="d7fc2023-5035-46d2-aa47-ebb4c0cfea45" xLabel="time(s)" items="a b"/>
+      </children>
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="5da669a7-a23c-4807-b57d-f086709eed1c" name="调用工具的JOB" toolType="VBASoft" functionName="readMessage" skip="true">
+        <inputField xmi:type="generator:FieldModel" xmi:id="e1efa8fd-ab9d-4d85-9ac3-5affffce3a04" attrName="networkName" attrValue="'CAN1'"/>
+        <inputField xmi:type="generator:FieldModel" xmi:id="4d81545d-4c6b-4a11-9eff-8bc59af05391" attrName="MsgId" attrValue="0x4C1"/>
+        <inputField xmi:type="generator:FieldModel" xmi:id="a8218a7c-9579-46c5-aea9-8783418d81ca" attrName="msgType" attrValue="1"/>
+        <outputField xmi:type="generator:SaveAndAssertFieldModel" xmi:id="e1da7901-42cb-486c-8e07-53d28dc0726d" attrName="value">
+          <save xmi:type="tae:IsSave" xmi:id="45ee959b-aa7f-4db3-a57f-6f09dd065f93"/>
+          <taeAssert xmi:type="tae:IsAssert" xmi:id="6c1c5e3c-b9eb-47e7-a340-81c37e793428"/>
+        </outputField>
+      </children>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="f95c9694-e146-4470-b6d5-92890fe353d1" name="Clean Up">
+      <children xmi:type="tae:Write" xmi:id="52f8375a-c7e8-424a-ac14-2fc4543ece94" sourceMapping="a" value="0">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="69b62a65-300d-47bd-89e6-d9383a26d153"/>
+      </children>
+    </children>
+    <mappingItems xmi:type="mapping:ModelMapping" xmi:id="492e2de9-0002-4f5c-91c7-5c52aa2fd58b" name="a" deviceName="HIL" path="param/a" dataType="VALUE"/>
+    <mappingItems xmi:type="mapping:ModelMapping" xmi:id="7b0a171a-b262-4e1e-95dd-1de00208b17f" name="b" deviceName="HIL" path="param/b" dataType="VALUE"/>
+    <variables xmi:type="tae:Variable" xmi:id="eb9c87e3-c1c1-4e0e-8c35-f3865d014655" name="variable" describle="变量的描述信息">
+      <initialValue xmi:type="tae:NumberVariableValue" xmi:id="a38f61b2-bfe9-4a8e-9c54-5280587db567"/>
+    </variables>
+    <captureGroup xmi:type="tae:CaptureGroup" xmi:id="a3519772-05cd-4963-baf4-117c1e22c223">
+      <captures xmi:type="tae:BaseCapture" xmi:id="9d1d53e6-c6ea-48c2-9e95-617ed7032082" captureName="CaptureDemo" captureId="488fbb74-e913-43b3-80e8-8911499e5561">
+        <signals xmi:type="tae:SignalItem" xmi:id="865ce70d-9239-46cf-add3-b3edaa8a9d61" signal="a" signalType="ModelMapping"/>
+        <signals xmi:type="tae:SignalItem" xmi:id="5116c078-25cd-421d-97c5-8aa1f2dd03b6" signal="b" signalType="ModelMapping"/>
+      </captures>
+      <chartGroup xmi:type="tae:ChartGroup" xmi:id="43705d7b-03e0-4ae0-b214-5214184bd6d9" refId="488fbb74-e913-43b3-80e8-8911499e5561"/>
+    </captureGroup>
+  </activitySequence>
+</tae:Process>

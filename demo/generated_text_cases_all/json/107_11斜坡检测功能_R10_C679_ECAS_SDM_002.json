@@ -1,0 +1,175 @@
+{
+  "caseId": "107_11斜坡检测功能_R10",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "11斜坡检测功能",
+    "range": "A10:I15",
+    "mode": "text-to-signal"
+  },
+  "caseName": "C679_ECAS_SDM_002",
+  "testLevel": "P3",
+  "concreteSettings": "指定横向加速度值",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、车辆静止",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms"
+    },
+    {
+      "action": "Placeholder",
+      "name": "5、斜坡测试路面",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Placeholder",
+      "name": "设置横向加速度为指定横向加速度值",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "设置横向加速度为指定横向加速度值"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置前轴两轮悬架高度为-26mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "设置前轴两轮悬架高度为-26mm"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测前轴实际空簧高度为-26mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "1、检测前轴实际空簧高度为-26mm\n2、检测实际空簧模式保持为标准"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step2",
+      "sourceText": "1、检测前轴实际空簧高度为-26mm\n2、检测实际空簧模式保持为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "执行开关车门,等待3s",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "执行开关车门,等待3s"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测前轴实际空簧高度为0mm,后轴0mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测前轴实际空簧高度为0mm,后轴0mm\n2、检测实际空簧模式保持为标准"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测前轴实际空簧高度为0mm,后轴0mm\n2、检测实际空簧模式保持为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置前轴两轮悬架高度为0mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "设置前轴两轮悬架高度为0mm"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测前轴实际空簧高度为0mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "1、检测前轴实际空簧高度为0mm\n2、检测实际空簧模式保持为标准"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step4",
+      "sourceText": "1、检测前轴实际空簧高度为0mm\n2、检测实际空簧模式保持为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置横向加速度为默认值",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step5",
+      "sourceText": "设置横向加速度为默认值"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step6",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [
+    "EcasModeFB"
+  ],
+  "warnings": [
+    "F10: 未识别文本动作：2、控制器无故障",
+    "F10: 未识别文本动作：3、车辆静止",
+    "F10: 未识别文本动作：5、斜坡测试路面",
+    "F10: 未知动作已生成占位节点：'2、控制器无故障'",
+    "F10: 未知动作已生成占位节点：'3、车辆静止'",
+    "F10: 未知动作已生成占位节点：'5、斜坡测试路面'",
+    "H10: 未识别文本动作：设置横向加速度为指定横向加速度值",
+    "H10: 未知动作已生成占位节点：'设置横向加速度为指定横向加速度值'",
+    "H11: 未识别文本动作：设置前轴两轮悬架高度为-26mm",
+    "I11: 未识别文本动作：1、检测前轴实际空簧高度为-26mm",
+    "H11: 未知动作已生成占位节点：'设置前轴两轮悬架高度为-26mm'",
+    "H11: 未知动作已生成占位节点：'1、检测前轴实际空簧高度为-26mm'",
+    "H12: 未识别文本动作：执行开关车门,等待3s",
+    "I12: 未识别文本动作：1、检测前轴实际空簧高度为0mm,后轴0mm",
+    "H12: 未知动作已生成占位节点：'执行开关车门,等待3s'",
+    "H12: 未知动作已生成占位节点：'1、检测前轴实际空簧高度为0mm,后轴0mm'",
+    "H13: 未识别文本动作：设置前轴两轮悬架高度为0mm",
+    "I13: 未识别文本动作：1、检测前轴实际空簧高度为0mm",
+    "H13: 未知动作已生成占位节点：'设置前轴两轮悬架高度为0mm'",
+    "H13: 未知动作已生成占位节点：'1、检测前轴实际空簧高度为0mm'",
+    "H14: 未识别文本动作：设置横向加速度为默认值",
+    "H14: 未知动作已生成占位节点：'设置横向加速度为默认值'"
+  ],
+  "signalCatalogSize": 10
+}

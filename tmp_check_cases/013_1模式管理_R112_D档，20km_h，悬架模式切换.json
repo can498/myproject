@@ -1,0 +1,26 @@
+{
+  "caseId": "013_1模式管理_R112",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "1模式管理",
+    "range": "A112:K123"
+  },
+  "caseName": "D档，20km/h，悬架模式切换",
+  "testLevel": "1",
+  "concreteSettings": "指定空簧模式请求1\n指定实际空簧模式对应高度1\n指定实际空簧模式1\n指定空簧模式请求2\n指定实际空簧模式对应高度2\n指定实际空簧模式2",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "挂D挡",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H112: 未知动作已生成占位节点：'挂D挡'"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "caseId": "115_13空气压缩机过载保护_R9",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "13空气压缩机过载保护",
+    "range": "A9:K13"
+  },
+  "caseName": "空气压缩机过载保护_调节中，空压机温度大于110℃",
+  "testLevel": "P2",
+  "concreteSettings": "",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": []
+}

@@ -1,0 +1,26 @@
+{
+  "caseId": "009_1模式管理_R68",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "1模式管理",
+    "range": "A68:K75"
+  },
+  "caseName": "P档静止，其它切维修",
+  "testLevel": "1",
+  "concreteSettings": "指定空簧模式请求\n指定实际空簧模式对应高度\n指定实际空簧模式",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "初始状态检测",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H68: 未知动作已生成占位节点：'初始状态检测'"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "caseId": "085_7悬架高度调平_R244",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "7悬架高度调平",
+    "range": "A244:M253"
+  },
+  "caseName": "不同模式下，P挡静止，后轴左右高度差超过阈值，开关右后门，3s后调节",
+  "testLevel": "P3",
+  "concreteSettings": "指定空簧模式请求\n指定实际空簧模式对应高度\n指定实际空簧模式\n指定后轴阈值",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "指定空簧模式请求",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row246"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "指定实际空簧对应高度",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row246"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "指定实际空簧对应高度",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row246"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "指定实际空簧对应高度",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row246"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "指定实际空簧对应高度",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row246"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "指定实际空簧模式",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row246"
+    },
+    {
+      "action": "Placeholder",
+      "name": "write#PSI5仿真板卡原始值",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Row248"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlXX",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "“指定实际空簧对应高度-16”",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row248"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "指定实际空簧模式",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row248"
+    },
+    {
+      "action": "Write",
+      "signal": "BcmRiReDoorSts",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row250"
+    },
+    {
+      "action": "Write",
+      "signal": "BcmRiReDoorSts",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row250"
+    },
+    {
+      "action": "Wait",
+      "time": 3,
+      "unit": "s",
+      "sourceStep": "Row250"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlXX",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "开始调节",
+      "sourceStep": "Row250"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlXX",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "指定实际空簧对应高度",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row250"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "指定实际空簧模式",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row250"
+    }
+  ],
+  "cleanup": [],
+  "requiredMappings": [
+    "BcmRiReDoorSts",
+    "ECASActLvlFL",
+    "ECASActLvlFR",
+    "ECASActLvlRL",
+    "ECASActLvlRR",
+    "ECASActLvlXX",
+    "EcasModeFB",
+    "EcasModeReq"
+  ],
+  "warnings": [
+    "M246: Read断言使用单个'='，已按'=='处理",
+    "M246: Read断言使用单个'='，已按'=='处理",
+    "M246: Read断言使用单个'='，已按'=='处理",
+    "M246: Read断言使用单个'='，已按'=='处理",
+    "M246: Read断言使用单个'='，已按'=='处理",
+    "L248: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+    "M248: Read断言使用单个'='，已按'=='处理",
+    "M248: Read断言使用单个'='，已按'=='处理",
+    "M250: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+    "M250: Read断言使用单个'='，已按'=='处理",
+    "M250: Read断言使用单个'='，已按'=='处理"
+  ]
+}

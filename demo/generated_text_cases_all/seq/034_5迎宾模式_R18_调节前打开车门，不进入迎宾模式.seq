@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generator="com.hirain.tae.generator" xmi:id="44672ddb-29b3-4494-8a3f-6c8cdeeec154" name="调节前打开车门，不进入迎宾模式" describle="来源：5迎宾模式 A18:I22" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="39b36221-06f3-43c2-b929-945774a1711a"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="301d204f-d4a3-411e-b1cd-47bb3c8ee196"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="d68b1492-bddc-4580-94c5-7c0eb26be54d" name="调节前打开车门，不进入迎宾模式">
+    <children xmi:type="tae:Initialization" xmi:id="ce11bd6f-3fae-4a94-a3e0-5d21501ab039" name="Initialization">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="8233012e-0654-4156-b30e-ec00cc7f4934" name="powerOn" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOn"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="e59ec8a9-0770-4bf6-8280-bac6a3b39adf" name="2.控制器无故障" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="6e3b2bb7-db90-488c-af43-1804a947694f" name="3.整车闭锁,四门关闭" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="0d56674f-5d46-4055-8f51-389c96879bc4" name="4.迎宾模式(待定状态）" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Group" xmi:id="fbde5bfb-057a-4a0c-a34e-cf3519bc914d" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:Write" xmi:id="9cde73ea-0cb5-4285-adeb-bcb06652bc90" sourceMapping="EcasModeReq" value="0" name="Write EcasModeReq" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="95ecc586-91de-455c-b9e8-2b86c0697ec1"/>
+      </children>
+      <children xmi:type="tae:Wait" xmi:id="0fbd177d-35f6-45e4-9c2f-38d82f17fe9b" unit="ms" name="Wait" describle=""/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="bcfcdc8f-99cf-43a8-a9bf-c83c4f0ccb61" name="1、检测实际空簧高度为0mm" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:Read" xmi:id="be38d5ac-448a-4e51-a71c-38157ccd7907" name="Read EcasModeFB" describle="@OFFLINE=0@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="0c5701a6-7a06-4736-9445-1345a6713b6c" signal="EcasModeFB"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="727274f0-d86b-47ad-ba01-85c435a47431"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="13b9729e-e820-4d2d-b370-eb3a19d7068d">
+          <expectation xmi:type="tae:Expectation" xmi:id="4a51a17e-8cbf-4b01-b5e5-2ad3a434d211">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="84539a14-60c7-4f3c-bef2-c1c5cc111624" operator="Equal"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="65676816-93b0-4b44-8503-c6a760bf0545" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:ScriptBlock" xmi:id="9652c4ef-34e4-4ec6-ad48-9a08eea32fad" name="设置不同车门打开信号" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:Write" xmi:id="67aa9ed6-c073-4bae-bb23-3b308419a0c9" sourceMapping="EcasModeReq" value="5" name="Write EcasModeReq" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="8ee0e2c7-4f7c-4539-bed9-943929e3f7bc"/>
+      </children>
+      <children xmi:type="tae:Wait" xmi:id="e86fd898-0215-4f83-87b8-bf95943bc55e" unit="ms" name="Wait" describle=""/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="0baef468-89db-432e-98e8-55cd78d4b4fd" name="1、检测实际空簧高度为0mm" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:Read" xmi:id="3240fa12-7563-4a18-9628-4281a1fb9856" name="Read EcasModeFB" describle="@OFFLINE=0@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="b255429d-0918-472b-b02e-60866ebd875b" signal="EcasModeFB"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="7cca30ad-e52b-4130-a8c4-6fc2a124fad9"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="dd52c249-c966-48d3-8e39-a9f591670264">
+          <expectation xmi:type="tae:Expectation" xmi:id="779a8ecc-fbbe-4280-9e6a-ed2ca9dc1879">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="3e44f6ba-c69c-4500-9c33-497bd7745abc" operator="Equal"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="388954f6-895f-4bb0-9b90-27c5e2396b3b" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Write" xmi:id="1c1731a6-8f97-4451-a4cf-683d898e6b24" sourceMapping="EcasModeReq" value="0" name="Write EcasModeReq" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="f59119dd-229b-42ad-94c7-30ccc731f1fa"/>
+      </children>
+      <children xmi:type="tae:Wait" xmi:id="71af5ba1-3b45-42ef-8115-a2930f48f98b" unit="ms" name="Wait" describle=""/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="0a2394d4-ec0e-46ef-ba9b-a21a745b08b9" name="1、检测实际空簧高度为0mm" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:Read" xmi:id="538c8c26-0561-4ed8-a187-738a27bc48a2" name="Read EcasModeFB" describle="@OFFLINE=0@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="60c55a97-f5f4-44b3-8ee4-86e86f036308" signal="EcasModeFB"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="d0b02165-469e-4042-9ffc-68bc796dff2a"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="dda36ef6-765f-4876-953e-82577f173b68">
+          <expectation xmi:type="tae:Expectation" xmi:id="59cad533-bae0-4039-917c-bf8442ac83bb">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="eec62d1f-6a64-403d-9bc4-6d1a15ec7133" operator="Equal"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="4527cb42-fccd-481b-9aa1-e8259e351df2" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="4de3f03f-c575-4033-96be-1659506680bd" name="Clean Up">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="d98c50f6-ee8f-4ec1-bb90-02730b661360" name="powerOff" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOff"/>
+    </children>
+  </activitySequence>
+</tae:Process>

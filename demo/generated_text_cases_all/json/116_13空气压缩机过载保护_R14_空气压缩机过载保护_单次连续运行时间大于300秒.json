@@ -1,0 +1,143 @@
+{
+  "caseId": "116_13空气压缩机过载保护_R14",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "13空气压缩机过载保护",
+    "range": "A14:G18",
+    "mode": "text-to-signal"
+  },
+  "caseName": "空气压缩机过载保护_单次连续运行时间大于300秒",
+  "testLevel": "P2",
+  "concreteSettings": "/·",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、车辆静止",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "4、ECAS模式为运动",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Placeholder",
+      "name": "标定空簧模型使其完成调节时间缓慢,大于300秒",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "标定空簧模型使其完成调节时间缓慢,大于300秒"
+    },
+    {
+      "action": "Placeholder",
+      "name": "请求切换ECAS模式为标准",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "请求切换ECAS模式为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS调节中,且持续301秒",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "ECAS调节中,且持续301秒\n故障状态相关信号报出\nECAS模式保持为运动\n检测信号变化情况：DMActrDisLeftSec执行器工作时间过长保护锁定剩余时间"
+    },
+    {
+      "action": "Placeholder",
+      "name": "故障状态相关信号报出",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "ECAS调节中,且持续301秒\n故障状态相关信号报出\nECAS模式保持为运动\n检测信号变化情况：DMActrDisLeftSec执行器工作时间过长保护锁定剩余时间"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS模式保持为运动",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "ECAS调节中,且持续301秒\n故障状态相关信号报出\nECAS模式保持为运动\n检测信号变化情况：DMActrDisLeftSec执行器工作时间过长保护锁定剩余时间"
+    },
+    {
+      "action": "Placeholder",
+      "name": "检测信号变化情况：DMActrDisLeftSec执行器工作时间过长保护锁定剩余时间",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "ECAS调节中,且持续301秒\n故障状态相关信号报出\nECAS模式保持为运动\n检测信号变化情况：DMActrDisLeftSec执行器工作时间过长保护锁定剩余时间"
+    },
+    {
+      "action": "Placeholder",
+      "name": "标定空簧模型使其完成调节时间恢复正常,等待61s",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "标定空簧模型使其完成调节时间恢复正常,等待61s"
+    },
+    {
+      "action": "Placeholder",
+      "name": "故障状态相关信号恢复",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "故障状态相关信号恢复"
+    },
+    {
+      "action": "Placeholder",
+      "name": "请求切换ECAS模式为标准",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "请求切换ECAS模式为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS模式切为标准",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "ECAS模式切为标准"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step5",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [],
+  "warnings": [
+    "D14: 未识别文本动作：2、控制器无故障",
+    "D14: 未识别文本动作：3、车辆静止",
+    "D14: 未识别文本动作：4、ECAS模式为运动",
+    "D14: 未知动作已生成占位节点：'2、控制器无故障'",
+    "D14: 未知动作已生成占位节点：'3、车辆静止'",
+    "D14: 未知动作已生成占位节点：'4、ECAS模式为运动'",
+    "F14: 未识别文本动作：标定空簧模型使其完成调节时间缓慢,大于300秒",
+    "F14: 未知动作已生成占位节点：'标定空簧模型使其完成调节时间缓慢,大于300秒'",
+    "F15: 未识别文本动作：请求切换ECAS模式为标准",
+    "G15: 未识别文本动作：ECAS调节中,且持续301秒",
+    "G15: 未识别文本动作：故障状态相关信号报出",
+    "G15: 未识别文本动作：ECAS模式保持为运动",
+    "G15: 未识别文本动作：检测信号变化情况：DMActrDisLeftSec执行器工作时间过长保护锁定剩余时间",
+    "F15: 未知动作已生成占位节点：'请求切换ECAS模式为标准'",
+    "F15: 未知动作已生成占位节点：'ECAS调节中,且持续301秒'",
+    "F15: 未知动作已生成占位节点：'故障状态相关信号报出'",
+    "F15: 未知动作已生成占位节点：'ECAS模式保持为运动'",
+    "F15: 未知动作已生成占位节点：'检测信号变化情况：DMActrDisLeftSec执行器工作时间过长保护锁定剩余时间'",
+    "F16: 未识别文本动作：标定空簧模型使其完成调节时间恢复正常,等待61s",
+    "G16: 未识别文本动作：故障状态相关信号恢复",
+    "F16: 未知动作已生成占位节点：'标定空簧模型使其完成调节时间恢复正常,等待61s'",
+    "F16: 未知动作已生成占位节点：'故障状态相关信号恢复'",
+    "F17: 未识别文本动作：请求切换ECAS模式为标准",
+    "G17: 未识别文本动作：ECAS模式切为标准",
+    "F17: 未知动作已生成占位节点：'请求切换ECAS模式为标准'",
+    "F17: 未知动作已生成占位节点：'ECAS模式切为标准'"
+  ],
+  "signalCatalogSize": 10
+}

@@ -1,0 +1,181 @@
+{
+  "caseId": "016_1模式管理_R148",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "1模式管理",
+    "range": "A148:I159",
+    "mode": "text-to-signal"
+  },
+  "caseName": "N档，0km/h，悬架模式切换",
+  "testLevel": "P2",
+  "concreteSettings": "指定空簧模式请求1\n指定实际空簧模式对应高度1\n指定实际空簧模式1\n指定空簧模式请求2\n指定实际空簧模式对应高度2\n指定实际空簧模式2",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、车辆静止",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "N",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step1",
+      "sourceText": "挂N挡"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step1",
+      "sourceText": "挂N挡"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "N",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1",
+      "sourceText": "已挂入N挡"
+    },
+    {
+      "action": "Placeholder",
+      "name": "检测车速",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "检测车速"
+    },
+    {
+      "action": "Read",
+      "signal": "EspVehSpd",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step2",
+      "sourceText": "检测车速=0km/h"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置空簧模式请求为指定空簧模式请求1",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "设置空簧模式请求为指定空簧模式请求1"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度为指定实际空簧对应高度1(±5mm)",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测实际空簧高度为指定实际空簧对应高度1(±5mm)\n2、检测实际空簧模式为指定实际空簧模式1"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、检测实际空簧模式为指定实际空簧模式1",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测实际空簧高度为指定实际空簧对应高度1(±5mm)\n2、检测实际空簧模式为指定实际空簧模式1"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置空簧模式请求为指定空簧模式请求2",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "设置空簧模式请求为指定空簧模式请求2"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度为指定实际空簧对应高度2(±5mm)",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "1、检测实际空簧高度为指定实际空簧对应高度2(±5mm)\n2、检测实际空簧模式为指定实际空簧模式2"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、检测实际空簧模式为指定实际空簧模式2",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "1、检测实际空簧高度为指定实际空簧对应高度2(±5mm)\n2、检测实际空簧模式为指定实际空簧模式2"
+    },
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "P",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step5",
+      "sourceText": "挂P挡"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step5",
+      "sourceText": "挂P挡"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "P",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step5",
+      "sourceText": "已挂入P挡"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step6",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [
+    "EspVehSpd",
+    "GearLever",
+    "VcuGearPosn"
+  ],
+  "warnings": [
+    "F148: 未识别文本动作：2、控制器无故障",
+    "F148: 未识别文本动作：3、车辆静止",
+    "F148: 未知动作已生成占位节点：'2、控制器无故障'",
+    "F148: 未知动作已生成占位节点：'3、车辆静止'",
+    "H150: 未识别文本动作：检测车速",
+    "H150: 未知动作已生成占位节点：'检测车速'",
+    "H152: 未识别文本动作：设置空簧模式请求为指定空簧模式请求1",
+    "I152: 未识别文本动作：1、检测实际空簧高度为指定实际空簧对应高度1(±5mm)",
+    "I152: 未识别文本动作：2、检测实际空簧模式为指定实际空簧模式1",
+    "H152: 未知动作已生成占位节点：'设置空簧模式请求为指定空簧模式请求1'",
+    "H152: 未知动作已生成占位节点：'1、检测实际空簧高度为指定实际空簧对应高度1(±5mm)'",
+    "H152: 未知动作已生成占位节点：'2、检测实际空簧模式为指定实际空簧模式1'",
+    "H154: 未识别文本动作：设置空簧模式请求为指定空簧模式请求2",
+    "I154: 未识别文本动作：1、检测实际空簧高度为指定实际空簧对应高度2(±5mm)",
+    "I154: 未识别文本动作：2、检测实际空簧模式为指定实际空簧模式2",
+    "H154: 未知动作已生成占位节点：'设置空簧模式请求为指定空簧模式请求2'",
+    "H154: 未知动作已生成占位节点：'1、检测实际空簧高度为指定实际空簧对应高度2(±5mm)'",
+    "H154: 未知动作已生成占位节点：'2、检测实际空簧模式为指定实际空簧模式2'"
+  ],
+  "signalCatalogSize": 10
+}

@@ -1,0 +1,56 @@
+{
+  "caseId": "101_10路缘检测功能_R4",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "10路缘检测功能",
+    "range": "A4:M6"
+  },
+  "caseName": "路缘检测_左前轮",
+  "testLevel": "P1",
+  "concreteSettings": "指定空簧模式请求",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "指定空簧模式请求",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row5"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlXX",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row5"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row5"
+    }
+  ],
+  "cleanup": [],
+  "requiredMappings": [
+    "ECASActLvlXX",
+    "EcasModeFB",
+    "EcasModeReq"
+  ],
+  "warnings": [
+    "M5: Read断言使用单个'='，已按'=='处理",
+    "M5: Read断言使用单个'='，已按'=='处理"
+  ]
+}

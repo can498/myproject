@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generator="com.hirain.tae.generator" xmi:id="a25b370a-1614-4ae2-ab8d-c211e7ab2172" name="空气压缩机过载保护_调节中，空压机温度大于110℃" describle="来源：13空气压缩机过载保护 A9:G13" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="36d27104-a130-4814-b4fb-a0267b5ace62"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="fd5a2efa-a32a-4b45-b97a-9b29debf0eea"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="a64bda10-7aee-4f9b-bb1c-eda38b83c3e4" name="空气压缩机过载保护_调节中，空压机温度大于110℃">
+    <children xmi:type="tae:Initialization" xmi:id="f88c00b1-e3c0-435a-9840-f15985e08ac5" name="Initialization">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="68fba7f7-46bf-44ef-9cf8-acbe6a496073" name="powerOn" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOn"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="77eee58c-7c94-4470-bb3a-307e4c212af0" name="2、控制器无故障" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="646c9d07-7656-4ee7-9e9f-d921d72420d2" name="3、车辆静止" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="e2c4ed0c-2f22-4fba-9645-c7814c304f32" name="4、ECAS模式为运动" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Group" xmi:id="480dd8c5-b8a7-4ee8-aa3d-301fd435faa6" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:ScriptBlock" xmi:id="c0ea0a86-d349-4787-a75a-3fd9ce8cae32" name="请求切换ECAS模式为标准" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="36ad6f5b-5216-4e7e-9e5b-473d7fa6275f" name="ECAS调节中" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="2105afd3-df78-4556-b143-d3a7e2ddc066" name="ECAS模式保持为运动" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="1cc783d1-87c2-4e1f-bb64-6d90f544691a" name="注入空压机温度=120℃,等待3s" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="7885c7cc-8f93-4a9a-a6fa-8635c18804aa" name="故障状态相关信号报出" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="ca470b23-42fd-44b0-ae39-f283e4252c5e" name="ECAS停止调节" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="2543b613-e02a-4335-93ad-ad616e97cdbe" name="ECAS模式保持为运动" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="6cb4bc03-458f-44b4-98c3-437dee0449c9" name="恢复空压机温度=80℃,等待61s" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="367b96c4-3df0-45d3-9fd8-70dca903f83e" name="故障状态相关信号恢复" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="57c9cab2-bd48-4a13-861f-efd9115dba9e" name="请求切换ECAS模式为标准" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="23fa2a56-994e-433b-8044-74f162a49d26" name="ECAS模式切为标准" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="2d77fd79-62f3-404a-875e-7823ff1ce74f" name="Clean Up">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="5adb2258-0047-4289-b256-628c3cf6db39" name="powerOff" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOff"/>
+    </children>
+  </activitySequence>
+</tae:Process>

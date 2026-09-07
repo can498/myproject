@@ -1,0 +1,2522 @@
+{
+  "total": 142,
+  "success": 142,
+  "failed": 0,
+  "results": [
+    {
+      "caseId": "001_1模式管理_R4",
+      "caseName": "P档静止，其它切标准",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\001_1模式管理_R4_P档静止，其它切标准.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\001_1模式管理_R4_P档静止，其它切标准.seq",
+      "warnings": [
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "002_1模式管理_R12",
+      "caseName": "P档静止，其它切运动",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\002_1模式管理_R12_P档静止，其它切运动.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\002_1模式管理_R12_P档静止，其它切运动.seq",
+      "warnings": [
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "003_1模式管理_R20",
+      "caseName": "P档静止，其它切越野",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\003_1模式管理_R20_P档静止，其它切越野.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\003_1模式管理_R20_P档静止，其它切越野.seq",
+      "warnings": [
+        "M22: Read断言使用单个'='，已按'=='处理",
+        "M22: Read断言使用单个'='，已按'=='处理",
+        "M22: Read断言使用单个'='，已按'=='处理",
+        "M22: Read断言使用单个'='，已按'=='处理",
+        "M22: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "004_1模式管理_R28",
+      "caseName": "P档静止，其它切自适应",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\004_1模式管理_R28_P档静止，其它切自适应.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\004_1模式管理_R28_P档静止，其它切自适应.seq",
+      "warnings": [
+        "M30: Read断言使用单个'='，已按'=='处理",
+        "M30: Read断言使用单个'='，已按'=='处理",
+        "M30: Read断言使用单个'='，已按'=='处理",
+        "M30: Read断言使用单个'='，已按'=='处理",
+        "M30: Read断言使用单个'='，已按'=='处理",
+        "M32: Read断言使用单个'='，已按'=='处理",
+        "M32: Read断言使用单个'='，已按'=='处理",
+        "M32: Read断言使用单个'='，已按'=='处理",
+        "M32: Read断言使用单个'='，已按'=='处理",
+        "M32: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "005_1模式管理_R36",
+      "caseName": "P档静止，其它切迎宾",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\005_1模式管理_R36_P档静止，其它切迎宾.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\005_1模式管理_R36_P档静止，其它切迎宾.seq",
+      "warnings": [
+        "M38: Read断言使用单个'='，已按'=='处理",
+        "M38: Read断言使用单个'='，已按'=='处理",
+        "M38: Read断言使用单个'='，已按'=='处理",
+        "M38: Read断言使用单个'='，已按'=='处理",
+        "M38: Read断言使用单个'='，已按'=='处理",
+        "M40: Read断言使用单个'='，已按'=='处理",
+        "M40: Read断言使用单个'='，已按'=='处理",
+        "M40: Read断言使用单个'='，已按'=='处理",
+        "M40: Read断言使用单个'='，已按'=='处理",
+        "M40: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "006_1模式管理_R44",
+      "caseName": "P档静止，其它切装卸",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\006_1模式管理_R44_P档静止，其它切装卸.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\006_1模式管理_R44_P档静止，其它切装卸.seq",
+      "warnings": [
+        "M46: Read断言使用单个'='，已按'=='处理",
+        "M46: Read断言使用单个'='，已按'=='处理",
+        "M46: Read断言使用单个'='，已按'=='处理",
+        "M46: Read断言使用单个'='，已按'=='处理",
+        "M46: Read断言使用单个'='，已按'=='处理",
+        "M48: Read断言使用单个'='，已按'=='处理",
+        "M48: Read断言使用单个'='，已按'=='处理",
+        "M48: Read断言使用单个'='，已按'=='处理",
+        "M48: Read断言使用单个'='，已按'=='处理",
+        "M48: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "007_1模式管理_R52",
+      "caseName": "P档静止，其它切一键调平",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\007_1模式管理_R52_P档静止，其它切一键调平.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\007_1模式管理_R52_P档静止，其它切一键调平.seq",
+      "warnings": [
+        "M54: Read断言使用单个'='，已按'=='处理",
+        "M54: Read断言使用单个'='，已按'=='处理",
+        "M54: Read断言使用单个'='，已按'=='处理",
+        "M54: Read断言使用单个'='，已按'=='处理",
+        "M54: Read断言使用单个'='，已按'=='处理",
+        "M56: Read断言使用单个'='，已按'=='处理",
+        "M56: Read断言使用单个'='，已按'=='处理",
+        "M56: Read断言使用单个'='，已按'=='处理",
+        "M56: Read断言使用单个'='，已按'=='处理",
+        "M56: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "008_1模式管理_R60",
+      "caseName": "P档静止，其它切牵引",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\008_1模式管理_R60_P档静止，其它切牵引.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\008_1模式管理_R60_P档静止，其它切牵引.seq",
+      "warnings": [
+        "M62: Read断言使用单个'='，已按'=='处理",
+        "M62: Read断言使用单个'='，已按'=='处理",
+        "M62: Read断言使用单个'='，已按'=='处理",
+        "M62: Read断言使用单个'='，已按'=='处理",
+        "M62: Read断言使用单个'='，已按'=='处理",
+        "M64: Read断言使用单个'='，已按'=='处理",
+        "M64: Read断言使用单个'='，已按'=='处理",
+        "M64: Read断言使用单个'='，已按'=='处理",
+        "M64: Read断言使用单个'='，已按'=='处理",
+        "M64: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "009_1模式管理_R68",
+      "caseName": "P档静止，其它切维修",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\009_1模式管理_R68_P档静止，其它切维修.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\009_1模式管理_R68_P档静止，其它切维修.seq",
+      "warnings": [
+        "M70: Read断言使用单个'='，已按'=='处理",
+        "M70: Read断言使用单个'='，已按'=='处理",
+        "M70: Read断言使用单个'='，已按'=='处理",
+        "M70: Read断言使用单个'='，已按'=='处理",
+        "M70: Read断言使用单个'='，已按'=='处理",
+        "M72: Read断言使用单个'='，已按'=='处理",
+        "M72: Read断言使用单个'='，已按'=='处理",
+        "M72: Read断言使用单个'='，已按'=='处理",
+        "M72: Read断言使用单个'='，已按'=='处理",
+        "M72: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "010_1模式管理_R76",
+      "caseName": "R档，0km/h，悬架模式切换",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\010_1模式管理_R76_R档，0km_h，悬架模式切换.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\010_1模式管理_R76_R档，0km_h，悬架模式切换.seq",
+      "warnings": [
+        "M80: Read断言使用单个'='，已按'=='处理",
+        "M80: Read断言使用单个'='，已按'=='处理",
+        "M80: Read断言使用单个'='，已按'=='处理",
+        "M80: Read断言使用单个'='，已按'=='处理",
+        "M80: Read断言使用单个'='，已按'=='处理",
+        "M82: Read断言使用单个'='，已按'=='处理",
+        "M82: Read断言使用单个'='，已按'=='处理",
+        "M82: Read断言使用单个'='，已按'=='处理",
+        "M82: Read断言使用单个'='，已按'=='处理",
+        "M82: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "011_1模式管理_R88",
+      "caseName": "R档，20km/h，悬架模式切换",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\011_1模式管理_R88_R档，20km_h，悬架模式切换.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\011_1模式管理_R88_R档，20km_h，悬架模式切换.seq",
+      "warnings": [
+        "M92: Read断言使用单个'='，已按'=='处理",
+        "M92: Read断言使用单个'='，已按'=='处理",
+        "M92: Read断言使用单个'='，已按'=='处理",
+        "M92: Read断言使用单个'='，已按'=='处理",
+        "M92: Read断言使用单个'='，已按'=='处理",
+        "M94: Read断言使用单个'='，已按'=='处理",
+        "M94: Read断言使用单个'='，已按'=='处理",
+        "M94: Read断言使用单个'='，已按'=='处理",
+        "M94: Read断言使用单个'='，已按'=='处理",
+        "M94: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "012_1模式管理_R100",
+      "caseName": "D档，0km/h，悬架模式切换",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\012_1模式管理_R100_D档，0km_h，悬架模式切换.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\012_1模式管理_R100_D档，0km_h，悬架模式切换.seq",
+      "warnings": [
+        "M104: Read断言使用单个'='，已按'=='处理",
+        "M104: Read断言使用单个'='，已按'=='处理",
+        "M104: Read断言使用单个'='，已按'=='处理",
+        "M104: Read断言使用单个'='，已按'=='处理",
+        "M104: Read断言使用单个'='，已按'=='处理",
+        "M106: Read断言使用单个'='，已按'=='处理",
+        "M106: Read断言使用单个'='，已按'=='处理",
+        "M106: Read断言使用单个'='，已按'=='处理",
+        "M106: Read断言使用单个'='，已按'=='处理",
+        "M106: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "013_1模式管理_R112",
+      "caseName": "D档，20km/h，悬架模式切换",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\013_1模式管理_R112_D档，20km_h，悬架模式切换.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\013_1模式管理_R112_D档，20km_h，悬架模式切换.seq",
+      "warnings": [
+        "M116: Read断言使用单个'='，已按'=='处理",
+        "M116: Read断言使用单个'='，已按'=='处理",
+        "M116: Read断言使用单个'='，已按'=='处理",
+        "M116: Read断言使用单个'='，已按'=='处理",
+        "M116: Read断言使用单个'='，已按'=='处理",
+        "M118: Read断言使用单个'='，已按'=='处理",
+        "M118: Read断言使用单个'='，已按'=='处理",
+        "M118: Read断言使用单个'='，已按'=='处理",
+        "M118: Read断言使用单个'='，已按'=='处理",
+        "M118: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "014_1模式管理_R124",
+      "caseName": "D档，60km/h，悬架模式切换",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\014_1模式管理_R124_D档，60km_h，悬架模式切换.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\014_1模式管理_R124_D档，60km_h，悬架模式切换.seq",
+      "warnings": [
+        "M128: Read断言使用单个'='，已按'=='处理",
+        "M128: Read断言使用单个'='，已按'=='处理",
+        "M128: Read断言使用单个'='，已按'=='处理",
+        "M128: Read断言使用单个'='，已按'=='处理",
+        "M128: Read断言使用单个'='，已按'=='处理",
+        "M130: Read断言使用单个'='，已按'=='处理",
+        "M130: Read断言使用单个'='，已按'=='处理",
+        "M130: Read断言使用单个'='，已按'=='处理",
+        "M130: Read断言使用单个'='，已按'=='处理",
+        "M130: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "015_1模式管理_R136",
+      "caseName": "D档，120km/h，悬架模式切换",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\015_1模式管理_R136_D档，120km_h，悬架模式切换.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\015_1模式管理_R136_D档，120km_h，悬架模式切换.seq",
+      "warnings": [
+        "M140: Read断言使用单个'='，已按'=='处理",
+        "M140: Read断言使用单个'='，已按'=='处理",
+        "M140: Read断言使用单个'='，已按'=='处理",
+        "M140: Read断言使用单个'='，已按'=='处理",
+        "M140: Read断言使用单个'='，已按'=='处理",
+        "M142: Read断言使用单个'='，已按'=='处理",
+        "M142: Read断言使用单个'='，已按'=='处理",
+        "M142: Read断言使用单个'='，已按'=='处理",
+        "M142: Read断言使用单个'='，已按'=='处理",
+        "M142: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "016_1模式管理_R148",
+      "caseName": "N档，0km/h，悬架模式切换",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\016_1模式管理_R148_N档，0km_h，悬架模式切换.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\016_1模式管理_R148_N档，0km_h，悬架模式切换.seq",
+      "warnings": [
+        "M152: Read断言使用单个'='，已按'=='处理",
+        "M152: Read断言使用单个'='，已按'=='处理",
+        "M152: Read断言使用单个'='，已按'=='处理",
+        "M152: Read断言使用单个'='，已按'=='处理",
+        "M152: Read断言使用单个'='，已按'=='处理",
+        "M154: Read断言使用单个'='，已按'=='处理",
+        "M154: Read断言使用单个'='，已按'=='处理",
+        "M154: Read断言使用单个'='，已按'=='处理",
+        "M154: Read断言使用单个'='，已按'=='处理",
+        "M154: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "017_1模式管理_R160",
+      "caseName": "N档，20km/h，悬架模式切换",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\017_1模式管理_R160_N档，20km_h，悬架模式切换.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\017_1模式管理_R160_N档，20km_h，悬架模式切换.seq",
+      "warnings": [
+        "M162: Read断言使用单个'='，已按'=='处理",
+        "M162: Read断言使用单个'='，已按'=='处理",
+        "M162: Read断言使用单个'='，已按'=='处理",
+        "M162: Read断言使用单个'='，已按'=='处理",
+        "M162: Read断言使用单个'='，已按'=='处理",
+        "M168: Read断言使用单个'='，已按'=='处理",
+        "M168: Read断言使用单个'='，已按'=='处理",
+        "M168: Read断言使用单个'='，已按'=='处理",
+        "M168: Read断言使用单个'='，已按'=='处理",
+        "M168: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "018_1模式管理_R172",
+      "caseName": "N档，60km/h，悬架模式切换",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\018_1模式管理_R172_N档，60km_h，悬架模式切换.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\018_1模式管理_R172_N档，60km_h，悬架模式切换.seq",
+      "warnings": [
+        "M174: Read断言使用单个'='，已按'=='处理",
+        "M174: Read断言使用单个'='，已按'=='处理",
+        "M174: Read断言使用单个'='，已按'=='处理",
+        "M174: Read断言使用单个'='，已按'=='处理",
+        "M174: Read断言使用单个'='，已按'=='处理",
+        "M180: Read断言使用单个'='，已按'=='处理",
+        "M180: Read断言使用单个'='，已按'=='处理",
+        "M180: Read断言使用单个'='，已按'=='处理",
+        "M180: Read断言使用单个'='，已按'=='处理",
+        "M180: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "019_1模式管理_R184",
+      "caseName": "N档，120km/h，悬架模式切换",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\019_1模式管理_R184_N档，120km_h，悬架模式切换.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\019_1模式管理_R184_N档，120km_h，悬架模式切换.seq",
+      "warnings": [
+        "M186: Read断言使用单个'='，已按'=='处理",
+        "M186: Read断言使用单个'='，已按'=='处理",
+        "M186: Read断言使用单个'='，已按'=='处理",
+        "M186: Read断言使用单个'='，已按'=='处理",
+        "M186: Read断言使用单个'='，已按'=='处理",
+        "M192: Read断言使用单个'='，已按'=='处理",
+        "M192: Read断言使用单个'='，已按'=='处理",
+        "M192: Read断言使用单个'='，已按'=='处理",
+        "M192: Read断言使用单个'='，已按'=='处理",
+        "M192: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "020_1模式管理_R196",
+      "caseName": "悬架模式不可切换（选取部分工况）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\020_1模式管理_R196_悬架模式不可切换（选取部分工况）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\020_1模式管理_R196_悬架模式不可切换（选取部分工况）.seq",
+      "warnings": [
+        "M196: Read断言使用单个'='，已按'=='处理",
+        "M196: Read断言使用单个'='，已按'=='处理",
+        "M196: Read断言使用单个'='，已按'=='处理",
+        "M196: Read断言使用单个'='，已按'=='处理",
+        "M196: Read断言使用单个'='，已按'=='处理",
+        "M199: Read断言使用单个'='，已按'=='处理",
+        "M199: Read断言使用单个'='，已按'=='处理",
+        "M199: Read断言使用单个'='，已按'=='处理",
+        "M199: Read断言使用单个'='，已按'=='处理",
+        "M199: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "021_2维修模式_R4",
+      "caseName": "主动进入维修模式，且空簧高度不能调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\021_2维修模式_R4_主动进入维修模式，且空簧高度不能调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\021_2维修模式_R4_主动进入维修模式，且空簧高度不能调节.seq",
+      "warnings": [
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "L7: 未知动作已生成占位节点：'直接标定模型中的高度'",
+        "M7: Read断言使用单个'='，已按'=='处理",
+        "M7: Read断言使用单个'='，已按'=='处理",
+        "M7: Read断言使用单个'='，已按'=='处理",
+        "M7: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "022_2维修模式_R10",
+      "caseName": "被动进入维修模式，空簧高度超限",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\022_2维修模式_R10_被动进入维修模式，空簧高度超限.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\022_2维修模式_R10_被动进入维修模式，空簧高度超限.seq",
+      "warnings": [
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理",
+        "M13: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "023_2维修模式_R16",
+      "caseName": "4.9km/h进入维修模式",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\023_2维修模式_R16_4.9km_h进入维修模式.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\023_2维修模式_R16_4.9km_h进入维修模式.seq",
+      "warnings": [
+        "M17: Read断言使用单个'='，已按'=='处理",
+        "M17: Read断言使用单个'='，已按'=='处理",
+        "M17: Read断言使用单个'='，已按'=='处理",
+        "M17: Read断言使用单个'='，已按'=='处理",
+        "M17: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M22: Read断言使用单个'='，已按'=='处理",
+        "M22: Read断言使用单个'='，已按'=='处理",
+        "M22: Read断言使用单个'='，已按'=='处理",
+        "M22: Read断言使用单个'='，已按'=='处理",
+        "M22: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "024_2维修模式_R24",
+      "caseName": "大于等于5km/h禁止进入维修模式",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\024_2维修模式_R24_大于等于5km_h禁止进入维修模式.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\024_2维修模式_R24_大于等于5km_h禁止进入维修模式.seq",
+      "warnings": [
+        "M25: Read断言使用单个'='，已按'=='处理",
+        "M25: Read断言使用单个'='，已按'=='处理",
+        "M25: Read断言使用单个'='，已按'=='处理",
+        "M25: Read断言使用单个'='，已按'=='处理",
+        "M25: Read断言使用单个'='，已按'=='处理",
+        "M27: Read断言使用单个'='，已按'=='处理",
+        "M27: Read断言使用单个'='，已按'=='处理",
+        "M27: Read断言使用单个'='，已按'=='处理",
+        "M27: Read断言使用单个'='，已按'=='处理",
+        "M27: Read断言使用单个'='，已按'=='处理",
+        "M30: Read断言使用单个'='，已按'=='处理",
+        "M30: Read断言使用单个'='，已按'=='处理",
+        "M30: Read断言使用单个'='，已按'=='处理",
+        "M30: Read断言使用单个'='，已按'=='处理",
+        "M30: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "025_2维修模式_R32",
+      "caseName": "空簧调节过程中，设置维修模式，立即停止调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\025_2维修模式_R32_空簧调节过程中，设置维修模式，立即停止调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\025_2维修模式_R32_空簧调节过程中，设置维修模式，立即停止调节.seq",
+      "warnings": [
+        "M33: Read断言使用单个'='，已按'=='处理",
+        "M33: Read断言使用单个'='，已按'=='处理",
+        "M33: Read断言使用单个'='，已按'=='处理",
+        "M33: Read断言使用单个'='，已按'=='处理",
+        "M33: Read断言使用单个'='，已按'=='处理",
+        "M34: Read断言使用单个'='，已按'=='处理",
+        "M34: Read断言使用单个'='，已按'=='处理",
+        "M34: Read断言使用单个'='，已按'=='处理",
+        "M34: Read断言使用单个'='，已按'=='处理",
+        "M34: Read断言使用单个'='，已按'=='处理",
+        "M35: Read断言使用单个'='，已按'=='处理",
+        "M35: Read断言使用单个'='，已按'=='处理",
+        "M35: Read断言使用单个'='，已按'=='处理",
+        "M35: Read断言使用单个'='，已按'=='处理",
+        "M35: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "026_3一键调平_R4",
+      "caseName": "完全一键调平，不同轮胎在凸台上",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\026_3一键调平_R4_完全一键调平，不同轮胎在凸台上.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\026_3一键调平_R4_完全一键调平，不同轮胎在凸台上.seq",
+      "warnings": [
+        "M4: Read断言使用单个'='，已按'=='处理",
+        "M4: Read断言使用单个'='，已按'=='处理",
+        "M4: Read断言使用单个'='，已按'=='处理",
+        "M4: Read断言使用单个'='，已按'=='处理",
+        "M4: Read断言使用单个'='，已按'=='处理",
+        "M6: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX（XX为对应凸台）=0'",
+        "M6: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX（XX为无凸台）=50'",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M7: Read断言使用单个'='，已按'=='处理",
+        "M7: Read断言使用单个'='，已按'=='处理",
+        "M7: Read断言使用单个'='，已按'=='处理",
+        "M7: Read断言使用单个'='，已按'=='处理",
+        "M7: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "027_3一键调平_R9",
+      "caseName": "相对一键调平，不同空簧达到目标高度",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\027_3一键调平_R9_相对一键调平，不同空簧达到目标高度.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\027_3一键调平_R9_相对一键调平，不同空簧达到目标高度.seq",
+      "warnings": [
+        "M9: Read断言使用单个'='，已按'=='处理",
+        "M9: Read断言使用单个'='，已按'=='处理",
+        "M9: Read断言使用单个'='，已按'=='处理",
+        "M9: Read断言使用单个'='，已按'=='处理",
+        "M9: Read断言使用单个'='，已按'=='处理",
+        "M11: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX（XX为对应凸台）=0'",
+        "M11: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX（XX为无凸台）=56'",
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "028_3一键调平_R14",
+      "caseName": "相对一键调平，气囊压力达到预警",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\028_3一键调平_R14_相对一键调平，气囊压力达到预警.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\028_3一键调平_R14_相对一键调平，气囊压力达到预警.seq",
+      "warnings": [
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "M17: Read断言使用单个'='，已按'=='处理",
+        "M17: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "029_3一键调平_R21",
+      "caseName": "退出P挡，退出一键调平",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\029_3一键调平_R21_退出P挡，退出一键调平.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\029_3一键调平_R21_退出P挡，退出一键调平.seq",
+      "warnings": [
+        "M22: Read断言使用单个'='，已按'=='处理",
+        "M22: Read断言使用单个'='，已按'=='处理",
+        "M22: Read断言使用单个'='，已按'=='处理",
+        "M22: Read断言使用单个'='，已按'=='处理",
+        "M22: Read断言使用单个'='，已按'=='处理",
+        "M23: Read断言使用单个'='，已按'=='处理",
+        "M23: Read断言使用单个'='，已按'=='处理",
+        "M23: Read断言使用单个'='，已按'=='处理",
+        "M23: Read断言使用单个'='，已按'=='处理",
+        "M23: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "030_4装卸模式_R4",
+      "caseName": "进入装卸模式",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\030_4装卸模式_R4_进入装卸模式.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\030_4装卸模式_R4_进入装卸模式.seq",
+      "warnings": [
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "031_4装卸模式_R12",
+      "caseName": "退出P档，退出装卸模式",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\031_4装卸模式_R12_退出P档，退出装卸模式.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\031_4装卸模式_R12_退出P档，退出装卸模式.seq",
+      "warnings": [
+        "M13: Read断言使用单个'='，已按'=='处理",
+        "M13: Read断言使用单个'='，已按'=='处理",
+        "M13: Read断言使用单个'='，已按'=='处理",
+        "M13: Read断言使用单个'='，已按'=='处理",
+        "M13: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "032_5迎宾模式_R4",
+      "caseName": "进入迎宾模式",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\032_5迎宾模式_R4_进入迎宾模式.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\032_5迎宾模式_R4_进入迎宾模式.seq",
+      "warnings": [
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M8: 未知动作已生成占位节点：'read#悬架下降先前再后逐级调节，每次调节高度为35mm'",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "033_5迎宾模式_R12",
+      "caseName": "调节中打开车门，迎宾模式中断",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\033_5迎宾模式_R12_调节中打开车门，迎宾模式中断.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\033_5迎宾模式_R12_调节中打开车门，迎宾模式中断.seq",
+      "warnings": [
+        "M12: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理",
+        "M13: Read断言使用单个'='，已按'=='处理",
+        "M13: Read断言使用单个'='，已按'=='处理",
+        "M13: Read断言使用单个'='，已按'=='处理",
+        "M13: Read断言使用单个'='，已按'=='处理",
+        "M13: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "034_5迎宾模式_R18",
+      "caseName": "调节前打开车门，不进入迎宾模式",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\034_5迎宾模式_R18_调节前打开车门，不进入迎宾模式.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\034_5迎宾模式_R18_调节前打开车门，不进入迎宾模式.seq",
+      "warnings": [
+        "M18: Read断言使用单个'='，已按'=='处理",
+        "M18: Read断言使用单个'='，已按'=='处理",
+        "M18: Read断言使用单个'='，已按'=='处理",
+        "M18: Read断言使用单个'='，已按'=='处理",
+        "M18: Read断言使用单个'='，已按'=='处理",
+        "M20: Read断言使用单个'='，已按'=='处理",
+        "M20: Read断言使用单个'='，已按'=='处理",
+        "M20: Read断言使用单个'='，已按'=='处理",
+        "M20: Read断言使用单个'='，已按'=='处理",
+        "M20: Read断言使用单个'='，已按'=='处理",
+        "M21: Read断言使用单个'='，已按'=='处理",
+        "M21: Read断言使用单个'='，已按'=='处理",
+        "M21: Read断言使用单个'='，已按'=='处理",
+        "M21: Read断言使用单个'='，已按'=='处理",
+        "M21: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "035_6随速调节_R4",
+      "caseName": "越野模式，加速时，车速大于等于15kph，高度立即调节，下降至10mm",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\035_6随速调节_R4_越野模式，加速时，车速大于等于15kph，高度立即调节，下降至10mm.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\035_6随速调节_R4_越野模式，加速时，车速大于等于15kph，高度立即调节，下降至10mm.seq",
+      "warnings": [
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M6: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlFL立即调节'",
+        "M6: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlFR立即调节'",
+        "M6: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlRL立即调节'",
+        "M6: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlRR立即调节'",
+        "M6: 未知动作已生成占位节点：'等待调节完成'",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "036_6随速调节_R10",
+      "caseName": "越野模式，加速时，车速小于15kph，高度不变",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\036_6随速调节_R10_越野模式，加速时，车速小于15kph，高度不变.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\036_6随速调节_R10_越野模式，加速时，车速小于15kph，高度不变.seq",
+      "warnings": [
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理",
+        "M12: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "037_6随速调节_R16",
+      "caseName": "越野模式，减速时，车速小于5kph，高度2s后调节，恢复至30mm",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\037_6随速调节_R16_越野模式，减速时，车速小于5kph，高度2s后调节，恢复至30mm.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\037_6随速调节_R16_越野模式，减速时，车速小于5kph，高度2s后调节，恢复至30mm.seq",
+      "warnings": [
+        "M17: Read断言使用单个'='，已按'=='处理",
+        "M17: Read断言使用单个'='，已按'=='处理",
+        "M17: Read断言使用单个'='，已按'=='处理",
+        "M17: Read断言使用单个'='，已按'=='处理",
+        "M17: Read断言使用单个'='，已按'=='处理",
+        "M18: Read断言使用单个'='，已按'=='处理",
+        "M18: Read断言使用单个'='，已按'=='处理",
+        "M18: Read断言使用单个'='，已按'=='处理",
+        "M18: Read断言使用单个'='，已按'=='处理",
+        "M18: Read断言使用单个'='，已按'=='处理",
+        "M19: 未知动作已生成占位节点：'2s内，'",
+        "M19: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M19: 未知动作已生成占位节点：'2s后，'",
+        "M19: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M19: 未知动作已生成占位节点：'等待调节完成'",
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "038_6随速调节_R23",
+      "caseName": "越野模式，减速时，车速大于等于5kph，高度不变",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\038_6随速调节_R23_越野模式，减速时，车速大于等于5kph，高度不变.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\038_6随速调节_R23_越野模式，减速时，车速大于等于5kph，高度不变.seq",
+      "warnings": [
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M26: 未知动作已生成占位节点：'2s内，'",
+        "M26: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M26: 未知动作已生成占位节点：'2s后，'",
+        "M26: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M26: Read断言使用单个'='，已按'=='处理",
+        "M26: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "039_6随速调节_R30",
+      "caseName": "标准模式，加速时，车速大于等于100kph，高度30s后调节，下降至-15mm",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\039_6随速调节_R30_标准模式，加速时，车速大于等于100kph，高度30s后调节，下降至-15mm.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\039_6随速调节_R30_标准模式，加速时，车速大于等于100kph，高度30s后调节，下降至-15mm.seq",
+      "warnings": [
+        "M31: Read断言使用单个'='，已按'=='处理",
+        "M31: Read断言使用单个'='，已按'=='处理",
+        "M31: Read断言使用单个'='，已按'=='处理",
+        "M31: Read断言使用单个'='，已按'=='处理",
+        "M31: Read断言使用单个'='，已按'=='处理",
+        "M32: 未知动作已生成占位节点：'30s内，'",
+        "M32: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M32: 未知动作已生成占位节点：'30s后，'",
+        "M32: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M32: 未知动作已生成占位节点：'等待调节完成'",
+        "M32: Read断言使用单个'='，已按'=='处理",
+        "M32: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "040_6随速调节_R36",
+      "caseName": "标准模式，加速时，车速小于100kph，高度不变",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\040_6随速调节_R36_标准模式，加速时，车速小于100kph，高度不变.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\040_6随速调节_R36_标准模式，加速时，车速小于100kph，高度不变.seq",
+      "warnings": [
+        "M37: Read断言使用单个'='，已按'=='处理",
+        "M37: Read断言使用单个'='，已按'=='处理",
+        "M37: Read断言使用单个'='，已按'=='处理",
+        "M37: Read断言使用单个'='，已按'=='处理",
+        "M37: Read断言使用单个'='，已按'=='处理",
+        "M38: 未知动作已生成占位节点：'30s内，'",
+        "M38: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M38: 未知动作已生成占位节点：'30s后，'",
+        "M38: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M38: Read断言使用单个'='，已按'=='处理",
+        "M38: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "041_6随速调节_R42",
+      "caseName": "标准模式，减速时，车速小于70kph，高度120s后调节，恢复至0mm",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\041_6随速调节_R42_标准模式，减速时，车速小于70kph，高度120s后调节，恢复至0mm.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\041_6随速调节_R42_标准模式，减速时，车速小于70kph，高度120s后调节，恢复至0mm.seq",
+      "warnings": [
+        "M43: Read断言使用单个'='，已按'=='处理",
+        "M43: Read断言使用单个'='，已按'=='处理",
+        "M43: Read断言使用单个'='，已按'=='处理",
+        "M43: Read断言使用单个'='，已按'=='处理",
+        "M43: Read断言使用单个'='，已按'=='处理",
+        "M44: Read断言使用单个'='，已按'=='处理",
+        "M44: Read断言使用单个'='，已按'=='处理",
+        "M44: Read断言使用单个'='，已按'=='处理",
+        "M44: Read断言使用单个'='，已按'=='处理",
+        "M44: Read断言使用单个'='，已按'=='处理",
+        "M45: 未知动作已生成占位节点：'120s内，'",
+        "M45: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M45: 未知动作已生成占位节点：'120s后，'",
+        "M45: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M45: 未知动作已生成占位节点：'等待调节完成'",
+        "M45: Read断言使用单个'='，已按'=='处理",
+        "M45: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "042_6随速调节_R49",
+      "caseName": "标准模式，减速时，车速大于等于70kph，高度不变",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\042_6随速调节_R49_标准模式，减速时，车速大于等于70kph，高度不变.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\042_6随速调节_R49_标准模式，减速时，车速大于等于70kph，高度不变.seq",
+      "warnings": [
+        "M50: Read断言使用单个'='，已按'=='处理",
+        "M50: Read断言使用单个'='，已按'=='处理",
+        "M50: Read断言使用单个'='，已按'=='处理",
+        "M50: Read断言使用单个'='，已按'=='处理",
+        "M50: Read断言使用单个'='，已按'=='处理",
+        "M51: Read断言使用单个'='，已按'=='处理",
+        "M51: Read断言使用单个'='，已按'=='处理",
+        "M51: Read断言使用单个'='，已按'=='处理",
+        "M51: Read断言使用单个'='，已按'=='处理",
+        "M51: Read断言使用单个'='，已按'=='处理",
+        "M52: 未知动作已生成占位节点：'120s内，'",
+        "M52: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M52: 未知动作已生成占位节点：'120s后，'",
+        "M52: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M52: Read断言使用单个'='，已按'=='处理",
+        "M52: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "043_6随速调节_R56",
+      "caseName": "标准模式，紧急制动时，车速小于5kph，高度立即调节，恢复至0mm",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\043_6随速调节_R56_标准模式，紧急制动时，车速小于5kph，高度立即调节，恢复至0mm.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\043_6随速调节_R56_标准模式，紧急制动时，车速小于5kph，高度立即调节，恢复至0mm.seq",
+      "warnings": [
+        "M57: Read断言使用单个'='，已按'=='处理",
+        "M57: Read断言使用单个'='，已按'=='处理",
+        "M57: Read断言使用单个'='，已按'=='处理",
+        "M57: Read断言使用单个'='，已按'=='处理",
+        "M57: Read断言使用单个'='，已按'=='处理",
+        "M58: Read断言使用单个'='，已按'=='处理",
+        "M58: Read断言使用单个'='，已按'=='处理",
+        "M58: Read断言使用单个'='，已按'=='处理",
+        "M58: Read断言使用单个'='，已按'=='处理",
+        "M58: Read断言使用单个'='，已按'=='处理",
+        "M59: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX立即开始调节'",
+        "M59: 未知动作已生成占位节点：'等待调节完成'",
+        "M59: Read断言使用单个'='，已按'=='处理",
+        "M59: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "044_6随速调节_R63",
+      "caseName": "标准模式，紧急制动时，车速大于等于5kph，高度不变",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\044_6随速调节_R63_标准模式，紧急制动时，车速大于等于5kph，高度不变.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\044_6随速调节_R63_标准模式，紧急制动时，车速大于等于5kph，高度不变.seq",
+      "warnings": [
+        "M64: Read断言使用单个'='，已按'=='处理",
+        "M64: Read断言使用单个'='，已按'=='处理",
+        "M64: Read断言使用单个'='，已按'=='处理",
+        "M64: Read断言使用单个'='，已按'=='处理",
+        "M64: Read断言使用单个'='，已按'=='处理",
+        "M65: Read断言使用单个'='，已按'=='处理",
+        "M65: Read断言使用单个'='，已按'=='处理",
+        "M65: Read断言使用单个'='，已按'=='处理",
+        "M65: Read断言使用单个'='，已按'=='处理",
+        "M65: Read断言使用单个'='，已按'=='处理",
+        "M66: 未知动作已生成占位节点：'立即，'",
+        "M66: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M66: Read断言使用单个'='，已按'=='处理",
+        "M66: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "045_6随速调节_R70",
+      "caseName": "运动模式，加速时，车速大于等于120kph，高度20s后调节，下降至-30mm",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\045_6随速调节_R70_运动模式，加速时，车速大于等于120kph，高度20s后调节，下降至-30mm.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\045_6随速调节_R70_运动模式，加速时，车速大于等于120kph，高度20s后调节，下降至-30mm.seq",
+      "warnings": [
+        "M71: Read断言使用单个'='，已按'=='处理",
+        "M71: Read断言使用单个'='，已按'=='处理",
+        "M71: Read断言使用单个'='，已按'=='处理",
+        "M71: Read断言使用单个'='，已按'=='处理",
+        "M71: Read断言使用单个'='，已按'=='处理",
+        "M72: 未知动作已生成占位节点：'20s内，'",
+        "M72: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M72: 未知动作已生成占位节点：'20s后，'",
+        "M72: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M72: 未知动作已生成占位节点：'等待调节完成'",
+        "M72: Read断言使用单个'='，已按'=='处理",
+        "M72: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "046_6随速调节_R76",
+      "caseName": "运动模式，加速时，车速小于120kph，高度不变",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\046_6随速调节_R76_运动模式，加速时，车速小于120kph，高度不变.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\046_6随速调节_R76_运动模式，加速时，车速小于120kph，高度不变.seq",
+      "warnings": [
+        "M77: Read断言使用单个'='，已按'=='处理",
+        "M77: Read断言使用单个'='，已按'=='处理",
+        "M77: Read断言使用单个'='，已按'=='处理",
+        "M77: Read断言使用单个'='，已按'=='处理",
+        "M77: Read断言使用单个'='，已按'=='处理",
+        "M78: 未知动作已生成占位节点：'20s内，'",
+        "M78: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M78: 未知动作已生成占位节点：'20s后，'",
+        "M78: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M78: Read断言使用单个'='，已按'=='处理",
+        "M78: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "047_6随速调节_R82",
+      "caseName": "运动模式，减速时，车速小于100kph，高度30s后调节，恢复至-25mm",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\047_6随速调节_R82_运动模式，减速时，车速小于100kph，高度30s后调节，恢复至-25mm.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\047_6随速调节_R82_运动模式，减速时，车速小于100kph，高度30s后调节，恢复至-25mm.seq",
+      "warnings": [
+        "M83: Read断言使用单个'='，已按'=='处理",
+        "M83: Read断言使用单个'='，已按'=='处理",
+        "M83: Read断言使用单个'='，已按'=='处理",
+        "M83: Read断言使用单个'='，已按'=='处理",
+        "M83: Read断言使用单个'='，已按'=='处理",
+        "M84: Read断言使用单个'='，已按'=='处理",
+        "M84: Read断言使用单个'='，已按'=='处理",
+        "M84: Read断言使用单个'='，已按'=='处理",
+        "M84: Read断言使用单个'='，已按'=='处理",
+        "M84: Read断言使用单个'='，已按'=='处理",
+        "M85: 未知动作已生成占位节点：'30s内，'",
+        "M85: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M85: 未知动作已生成占位节点：'30s后，'",
+        "M85: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M85: 未知动作已生成占位节点：'等待调节完成'",
+        "M85: Read断言使用单个'='，已按'=='处理",
+        "M85: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "048_6随速调节_R89",
+      "caseName": "运动模式，减速时，车速大于等于100kph，高度不变",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\048_6随速调节_R89_运动模式，减速时，车速大于等于100kph，高度不变.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\048_6随速调节_R89_运动模式，减速时，车速大于等于100kph，高度不变.seq",
+      "warnings": [
+        "M90: Read断言使用单个'='，已按'=='处理",
+        "M90: Read断言使用单个'='，已按'=='处理",
+        "M90: Read断言使用单个'='，已按'=='处理",
+        "M90: Read断言使用单个'='，已按'=='处理",
+        "M90: Read断言使用单个'='，已按'=='处理",
+        "M91: Read断言使用单个'='，已按'=='处理",
+        "M91: Read断言使用单个'='，已按'=='处理",
+        "M91: Read断言使用单个'='，已按'=='处理",
+        "M91: Read断言使用单个'='，已按'=='处理",
+        "M91: Read断言使用单个'='，已按'=='处理",
+        "M92: 未知动作已生成占位节点：'30s内，'",
+        "M92: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M92: 未知动作已生成占位节点：'30s后，'",
+        "M92: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M92: Read断言使用单个'='，已按'=='处理",
+        "M92: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "049_6随速调节_R96",
+      "caseName": "运动模式，紧急制动时，车速小于5kph，高度立即调节，恢复至-25mm",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\049_6随速调节_R96_运动模式，紧急制动时，车速小于5kph，高度立即调节，恢复至-25mm.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\049_6随速调节_R96_运动模式，紧急制动时，车速小于5kph，高度立即调节，恢复至-25mm.seq",
+      "warnings": [
+        "M97: Read断言使用单个'='，已按'=='处理",
+        "M97: Read断言使用单个'='，已按'=='处理",
+        "M97: Read断言使用单个'='，已按'=='处理",
+        "M97: Read断言使用单个'='，已按'=='处理",
+        "M97: Read断言使用单个'='，已按'=='处理",
+        "M98: Read断言使用单个'='，已按'=='处理",
+        "M98: Read断言使用单个'='，已按'=='处理",
+        "M98: Read断言使用单个'='，已按'=='处理",
+        "M98: Read断言使用单个'='，已按'=='处理",
+        "M98: Read断言使用单个'='，已按'=='处理",
+        "M99: 未知动作已生成占位节点：'立即，'",
+        "M99: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M99: 未知动作已生成占位节点：'等待调节完成'",
+        "M99: Read断言使用单个'='，已按'=='处理",
+        "M99: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "050_6随速调节_R103",
+      "caseName": "运动模式，紧急制动时，车速大于等于5kph，高度不变",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\050_6随速调节_R103_运动模式，紧急制动时，车速大于等于5kph，高度不变.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\050_6随速调节_R103_运动模式，紧急制动时，车速大于等于5kph，高度不变.seq",
+      "warnings": [
+        "M104: Read断言使用单个'='，已按'=='处理",
+        "M104: Read断言使用单个'='，已按'=='处理",
+        "M104: Read断言使用单个'='，已按'=='处理",
+        "M104: Read断言使用单个'='，已按'=='处理",
+        "M104: Read断言使用单个'='，已按'=='处理",
+        "M105: Read断言使用单个'='，已按'=='处理",
+        "M105: Read断言使用单个'='，已按'=='处理",
+        "M105: Read断言使用单个'='，已按'=='处理",
+        "M105: Read断言使用单个'='，已按'=='处理",
+        "M105: Read断言使用单个'='，已按'=='处理",
+        "M106: 未知动作已生成占位节点：'立即，'",
+        "M106: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M106: Read断言使用单个'='，已按'=='处理",
+        "M106: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "051_6随速调节_R110",
+      "caseName": "自适应模式，加速时，车速大于等于100kph，高度30s后调节，下降至-15mm（小于120kph)",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\051_6随速调节_R110_自适应模式，加速时，车速大于等于100kph，高度30s后调节，下降至-15mm（小于120kph).json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\051_6随速调节_R110_自适应模式，加速时，车速大于等于100kph，高度30s后调节，下降至-15mm（小于120kph).seq",
+      "warnings": [
+        "M111: Read断言使用单个'='，已按'=='处理",
+        "M111: Read断言使用单个'='，已按'=='处理",
+        "M111: Read断言使用单个'='，已按'=='处理",
+        "M111: Read断言使用单个'='，已按'=='处理",
+        "M111: Read断言使用单个'='，已按'=='处理",
+        "M112: 未知动作已生成占位节点：'30s内，'",
+        "M112: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M112: 未知动作已生成占位节点：'30s后，'",
+        "M112: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M112: 未知动作已生成占位节点：'等待调节完成'",
+        "M112: Read断言使用单个'='，已按'=='处理",
+        "M112: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "052_6随速调节_R116",
+      "caseName": "自适应模式，加速时，车速大于等于120kph，高度20s后调节，下降至-30mm",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\052_6随速调节_R116_自适应模式，加速时，车速大于等于120kph，高度20s后调节，下降至-30mm.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\052_6随速调节_R116_自适应模式，加速时，车速大于等于120kph，高度20s后调节，下降至-30mm.seq",
+      "warnings": [
+        "M117: Read断言使用单个'='，已按'=='处理",
+        "M117: Read断言使用单个'='，已按'=='处理",
+        "M117: Read断言使用单个'='，已按'=='处理",
+        "M117: Read断言使用单个'='，已按'=='处理",
+        "M117: Read断言使用单个'='，已按'=='处理",
+        "M118: 未知动作已生成占位节点：'20s内，'",
+        "M118: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M118: 未知动作已生成占位节点：'20s后，'",
+        "M118: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M118: 未知动作已生成占位节点：'等待调节完成'",
+        "M118: Read断言使用单个'='，已按'=='处理",
+        "M118: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "053_6随速调节_R122",
+      "caseName": "自适应模式，加速时，车速小于100kph，持续30s，高度不变",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\053_6随速调节_R122_自适应模式，加速时，车速小于100kph，持续30s，高度不变.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\053_6随速调节_R122_自适应模式，加速时，车速小于100kph，持续30s，高度不变.seq",
+      "warnings": [
+        "M123: Read断言使用单个'='，已按'=='处理",
+        "M123: Read断言使用单个'='，已按'=='处理",
+        "M123: Read断言使用单个'='，已按'=='处理",
+        "M123: Read断言使用单个'='，已按'=='处理",
+        "M123: Read断言使用单个'='，已按'=='处理",
+        "M124: 未知动作已生成占位节点：'30s内，'",
+        "M124: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M124: 未知动作已生成占位节点：'30s后，'",
+        "M124: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M124: Read断言使用单个'='，已按'=='处理",
+        "M124: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "054_6随速调节_R128",
+      "caseName": "自适应模式，加速时，车速小于120kph，持续20s，高度不变",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\054_6随速调节_R128_自适应模式，加速时，车速小于120kph，持续20s，高度不变.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\054_6随速调节_R128_自适应模式，加速时，车速小于120kph，持续20s，高度不变.seq",
+      "warnings": [
+        "M129: Read断言使用单个'='，已按'=='处理",
+        "M129: Read断言使用单个'='，已按'=='处理",
+        "M129: Read断言使用单个'='，已按'=='处理",
+        "M129: Read断言使用单个'='，已按'=='处理",
+        "M129: Read断言使用单个'='，已按'=='处理",
+        "M130: 未知动作已生成占位节点：'20s内，'",
+        "M130: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M130: 未知动作已生成占位节点：'20s后，'",
+        "M130: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M130: Read断言使用单个'='，已按'=='处理",
+        "M130: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "055_6随速调节_R134",
+      "caseName": "自适应模式，减速时，车速小于100kph，高度30s后调节，恢复至-15mm（初始车速130kph)",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\055_6随速调节_R134_自适应模式，减速时，车速小于100kph，高度30s后调节，恢复至-15mm（初始车速130kph).json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\055_6随速调节_R134_自适应模式，减速时，车速小于100kph，高度30s后调节，恢复至-15mm（初始车速130kph).seq",
+      "warnings": [
+        "M135: Read断言使用单个'='，已按'=='处理",
+        "M135: Read断言使用单个'='，已按'=='处理",
+        "M135: Read断言使用单个'='，已按'=='处理",
+        "M135: Read断言使用单个'='，已按'=='处理",
+        "M135: Read断言使用单个'='，已按'=='处理",
+        "M136: Read断言使用单个'='，已按'=='处理",
+        "M136: Read断言使用单个'='，已按'=='处理",
+        "M136: Read断言使用单个'='，已按'=='处理",
+        "M136: Read断言使用单个'='，已按'=='处理",
+        "M136: Read断言使用单个'='，已按'=='处理",
+        "M137: 未知动作已生成占位节点：'30s内，'",
+        "M137: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M137: 未知动作已生成占位节点：'30s后，'",
+        "M137: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M137: 未知动作已生成占位节点：'等待调节完成'",
+        "M137: Read断言使用单个'='，已按'=='处理",
+        "M137: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "056_6随速调节_R141",
+      "caseName": "自适应模式，减速时，车速小于70kph，高度120s后调节，恢复至0mm（初始车速110kph）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\056_6随速调节_R141_自适应模式，减速时，车速小于70kph，高度120s后调节，恢复至0mm（初始车速110kph）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\056_6随速调节_R141_自适应模式，减速时，车速小于70kph，高度120s后调节，恢复至0mm（初始车速110kph）.seq",
+      "warnings": [
+        "M142: Read断言使用单个'='，已按'=='处理",
+        "M142: Read断言使用单个'='，已按'=='处理",
+        "M142: Read断言使用单个'='，已按'=='处理",
+        "M142: Read断言使用单个'='，已按'=='处理",
+        "M142: Read断言使用单个'='，已按'=='处理",
+        "M143: Read断言使用单个'='，已按'=='处理",
+        "M143: Read断言使用单个'='，已按'=='处理",
+        "M143: Read断言使用单个'='，已按'=='处理",
+        "M143: Read断言使用单个'='，已按'=='处理",
+        "M143: Read断言使用单个'='，已按'=='处理",
+        "M144: 未知动作已生成占位节点：'120s内，'",
+        "M144: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M144: 未知动作已生成占位节点：'120s后，'",
+        "M144: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M144: 未知动作已生成占位节点：'等待调节完成'",
+        "M144: Read断言使用单个'='，已按'=='处理",
+        "M144: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "057_6随速调节_R148",
+      "caseName": "自适应模式，减速时，车速大于等于100kph，持续30s，高度不变(初始车速130kph)",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\057_6随速调节_R148_自适应模式，减速时，车速大于等于100kph，持续30s，高度不变(初始车速130kph).json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\057_6随速调节_R148_自适应模式，减速时，车速大于等于100kph，持续30s，高度不变(初始车速130kph).seq",
+      "warnings": [
+        "M149: Read断言使用单个'='，已按'=='处理",
+        "M149: Read断言使用单个'='，已按'=='处理",
+        "M149: Read断言使用单个'='，已按'=='处理",
+        "M149: Read断言使用单个'='，已按'=='处理",
+        "M149: Read断言使用单个'='，已按'=='处理",
+        "M150: Read断言使用单个'='，已按'=='处理",
+        "M150: Read断言使用单个'='，已按'=='处理",
+        "M150: Read断言使用单个'='，已按'=='处理",
+        "M150: Read断言使用单个'='，已按'=='处理",
+        "M150: Read断言使用单个'='，已按'=='处理",
+        "M151: 未知动作已生成占位节点：'30s内，'",
+        "M151: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M151: 未知动作已生成占位节点：'30s后，'",
+        "M151: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M151: Read断言使用单个'='，已按'=='处理",
+        "M151: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "058_6随速调节_R155",
+      "caseName": "自适应模式，减速时，车速大于等于70kph，持续120s，高度不变（初始车速110kph)",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\058_6随速调节_R155_自适应模式，减速时，车速大于等于70kph，持续120s，高度不变（初始车速110kph).json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\058_6随速调节_R155_自适应模式，减速时，车速大于等于70kph，持续120s，高度不变（初始车速110kph).seq",
+      "warnings": [
+        "M156: Read断言使用单个'='，已按'=='处理",
+        "M156: Read断言使用单个'='，已按'=='处理",
+        "M156: Read断言使用单个'='，已按'=='处理",
+        "M156: Read断言使用单个'='，已按'=='处理",
+        "M156: Read断言使用单个'='，已按'=='处理",
+        "M157: Read断言使用单个'='，已按'=='处理",
+        "M157: Read断言使用单个'='，已按'=='处理",
+        "M157: Read断言使用单个'='，已按'=='处理",
+        "M157: Read断言使用单个'='，已按'=='处理",
+        "M157: Read断言使用单个'='，已按'=='处理",
+        "M158: 未知动作已生成占位节点：'120s内，'",
+        "M158: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M158: 未知动作已生成占位节点：'120s后，'",
+        "M158: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M158: Read断言使用单个'='，已按'=='处理",
+        "M158: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "059_6随速调节_R162",
+      "caseName": "自适应模式，紧急制动时，车速小于5kph，高度立即调节，恢复至0mm",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\059_6随速调节_R162_自适应模式，紧急制动时，车速小于5kph，高度立即调节，恢复至0mm.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\059_6随速调节_R162_自适应模式，紧急制动时，车速小于5kph，高度立即调节，恢复至0mm.seq",
+      "warnings": [
+        "M163: Read断言使用单个'='，已按'=='处理",
+        "M163: Read断言使用单个'='，已按'=='处理",
+        "M163: Read断言使用单个'='，已按'=='处理",
+        "M163: Read断言使用单个'='，已按'=='处理",
+        "M163: Read断言使用单个'='，已按'=='处理",
+        "M164: Read断言使用单个'='，已按'=='处理",
+        "M164: Read断言使用单个'='，已按'=='处理",
+        "M164: Read断言使用单个'='，已按'=='处理",
+        "M164: Read断言使用单个'='，已按'=='处理",
+        "M164: Read断言使用单个'='，已按'=='处理",
+        "M165: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX立即开始调节'",
+        "M165: 未知动作已生成占位节点：'等待调节完成'",
+        "M165: Read断言使用单个'='，已按'=='处理",
+        "M165: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "060_6随速调节_R169",
+      "caseName": "自适应模式，紧急制动时，车速大于等于5kph，高度不变（30s内）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\060_6随速调节_R169_自适应模式，紧急制动时，车速大于等于5kph，高度不变（30s内）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\060_6随速调节_R169_自适应模式，紧急制动时，车速大于等于5kph，高度不变（30s内）.seq",
+      "warnings": [
+        "M170: Read断言使用单个'='，已按'=='处理",
+        "M170: Read断言使用单个'='，已按'=='处理",
+        "M170: Read断言使用单个'='，已按'=='处理",
+        "M170: Read断言使用单个'='，已按'=='处理",
+        "M170: Read断言使用单个'='，已按'=='处理",
+        "M171: Read断言使用单个'='，已按'=='处理",
+        "M171: Read断言使用单个'='，已按'=='处理",
+        "M171: Read断言使用单个'='，已按'=='处理",
+        "M171: Read断言使用单个'='，已按'=='处理",
+        "M171: Read断言使用单个'='，已按'=='处理",
+        "M172: 未知动作已生成占位节点：'立即，'",
+        "M172: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+        "M172: Read断言使用单个'='，已按'=='处理",
+        "M172: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "061_7悬架高度调平_R4",
+      "caseName": "不同模式下，P挡静止，四轮变化超过阈值，无开关门，300s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\061_7悬架高度调平_R4_不同模式下，P挡静止，四轮变化超过阈值，无开关门，300s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\061_7悬架高度调平_R4_不同模式下，P挡静止，四轮变化超过阈值，无开关门，300s后调节.seq",
+      "warnings": [
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "L8: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M10: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M10: Read断言使用单个'='，已按'=='处理",
+        "M10: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "062_7悬架高度调平_R14",
+      "caseName": "不同模式下，P挡静止，四轮变化超过阈值，开关左前门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\062_7悬架高度调平_R14_不同模式下，P挡静止，四轮变化超过阈值，开关左前门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\062_7悬架高度调平_R14_不同模式下，P挡静止，四轮变化超过阈值，开关左前门，3s后调节.seq",
+      "warnings": [
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "M16: Read断言使用单个'='，已按'=='处理",
+        "L18: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M18: Read断言使用单个'='，已按'=='处理",
+        "M18: Read断言使用单个'='，已按'=='处理",
+        "M20: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M20: Read断言使用单个'='，已按'=='处理",
+        "M20: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "063_7悬架高度调平_R24",
+      "caseName": "不同模式下，P挡静止，四轮变化超过阈值，开关右前门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\063_7悬架高度调平_R24_不同模式下，P挡静止，四轮变化超过阈值，开关右前门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\063_7悬架高度调平_R24_不同模式下，P挡静止，四轮变化超过阈值，开关右前门，3s后调节.seq",
+      "warnings": [
+        "M26: Read断言使用单个'='，已按'=='处理",
+        "M26: Read断言使用单个'='，已按'=='处理",
+        "M26: Read断言使用单个'='，已按'=='处理",
+        "M26: Read断言使用单个'='，已按'=='处理",
+        "M26: Read断言使用单个'='，已按'=='处理",
+        "L28: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M28: Read断言使用单个'='，已按'=='处理",
+        "M28: Read断言使用单个'='，已按'=='处理",
+        "M30: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M30: Read断言使用单个'='，已按'=='处理",
+        "M30: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "064_7悬架高度调平_R34",
+      "caseName": "不同模式下，P挡静止，四轮变化超过阈值，开关左后门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\064_7悬架高度调平_R34_不同模式下，P挡静止，四轮变化超过阈值，开关左后门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\064_7悬架高度调平_R34_不同模式下，P挡静止，四轮变化超过阈值，开关左后门，3s后调节.seq",
+      "warnings": [
+        "M36: Read断言使用单个'='，已按'=='处理",
+        "M36: Read断言使用单个'='，已按'=='处理",
+        "M36: Read断言使用单个'='，已按'=='处理",
+        "M36: Read断言使用单个'='，已按'=='处理",
+        "M36: Read断言使用单个'='，已按'=='处理",
+        "L38: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M38: Read断言使用单个'='，已按'=='处理",
+        "M38: Read断言使用单个'='，已按'=='处理",
+        "M40: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M40: Read断言使用单个'='，已按'=='处理",
+        "M40: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "065_7悬架高度调平_R44",
+      "caseName": "不同模式下，P挡静止，四轮变化超过阈值，开关右后门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\065_7悬架高度调平_R44_不同模式下，P挡静止，四轮变化超过阈值，开关右后门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\065_7悬架高度调平_R44_不同模式下，P挡静止，四轮变化超过阈值，开关右后门，3s后调节.seq",
+      "warnings": [
+        "M46: Read断言使用单个'='，已按'=='处理",
+        "M46: Read断言使用单个'='，已按'=='处理",
+        "M46: Read断言使用单个'='，已按'=='处理",
+        "M46: Read断言使用单个'='，已按'=='处理",
+        "M46: Read断言使用单个'='，已按'=='处理",
+        "L48: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M48: Read断言使用单个'='，已按'=='处理",
+        "M48: Read断言使用单个'='，已按'=='处理",
+        "M50: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M50: Read断言使用单个'='，已按'=='处理",
+        "M50: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "066_7悬架高度调平_R54",
+      "caseName": "不同模式下，P挡静止，前轴两轮变化超过阈值，无开关门，300s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\066_7悬架高度调平_R54_不同模式下，P挡静止，前轴两轮变化超过阈值，无开关门，300s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\066_7悬架高度调平_R54_不同模式下，P挡静止，前轴两轮变化超过阈值，无开关门，300s后调节.seq",
+      "warnings": [
+        "M56: Read断言使用单个'='，已按'=='处理",
+        "M56: Read断言使用单个'='，已按'=='处理",
+        "M56: Read断言使用单个'='，已按'=='处理",
+        "M56: Read断言使用单个'='，已按'=='处理",
+        "M56: Read断言使用单个'='，已按'=='处理",
+        "L58: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M58: Read断言使用单个'='，已按'=='处理",
+        "M58: Read断言使用单个'='，已按'=='处理",
+        "M60: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M60: Read断言使用单个'='，已按'=='处理",
+        "M60: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "067_7悬架高度调平_R64",
+      "caseName": "不同模式下，P挡静止，前轴两轮变化超过阈值，开关左前门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\067_7悬架高度调平_R64_不同模式下，P挡静止，前轴两轮变化超过阈值，开关左前门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\067_7悬架高度调平_R64_不同模式下，P挡静止，前轴两轮变化超过阈值，开关左前门，3s后调节.seq",
+      "warnings": [
+        "M66: Read断言使用单个'='，已按'=='处理",
+        "M66: Read断言使用单个'='，已按'=='处理",
+        "M66: Read断言使用单个'='，已按'=='处理",
+        "M66: Read断言使用单个'='，已按'=='处理",
+        "M66: Read断言使用单个'='，已按'=='处理",
+        "L68: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M68: Read断言使用单个'='，已按'=='处理",
+        "M68: Read断言使用单个'='，已按'=='处理",
+        "M70: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M70: Read断言使用单个'='，已按'=='处理",
+        "M70: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "068_7悬架高度调平_R74",
+      "caseName": "不同模式下，P挡静止，前轴两轮变化超过阈值，开关右前门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\068_7悬架高度调平_R74_不同模式下，P挡静止，前轴两轮变化超过阈值，开关右前门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\068_7悬架高度调平_R74_不同模式下，P挡静止，前轴两轮变化超过阈值，开关右前门，3s后调节.seq",
+      "warnings": [
+        "M76: Read断言使用单个'='，已按'=='处理",
+        "M76: Read断言使用单个'='，已按'=='处理",
+        "M76: Read断言使用单个'='，已按'=='处理",
+        "M76: Read断言使用单个'='，已按'=='处理",
+        "M76: Read断言使用单个'='，已按'=='处理",
+        "L78: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M78: Read断言使用单个'='，已按'=='处理",
+        "M78: Read断言使用单个'='，已按'=='处理",
+        "M80: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M80: Read断言使用单个'='，已按'=='处理",
+        "M80: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "069_7悬架高度调平_R84",
+      "caseName": "不同模式下，P挡静止，前轴两轮变化超过阈值，开关左后门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\069_7悬架高度调平_R84_不同模式下，P挡静止，前轴两轮变化超过阈值，开关左后门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\069_7悬架高度调平_R84_不同模式下，P挡静止，前轴两轮变化超过阈值，开关左后门，3s后调节.seq",
+      "warnings": [
+        "M86: Read断言使用单个'='，已按'=='处理",
+        "M86: Read断言使用单个'='，已按'=='处理",
+        "M86: Read断言使用单个'='，已按'=='处理",
+        "M86: Read断言使用单个'='，已按'=='处理",
+        "M86: Read断言使用单个'='，已按'=='处理",
+        "L88: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M88: Read断言使用单个'='，已按'=='处理",
+        "M88: Read断言使用单个'='，已按'=='处理",
+        "M90: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M90: Read断言使用单个'='，已按'=='处理",
+        "M90: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "070_7悬架高度调平_R94",
+      "caseName": "不同模式下，P挡静止，前轴两轮变化超过阈值，开关右后门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\070_7悬架高度调平_R94_不同模式下，P挡静止，前轴两轮变化超过阈值，开关右后门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\070_7悬架高度调平_R94_不同模式下，P挡静止，前轴两轮变化超过阈值，开关右后门，3s后调节.seq",
+      "warnings": [
+        "M96: Read断言使用单个'='，已按'=='处理",
+        "M96: Read断言使用单个'='，已按'=='处理",
+        "M96: Read断言使用单个'='，已按'=='处理",
+        "M96: Read断言使用单个'='，已按'=='处理",
+        "M96: Read断言使用单个'='，已按'=='处理",
+        "L98: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M98: Read断言使用单个'='，已按'=='处理",
+        "M98: Read断言使用单个'='，已按'=='处理",
+        "M100: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M100: Read断言使用单个'='，已按'=='处理",
+        "M100: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "071_7悬架高度调平_R104",
+      "caseName": "不同模式下，P挡静止，后轴两轮变化超过阈值，无开关门，300s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\071_7悬架高度调平_R104_不同模式下，P挡静止，后轴两轮变化超过阈值，无开关门，300s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\071_7悬架高度调平_R104_不同模式下，P挡静止，后轴两轮变化超过阈值，无开关门，300s后调节.seq",
+      "warnings": [
+        "M106: Read断言使用单个'='，已按'=='处理",
+        "M106: Read断言使用单个'='，已按'=='处理",
+        "M106: Read断言使用单个'='，已按'=='处理",
+        "M106: Read断言使用单个'='，已按'=='处理",
+        "M106: Read断言使用单个'='，已按'=='处理",
+        "L108: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M108: Read断言使用单个'='，已按'=='处理",
+        "M108: Read断言使用单个'='，已按'=='处理",
+        "M110: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M110: Read断言使用单个'='，已按'=='处理",
+        "M110: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "072_7悬架高度调平_R114",
+      "caseName": "不同模式下，P挡静止，后轴两轮变化超过阈值，开关左前门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\072_7悬架高度调平_R114_不同模式下，P挡静止，后轴两轮变化超过阈值，开关左前门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\072_7悬架高度调平_R114_不同模式下，P挡静止，后轴两轮变化超过阈值，开关左前门，3s后调节.seq",
+      "warnings": [
+        "M116: Read断言使用单个'='，已按'=='处理",
+        "M116: Read断言使用单个'='，已按'=='处理",
+        "M116: Read断言使用单个'='，已按'=='处理",
+        "M116: Read断言使用单个'='，已按'=='处理",
+        "M116: Read断言使用单个'='，已按'=='处理",
+        "L118: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M118: Read断言使用单个'='，已按'=='处理",
+        "M118: Read断言使用单个'='，已按'=='处理",
+        "M120: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M120: Read断言使用单个'='，已按'=='处理",
+        "M120: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "073_7悬架高度调平_R124",
+      "caseName": "不同模式下，P挡静止，后轴两轮变化超过阈值，开关右前门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\073_7悬架高度调平_R124_不同模式下，P挡静止，后轴两轮变化超过阈值，开关右前门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\073_7悬架高度调平_R124_不同模式下，P挡静止，后轴两轮变化超过阈值，开关右前门，3s后调节.seq",
+      "warnings": [
+        "M126: Read断言使用单个'='，已按'=='处理",
+        "M126: Read断言使用单个'='，已按'=='处理",
+        "M126: Read断言使用单个'='，已按'=='处理",
+        "M126: Read断言使用单个'='，已按'=='处理",
+        "M126: Read断言使用单个'='，已按'=='处理",
+        "L128: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M128: Read断言使用单个'='，已按'=='处理",
+        "M128: Read断言使用单个'='，已按'=='处理",
+        "M130: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M130: Read断言使用单个'='，已按'=='处理",
+        "M130: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "074_7悬架高度调平_R134",
+      "caseName": "不同模式下，P挡静止，后轴两轮变化超过阈值，开关左后门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\074_7悬架高度调平_R134_不同模式下，P挡静止，后轴两轮变化超过阈值，开关左后门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\074_7悬架高度调平_R134_不同模式下，P挡静止，后轴两轮变化超过阈值，开关左后门，3s后调节.seq",
+      "warnings": [
+        "M136: Read断言使用单个'='，已按'=='处理",
+        "M136: Read断言使用单个'='，已按'=='处理",
+        "M136: Read断言使用单个'='，已按'=='处理",
+        "M136: Read断言使用单个'='，已按'=='处理",
+        "M136: Read断言使用单个'='，已按'=='处理",
+        "L138: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M138: Read断言使用单个'='，已按'=='处理",
+        "M138: Read断言使用单个'='，已按'=='处理",
+        "M140: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M140: Read断言使用单个'='，已按'=='处理",
+        "M140: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "075_7悬架高度调平_R144",
+      "caseName": "不同模式下，P挡静止，后轴两轮变化超过阈值，开关右后门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\075_7悬架高度调平_R144_不同模式下，P挡静止，后轴两轮变化超过阈值，开关右后门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\075_7悬架高度调平_R144_不同模式下，P挡静止，后轴两轮变化超过阈值，开关右后门，3s后调节.seq",
+      "warnings": [
+        "M146: Read断言使用单个'='，已按'=='处理",
+        "M146: Read断言使用单个'='，已按'=='处理",
+        "M146: Read断言使用单个'='，已按'=='处理",
+        "M146: Read断言使用单个'='，已按'=='处理",
+        "M146: Read断言使用单个'='，已按'=='处理",
+        "L148: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M148: Read断言使用单个'='，已按'=='处理",
+        "M148: Read断言使用单个'='，已按'=='处理",
+        "M150: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M150: Read断言使用单个'='，已按'=='处理",
+        "M150: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "076_7悬架高度调平_R154",
+      "caseName": "不同模式下，P挡静止，前轴左右高度差超过阈值，无开关门，300s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\076_7悬架高度调平_R154_不同模式下，P挡静止，前轴左右高度差超过阈值，无开关门，300s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\076_7悬架高度调平_R154_不同模式下，P挡静止，前轴左右高度差超过阈值，无开关门，300s后调节.seq",
+      "warnings": [
+        "M156: Read断言使用单个'='，已按'=='处理",
+        "M156: Read断言使用单个'='，已按'=='处理",
+        "M156: Read断言使用单个'='，已按'=='处理",
+        "M156: Read断言使用单个'='，已按'=='处理",
+        "M156: Read断言使用单个'='，已按'=='处理",
+        "L158: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M158: Read断言使用单个'='，已按'=='处理",
+        "M158: Read断言使用单个'='，已按'=='处理",
+        "M160: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M160: Read断言使用单个'='，已按'=='处理",
+        "M160: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "077_7悬架高度调平_R164",
+      "caseName": "不同模式下，P挡静止，前轴左右高度差超过阈值，开关左前门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\077_7悬架高度调平_R164_不同模式下，P挡静止，前轴左右高度差超过阈值，开关左前门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\077_7悬架高度调平_R164_不同模式下，P挡静止，前轴左右高度差超过阈值，开关左前门，3s后调节.seq",
+      "warnings": [
+        "M166: Read断言使用单个'='，已按'=='处理",
+        "M166: Read断言使用单个'='，已按'=='处理",
+        "M166: Read断言使用单个'='，已按'=='处理",
+        "M166: Read断言使用单个'='，已按'=='处理",
+        "M166: Read断言使用单个'='，已按'=='处理",
+        "L168: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M168: Read断言使用单个'='，已按'=='处理",
+        "M168: Read断言使用单个'='，已按'=='处理",
+        "M170: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M170: Read断言使用单个'='，已按'=='处理",
+        "M170: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "078_7悬架高度调平_R174",
+      "caseName": "不同模式下，P挡静止，前轴左右高度差超过阈值，开关右前门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\078_7悬架高度调平_R174_不同模式下，P挡静止，前轴左右高度差超过阈值，开关右前门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\078_7悬架高度调平_R174_不同模式下，P挡静止，前轴左右高度差超过阈值，开关右前门，3s后调节.seq",
+      "warnings": [
+        "M176: Read断言使用单个'='，已按'=='处理",
+        "M176: Read断言使用单个'='，已按'=='处理",
+        "M176: Read断言使用单个'='，已按'=='处理",
+        "M176: Read断言使用单个'='，已按'=='处理",
+        "M176: Read断言使用单个'='，已按'=='处理",
+        "L178: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M178: Read断言使用单个'='，已按'=='处理",
+        "M178: Read断言使用单个'='，已按'=='处理",
+        "M180: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M180: Read断言使用单个'='，已按'=='处理",
+        "M180: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "079_7悬架高度调平_R184",
+      "caseName": "不同模式下，P挡静止，前轴左右高度差超过阈值，开关左后门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\079_7悬架高度调平_R184_不同模式下，P挡静止，前轴左右高度差超过阈值，开关左后门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\079_7悬架高度调平_R184_不同模式下，P挡静止，前轴左右高度差超过阈值，开关左后门，3s后调节.seq",
+      "warnings": [
+        "M186: Read断言使用单个'='，已按'=='处理",
+        "M186: Read断言使用单个'='，已按'=='处理",
+        "M186: Read断言使用单个'='，已按'=='处理",
+        "M186: Read断言使用单个'='，已按'=='处理",
+        "M186: Read断言使用单个'='，已按'=='处理",
+        "L188: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M188: Read断言使用单个'='，已按'=='处理",
+        "M188: Read断言使用单个'='，已按'=='处理",
+        "M190: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M190: Read断言使用单个'='，已按'=='处理",
+        "M190: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "080_7悬架高度调平_R194",
+      "caseName": "不同模式下，P挡静止，前轴左右高度差超过阈值，开关右后门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\080_7悬架高度调平_R194_不同模式下，P挡静止，前轴左右高度差超过阈值，开关右后门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\080_7悬架高度调平_R194_不同模式下，P挡静止，前轴左右高度差超过阈值，开关右后门，3s后调节.seq",
+      "warnings": [
+        "M196: Read断言使用单个'='，已按'=='处理",
+        "M196: Read断言使用单个'='，已按'=='处理",
+        "M196: Read断言使用单个'='，已按'=='处理",
+        "M196: Read断言使用单个'='，已按'=='处理",
+        "M196: Read断言使用单个'='，已按'=='处理",
+        "L198: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M198: Read断言使用单个'='，已按'=='处理",
+        "M198: Read断言使用单个'='，已按'=='处理",
+        "M200: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M200: Read断言使用单个'='，已按'=='处理",
+        "M200: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "081_7悬架高度调平_R204",
+      "caseName": "不同模式下，P挡静止，后轴左右高度差超过阈值，无开关门，300s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\081_7悬架高度调平_R204_不同模式下，P挡静止，后轴左右高度差超过阈值，无开关门，300s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\081_7悬架高度调平_R204_不同模式下，P挡静止，后轴左右高度差超过阈值，无开关门，300s后调节.seq",
+      "warnings": [
+        "M206: Read断言使用单个'='，已按'=='处理",
+        "M206: Read断言使用单个'='，已按'=='处理",
+        "M206: Read断言使用单个'='，已按'=='处理",
+        "M206: Read断言使用单个'='，已按'=='处理",
+        "M206: Read断言使用单个'='，已按'=='处理",
+        "L208: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M208: Read断言使用单个'='，已按'=='处理",
+        "M208: Read断言使用单个'='，已按'=='处理",
+        "M210: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M210: Read断言使用单个'='，已按'=='处理",
+        "M210: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "082_7悬架高度调平_R214",
+      "caseName": "不同模式下，P挡静止，后轴左右高度差超过阈值，开关左前门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\082_7悬架高度调平_R214_不同模式下，P挡静止，后轴左右高度差超过阈值，开关左前门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\082_7悬架高度调平_R214_不同模式下，P挡静止，后轴左右高度差超过阈值，开关左前门，3s后调节.seq",
+      "warnings": [
+        "M216: Read断言使用单个'='，已按'=='处理",
+        "M216: Read断言使用单个'='，已按'=='处理",
+        "M216: Read断言使用单个'='，已按'=='处理",
+        "M216: Read断言使用单个'='，已按'=='处理",
+        "M216: Read断言使用单个'='，已按'=='处理",
+        "L218: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M218: Read断言使用单个'='，已按'=='处理",
+        "M218: Read断言使用单个'='，已按'=='处理",
+        "M220: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M220: Read断言使用单个'='，已按'=='处理",
+        "M220: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "083_7悬架高度调平_R224",
+      "caseName": "不同模式下，P挡静止，后轴左右高度差超过阈值，开关右前门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\083_7悬架高度调平_R224_不同模式下，P挡静止，后轴左右高度差超过阈值，开关右前门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\083_7悬架高度调平_R224_不同模式下，P挡静止，后轴左右高度差超过阈值，开关右前门，3s后调节.seq",
+      "warnings": [
+        "M226: Read断言使用单个'='，已按'=='处理",
+        "M226: Read断言使用单个'='，已按'=='处理",
+        "M226: Read断言使用单个'='，已按'=='处理",
+        "M226: Read断言使用单个'='，已按'=='处理",
+        "M226: Read断言使用单个'='，已按'=='处理",
+        "L228: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M228: Read断言使用单个'='，已按'=='处理",
+        "M228: Read断言使用单个'='，已按'=='处理",
+        "M230: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M230: Read断言使用单个'='，已按'=='处理",
+        "M230: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "084_7悬架高度调平_R234",
+      "caseName": "不同模式下，P挡静止，后轴左右高度差超过阈值，开关左后门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\084_7悬架高度调平_R234_不同模式下，P挡静止，后轴左右高度差超过阈值，开关左后门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\084_7悬架高度调平_R234_不同模式下，P挡静止，后轴左右高度差超过阈值，开关左后门，3s后调节.seq",
+      "warnings": [
+        "M236: Read断言使用单个'='，已按'=='处理",
+        "M236: Read断言使用单个'='，已按'=='处理",
+        "M236: Read断言使用单个'='，已按'=='处理",
+        "M236: Read断言使用单个'='，已按'=='处理",
+        "M236: Read断言使用单个'='，已按'=='处理",
+        "L238: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M238: Read断言使用单个'='，已按'=='处理",
+        "M238: Read断言使用单个'='，已按'=='处理",
+        "M240: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M240: Read断言使用单个'='，已按'=='处理",
+        "M240: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "085_7悬架高度调平_R244",
+      "caseName": "不同模式下，P挡静止，后轴左右高度差超过阈值，开关右后门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\085_7悬架高度调平_R244_不同模式下，P挡静止，后轴左右高度差超过阈值，开关右后门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\085_7悬架高度调平_R244_不同模式下，P挡静止，后轴左右高度差超过阈值，开关右后门，3s后调节.seq",
+      "warnings": [
+        "M246: Read断言使用单个'='，已按'=='处理",
+        "M246: Read断言使用单个'='，已按'=='处理",
+        "M246: Read断言使用单个'='，已按'=='处理",
+        "M246: Read断言使用单个'='，已按'=='处理",
+        "M246: Read断言使用单个'='，已按'=='处理",
+        "L248: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M248: Read断言使用单个'='，已按'=='处理",
+        "M248: Read断言使用单个'='，已按'=='处理",
+        "M250: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M250: Read断言使用单个'='，已按'=='处理",
+        "M250: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "086_7悬架高度调平_R254",
+      "caseName": "不同模式下，P挡静止，后轴左右高度差超过阈值，开关尾门，3s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\086_7悬架高度调平_R254_不同模式下，P挡静止，后轴左右高度差超过阈值，开关尾门，3s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\086_7悬架高度调平_R254_不同模式下，P挡静止，后轴左右高度差超过阈值，开关尾门，3s后调节.seq",
+      "warnings": [
+        "M256: Read断言使用单个'='，已按'=='处理",
+        "M256: Read断言使用单个'='，已按'=='处理",
+        "M256: Read断言使用单个'='，已按'=='处理",
+        "M256: Read断言使用单个'='，已按'=='处理",
+        "M256: Read断言使用单个'='，已按'=='处理",
+        "L258: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M258: Read断言使用单个'='，已按'=='处理",
+        "M258: Read断言使用单个'='，已按'=='处理",
+        "M260: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M260: Read断言使用单个'='，已按'=='处理",
+        "M260: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "087_7悬架高度调平_R264",
+      "caseName": "不同模式下，P挡静止，上升时，先同轴调节，再调节较低轮_前轴",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\087_7悬架高度调平_R264_不同模式下，P挡静止，上升时，先同轴调节，再调节较低轮_前轴.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\087_7悬架高度调平_R264_不同模式下，P挡静止，上升时，先同轴调节，再调节较低轮_前轴.seq",
+      "warnings": [
+        "M266: Read断言使用单个'='，已按'=='处理",
+        "M266: Read断言使用单个'='，已按'=='处理",
+        "M266: Read断言使用单个'='，已按'=='处理",
+        "M266: Read断言使用单个'='，已按'=='处理",
+        "M266: Read断言使用单个'='，已按'=='处理",
+        "L268: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M268: Read断言使用单个'='，已按'=='处理",
+        "M268: Read断言使用单个'='，已按'=='处理",
+        "M270: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M270: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX距离目标高度5mm时，左右高差超过10mm，停止同轴调节，较低侧进行单轮调节'",
+        "M270: Read断言使用单个'='，已按'=='处理",
+        "M270: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "088_7悬架高度调平_R274",
+      "caseName": "不同模式下，P挡静止，上升时，先同轴调节，再调节较低轮_后轴",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\088_7悬架高度调平_R274_不同模式下，P挡静止，上升时，先同轴调节，再调节较低轮_后轴.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\088_7悬架高度调平_R274_不同模式下，P挡静止，上升时，先同轴调节，再调节较低轮_后轴.seq",
+      "warnings": [
+        "M276: Read断言使用单个'='，已按'=='处理",
+        "M276: Read断言使用单个'='，已按'=='处理",
+        "M276: Read断言使用单个'='，已按'=='处理",
+        "M276: Read断言使用单个'='，已按'=='处理",
+        "M276: Read断言使用单个'='，已按'=='处理",
+        "L278: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M278: Read断言使用单个'='，已按'=='处理",
+        "M278: Read断言使用单个'='，已按'=='处理",
+        "M280: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M280: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX距离目标高度5mm时，左右高差超过10mm，停止同轴调节，较低侧进行单轮调节'",
+        "M280: Read断言使用单个'='，已按'=='处理",
+        "M280: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "089_7悬架高度调平_R284",
+      "caseName": "不同模式下，P挡静止，下降时，先同轴调节，再调节较高轮_前轴",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\089_7悬架高度调平_R284_不同模式下，P挡静止，下降时，先同轴调节，再调节较高轮_前轴.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\089_7悬架高度调平_R284_不同模式下，P挡静止，下降时，先同轴调节，再调节较高轮_前轴.seq",
+      "warnings": [
+        "M286: Read断言使用单个'='，已按'=='处理",
+        "M286: Read断言使用单个'='，已按'=='处理",
+        "M286: Read断言使用单个'='，已按'=='处理",
+        "M286: Read断言使用单个'='，已按'=='处理",
+        "M286: Read断言使用单个'='，已按'=='处理",
+        "L288: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M288: Read断言使用单个'='，已按'=='处理",
+        "M288: Read断言使用单个'='，已按'=='处理",
+        "M290: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M290: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX距离目标高度5mm时，左右高差超过10mm，停止同轴调节，较高侧进行单轮调节'",
+        "M290: Read断言使用单个'='，已按'=='处理",
+        "M290: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "090_7悬架高度调平_R294",
+      "caseName": "不同模式下，P挡静止，下降时，先同轴调节，再调节较高轮_后轴",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\090_7悬架高度调平_R294_不同模式下，P挡静止，下降时，先同轴调节，再调节较高轮_后轴.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\090_7悬架高度调平_R294_不同模式下，P挡静止，下降时，先同轴调节，再调节较高轮_后轴.seq",
+      "warnings": [
+        "M296: Read断言使用单个'='，已按'=='处理",
+        "M296: Read断言使用单个'='，已按'=='处理",
+        "M296: Read断言使用单个'='，已按'=='处理",
+        "M296: Read断言使用单个'='，已按'=='处理",
+        "M296: Read断言使用单个'='，已按'=='处理",
+        "L298: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M298: Read断言使用单个'='，已按'=='处理",
+        "M298: Read断言使用单个'='，已按'=='处理",
+        "M300: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M300: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX距离目标高度5mm时，左右高差超过10mm，停止同轴调节，较高侧进行单轮调节'",
+        "M300: Read断言使用单个'='，已按'=='处理",
+        "M300: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "091_7悬架高度调平_R304",
+      "caseName": "不同模式下，D挡20kph行驶，四轮变化超过阈值，10s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\091_7悬架高度调平_R304_不同模式下，D挡20kph行驶，四轮变化超过阈值，10s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\091_7悬架高度调平_R304_不同模式下，D挡20kph行驶，四轮变化超过阈值，10s后调节.seq",
+      "warnings": [
+        "M306: Read断言使用单个'='，已按'=='处理",
+        "M306: Read断言使用单个'='，已按'=='处理",
+        "M306: Read断言使用单个'='，已按'=='处理",
+        "M306: Read断言使用单个'='，已按'=='处理",
+        "M306: Read断言使用单个'='，已按'=='处理",
+        "L308: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M308: Read断言使用单个'='，已按'=='处理",
+        "M308: Read断言使用单个'='，已按'=='处理",
+        "M310: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M310: Read断言使用单个'='，已按'=='处理",
+        "M310: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "092_7悬架高度调平_R314",
+      "caseName": "不同模式下，D挡20kph行驶，前轴两轮变化超过阈值，10s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\092_7悬架高度调平_R314_不同模式下，D挡20kph行驶，前轴两轮变化超过阈值，10s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\092_7悬架高度调平_R314_不同模式下，D挡20kph行驶，前轴两轮变化超过阈值，10s后调节.seq",
+      "warnings": [
+        "M316: Read断言使用单个'='，已按'=='处理",
+        "M316: Read断言使用单个'='，已按'=='处理",
+        "M316: Read断言使用单个'='，已按'=='处理",
+        "M316: Read断言使用单个'='，已按'=='处理",
+        "M316: Read断言使用单个'='，已按'=='处理",
+        "L318: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M318: Read断言使用单个'='，已按'=='处理",
+        "M318: Read断言使用单个'='，已按'=='处理",
+        "M320: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M320: Read断言使用单个'='，已按'=='处理",
+        "M320: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "093_7悬架高度调平_R324",
+      "caseName": "不同模式下，D挡20kph行驶，后轴两轮变化超过阈值，10s后调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\093_7悬架高度调平_R324_不同模式下，D挡20kph行驶，后轴两轮变化超过阈值，10s后调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\093_7悬架高度调平_R324_不同模式下，D挡20kph行驶，后轴两轮变化超过阈值，10s后调节.seq",
+      "warnings": [
+        "M326: Read断言使用单个'='，已按'=='处理",
+        "M326: Read断言使用单个'='，已按'=='处理",
+        "M326: Read断言使用单个'='，已按'=='处理",
+        "M326: Read断言使用单个'='，已按'=='处理",
+        "M326: Read断言使用单个'='，已按'=='处理",
+        "L328: 未知动作已生成占位节点：'write#PSI5仿真板卡原始值'",
+        "M328: Read断言使用单个'='，已按'=='处理",
+        "M328: Read断言使用单个'='，已按'=='处理",
+        "M330: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX开始调节'",
+        "M330: Read断言使用单个'='，已按'=='处理",
+        "M330: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "094_8周期唤醒高度控制_R4",
+      "caseName": "周期唤醒高度控制_左前轮超阈值",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\094_8周期唤醒高度控制_R4_周期唤醒高度控制_左前轮超阈值.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\094_8周期唤醒高度控制_R4_周期唤醒高度控制_左前轮超阈值.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "095_8周期唤醒高度控制_R10",
+      "caseName": "周期唤醒高度控制_右前轮超阈值",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\095_8周期唤醒高度控制_R10_周期唤醒高度控制_右前轮超阈值.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\095_8周期唤醒高度控制_R10_周期唤醒高度控制_右前轮超阈值.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "096_8周期唤醒高度控制_R16",
+      "caseName": "周期唤醒高度控制_左后轮超阈值",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\096_8周期唤醒高度控制_R16_周期唤醒高度控制_左后轮超阈值.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\096_8周期唤醒高度控制_R16_周期唤醒高度控制_左后轮超阈值.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "097_8周期唤醒高度控制_R22",
+      "caseName": "周期唤醒高度控制_右后轮超阈值",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\097_8周期唤醒高度控制_R22_周期唤醒高度控制_右后轮超阈值.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\097_8周期唤醒高度控制_R22_周期唤醒高度控制_右后轮超阈值.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "098_9下电延迟管理功能_R4",
+      "caseName": "闭锁后，控制器在一定时间内未收到指令进入休眠",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\098_9下电延迟管理功能_R4_闭锁后，控制器在一定时间内未收到指令进入休眠.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\098_9下电延迟管理功能_R4_闭锁后，控制器在一定时间内未收到指令进入休眠.seq",
+      "warnings": [
+        "H4: 未知动作已生成占位节点：'StraightRoadTest'",
+        "J4: 未知动作已生成占位节点：'write#闭锁信号？'",
+        "J5: 未知动作已生成占位节点：'未收到指令信号？'",
+        "K5: 未知动作已生成占位节点：'控制器报文为空'"
+      ]
+    },
+    {
+      "caseId": "099_9下电延迟管理功能_R6",
+      "caseName": "闭锁后，悬架正在调节，控制器需维持",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\099_9下电延迟管理功能_R6_闭锁后，悬架正在调节，控制器需维持.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\099_9下电延迟管理功能_R6_闭锁后，悬架正在调节，控制器需维持.seq",
+      "warnings": [
+        "H6: 未知动作已生成占位节点：'StraightRoadTest'",
+        "J6: 未知动作已生成占位节点：'write#空簧模式请求信号？'",
+        "K6: 未知动作已生成占位节点：'read#高度信号？'",
+        "K6: 未知动作已生成占位节点：'空簧模式信号？'",
+        "J7: 未知动作已生成占位节点：'write#闭锁信号？'",
+        "K7: 未知动作已生成占位节点：'read#高度信号？'",
+        "K7: 未知动作已生成占位节点：'空簧模式信号？'",
+        "K7: 未知动作已生成占位节点：'控制器有报文'",
+        "J8: 未知动作已生成占位节点：'未收到指令信号？'",
+        "K8: 未知动作已生成占位节点：'控制器报文为空'"
+      ]
+    },
+    {
+      "caseId": "100_9下电延迟管理功能_R9",
+      "caseName": "闭锁后，收到调节指令，控制器需完成调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\100_9下电延迟管理功能_R9_闭锁后，收到调节指令，控制器需完成调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\100_9下电延迟管理功能_R9_闭锁后，收到调节指令，控制器需完成调节.seq",
+      "warnings": [
+        "H9: 未知动作已生成占位节点：'StraightRoadTest'",
+        "J9: 未知动作已生成占位节点：'write#闭锁信号？'",
+        "J10: 未知动作已生成占位节点：'write#空簧模式请求信号？'",
+        "K10: 未知动作已生成占位节点：'read#高度信号？'",
+        "K10: 未知动作已生成占位节点：'空簧模式信号？'",
+        "K10: 未知动作已生成占位节点：'控制器有报文'",
+        "J11: 未知动作已生成占位节点：'未收到指令信号？'",
+        "K11: 未知动作已生成占位节点：'控制器报文为空'"
+      ]
+    },
+    {
+      "caseId": "101_10路缘检测功能_R4",
+      "caseName": "路缘检测_左前轮",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\101_10路缘检测功能_R4_路缘检测_左前轮.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\101_10路缘检测功能_R4_路缘检测_左前轮.seq",
+      "warnings": [
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M5: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "102_10路缘检测功能_R7",
+      "caseName": "路缘检测_右前轮",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\102_10路缘检测功能_R7_路缘检测_右前轮.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\102_10路缘检测功能_R7_路缘检测_右前轮.seq",
+      "warnings": [
+        "M8: Read断言使用单个'='，已按'=='处理",
+        "M8: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "103_10路缘检测功能_R10",
+      "caseName": "路缘检测_左后轮",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\103_10路缘检测功能_R10_路缘检测_左后轮.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\103_10路缘检测功能_R10_路缘检测_左后轮.seq",
+      "warnings": [
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M11: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "104_10路缘检测功能_R13",
+      "caseName": "路缘检测_右后轮",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\104_10路缘检测功能_R13_路缘检测_右后轮.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\104_10路缘检测功能_R13_路缘检测_右后轮.seq",
+      "warnings": [
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "105_11斜坡检测功能_R3",
+      "caseName": "斜坡检测Slope Detection Module",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\105_11斜坡检测功能_R3_斜坡检测Slope_Detection_Module.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\105_11斜坡检测功能_R3_斜坡检测Slope_Detection_Module.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "106_11斜坡检测功能_R4",
+      "caseName": "C679_ECAS_SDM_001",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\106_11斜坡检测功能_R4_C679_ECAS_SDM_001.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\106_11斜坡检测功能_R4_C679_ECAS_SDM_001.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "107_11斜坡检测功能_R10",
+      "caseName": "C679_ECAS_SDM_002",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\107_11斜坡检测功能_R10_C679_ECAS_SDM_002.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\107_11斜坡检测功能_R10_C679_ECAS_SDM_002.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "108_11斜坡检测功能_R16",
+      "caseName": "C679_ECAS_SDM_003",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\108_11斜坡检测功能_R16_C679_ECAS_SDM_003.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\108_11斜坡检测功能_R16_C679_ECAS_SDM_003.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "109_12车身保护功能_R4",
+      "caseName": "车速大于5kph时，高度调节中，开门后关门，始终禁止调节_标准切越野",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\109_12车身保护功能_R4_车速大于5kph时，高度调节中，开门后关门，始终禁止调节_标准切越野.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\109_12车身保护功能_R4_车速大于5kph时，高度调节中，开门后关门，始终禁止调节_标准切越野.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "110_12车身保护功能_R12",
+      "caseName": "车速小于等于5kph时，高度调节中，开门后关门，禁止后恢复调节_标准切越野",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\110_12车身保护功能_R12_车速小于等于5kph时，高度调节中，开门后关门，禁止后恢复调节_标准切越野.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\110_12车身保护功能_R12_车速小于等于5kph时，高度调节中，开门后关门，禁止后恢复调节_标准切越野.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "111_12车身保护功能_R20",
+      "caseName": "静态时，高度调节中，开门后关门，禁止后恢复调节_标准切越野",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\111_12车身保护功能_R20_静态时，高度调节中，开门后关门，禁止后恢复调节_标准切越野.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\111_12车身保护功能_R20_静态时，高度调节中，开门后关门，禁止后恢复调节_标准切越野.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "112_12车身保护功能_R25",
+      "caseName": "静态时，车门打开，可切换至高度升高的模式_标准切越野",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\112_12车身保护功能_R25_静态时，车门打开，可切换至高度升高的模式_标准切越野.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\112_12车身保护功能_R25_静态时，车门打开，可切换至高度升高的模式_标准切越野.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "113_12车身保护功能_R31",
+      "caseName": "静态时，车门打开，禁止切换至高度降低的模式_标准切运动",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\113_12车身保护功能_R31_静态时，车门打开，禁止切换至高度降低的模式_标准切运动.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\113_12车身保护功能_R31_静态时，车门打开，禁止切换至高度降低的模式_标准切运动.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "114_13空气压缩机过载保护_R4",
+      "caseName": "空气压缩机过载保护_调节前，空压机温度大于110℃",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\114_13空气压缩机过载保护_R4_空气压缩机过载保护_调节前，空压机温度大于110℃.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\114_13空气压缩机过载保护_R4_空气压缩机过载保护_调节前，空压机温度大于110℃.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "115_13空气压缩机过载保护_R9",
+      "caseName": "空气压缩机过载保护_调节中，空压机温度大于110℃",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\115_13空气压缩机过载保护_R9_空气压缩机过载保护_调节中，空压机温度大于110℃.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\115_13空气压缩机过载保护_R9_空气压缩机过载保护_调节中，空压机温度大于110℃.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "116_13空气压缩机过载保护_R14",
+      "caseName": "空气压缩机过载保护_单次连续运行时间大于300秒",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\116_13空气压缩机过载保护_R14_空气压缩机过载保护_单次连续运行时间大于300秒.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\116_13空气压缩机过载保护_R14_空气压缩机过载保护_单次连续运行时间大于300秒.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "117_14车身过高故障报警_R4",
+      "caseName": "FL车身过高故障报警",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\117_14车身过高故障报警_R4_FL车身过高故障报警.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\117_14车身过高故障报警_R4_FL车身过高故障报警.seq",
+      "warnings": [
+        "K4: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvl变化中'",
+        "K4: Read断言使用单个'='，已按'=='处理",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASL2FSErrInfo'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#EcasModeCHASts'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECAS_LatchReq'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECAS_DrvrErrExtECASErrMapBus'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASErrMapECAS'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASErrMapHw'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASErrMapSnsr'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASErrMapSys'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASerromode'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASFuncDegrdMode'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#SusfaultlLamp'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#Susfaultred'"
+      ]
+    },
+    {
+      "caseId": "118_14车身过高故障报警_R9",
+      "caseName": "FR车身过高故障报警",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\118_14车身过高故障报警_R9_FR车身过高故障报警.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\118_14车身过高故障报警_R9_FR车身过高故障报警.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "119_14车身过高故障报警_R14",
+      "caseName": "RL车身过高故障报警",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\119_14车身过高故障报警_R14_RL车身过高故障报警.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\119_14车身过高故障报警_R14_RL车身过高故障报警.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "120_14车身过高故障报警_R19",
+      "caseName": "RR车身过高故障报警",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\120_14车身过高故障报警_R19_RR车身过高故障报警.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\120_14车身过高故障报警_R19_RR车身过高故障报警.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "121_14车身过高故障报警_R24",
+      "caseName": "车身过高故障报警_压力过大故障报警",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\121_14车身过高故障报警_R24_车身过高故障报警_压力过大故障报警.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\121_14车身过高故障报警_R24_车身过高故障报警_压力过大故障报警.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "122_14车身过高故障报警_R29",
+      "caseName": "车身过高故障报警_下电后上电恢复",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\122_14车身过高故障报警_R29_车身过高故障报警_下电后上电恢复.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\122_14车身过高故障报警_R29_车身过高故障报警_下电后上电恢复.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "123_14车身过高故障报警_R34",
+      "caseName": "车身过高故障报警_周期性恢复",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\123_14车身过高故障报警_R34_车身过高故障报警_周期性恢复.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\123_14车身过高故障报警_R34_车身过高故障报警_周期性恢复.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "124_15控制系统失效模式_R4",
+      "caseName": "控制系统失效模式",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\124_15控制系统失效模式_R4_控制系统失效模式.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\124_15控制系统失效模式_R4_控制系统失效模式.seq",
+      "warnings": [
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASL2FSErrInfo'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#EcasModeCHASts'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECAS_LatchReq'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECAS_DrvrErrExtECASErrMapBus'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASErrMapECAS'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASErrMapHw'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASErrMapSnsr'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASErrMapSys'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASerromode'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASFuncDegrdMode'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#SusfaultlLamp'",
+        "K5: Read缺少标准比较表达式，已生成无断言读取：'read#Susfaultred'"
+      ]
+    },
+    {
+      "caseId": "125_16高度调节顺序_R4",
+      "caseName": "P挡静止，高度调节顺序，抬升控制",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\125_16高度调节顺序_R4_P挡静止，高度调节顺序，抬升控制.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\125_16高度调节顺序_R4_P挡静止，高度调节顺序，抬升控制.seq",
+      "warnings": [
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M6: 未知动作已生成占位节点：'read#高度信号变化顺序是否符合要求'",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理",
+        "M6: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "126_16高度调节顺序_R8",
+      "caseName": "60kph行驶，高度调节顺序，抬升控制",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\126_16高度调节顺序_R8_60kph行驶，高度调节顺序，抬升控制.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\126_16高度调节顺序_R8_60kph行驶，高度调节顺序，抬升控制.seq",
+      "warnings": [
+        "M10: Read断言使用单个'='，已按'=='处理",
+        "M10: Read断言使用单个'='，已按'=='处理",
+        "M10: Read断言使用单个'='，已按'=='处理",
+        "M10: Read断言使用单个'='，已按'=='处理",
+        "M10: Read断言使用单个'='，已按'=='处理",
+        "M11: 未知动作已生成占位节点：'read#高度信号变化顺序是否符合要求'",
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M11: Read断言使用单个'='，已按'=='处理",
+        "M11: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "127_16高度调节顺序_R13",
+      "caseName": "P挡静止，高度调节顺序，除迎宾模式外的降低控制",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\127_16高度调节顺序_R13_P挡静止，高度调节顺序，除迎宾模式外的降低控制.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\127_16高度调节顺序_R13_P挡静止，高度调节顺序，除迎宾模式外的降低控制.seq",
+      "warnings": [
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M15: 未知动作已生成占位节点：'read#高度信号变化顺序是否符合要求'",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理",
+        "M15: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "128_16高度调节顺序_R17",
+      "caseName": "60kph行驶，高度调节顺序，除迎宾模式外的降低控制",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\128_16高度调节顺序_R17_60kph行驶，高度调节顺序，除迎宾模式外的降低控制.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\128_16高度调节顺序_R17_60kph行驶，高度调节顺序，除迎宾模式外的降低控制.seq",
+      "warnings": [
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M19: Read断言使用单个'='，已按'=='处理",
+        "M20: 未知动作已生成占位节点：'read#高度信号变化顺序是否符合要求'",
+        "M20: Read断言使用单个'='，已按'=='处理",
+        "M20: Read断言使用单个'='，已按'=='处理",
+        "M20: Read断言使用单个'='，已按'=='处理",
+        "M20: Read断言使用单个'='，已按'=='处理",
+        "M20: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "129_16高度调节顺序_R22",
+      "caseName": "P挡静止，高度调节顺序，迎宾模式下降控制",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\129_16高度调节顺序_R22_P挡静止，高度调节顺序，迎宾模式下降控制.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\129_16高度调节顺序_R22_P挡静止，高度调节顺序，迎宾模式下降控制.seq",
+      "warnings": [
+        "M23: Read断言使用单个'='，已按'=='处理",
+        "M23: Read断言使用单个'='，已按'=='处理",
+        "M23: Read断言使用单个'='，已按'=='处理",
+        "M23: Read断言使用单个'='，已按'=='处理",
+        "M23: Read断言使用单个'='，已按'=='处理",
+        "M24: 未知动作已生成占位节点：'read#高度信号变化顺序是否符合要求'",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理",
+        "M24: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "130_16高度调节顺序_R30",
+      "caseName": "与悬架调平先一起调，后单独调矛盾？",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\130_16高度调节顺序_R30_与悬架调平先一起调，后单独调矛盾？.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\130_16高度调节顺序_R30_与悬架调平先一起调，后单独调矛盾？.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "131_16高度调节顺序_R31",
+      "caseName": "已确认：目前悬架调节过程中，都是先前轴调节，后后轴调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\131_16高度调节顺序_R31_已确认：目前悬架调节过程中，都是先前轴调节，后后轴调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\131_16高度调节顺序_R31_已确认：目前悬架调节过程中，都是先前轴调节，后后轴调节.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "132_17主动保护_R4",
+      "caseName": "60kph行驶，纵向加速度超阈值，禁止调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\132_17主动保护_R4_60kph行驶，纵向加速度超阈值，禁止调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\132_17主动保护_R4_60kph行驶，纵向加速度超阈值，禁止调节.seq",
+      "warnings": [
+        "M5: Read断言使用单个'='，已按'=='处理",
+        "M5: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX停止变化'",
+        "M5: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "133_17主动保护_R11",
+      "caseName": "不同车速行驶，横向加速度超阈值，禁止调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\133_17主动保护_R11_不同车速行驶，横向加速度超阈值，禁止调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\133_17主动保护_R11_不同车速行驶，横向加速度超阈值，禁止调节.seq",
+      "warnings": [
+        "M14: Read断言使用单个'='，已按'=='处理",
+        "M14: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX停止变化'",
+        "M14: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "134_17主动保护_R20",
+      "caseName": "不同车速行驶，转向角度超阈值，禁止调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\134_17主动保护_R20_不同车速行驶，转向角度超阈值，禁止调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\134_17主动保护_R20_不同车速行驶，转向角度超阈值，禁止调节.seq",
+      "warnings": [
+        "M23: Read断言使用单个'='，已按'=='处理",
+        "M23: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX停止变化'",
+        "M23: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "135_17主动保护_R29",
+      "caseName": "60kph行驶，转向速率超阈值，禁止调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\135_17主动保护_R29_60kph行驶，转向速率超阈值，禁止调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\135_17主动保护_R29_60kph行驶，转向速率超阈值，禁止调节.seq",
+      "warnings": [
+        "M32: Read断言使用单个'='，已按'=='处理",
+        "M32: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX停止变化'",
+        "M32: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "136_17主动保护_R38",
+      "caseName": "P挡静止，转向角度超阈值，禁止调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\136_17主动保护_R38_P挡静止，转向角度超阈值，禁止调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\136_17主动保护_R38_P挡静止，转向角度超阈值，禁止调节.seq",
+      "warnings": [
+        "M40: Read断言使用单个'='，已按'=='处理",
+        "M40: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX停止变化'",
+        "M40: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "137_17主动保护_R44",
+      "caseName": "P挡静止，转向速率超阈值，禁止调节",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\137_17主动保护_R44_P挡静止，转向速率超阈值，禁止调节.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\137_17主动保护_R44_P挡静止，转向速率超阈值，禁止调节.seq",
+      "warnings": [
+        "M46: Read断言使用单个'='，已按'=='处理",
+        "M46: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX停止变化'",
+        "M46: Read断言使用单个'='，已按'=='处理"
+      ]
+    },
+    {
+      "caseId": "138_18车辆高速行驶的稳定控制_R4",
+      "caseName": "车辆高速行驶时，刚度阀关闭",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\138_18车辆高速行驶的稳定控制_R4_车辆高速行驶时，刚度阀关闭.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\138_18车辆高速行驶的稳定控制_R4_车辆高速行驶时，刚度阀关闭.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "139_18车辆高速行驶的稳定控制_R7",
+      "caseName": "车辆高速行驶后缓慢减速，刚度阀打开",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\139_18车辆高速行驶的稳定控制_R7_车辆高速行驶后缓慢减速，刚度阀打开.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\139_18车辆高速行驶的稳定控制_R7_车辆高速行驶后缓慢减速，刚度阀打开.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "140_18车辆高速行驶的稳定控制_R11",
+      "caseName": "车辆高速行驶后迅速减速，刚度阀打开",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\140_18车辆高速行驶的稳定控制_R11_车辆高速行驶后迅速减速，刚度阀打开.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\140_18车辆高速行驶的稳定控制_R11_车辆高速行驶后迅速减速，刚度阀打开.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "141_19刚度控制_R4",
+      "caseName": "刚度阀故障关闭，禁止切换到越野模式",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\141_19刚度控制_R4_刚度阀故障关闭，禁止切换到越野模式.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\141_19刚度控制_R4_刚度阀故障关闭，禁止切换到越野模式.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "142_19刚度控制_R9",
+      "caseName": "越野模式时，刚度阀禁止被打开",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\json\\142_19刚度控制_R9_越野模式时，刚度阀禁止被打开.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases_1_1\\seq\\142_19刚度控制_R9_越野模式时，刚度阀禁止被打开.seq",
+      "warnings": []
+    }
+  ]
+}

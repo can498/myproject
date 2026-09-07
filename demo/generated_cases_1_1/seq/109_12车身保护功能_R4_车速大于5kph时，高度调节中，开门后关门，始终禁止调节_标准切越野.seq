@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="c5c8f0c0-40da-4ee1-bd13-bb65e8f49072" name="车速大于5kph时，高度调节中，开门后关门，始终禁止调节_标准切越野" describle="来源：12车身保护功能 A4:M11" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="ad8cd6da-ea2f-4a4f-b70c-ac5da2801619"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="7ea44277-4884-42f3-83f4-2e82d49e3f9b"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="77ee9f15-e17b-404a-9526-cacb92c0b77d" name="车速大于5kph时，高度调节中，开门后关门，始终禁止调节_标准切越野">
+    <children xmi:type="tae:Initialization" xmi:id="9c048a9b-a79f-4c48-aa4a-897f268ce2d3" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="3215bbf8-872c-4b3a-b85e-af66c88deaa2" name="Test Step &amp; Expected Result"/>
+    <children xmi:type="tae:Cleanup" xmi:id="8d1a4a97-3a1c-4a20-9e40-292a82be9521" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

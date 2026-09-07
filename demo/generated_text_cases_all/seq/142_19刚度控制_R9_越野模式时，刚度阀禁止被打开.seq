@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generator="com.hirain.tae.generator" xmi:id="b2f8d846-340f-45b1-b4a3-70812ce0f65c" name="越野模式时，刚度阀禁止被打开" describle="来源：19刚度控制 A9:G12" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="6290a15d-f56d-49b4-9ea1-9aae18a8d037"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="30f6f919-0649-4f46-8123-c40b9f26087c"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="4527d0c6-ec1e-4b91-9a30-32a23612ec20" name="越野模式时，刚度阀禁止被打开">
+    <children xmi:type="tae:Initialization" xmi:id="f0ce0674-e60d-4114-a9bb-fcedfc323f87" name="Initialization">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="c6273f12-135d-4f38-81a7-a19c14068129" name="powerOn" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOn"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="70e6f127-9abd-4d4f-866c-2ca156f763cc" name="2、控制器无故障" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="5d0581bb-6a6a-4498-a4a7-1a6c6ac64b2e" name="3、车辆静止" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="23a3ec4a-a1b8-4842-88b9-ab64f5c3079c" name="4、ECAS模式为越野" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Group" xmi:id="8f6b859b-4100-4839-a417-b54d75ba1e07" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:ScriptBlock" xmi:id="c479f64a-bef8-42b5-8200-f4697fa1a996" name="使刚度阀打开" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="c27c4b8a-5fa4-4211-891e-2afde2717937" name="所有刚度阀保持关闭" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="4a2ff994-cbd0-4122-a2e0-bcd41dcab61b" name="切换ECAS为标准模式" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="88090e6a-3bf5-428b-b6bc-8917573d4515" name="ECAS切为标准模式" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="0e4b55fe-f3b3-4c96-a8f2-abf916a7b316" name="使刚度阀打开" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="eba74802-49cc-4f7f-ad4a-514cc1cee5b1" name="所有刚度阀打开" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="98bace2b-f0b2-48ad-88f1-8eb6323d8ca3" name="Clean Up">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="dd0accc7-56b9-45be-a10a-17fee4668c79" name="powerOff" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOff"/>
+    </children>
+  </activitySequence>
+</tae:Process>

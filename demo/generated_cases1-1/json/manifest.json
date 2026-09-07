@@ -1,0 +1,246 @@
+{
+  "totalCases": 20,
+  "totalWarnings": 260,
+  "cases": [
+    {
+      "caseId": "001_1模式管理_R4",
+      "caseName": "P档静止，其它切标准",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A4:M11"
+      },
+      "json": "001_1模式管理_R4_P档静止，其它切标准.json",
+      "actions": 17,
+      "warnings": 12
+    },
+    {
+      "caseId": "002_1模式管理_R12",
+      "caseName": "P档静止，其它切运动",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A12:M19"
+      },
+      "json": "002_1模式管理_R12_P档静止，其它切运动.json",
+      "actions": 17,
+      "warnings": 12
+    },
+    {
+      "caseId": "003_1模式管理_R20",
+      "caseName": "P档静止，其它切越野",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A20:M27"
+      },
+      "json": "003_1模式管理_R20_P档静止，其它切越野.json",
+      "actions": 17,
+      "warnings": 12
+    },
+    {
+      "caseId": "004_1模式管理_R28",
+      "caseName": "P档静止，其它切自适应",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A28:M35"
+      },
+      "json": "004_1模式管理_R28_P档静止，其它切自适应.json",
+      "actions": 17,
+      "warnings": 12
+    },
+    {
+      "caseId": "005_1模式管理_R36",
+      "caseName": "P档静止，其它切迎宾",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A36:M43"
+      },
+      "json": "005_1模式管理_R36_P档静止，其它切迎宾.json",
+      "actions": 17,
+      "warnings": 12
+    },
+    {
+      "caseId": "006_1模式管理_R44",
+      "caseName": "P档静止，其它切装卸",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A44:M51"
+      },
+      "json": "006_1模式管理_R44_P档静止，其它切装卸.json",
+      "actions": 15,
+      "warnings": 10
+    },
+    {
+      "caseId": "007_1模式管理_R52",
+      "caseName": "P档静止，其它切一键调平",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A52:M59"
+      },
+      "json": "007_1模式管理_R52_P档静止，其它切一键调平.json",
+      "actions": 17,
+      "warnings": 12
+    },
+    {
+      "caseId": "008_1模式管理_R60",
+      "caseName": "P档静止，其它切牵引",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A60:M67"
+      },
+      "json": "008_1模式管理_R60_P档静止，其它切牵引.json",
+      "actions": 17,
+      "warnings": 12
+    },
+    {
+      "caseId": "009_1模式管理_R68",
+      "caseName": "P档静止，其它切维修",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A68:M75"
+      },
+      "json": "009_1模式管理_R68_P档静止，其它切维修.json",
+      "actions": 17,
+      "warnings": 12
+    },
+    {
+      "caseId": "010_1模式管理_R76",
+      "caseName": "R档，0km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A76:M87"
+      },
+      "json": "010_1模式管理_R76_R档，0km_h，悬架模式切换.json",
+      "actions": 20,
+      "warnings": 13
+    },
+    {
+      "caseId": "011_1模式管理_R88",
+      "caseName": "R档，20km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A88:M99"
+      },
+      "json": "011_1模式管理_R88_R档，20km_h，悬架模式切换.json",
+      "actions": 22,
+      "warnings": 14
+    },
+    {
+      "caseId": "012_1模式管理_R100",
+      "caseName": "D档，0km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A100:M111"
+      },
+      "json": "012_1模式管理_R100_D档，0km_h，悬架模式切换.json",
+      "actions": 20,
+      "warnings": 13
+    },
+    {
+      "caseId": "013_1模式管理_R112",
+      "caseName": "D档，20km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A112:M123"
+      },
+      "json": "013_1模式管理_R112_D档，20km_h，悬架模式切换.json",
+      "actions": 22,
+      "warnings": 14
+    },
+    {
+      "caseId": "014_1模式管理_R124",
+      "caseName": "D档，60km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A124:M135"
+      },
+      "json": "014_1模式管理_R124_D档，60km_h，悬架模式切换.json",
+      "actions": 22,
+      "warnings": 14
+    },
+    {
+      "caseId": "015_1模式管理_R136",
+      "caseName": "D档，120km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A136:M147"
+      },
+      "json": "015_1模式管理_R136_D档，120km_h，悬架模式切换.json",
+      "actions": 22,
+      "warnings": 14
+    },
+    {
+      "caseId": "016_1模式管理_R148",
+      "caseName": "N档，0km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A148:M159"
+      },
+      "json": "016_1模式管理_R148_N档，0km_h，悬架模式切换.json",
+      "actions": 20,
+      "warnings": 13
+    },
+    {
+      "caseId": "017_1模式管理_R160",
+      "caseName": "N档，20km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A160:M171"
+      },
+      "json": "017_1模式管理_R160_N档，20km_h，悬架模式切换.json",
+      "actions": 24,
+      "warnings": 15
+    },
+    {
+      "caseId": "018_1模式管理_R172",
+      "caseName": "N档，60km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A172:M183"
+      },
+      "json": "018_1模式管理_R172_N档，60km_h，悬架模式切换.json",
+      "actions": 24,
+      "warnings": 15
+    },
+    {
+      "caseId": "019_1模式管理_R184",
+      "caseName": "N档，120km/h，悬架模式切换",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A184:M195"
+      },
+      "json": "019_1模式管理_R184_N档，120km_h，悬架模式切换.json",
+      "actions": 24,
+      "warnings": 15
+    },
+    {
+      "caseId": "020_1模式管理_R196",
+      "caseName": "悬架模式不可切换（选取部分工况）",
+      "source": {
+        "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\用例1-1_HIL_simple.xlsx",
+        "sheet": "1模式管理",
+        "range": "A196:M202"
+      },
+      "json": "020_1模式管理_R196_悬架模式不可切换（选取部分工况）.json",
+      "actions": 22,
+      "warnings": 14
+    }
+  ]
+}

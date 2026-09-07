@@ -1,0 +1,18 @@
+{
+  "caseId": "119_14车身过高故障报警_R14",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "14车身过高故障报警",
+    "range": "A14:K18"
+  },
+  "caseName": "RL车身过高故障报警",
+  "testLevel": "P3",
+  "concreteSettings": "/·",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": []
+}

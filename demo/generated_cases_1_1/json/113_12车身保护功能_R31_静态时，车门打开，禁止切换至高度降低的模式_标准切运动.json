@@ -1,0 +1,18 @@
+{
+  "caseId": "113_12车身保护功能_R31",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "12车身保护功能",
+    "range": "A31:M36"
+  },
+  "caseName": "静态时，车门打开，禁止切换至高度降低的模式_标准切运动",
+  "testLevel": "P1",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": []
+}

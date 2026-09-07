@@ -1,0 +1,75 @@
+{
+  "caseId": "136_17主动保护_R38",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "17主动保护",
+    "range": "A38:M43"
+  },
+  "caseName": "P挡静止，转向角度超阈值，禁止调节",
+  "testLevel": "P2",
+  "concreteSettings": "指定车速\n指定转向角度1\n指定转向角度2",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "EpsSasSteerAg",
+      "value": "转向角度1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row40"
+    },
+    {
+      "action": "Read",
+      "signal": "ECAS_LatchReq",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "?",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row40"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlXX",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "停止变化",
+      "sourceStep": "Row40"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row40"
+    },
+    {
+      "action": "Write",
+      "signal": "EpsSasSteerAg",
+      "value": "转向角度2",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row41"
+    }
+  ],
+  "cleanup": [],
+  "requiredMappings": [
+    "ECASActLvlXX",
+    "ECAS_LatchReq",
+    "EcasModeFB",
+    "EpsSasSteerAg"
+  ],
+  "warnings": [
+    "M40: Read断言使用单个'='，已按'=='处理",
+    "M40: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX停止变化'",
+    "M40: Read断言使用单个'='，已按'=='处理"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "caseId": "142_19刚度控制_R9",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "19刚度控制",
+    "range": "A9:G12",
+    "mode": "text-to-signal"
+  },
+  "caseName": "越野模式时，刚度阀禁止被打开",
+  "testLevel": "P1",
+  "concreteSettings": "/·",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、车辆静止",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "4、ECAS模式为越野",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Placeholder",
+      "name": "使刚度阀打开",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "使刚度阀打开"
+    },
+    {
+      "action": "Placeholder",
+      "name": "所有刚度阀保持关闭",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "所有刚度阀保持关闭"
+    },
+    {
+      "action": "Placeholder",
+      "name": "切换ECAS为标准模式",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "切换ECAS为标准模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS切为标准模式",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "ECAS切为标准模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "使刚度阀打开",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "使刚度阀打开"
+    },
+    {
+      "action": "Placeholder",
+      "name": "所有刚度阀打开",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "所有刚度阀打开"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step4",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [],
+  "warnings": [
+    "D9: 未识别文本动作：2、控制器无故障",
+    "D9: 未识别文本动作：3、车辆静止",
+    "D9: 未识别文本动作：4、ECAS模式为越野",
+    "D9: 未知动作已生成占位节点：'2、控制器无故障'",
+    "D9: 未知动作已生成占位节点：'3、车辆静止'",
+    "D9: 未知动作已生成占位节点：'4、ECAS模式为越野'",
+    "F9: 未识别文本动作：使刚度阀打开",
+    "G9: 未识别文本动作：所有刚度阀保持关闭",
+    "F9: 未知动作已生成占位节点：'使刚度阀打开'",
+    "F9: 未知动作已生成占位节点：'所有刚度阀保持关闭'",
+    "F10: 未识别文本动作：切换ECAS为标准模式",
+    "G10: 未识别文本动作：ECAS切为标准模式",
+    "F10: 未知动作已生成占位节点：'切换ECAS为标准模式'",
+    "F10: 未知动作已生成占位节点：'ECAS切为标准模式'",
+    "F11: 未识别文本动作：使刚度阀打开",
+    "G11: 未识别文本动作：所有刚度阀打开",
+    "F11: 未知动作已生成占位节点：'使刚度阀打开'",
+    "F11: 未知动作已生成占位节点：'所有刚度阀打开'"
+  ],
+  "signalCatalogSize": 10
+}

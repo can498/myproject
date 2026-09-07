@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generator="com.hirain.tae.generator" xmi:id="858caed2-af22-42ed-9025-7e0da8f72057" name="车辆高速行驶时，刚度阀关闭" describle="来源：18车辆高速行驶的稳定控制 A4:G6" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="07369bc6-b741-4512-b85c-df624f79f779"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="42161079-3b78-4c78-bfda-352813d51464"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="5021b94b-ed70-49b2-be24-7d2082f45c78" name="车辆高速行驶时，刚度阀关闭">
+    <children xmi:type="tae:Initialization" xmi:id="19b48d40-0993-47a6-9b5b-74ef4c69cb55" name="Initialization">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="6435e853-afb9-42ca-a242-c4c5be8ebb66" name="powerOn" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOn"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="6bf9952a-ea5b-4794-8c84-d74a540342f7" name="2、控制器无故障" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="4d88beb0-419a-4067-adac-cd317b5d7320" name="3、车辆静止" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="d4d3f537-a98b-4516-a541-8ade61fdfce9" name="4、ECAS模式为运动" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Group" xmi:id="89602857-f6c1-4a35-a6be-cb6255b5b7f7" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:ScriptBlock" xmi:id="b604f64e-ae32-4786-91e8-387dd07e383f" name="切D挡,并加速到100km/h,等待21s" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="d3d03530-69f9-4f2e-b54a-a719ed2dc530" name="所有刚度阀关闭" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="9d667fad-f1aa-4e23-ae1a-86771c4f83fd" name="停车减速至0km/h,切P挡" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="d0c41aa2-5a81-4f31-9c61-4fde3773e3a2" name="Clean Up">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="d895b408-c3c9-44ab-9297-4cba7a8e95da" name="powerOff" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOff"/>
+    </children>
+  </activitySequence>
+</tae:Process>

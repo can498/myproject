@@ -1,0 +1,89 @@
+{
+  "caseId": "002_3.2.1_信号处理_R4",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+    "sheet": "3.2.1 信号处理",
+    "range": "A4:K5"
+  },
+  "caseName": "车辆上电后，各加速度传感器有效性为有效",
+  "testLevel": "P1",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Read",
+      "signal": "ECDCSP_I_AzWhlFRVld_uls_u8",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Read",
+      "signal": "ECDCSP_I_AzWhlFLVld_uls_u8",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Read",
+      "signal": "ECDCSP_I_AzBodyRearVld_uls_u8",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Read",
+      "signal": "ECDCSP_I_AzBodyFRVld_uls_u8",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Read",
+      "signal": "ECDCSP_I_AzBodyFLVld_uls_u8",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step2"
+    }
+  ],
+  "requiredMappings": [
+    "ECDCSP_I_AzBodyFLVld_uls_u8",
+    "ECDCSP_I_AzBodyFRVld_uls_u8",
+    "ECDCSP_I_AzBodyRearVld_uls_u8",
+    "ECDCSP_I_AzWhlFLVld_uls_u8",
+    "ECDCSP_I_AzWhlFRVld_uls_u8"
+  ],
+  "warnings": []
+}

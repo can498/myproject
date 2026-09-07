@@ -1,0 +1,18 @@
+{
+  "caseId": "110_12车身保护功能_R12",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "12车身保护功能",
+    "range": "A12:M19"
+  },
+  "caseName": "车速小于等于5kph时，高度调节中，开门后关门，禁止后恢复调节_标准切越野",
+  "testLevel": "P3",
+  "concreteSettings": "指定车速\n指定车门",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": []
+}

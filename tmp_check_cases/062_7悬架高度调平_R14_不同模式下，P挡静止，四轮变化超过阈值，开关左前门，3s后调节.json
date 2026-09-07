@@ -1,0 +1,26 @@
+{
+  "caseId": "062_7悬架高度调平_R14",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "7悬架高度调平",
+    "range": "A14:K23"
+  },
+  "caseName": "不同模式下，P挡静止，四轮变化超过阈值，开关左前门，3s后调节",
+  "testLevel": "1",
+  "concreteSettings": "指定空簧模式请求\n指定实际空簧模式对应高度\n指定实际空簧模式\n指定阈值",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "初始状态检测",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H14: 未知动作已生成占位节点：'初始状态检测'"
+  ]
+}

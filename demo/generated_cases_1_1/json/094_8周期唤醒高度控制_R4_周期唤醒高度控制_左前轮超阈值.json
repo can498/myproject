@@ -1,0 +1,37 @@
+{
+  "caseId": "094_8周期唤醒高度控制_R4",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "8周期唤醒高度控制",
+    "range": "A4:M9"
+  },
+  "caseName": "周期唤醒高度控制_左前轮超阈值",
+  "testLevel": "P1",
+  "concreteSettings": "指定阈值",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "LoChrgSts",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row5"
+    },
+    {
+      "action": "Write",
+      "signal": "LoChrgSts",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row8"
+    }
+  ],
+  "cleanup": [],
+  "requiredMappings": [
+    "LoChrgSts"
+  ],
+  "warnings": []
+}

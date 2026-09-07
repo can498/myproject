@@ -1,0 +1,99 @@
+{
+  "caseId": "101_10路缘检测功能_R4",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "10路缘检测功能",
+    "range": "A4:I6",
+    "mode": "text-to-signal"
+  },
+  "caseName": "路缘检测_左前轮",
+  "testLevel": "P1",
+  "concreteSettings": "指定空簧模式请求",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、车辆静止",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Placeholder",
+      "name": "设置使左前轮在61mm的路缘上",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "设置使左前轮在61mm的路缘上"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置空簧模式请求为指定空簧模式请求",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "设置空簧模式请求为指定空簧模式请求"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度保持为0mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "1、检测实际空簧高度保持为0mm\n2、检测实际空簧模式保持为标准模式"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step2",
+      "sourceText": "1、检测实际空簧高度保持为0mm\n2、检测实际空簧模式保持为标准模式"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step3",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [
+    "EcasModeFB"
+  ],
+  "warnings": [
+    "F4: 未识别文本动作：2、控制器无故障",
+    "F4: 未识别文本动作：3、车辆静止",
+    "F4: 未知动作已生成占位节点：'2、控制器无故障'",
+    "F4: 未知动作已生成占位节点：'3、车辆静止'",
+    "H4: 未识别文本动作：设置使左前轮在61mm的路缘上",
+    "H4: 未知动作已生成占位节点：'设置使左前轮在61mm的路缘上'",
+    "H5: 未识别文本动作：设置空簧模式请求为指定空簧模式请求",
+    "I5: 未识别文本动作：1、检测实际空簧高度保持为0mm",
+    "H5: 未知动作已生成占位节点：'设置空簧模式请求为指定空簧模式请求'",
+    "H5: 未知动作已生成占位节点：'1、检测实际空簧高度保持为0mm'"
+  ],
+  "signalCatalogSize": 10
+}

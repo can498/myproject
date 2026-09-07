@@ -1,0 +1,176 @@
+{
+  "caseId": "034_5迎宾模式_R18",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "5迎宾模式",
+    "range": "A18:I22",
+    "mode": "text-to-signal"
+  },
+  "caseName": "调节前打开车门，不进入迎宾模式",
+  "testLevel": "P2",
+  "concreteSettings": "FL车门\nFR车门\nRL车门\nRR车门",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2.控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3.整车闭锁,四门关闭",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "4.迎宾模式(待定状态）",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step1",
+      "sourceText": "设置空簧模式请求为标准"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step1",
+      "sourceText": "设置空簧模式请求为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度为0mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "1、检测实际空簧高度为0mm\n2、检测实际空簧模式为标准"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1",
+      "sourceText": "1、检测实际空簧高度为0mm\n2、检测实际空簧模式为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置不同车门打开信号",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "设置不同车门打开信号"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "5",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step2",
+      "sourceText": "设置空簧模式请求为迎宾"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step2",
+      "sourceText": "设置空簧模式请求为迎宾"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度为0mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "1、检测实际空簧高度为0mm\n2、检测实际空簧模式为标准"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step2",
+      "sourceText": "1、检测实际空簧高度为0mm\n2、检测实际空簧模式为标准"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step4",
+      "sourceText": "设置空簧模式请求为标准"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step4",
+      "sourceText": "设置空簧模式请求为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度为0mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "1、检测实际空簧高度为0mm\n2、检测实际空簧模式为标准"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step4",
+      "sourceText": "1、检测实际空簧高度为0mm\n2、检测实际空簧模式为标准"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step5",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [
+    "EcasModeFB",
+    "EcasModeReq"
+  ],
+  "warnings": [
+    "F18: 未识别文本动作：2.控制器无故障",
+    "F18: 未识别文本动作：3.整车闭锁,四门关闭",
+    "F18: 未识别文本动作：4.迎宾模式(待定状态）",
+    "F18: 未知动作已生成占位节点：'2.控制器无故障'",
+    "F18: 未知动作已生成占位节点：'3.整车闭锁,四门关闭'",
+    "F18: 未知动作已生成占位节点：'4.迎宾模式(待定状态）'",
+    "I18: 未识别文本动作：1、检测实际空簧高度为0mm",
+    "H18: 未知动作已生成占位节点：'1、检测实际空簧高度为0mm'",
+    "H19: 未识别文本动作：设置不同车门打开信号",
+    "H19: 未知动作已生成占位节点：'设置不同车门打开信号'",
+    "I20: 未识别文本动作：1、检测实际空簧高度为0mm",
+    "H20: 未知动作已生成占位节点：'1、检测实际空簧高度为0mm'",
+    "I21: 未识别文本动作：1、检测实际空簧高度为0mm",
+    "H21: 未知动作已生成占位节点：'1、检测实际空簧高度为0mm'"
+  ],
+  "signalCatalogSize": 10
+}

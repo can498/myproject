@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="2eef42ea-f5e3-476b-b5af-37e0c22e5ae0" name="斜坡检测Slope Detection Module" describle="来源：11斜坡检测功能 A3:I3" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="1de11baf-a8a5-43c1-906c-7ba3efb33f6c"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="d9426b8c-be91-46ed-9023-4f185697f265"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="b32fc6c4-b4dd-46b5-91cd-dd6fa27bd0f4" name="斜坡检测Slope Detection Module">
+    <children xmi:type="tae:Initialization" xmi:id="b607a491-30c5-4efe-a6bd-aa44aaefb35e" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="9dba3784-1582-41a8-9d5a-d49694dea39a" name="Test Step &amp; Expected Result"/>
+    <children xmi:type="tae:Cleanup" xmi:id="37832da8-c416-4c53-acf5-c9a2319156bd" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

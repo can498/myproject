@@ -1,0 +1,101 @@
+{
+  "caseId": "100_9下电延迟管理功能_R9",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "9下电延迟管理功能",
+    "range": "A9:G11",
+    "mode": "text-to-signal"
+  },
+  "caseName": "闭锁后，收到调节指令，控制器需完成调节",
+  "testLevel": "P3",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、车辆静止",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "4、空簧为标准模式",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Placeholder",
+      "name": "闭锁后",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "闭锁后"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "2",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step2",
+      "sourceText": "设置目标空簧模式为越野模式"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step2",
+      "sourceText": "设置目标空簧模式为越野模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "空簧高度正在调节中",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "空簧高度正在调节中"
+    },
+    {
+      "action": "Placeholder",
+      "name": "控制器在一定时间内未收到指令",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "控制器在一定时间内未收到指令"
+    },
+    {
+      "action": "Placeholder",
+      "name": "控制器休眠",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "控制器休眠"
+    }
+  ],
+  "cleanup": [],
+  "requiredMappings": [
+    "EcasModeReq"
+  ],
+  "warnings": [
+    "D9: 未识别文本动作：2、控制器无故障",
+    "D9: 未识别文本动作：3、车辆静止",
+    "D9: 未识别文本动作：4、空簧为标准模式",
+    "D9: 未知动作已生成占位节点：'2、控制器无故障'",
+    "D9: 未知动作已生成占位节点：'3、车辆静止'",
+    "D9: 未知动作已生成占位节点：'4、空簧为标准模式'",
+    "F9: 未识别文本动作：闭锁后",
+    "F9: 未知动作已生成占位节点：'闭锁后'",
+    "G10: 未识别文本动作：空簧高度正在调节中",
+    "F10: 未知动作已生成占位节点：'空簧高度正在调节中'",
+    "F11: 未识别文本动作：控制器在一定时间内未收到指令",
+    "G11: 未识别文本动作：控制器休眠",
+    "F11: 未知动作已生成占位节点：'控制器在一定时间内未收到指令'",
+    "F11: 未知动作已生成占位节点：'控制器休眠'"
+  ],
+  "signalCatalogSize": 10
+}

@@ -1,0 +1,26 @@
+{
+  "caseId": "032_5迎宾模式_R4",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "5迎宾模式",
+    "range": "A4:K11"
+  },
+  "caseName": "进入迎宾模式",
+  "testLevel": "1",
+  "concreteSettings": "指定空簧模式请求\n指定实际空簧模式对应高度\n指定实际空簧模式",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "初始状态检测",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H4: 未知动作已生成占位节点：'初始状态检测'"
+  ]
+}

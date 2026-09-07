@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mapping:MappingFolder xmlns:xmi="http://www.omg.org/XMI" xmlns:mapping="com.hirain.tae.model.mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="8d34ce72-fa2e-4e7e-b2b6-682642668e23" name="" xmi:version="2.0">
+  <folder xmi:type="mapping:MappingFolder" xmi:id="454d1855-adbf-472d-8d2a-8db6a00fe667" name="Model">
+    <mapping xmi:type="mapping:ModelMapping" xmi:id="53849a83-e778-41b2-ada3-cdac9f7d7e45" name="a" deviceName="HIL" path="param/a" description="" reference="" dataType="VALUE">
+      <enumeration xmi:type="mapping:Enumeration" xmi:id="22e131bc-3fb1-40ac-81a1-95d6d7dca922"/>
+    </mapping>
+  </folder>
+</mapping:MappingFolder>

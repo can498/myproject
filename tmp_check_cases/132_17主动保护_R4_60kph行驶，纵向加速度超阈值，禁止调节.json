@@ -1,0 +1,26 @@
+{
+  "caseId": "132_17主动保护_R4",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "17主动保护",
+    "range": "A4:K10"
+  },
+  "caseName": "60kph行驶，纵向加速度超阈值，禁止调节",
+  "testLevel": "1",
+  "concreteSettings": "指定纵向加速度",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "设置空簧模式为运动",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H4: 未知动作已生成占位节点：'设置空簧模式为运动'"
+  ]
+}

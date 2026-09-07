@@ -1,0 +1,54 @@
+{
+  "environment": "ModelDummy",
+  "description": "仅用于TAE自动生成链路联调，不代表真实底盘信号路径",
+  "mappings": [
+    {
+      "name": "GearLever",
+      "type": "ModelMapping",
+      "deviceName": "HIL",
+      "path": "param/a",
+      "dataType": "VALUE",
+      "enumerations": {"P": "0", "D": "1"}
+    },
+    {
+      "name": "VcuGearPosn",
+      "type": "ModelMapping",
+      "deviceName": "HIL",
+      "path": "param/a",
+      "dataType": "VALUE",
+      "enumerations": {"P": "0", "D": "1"}
+    },
+    {
+      "name": "ECDCmodereq",
+      "type": "ModelMapping",
+      "deviceName": "HIL",
+      "path": "param/b",
+      "dataType": "VALUE",
+      "enumerations": {"ECDCMODE_INIT": "0", "ECDCMODE": "1"}
+    },
+    {
+      "name": "VMC_EcdcMode",
+      "type": "ModelMapping",
+      "deviceName": "HIL",
+      "path": "param/b",
+      "dataType": "VALUE",
+      "enumerations": {"ECDCMODE_INIT": "0", "ECDCMODE": "1"}
+    },
+    {
+      "name": "TargetVehSpd",
+      "type": "ModelMapping",
+      "deviceName": "HIL",
+      "path": "param/c",
+      "dataType": "VALUE",
+      "enumerations": {"SPEED": "20"}
+    },
+    {
+      "name": "EspVehSpd",
+      "type": "ModelMapping",
+      "deviceName": "HIL",
+      "path": "param/c",
+      "dataType": "VALUE",
+      "enumerations": {"SPEED": "20"}
+    }
+  ]
+}

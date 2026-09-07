@@ -1,0 +1,75 @@
+{
+  "caseId": "135_17主动保护_R29",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "17主动保护",
+    "range": "A29:M37"
+  },
+  "caseName": "60kph行驶，转向速率超阈值，禁止调节",
+  "testLevel": "P2",
+  "concreteSettings": "指定车速\n指定转向速率1\n指定转向速率2",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "EpsSteerAgRate",
+      "value": "转向速率1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row32"
+    },
+    {
+      "action": "Read",
+      "signal": "ECAS_LatchReq",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "?",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row32"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlXX",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "停止变化",
+      "sourceStep": "Row32"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row32"
+    },
+    {
+      "action": "Write",
+      "signal": "EpsSteerAgRate",
+      "value": "转向速率2",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row33"
+    }
+  ],
+  "cleanup": [],
+  "requiredMappings": [
+    "ECASActLvlXX",
+    "ECAS_LatchReq",
+    "EcasModeFB",
+    "EpsSteerAgRate"
+  ],
+  "warnings": [
+    "M32: Read断言使用单个'='，已按'=='处理",
+    "M32: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX停止变化'",
+    "M32: Read断言使用单个'='，已按'=='处理"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "caseId": "095_8周期唤醒高度控制_R10",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "8周期唤醒高度控制",
+    "range": "A10:K15"
+  },
+  "caseName": "周期唤醒高度控制_右前轮超阈值",
+  "testLevel": "1",
+  "concreteSettings": "指定阈值",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "设置使控制器唤醒",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H10: 未知动作已生成占位节点：'设置使控制器唤醒'"
+  ]
+}

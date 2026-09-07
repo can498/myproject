@@ -1,0 +1,26 @@
+{
+  "caseId": "125_16高度调节顺序_R4",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "16高度调节顺序",
+    "range": "A4:K7"
+  },
+  "caseName": "P挡静止，高度调节顺序，抬升控制",
+  "testLevel": "1",
+  "concreteSettings": "指定空簧模式请求1\n指定实际空簧模式对应高度1\n指定实际空簧模式1\n指定空簧模式请求2\n指定实际空簧模式对应高度2\n指定实际空簧模式2",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "初始状态检测",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H4: 未知动作已生成占位节点：'初始状态检测'"
+  ]
+}

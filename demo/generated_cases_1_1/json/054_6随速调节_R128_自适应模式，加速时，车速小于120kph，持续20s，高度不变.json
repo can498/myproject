@@ -1,0 +1,154 @@
+{
+  "caseId": "054_6随速调节_R128",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "6随速调节",
+    "range": "A128:M133"
+  },
+  "caseName": "自适应模式，加速时，车速小于120kph，持续20s，高度不变",
+  "testLevel": "P3",
+  "concreteSettings": "指定车速",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "4",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Row129"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row129"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlFR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row129"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row129"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlRR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row129"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "4",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row129"
+    },
+    {
+      "action": "Placeholder",
+      "name": "20s内，",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Row130"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlXX",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "未调节",
+      "sourceStep": "Row130"
+    },
+    {
+      "action": "Placeholder",
+      "name": "20s后，",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Row130"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlXX",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "未调节",
+      "sourceStep": "Row130"
+    },
+    {
+      "action": "Read",
+      "signal": "ECASActLvlXX",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row130"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "4",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Row130"
+    }
+  ],
+  "cleanup": [],
+  "requiredMappings": [
+    "ECASActLvlFL",
+    "ECASActLvlFR",
+    "ECASActLvlRL",
+    "ECASActLvlRR",
+    "ECASActLvlXX",
+    "EcasModeFB",
+    "EcasModeReq"
+  ],
+  "warnings": [
+    "M129: Read断言使用单个'='，已按'=='处理",
+    "M129: Read断言使用单个'='，已按'=='处理",
+    "M129: Read断言使用单个'='，已按'=='处理",
+    "M129: Read断言使用单个'='，已按'=='处理",
+    "M129: Read断言使用单个'='，已按'=='处理",
+    "M130: 未知动作已生成占位节点：'20s内，'",
+    "M130: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+    "M130: 未知动作已生成占位节点：'20s后，'",
+    "M130: Read缺少标准比较表达式，已生成无断言读取：'read#ECASActLvlXX未调节'",
+    "M130: Read断言使用单个'='，已按'=='处理",
+    "M130: Read断言使用单个'='，已按'=='处理"
+  ]
+}

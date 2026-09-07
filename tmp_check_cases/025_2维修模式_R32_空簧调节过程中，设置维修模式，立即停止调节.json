@@ -1,0 +1,26 @@
+{
+  "caseId": "025_2维修模式_R32",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "2维修模式",
+    "range": "A32:K36"
+  },
+  "caseName": "空簧调节过程中，设置维修模式，立即停止调节",
+  "testLevel": "/",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "初始状态检测",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H32: 未知动作已生成占位节点：'初始状态检测'"
+  ]
+}

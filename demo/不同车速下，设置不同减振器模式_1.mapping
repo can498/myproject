@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mapping:MappingFolder xmlns:xmi="http://www.omg.org/XMI" xmlns:mapping="com.hirain.tae.model.mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="e612fa5e-b966-4079-827b-27e88e3a015f" name="" xmi:version="2.0">
+  <folder xmi:type="mapping:MappingFolder" xmi:id="b1fa442b-12d9-4d79-aee9-e05c9e827cce" name="Model">
+    <mapping xmi:type="mapping:ModelMapping" xmi:id="b9312ecc-f125-4174-8940-93a182f12a78" name="ECDCmodereq" deviceName="HIL" path="param/b" description="" reference="" dataType="VALUE">
+      <enumeration xmi:type="mapping:Enumeration" xmi:id="de12b21e-57b3-4533-ba09-5651aaa890ad">
+        <keyValue xmi:type="mapping:EnumerationEntity" xmi:id="c325b14f-0b8a-437b-afb9-0bf29c9e6e35" key="ECDCMODE_INIT" value="0"/>
+        <keyValue xmi:type="mapping:EnumerationEntity" xmi:id="60019766-5eb7-416d-b9ad-9298eb373d6b" key="ECDCMODE" value="1"/>
+      </enumeration>
+    </mapping>
+    <mapping xmi:type="mapping:ModelMapping" xmi:id="6e93005c-4d50-4cec-b6d1-6e4a37c3d3ac" name="EspVehSpd" deviceName="HIL" path="param/c" description="" reference="" dataType="VALUE">
+      <enumeration xmi:type="mapping:Enumeration" xmi:id="689123b5-f5b3-4e7a-bed3-23a34ae274d0">
+        <keyValue xmi:type="mapping:EnumerationEntity" xmi:id="1fa3d7e7-92b7-4c18-a10b-e4d879c0fd03" key="SPEED" value="20"/>
+      </enumeration>
+    </mapping>
+    <mapping xmi:type="mapping:ModelMapping" xmi:id="6f475d9a-6e1f-467c-afef-4d2cf6dbb65c" name="GearLever" deviceName="HIL" path="param/a" description="" reference="" dataType="VALUE">
+      <enumeration xmi:type="mapping:Enumeration" xmi:id="01129b11-a679-4dc5-b73b-85eaf80746e7">
+        <keyValue xmi:type="mapping:EnumerationEntity" xmi:id="519cb118-ac61-4609-a9dc-ddd0612de126" key="P" value="0"/>
+        <keyValue xmi:type="mapping:EnumerationEntity" xmi:id="45b980ec-049a-4c26-96e7-69a6c6ff6c36" key="D" value="1"/>
+      </enumeration>
+    </mapping>
+    <mapping xmi:type="mapping:ModelMapping" xmi:id="6ab30117-1614-4b1a-b35b-dbcb87458305" name="TargetVehSpd" deviceName="HIL" path="param/c" description="" reference="" dataType="VALUE">
+      <enumeration xmi:type="mapping:Enumeration" xmi:id="f873de21-208d-4f78-bd85-99cf0c69a59e">
+        <keyValue xmi:type="mapping:EnumerationEntity" xmi:id="659dc242-1905-465c-986a-714e628af8a3" key="SPEED" value="20"/>
+      </enumeration>
+    </mapping>
+    <mapping xmi:type="mapping:ModelMapping" xmi:id="78d1064b-b3c4-428f-8918-43a777131369" name="VMC_EcdcMode" deviceName="HIL" path="param/b" description="" reference="" dataType="VALUE">
+      <enumeration xmi:type="mapping:Enumeration" xmi:id="519a7a91-7bc2-4622-9d11-d16dba18f452">
+        <keyValue xmi:type="mapping:EnumerationEntity" xmi:id="545d089b-afb4-4d61-a162-b54d22eb3823" key="ECDCMODE_INIT" value="0"/>
+        <keyValue xmi:type="mapping:EnumerationEntity" xmi:id="a797a117-d00b-435c-916a-1be4af83f584" key="ECDCMODE" value="1"/>
+      </enumeration>
+    </mapping>
+    <mapping xmi:type="mapping:ModelMapping" xmi:id="132d09ec-7ac9-4389-b8bb-49c130d4e5e9" name="VcuGearPosn" deviceName="HIL" path="param/a" description="" reference="" dataType="VALUE">
+      <enumeration xmi:type="mapping:Enumeration" xmi:id="b4b88639-850f-4f42-bc2e-64cf9f28888f">
+        <keyValue xmi:type="mapping:EnumerationEntity" xmi:id="1d0ea4f4-1860-4280-8b6c-1ab9681592a0" key="P" value="0"/>
+        <keyValue xmi:type="mapping:EnumerationEntity" xmi:id="72261cee-1c40-40cb-bf3c-9f48332728f1" key="D" value="1"/>
+      </enumeration>
+    </mapping>
+  </folder>
+</mapping:MappingFolder>

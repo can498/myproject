@@ -1,0 +1,18 @@
+{
+  "caseId": "108_11斜坡检测功能_R16",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "11斜坡检测功能",
+    "range": "A16:M19"
+  },
+  "caseName": "C679_ECAS_SDM_003",
+  "testLevel": "P3",
+  "concreteSettings": "指定横向加速度值",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": []
+}

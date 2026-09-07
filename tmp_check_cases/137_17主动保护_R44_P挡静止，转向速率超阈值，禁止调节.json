@@ -1,0 +1,26 @@
+{
+  "caseId": "137_17主动保护_R44",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "17主动保护",
+    "range": "A44:K49"
+  },
+  "caseName": "P挡静止，转向速率超阈值，禁止调节",
+  "testLevel": "1",
+  "concreteSettings": "指定车速\n指定转向速率1\n指定转向速率2",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "初始状态检测",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H44: 未知动作已生成占位节点：'初始状态检测'"
+  ]
+}

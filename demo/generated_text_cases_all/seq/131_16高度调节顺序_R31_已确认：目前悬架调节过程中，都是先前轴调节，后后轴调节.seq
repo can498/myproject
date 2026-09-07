@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="7be17823-e7bc-4e6c-9d3f-8333be41c2b4" name="已确认：目前悬架调节过程中，都是先前轴调节，后后轴调节" describle="来源：16高度调节顺序 A31:I31" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="2f2501eb-0663-4b76-b785-570c40fa4240"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="9a863f76-79f5-4974-9525-ad3b663f6381"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="f9ca115e-a0b2-4e28-b0c1-ed2b61da0967" name="已确认：目前悬架调节过程中，都是先前轴调节，后后轴调节">
+    <children xmi:type="tae:Initialization" xmi:id="48ef590b-e832-4628-a17b-108b47bf092e" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="34beafe7-b324-48b8-9f06-5ac86612ec3a" name="Test Step &amp; Expected Result"/>
+    <children xmi:type="tae:Cleanup" xmi:id="9f2e2e04-3bbe-4645-933b-ee39b2d24623" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

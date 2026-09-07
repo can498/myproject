@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mapping:MappingFolder xmlns:xmi="http://www.omg.org/XMI" xmlns:mapping="com.hirain.tae.model.mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="48e63a08-7885-41c9-9213-4a9be106dc1a" xmi:version="2.0">
+  <mapping xmi:type="mapping:ModelMapping" xmi:id="864cb51f-bf5b-4d63-bbed-795c0ffbcfdc" name="command_RPM" deviceName="HIL" path="Targets/Controller/Simulation Models/Models/Engine Demo/Inports/command_RPM" reference="" dataType="VALUE">
+    <enumeration xmi:type="mapping:Enumeration" xmi:id="e3fd61fa-d276-4e7d-8e27-56adfaec2c4c">
+      <keyValue xmi:type="mapping:EnumerationEntity" xmi:id="86d6fdd6-1194-4d91-a375-8baed1bc56c0" key="on" value="1"/>
+      <keyValue xmi:type="mapping:EnumerationEntity" xmi:id="08356421-5d16-42ec-836d-0f75e28e33b1" key="off" value="0"/>
+    </enumeration>
+  </mapping>
+  <folder xmi:type="mapping:MappingFolder" xmi:id="84dc983f-5284-4dfc-8fd9-62cc92f67c49" name="Engine"/>
+</mapping:MappingFolder>

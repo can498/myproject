@@ -1,0 +1,141 @@
+{
+  "caseId": "003_3.2.1_信号处理_R6",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+    "sheet": "3.2.1 信号处理",
+    "range": "A6:K8"
+  },
+  "caseName": "车辆行驶在振动路面上，各加速度传感器值有正负值波动",
+  "testLevel": "P1",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "VibrationRoadTest",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "D",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "D",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Write",
+      "signal": "TargetVehSpd",
+      "value": "30",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Wait",
+      "time": 10,
+      "unit": "s",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Read",
+      "signal": "EspVehSpd",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "30",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Wait",
+      "time": 10,
+      "unit": "s",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_CrrntVehBodyVerticalVal_FL",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "有正负值",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_CrrntVehBodyVerticalVal_FR",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "有正负值",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_CrrntVehBodyVerticalVal_RL",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "有正负值",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_CrrntVehBodyVerticalVal_RR",
+      "expectType": null,
+      "accessMode": "PhysicalValue",
+      "offlineValue": 0,
+      "description": "有正负值",
+      "sourceStep": "Step5"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step2"
+    }
+  ],
+  "requiredMappings": [
+    "EspVehSpd",
+    "GearLever",
+    "TargetVehSpd",
+    "VMC_CrrntVehBodyVerticalVal_FL",
+    "VMC_CrrntVehBodyVerticalVal_FR",
+    "VMC_CrrntVehBodyVerticalVal_RL",
+    "VMC_CrrntVehBodyVerticalVal_RR",
+    "VcuGearPosn"
+  ],
+  "warnings": [
+    "H6: 未知动作已生成占位节点：'VibrationRoadTest'",
+    "J7: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+    "K7: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_CrrntVehBodyVerticalVal_FL有正负值'",
+    "K7: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_CrrntVehBodyVerticalVal_FR有正负值'",
+    "K7: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_CrrntVehBodyVerticalVal_RL有正负值'",
+    "K7: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_CrrntVehBodyVerticalVal_RR有正负值'"
+  ]
+}

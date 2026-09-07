@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="edd3f0a6-da01-4818-84a2-9739c8399ba2" name="刚度阀故障关闭，禁止切换到越野模式" describle="来源：19刚度控制 A4:K8" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="22768d03-7aee-44d4-9ea4-2ef63ae86d81"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="b842ac02-d491-444b-a9b6-037e2075b9b9"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="250e5f79-ca73-4a24-8587-7f641881dfc1" name="刚度阀故障关闭，禁止切换到越野模式">
+    <children xmi:type="tae:Initialization" xmi:id="a771d63a-61d8-4b54-b5a3-842345318ccf" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="4479587c-2dee-4e6d-b054-ffb107189786" name="Test Step &amp; Expected Result"/>
+    <children xmi:type="tae:Cleanup" xmi:id="e7248082-8a81-4016-821a-a6ef6442e997" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

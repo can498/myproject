@@ -1,0 +1,270 @@
+{
+  "caseId": "133_17主动保护_R11",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "17主动保护",
+    "range": "A11:I19",
+    "mode": "text-to-signal"
+  },
+  "caseName": "不同车速行驶，横向加速度超阈值，禁止调节",
+  "testLevel": "P2",
+  "concreteSettings": "指定车速\n指定横向加速度1\n指定横向加速度2",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、ECAS模式为标准",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "4、车辆静止",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "D",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step1",
+      "sourceText": "挂D挡"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step1",
+      "sourceText": "挂D挡"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "D",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1",
+      "sourceText": "已挂入D挡"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置指定车速",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "设置指定车速"
+    },
+    {
+      "action": "Placeholder",
+      "name": "已达到指定车速",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "已达到指定车速"
+    },
+    {
+      "action": "Write",
+      "signal": "EcasModeReq",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step3",
+      "sourceText": "设置空簧模式为运动"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step3",
+      "sourceText": "设置空簧模式为运动"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测前轴实际空簧高度开始调节",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测前轴实际空簧高度开始调节\n2、检测实际空簧模式为标准"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测前轴实际空簧高度开始调节\n2、检测实际空簧模式为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置指定横向加速度1",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "设置指定横向加速度1"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、观测调节锁止信号",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "1、观测调节锁止信号\n2、检测前轴实际空簧高度停止调节\n3、检测实际空簧模式为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、检测前轴实际空簧高度停止调节",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "1、观测调节锁止信号\n2、检测前轴实际空簧高度停止调节\n3、检测实际空簧模式为标准"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step4",
+      "sourceText": "1、观测调节锁止信号\n2、检测前轴实际空簧高度停止调节\n3、检测实际空簧模式为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置指定横向加速度2",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step5",
+      "sourceText": "设置指定横向加速度2"
+    },
+    {
+      "action": "Placeholder",
+      "name": "观测调节锁止信号",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step5",
+      "sourceText": "观测调节锁止信号"
+    },
+    {
+      "action": "Placeholder",
+      "name": "等待10s",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step6",
+      "sourceText": "等待10s"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测前轴实际空簧高度为-25mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step6",
+      "sourceText": "1、检测前轴实际空簧高度为-25mm\n2、检测实际空簧模式为运动"
+    },
+    {
+      "action": "Read",
+      "signal": "EcasModeFB",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "1",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step6",
+      "sourceText": "1、检测前轴实际空簧高度为-25mm\n2、检测实际空簧模式为运动"
+    },
+    {
+      "action": "Write",
+      "signal": "TargetVehSpd",
+      "value": "0",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step7",
+      "sourceText": "设置车速为0kph"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step7",
+      "sourceText": "设置车速为0kph"
+    },
+    {
+      "action": "Placeholder",
+      "name": "已减速至0",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step7",
+      "sourceText": "已减速至0"
+    },
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "P",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step8",
+      "sourceText": "挂P挡"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step8",
+      "sourceText": "挂P挡"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step9",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [
+    "EcasModeFB",
+    "EcasModeReq",
+    "GearLever",
+    "TargetVehSpd",
+    "VcuGearPosn"
+  ],
+  "warnings": [
+    "F11: 未识别文本动作：2、控制器无故障",
+    "F11: 未识别文本动作：3、ECAS模式为标准",
+    "F11: 未识别文本动作：4、车辆静止",
+    "F11: 未知动作已生成占位节点：'2、控制器无故障'",
+    "F11: 未知动作已生成占位节点：'3、ECAS模式为标准'",
+    "F11: 未知动作已生成占位节点：'4、车辆静止'",
+    "H12: 未识别文本动作：设置指定车速",
+    "I12: 未识别文本动作：已达到指定车速",
+    "H12: 未知动作已生成占位节点：'设置指定车速'",
+    "H12: 未知动作已生成占位节点：'已达到指定车速'",
+    "I13: 未识别文本动作：1、检测前轴实际空簧高度开始调节",
+    "H13: 未知动作已生成占位节点：'1、检测前轴实际空簧高度开始调节'",
+    "H14: 未识别文本动作：设置指定横向加速度1",
+    "I14: 未识别文本动作：1、观测调节锁止信号",
+    "I14: 未识别文本动作：2、检测前轴实际空簧高度停止调节",
+    "H14: 未知动作已生成占位节点：'设置指定横向加速度1'",
+    "H14: 未知动作已生成占位节点：'1、观测调节锁止信号'",
+    "H14: 未知动作已生成占位节点：'2、检测前轴实际空簧高度停止调节'",
+    "H15: 未识别文本动作：设置指定横向加速度2",
+    "I15: 未识别文本动作：观测调节锁止信号",
+    "H15: 未知动作已生成占位节点：'设置指定横向加速度2'",
+    "H15: 未知动作已生成占位节点：'观测调节锁止信号'",
+    "H16: 未识别文本动作：等待10s",
+    "I16: 未识别文本动作：1、检测前轴实际空簧高度为-25mm",
+    "H16: 未知动作已生成占位节点：'等待10s'",
+    "H16: 未知动作已生成占位节点：'1、检测前轴实际空簧高度为-25mm'",
+    "I17: 未识别文本动作：已减速至0",
+    "H17: 未知动作已生成占位节点：'已减速至0'"
+  ],
+  "signalCatalogSize": 10
+}

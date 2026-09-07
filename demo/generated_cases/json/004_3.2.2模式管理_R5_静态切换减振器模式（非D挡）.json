@@ -1,0 +1,235 @@
+{
+  "caseId": "004_3.2.2模式管理_R5",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例.xlsx",
+    "sheet": "3.2.2模式管理",
+    "range": "A5:K10"
+  },
+  "caseName": "静态切换减振器模式（非D挡）",
+  "testLevel": "P1/P2",
+  "concreteSettings": "挡位=P挡/N挡/R挡\n初始减振器模式=舒适/标准/运动\n减振器模式=舒适/标准/运动\n1、P挡，舒适切标准(P1)\n2、P挡，舒适切运动(P1)\n3、P挡，标准切舒适(P1)\n4、P挡，标准切运动(P1)\n5、P挡，运动切舒适(P1)\n6、P挡，运动切标准(P1)\n7、N挡，舒适切标准\n8、N挡，舒适切运动\n9、N挡，标准切舒适\n10、N挡，标准切运动\n11、N挡，运动切舒适\n12、N挡，运动切标准\n13、R挡，舒适切标准\n14、R挡，舒适切运动\n15、R挡，标准切舒适\n16、R挡，标准切运动\n17、R挡，运动切舒适\n18、R挡，运动切标准",
+  "offlineMode": true,
+  "variables": [
+    {
+      "name": "ECDCMODE",
+      "type": "NumberVariableValue",
+      "value": 0,
+      "description": "参数占位值0，待具体场景展开或项目参数定义"
+    },
+    {
+      "name": "ECDCMODE_INIT",
+      "type": "NumberVariableValue",
+      "value": 0,
+      "description": "参数占位值0，待具体场景展开或项目参数定义"
+    },
+    {
+      "name": "GEARLEVER",
+      "type": "NumberVariableValue",
+      "value": 0,
+      "description": "参数占位值0，待具体场景展开或项目参数定义"
+    },
+    {
+      "name": "VCUGEARPOSN",
+      "type": "NumberVariableValue",
+      "value": 0,
+      "description": "参数占位值0，待具体场景展开或项目参数定义"
+    }
+  ],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "GEARLEVER",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "VCUGEARPOSN",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCFDA_K_StandstillSwitch_uls_b",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCFDA_K_GearLogicSwitch_uls_b",
+      "value": "1",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCmodereq",
+      "value": "ECDCMODE_INIT",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_EcdcMode",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "ECDCMODE_INIT",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Write",
+      "signal": "ECDCmodereq",
+      "value": "ECDCMODE",
+      "valueType": "Number",
+      "accessMode": "PhysicalValue",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_EcdcMode",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "ECDCMODE",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_FR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RL",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Read",
+      "signal": "VMC_Actul_O_DAMP_RR",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step4"
+    },
+    {
+      "action": "Write",
+      "signal": "GearLever",
+      "value": "P",
+      "valueType": "String",
+      "accessMode": "TextValue",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step5"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "P",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step5"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step6"
+    }
+  ],
+  "requiredMappings": [
+    "ECDCFDA_K_GearLogicSwitch_uls_b",
+    "ECDCFDA_K_StandstillSwitch_uls_b",
+    "ECDCmodereq",
+    "GearLever",
+    "VMC_Actul_O_DAMP_FL",
+    "VMC_Actul_O_DAMP_FR",
+    "VMC_Actul_O_DAMP_RL",
+    "VMC_Actul_O_DAMP_RR",
+    "VMC_EcdcMode",
+    "VcuGearPosn"
+  ],
+  "warnings": [
+    "K7: Read断言使用单个'='，已按'=='处理",
+    "K8: Read断言使用单个'='，已按'=='处理",
+    "K8: Read断言使用单个'='，已按'=='处理",
+    "K8: Read断言使用单个'='，已按'=='处理",
+    "K8: Read断言使用单个'='，已按'=='处理",
+    "K8: Read断言使用单个'='，已按'=='处理",
+    "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+    "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0",
+    "参数'GEARLEVER'未给出具体值，当前离线框图使用占位值0",
+    "参数'VCUGEARPOSN'未给出具体值，当前离线框图使用占位值0"
+  ]
+}

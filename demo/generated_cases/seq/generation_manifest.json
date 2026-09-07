@@ -1,0 +1,736 @@
+{
+  "total": 41,
+  "success": 41,
+  "failed": 0,
+  "results": [
+    {
+      "caseId": "001_3.1_驾驶模式_R4",
+      "caseName": "不同车速下，设置不同减振器模式",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\001_3.1_驾驶模式_R4_不同车速下，设置不同减振器模式.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\001_3.1_驾驶模式_R4_不同车速下，设置不同减振器模式.seq",
+      "warnings": [
+        "K5: Read断言使用单个'='，已按'=='处理",
+        "J6: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K7: Read断言使用单个'='，已按'=='处理",
+        "J8: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "002_3.2.1_信号处理_R4",
+      "caseName": "车辆上电后，各加速度传感器有效性为有效",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\002_3.2.1_信号处理_R4_车辆上电后，各加速度传感器有效性为有效.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\002_3.2.1_信号处理_R4_车辆上电后，各加速度传感器有效性为有效.seq",
+      "warnings": []
+    },
+    {
+      "caseId": "003_3.2.1_信号处理_R6",
+      "caseName": "车辆行驶在振动路面上，各加速度传感器值有正负值波动",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\003_3.2.1_信号处理_R6_车辆行驶在振动路面上，各加速度传感器值有正负值波动.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\003_3.2.1_信号处理_R6_车辆行驶在振动路面上，各加速度传感器值有正负值波动.seq",
+      "warnings": [
+        "H6: 未知动作已生成占位节点：'VibrationRoadTest'",
+        "J7: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K7: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_CrrntVehBodyVerticalVal_FL有正负值'",
+        "K7: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_CrrntVehBodyVerticalVal_FR有正负值'",
+        "K7: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_CrrntVehBodyVerticalVal_RL有正负值'",
+        "K7: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_CrrntVehBodyVerticalVal_RR有正负值'"
+      ]
+    },
+    {
+      "caseId": "004_3.2.2模式管理_R5",
+      "caseName": "静态切换减振器模式（非D挡）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\004_3.2.2模式管理_R5_静态切换减振器模式（非D挡）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\004_3.2.2模式管理_R5_静态切换减振器模式（非D挡）.seq",
+      "warnings": [
+        "K7: Read断言使用单个'='，已按'=='处理",
+        "K8: Read断言使用单个'='，已按'=='处理",
+        "K8: Read断言使用单个'='，已按'=='处理",
+        "K8: Read断言使用单个'='，已按'=='处理",
+        "K8: Read断言使用单个'='，已按'=='处理",
+        "K8: Read断言使用单个'='，已按'=='处理",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0",
+        "参数'GEARLEVER'未给出具体值，当前离线框图使用占位值0",
+        "参数'VCUGEARPOSN'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "005_3.2.2模式管理_R11",
+      "caseName": "动态切换减振器模式（D挡，车速等于0，小电流切换大电流）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\005_3.2.2模式管理_R11_动态切换减振器模式（D挡，车速等于0，小电流切换大电流）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\005_3.2.2模式管理_R11_动态切换减振器模式（D挡，车速等于0，小电流切换大电流）.seq",
+      "warnings": [
+        "K13: Read断言使用单个'='，已按'=='处理",
+        "K13: Read断言使用单个'='，已按'=='处理",
+        "K13: Read断言使用单个'='，已按'=='处理",
+        "K13: Read断言使用单个'='，已按'=='处理",
+        "K13: Read断言使用单个'='，已按'=='处理",
+        "K14: Read断言使用单个'='，已按'=='处理",
+        "K14: Read断言使用单个'='，已按'=='处理",
+        "K14: Read断言使用单个'='，已按'=='处理",
+        "K14: Read断言使用单个'='，已按'=='处理",
+        "K14: Read断言使用单个'='，已按'=='处理",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "006_3.2.2模式管理_R17",
+      "caseName": "动态切换减振器模式（N挡，车速大于0，小电流切换大电流）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\006_3.2.2模式管理_R17_动态切换减振器模式（N挡，车速大于0，小电流切换大电流）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\006_3.2.2模式管理_R17_动态切换减振器模式（N挡，车速大于0，小电流切换大电流）.seq",
+      "warnings": [
+        "J19: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K21: Read断言使用单个'='，已按'=='处理",
+        "K21: Read断言使用单个'='，已按'=='处理",
+        "K21: Read断言使用单个'='，已按'=='处理",
+        "K21: Read断言使用单个'='，已按'=='处理",
+        "K21: Read断言使用单个'='，已按'=='处理",
+        "K22: Read断言使用单个'='，已按'=='处理",
+        "K22: Read断言使用单个'='，已按'=='处理",
+        "K22: Read断言使用单个'='，已按'=='处理",
+        "K22: Read断言使用单个'='，已按'=='处理",
+        "K22: Read断言使用单个'='，已按'=='处理",
+        "J24: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "007_3.2.2模式管理_R27",
+      "caseName": "动态切换减振器模式（R挡，车速大于0，小电流切换大电流）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\007_3.2.2模式管理_R27_动态切换减振器模式（R挡，车速大于0，小电流切换大电流）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\007_3.2.2模式管理_R27_动态切换减振器模式（R挡，车速大于0，小电流切换大电流）.seq",
+      "warnings": [
+        "J29: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K30: Read断言使用单个'='，已按'=='处理",
+        "K30: Read断言使用单个'='，已按'=='处理",
+        "K30: Read断言使用单个'='，已按'=='处理",
+        "K30: Read断言使用单个'='，已按'=='处理",
+        "K30: Read断言使用单个'='，已按'=='处理",
+        "K31: Read断言使用单个'='，已按'=='处理",
+        "K31: Read断言使用单个'='，已按'=='处理",
+        "K31: Read断言使用单个'='，已按'=='处理",
+        "K31: Read断言使用单个'='，已按'=='处理",
+        "K31: Read断言使用单个'='，已按'=='处理",
+        "J32: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "008_3.2.2模式管理_R35",
+      "caseName": "动态切换减振器模式（ECDCFDA_K_StandstillSwitch_uls_b = 0，小电流切换大电流）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\008_3.2.2模式管理_R35_动态切换减振器模式（ECDCFDA_K_StandstillSwitch_uls_b_=_0，小电流切换大电流）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\008_3.2.2模式管理_R35_动态切换减振器模式（ECDCFDA_K_StandstillSwitch_uls_b_=_0，小电流切换大电流）.seq",
+      "warnings": [
+        "K36: Read断言使用单个'='，已按'=='处理",
+        "K36: Read断言使用单个'='，已按'=='处理",
+        "K36: Read断言使用单个'='，已按'=='处理",
+        "K36: Read断言使用单个'='，已按'=='处理",
+        "K36: Read断言使用单个'='，已按'=='处理",
+        "K37: Read断言使用单个'='，已按'=='处理",
+        "K37: Read断言使用单个'='，已按'=='处理",
+        "K37: Read断言使用单个'='，已按'=='处理",
+        "K37: Read断言使用单个'='，已按'=='处理",
+        "K37: Read断言使用单个'='，已按'=='处理",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "009_3.2.2模式管理_R40",
+      "caseName": "动态切换减振器模式（ECDCFDA_K_GearLogicSwitch_uls_b = 0，小电流切换大电流）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\009_3.2.2模式管理_R40_动态切换减振器模式（ECDCFDA_K_GearLogicSwitch_uls_b_=_0，小电流切换大电流）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\009_3.2.2模式管理_R40_动态切换减振器模式（ECDCFDA_K_GearLogicSwitch_uls_b_=_0，小电流切换大电流）.seq",
+      "warnings": [
+        "K41: Read断言使用单个'='，已按'=='处理",
+        "K41: Read断言使用单个'='，已按'=='处理",
+        "K41: Read断言使用单个'='，已按'=='处理",
+        "K41: Read断言使用单个'='，已按'=='处理",
+        "K41: Read断言使用单个'='，已按'=='处理",
+        "K42: Read断言使用单个'='，已按'=='处理",
+        "K42: Read断言使用单个'='，已按'=='处理",
+        "K42: Read断言使用单个'='，已按'=='处理",
+        "K42: Read断言使用单个'='，已按'=='处理",
+        "K42: Read断言使用单个'='，已按'=='处理",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "010_3.2.2模式管理_R45",
+      "caseName": "动态切换减振器模式（D挡，车速大于0，小电流切换大电流）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\010_3.2.2模式管理_R45_动态切换减振器模式（D挡，车速大于0，小电流切换大电流）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\010_3.2.2模式管理_R45_动态切换减振器模式（D挡，车速大于0，小电流切换大电流）.seq",
+      "warnings": [
+        "J47: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K48: Read断言使用单个'='，已按'=='处理",
+        "K48: Read断言使用单个'='，已按'=='处理",
+        "K48: Read断言使用单个'='，已按'=='处理",
+        "K48: Read断言使用单个'='，已按'=='处理",
+        "K48: Read断言使用单个'='，已按'=='处理",
+        "K49: Read断言使用单个'='，已按'=='处理",
+        "K49: Read断言使用单个'='，已按'=='处理",
+        "K49: Read断言使用单个'='，已按'=='处理",
+        "K49: Read断言使用单个'='，已按'=='处理",
+        "K49: Read断言使用单个'='，已按'=='处理",
+        "J50: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "011_3.2.2模式管理_R53",
+      "caseName": "动态切换减振器模式（D挡，车速等于0，大电流切换小电流）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\011_3.2.2模式管理_R53_动态切换减振器模式（D挡，车速等于0，大电流切换小电流）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\011_3.2.2模式管理_R53_动态切换减振器模式（D挡，车速等于0，大电流切换小电流）.seq",
+      "warnings": [
+        "K55: Read断言使用单个'='，已按'=='处理",
+        "K55: Read断言使用单个'='，已按'=='处理",
+        "K55: Read断言使用单个'='，已按'=='处理",
+        "K55: Read断言使用单个'='，已按'=='处理",
+        "K55: Read断言使用单个'='，已按'=='处理",
+        "K56: Read断言使用单个'='，已按'=='处理",
+        "K56: Read断言使用单个'='，已按'=='处理",
+        "K56: Read断言使用单个'='，已按'=='处理",
+        "K56: Read断言使用单个'='，已按'=='处理",
+        "K56: Read断言使用单个'='，已按'=='处理",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "012_3.2.2模式管理_R59",
+      "caseName": "动态切换减振器模式（N挡，车速大于0，大电流切换小电流）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\012_3.2.2模式管理_R59_动态切换减振器模式（N挡，车速大于0，大电流切换小电流）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\012_3.2.2模式管理_R59_动态切换减振器模式（N挡，车速大于0，大电流切换小电流）.seq",
+      "warnings": [
+        "J61: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K63: Read断言使用单个'='，已按'=='处理",
+        "K63: Read断言使用单个'='，已按'=='处理",
+        "K63: Read断言使用单个'='，已按'=='处理",
+        "K63: Read断言使用单个'='，已按'=='处理",
+        "K63: Read断言使用单个'='，已按'=='处理",
+        "K64: Read断言使用单个'='，已按'=='处理",
+        "K64: Read断言使用单个'='，已按'=='处理",
+        "K64: Read断言使用单个'='，已按'=='处理",
+        "K64: Read断言使用单个'='，已按'=='处理",
+        "K64: Read断言使用单个'='，已按'=='处理",
+        "J66: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "013_3.2.2模式管理_R69",
+      "caseName": "动态切换减振器模式（R挡，车速大于0，大电流切换小电流）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\013_3.2.2模式管理_R69_动态切换减振器模式（R挡，车速大于0，大电流切换小电流）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\013_3.2.2模式管理_R69_动态切换减振器模式（R挡，车速大于0，大电流切换小电流）.seq",
+      "warnings": [
+        "J71: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K72: Read断言使用单个'='，已按'=='处理",
+        "K72: Read断言使用单个'='，已按'=='处理",
+        "K72: Read断言使用单个'='，已按'=='处理",
+        "K72: Read断言使用单个'='，已按'=='处理",
+        "K72: Read断言使用单个'='，已按'=='处理",
+        "K73: Read断言使用单个'='，已按'=='处理",
+        "K73: Read断言使用单个'='，已按'=='处理",
+        "K73: Read断言使用单个'='，已按'=='处理",
+        "K73: Read断言使用单个'='，已按'=='处理",
+        "K73: Read断言使用单个'='，已按'=='处理",
+        "J74: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "014_3.2.2模式管理_R77",
+      "caseName": "动态切换减振器模式（ECDCFDA_K_StandstillSwitch_uls_b = 0，大电流切换小电流）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\014_3.2.2模式管理_R77_动态切换减振器模式（ECDCFDA_K_StandstillSwitch_uls_b_=_0，大电流切换小电流）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\014_3.2.2模式管理_R77_动态切换减振器模式（ECDCFDA_K_StandstillSwitch_uls_b_=_0，大电流切换小电流）.seq",
+      "warnings": [
+        "K78: Read断言使用单个'='，已按'=='处理",
+        "K78: Read断言使用单个'='，已按'=='处理",
+        "K78: Read断言使用单个'='，已按'=='处理",
+        "K78: Read断言使用单个'='，已按'=='处理",
+        "K78: Read断言使用单个'='，已按'=='处理",
+        "K79: Read断言使用单个'='，已按'=='处理",
+        "K79: Read断言使用单个'='，已按'=='处理",
+        "K79: Read断言使用单个'='，已按'=='处理",
+        "K79: Read断言使用单个'='，已按'=='处理",
+        "K79: Read断言使用单个'='，已按'=='处理",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "015_3.2.2模式管理_R82",
+      "caseName": "动态切换减振器模式（ECDCFDA_K_GearLogicSwitch_uls_b = 0，大电流切换小电流）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\015_3.2.2模式管理_R82_动态切换减振器模式（ECDCFDA_K_GearLogicSwitch_uls_b_=_0，大电流切换小电流）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\015_3.2.2模式管理_R82_动态切换减振器模式（ECDCFDA_K_GearLogicSwitch_uls_b_=_0，大电流切换小电流）.seq",
+      "warnings": [
+        "K83: Read断言使用单个'='，已按'=='处理",
+        "K83: Read断言使用单个'='，已按'=='处理",
+        "K83: Read断言使用单个'='，已按'=='处理",
+        "K83: Read断言使用单个'='，已按'=='处理",
+        "K83: Read断言使用单个'='，已按'=='处理",
+        "K84: Read断言使用单个'='，已按'=='处理",
+        "K84: Read断言使用单个'='，已按'=='处理",
+        "K84: Read断言使用单个'='，已按'=='处理",
+        "K84: Read断言使用单个'='，已按'=='处理",
+        "K84: Read断言使用单个'='，已按'=='处理",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "016_3.2.2模式管理_R87",
+      "caseName": "动态切换减振器模式（D挡，车速大于0，大电流切换小电流）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\016_3.2.2模式管理_R87_动态切换减振器模式（D挡，车速大于0，大电流切换小电流）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\016_3.2.2模式管理_R87_动态切换减振器模式（D挡，车速大于0，大电流切换小电流）.seq",
+      "warnings": [
+        "J89: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K90: Read断言使用单个'='，已按'=='处理",
+        "K90: Read断言使用单个'='，已按'=='处理",
+        "K90: Read断言使用单个'='，已按'=='处理",
+        "K90: Read断言使用单个'='，已按'=='处理",
+        "K90: Read断言使用单个'='，已按'=='处理",
+        "K91: Read断言使用单个'='，已按'=='处理",
+        "K91: Read断言使用单个'='，已按'=='处理",
+        "K91: Read断言使用单个'='，已按'=='处理",
+        "K91: Read断言使用单个'='，已按'=='处理",
+        "K91: Read断言使用单个'='，已按'=='处理",
+        "J92: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE_INIT'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "017_3.2.3_垂向舒适控制_R5",
+      "caseName": "不同减振器模式，不同车速下，一阶振动垂向控制功能",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\017_3.2.3_垂向舒适控制_R5_不同减振器模式，不同车速下，一阶振动垂向控制功能.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\017_3.2.3_垂向舒适控制_R5_不同减振器模式，不同车速下，一阶振动垂向控制功能.seq",
+      "warnings": [
+        "H5: 未知动作已生成占位节点：'VibrationRoadTest'",
+        "J7: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J10: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "018_3.2.3_垂向舒适控制_R13",
+      "caseName": "不同减振器模式，不同车速下，一阶振动俯仰控制功能",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\018_3.2.3_垂向舒适控制_R13_不同减振器模式，不同车速下，一阶振动俯仰控制功能.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\018_3.2.3_垂向舒适控制_R13_不同减振器模式，不同车速下，一阶振动俯仰控制功能.seq",
+      "warnings": [
+        "H13: 未知动作已生成占位节点：'WaveRoadTest'",
+        "J15: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J18: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "019_3.2.3_垂向舒适控制_R21",
+      "caseName": "不同减振器模式，不同车速下，一阶振动侧倾控制功能",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\019_3.2.3_垂向舒适控制_R21_不同减振器模式，不同车速下，一阶振动侧倾控制功能.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\019_3.2.3_垂向舒适控制_R21_不同减振器模式，不同车速下，一阶振动侧倾控制功能.seq",
+      "warnings": [
+        "H21: 未知动作已生成占位节点：'WaveRoadTest'",
+        "J23: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J26: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "020_3.2.3_垂向舒适控制_R29",
+      "caseName": "不同减振器模式，不同车速下，二阶振动控制功能（平滑水泥路面）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\020_3.2.3_垂向舒适控制_R29_不同减振器模式，不同车速下，二阶振动控制功能（平滑水泥路面）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\020_3.2.3_垂向舒适控制_R29_不同减振器模式，不同车速下，二阶振动控制功能（平滑水泥路面）.seq",
+      "warnings": [
+        "H29: 未知动作已生成占位节点：'StraightLaneTest'",
+        "J31: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J34: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "021_3.2.3_垂向舒适控制_R37",
+      "caseName": "不同减振器模式，不同车速下，二阶振动控制功能（破损水泥路面）",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\021_3.2.3_垂向舒适控制_R37_不同减振器模式，不同车速下，二阶振动控制功能（破损水泥路面）.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\021_3.2.3_垂向舒适控制_R37_不同减振器模式，不同车速下，二阶振动控制功能（破损水泥路面）.seq",
+      "warnings": [
+        "H37: 未知动作已生成占位节点：'DamagedStraightLaneTest'",
+        "J39: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J42: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "022_3.2.3_垂向舒适控制_R45",
+      "caseName": "不同减振器模式，D挡，全速度段车辆舒适性与稳定性的平衡测试",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\022_3.2.3_垂向舒适控制_R45_不同减振器模式，D挡，全速度段车辆舒适性与稳定性的平衡测试.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\022_3.2.3_垂向舒适控制_R45_不同减振器模式，D挡，全速度段车辆舒适性与稳定性的平衡测试.seq",
+      "warnings": [
+        "H45: 未知动作已生成占位节点：'StraightLaneTest'",
+        "J48: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K48: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_60'",
+        "K48: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_60'",
+        "K48: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_60'",
+        "K48: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_60'",
+        "J49: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J50: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_FL_60'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_FR_60'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_RL_60'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_RR_60'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "023_3.2.3_垂向舒适控制_R53",
+      "caseName": "不同减振器模式，R挡，全速度段车辆舒适性与稳定性的平衡测试",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\023_3.2.3_垂向舒适控制_R53_不同减振器模式，R挡，全速度段车辆舒适性与稳定性的平衡测试.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\023_3.2.3_垂向舒适控制_R53_不同减振器模式，R挡，全速度段车辆舒适性与稳定性的平衡测试.seq",
+      "warnings": [
+        "H53: 未知动作已生成占位节点：'StraightLaneTest'",
+        "J56: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K56: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_15'",
+        "K56: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_15'",
+        "K56: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_15'",
+        "K56: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_15'",
+        "J57: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J58: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_FL_15'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_FR_15'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_RL_15'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_RR_15'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "024_3.2.4_垂向操稳控制_R5",
+      "caseName": "不同减振器模式，不同车速下，0.1s内急减速俯仰姿态控制",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\024_3.2.4_垂向操稳控制_R5_不同减振器模式，不同车速下，0.1s内急减速俯仰姿态控制.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\024_3.2.4_垂向操稳控制_R5_不同减振器模式，不同车速下，0.1s内急减速俯仰姿态控制.seq",
+      "warnings": [
+        "H5: 未知动作已生成占位节点：'VibrationRoadTest'",
+        "J8: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K9: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL按预期变化read#VMC_Actul_O_DAMP_FR按预期变化read#VMC_Actul_O_DAMP_RL按预期变化Vread#MC_Actul_O_DAMP_RR按预期变化'",
+        "J10: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "025_3.2.4_垂向操稳控制_R13",
+      "caseName": "不同减振器模式，不同车速下，1s内急减速俯仰姿态控制",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\025_3.2.4_垂向操稳控制_R13_不同减振器模式，不同车速下，1s内急减速俯仰姿态控制.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\025_3.2.4_垂向操稳控制_R13_不同减振器模式，不同车速下，1s内急减速俯仰姿态控制.seq",
+      "warnings": [
+        "H13: 未知动作已生成占位节点：'VibrationRoadTest'",
+        "J16: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K17: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL按预期变化read#VMC_Actul_O_DAMP_FR按预期变化read#VMC_Actul_O_DAMP_RL按预期变化read#VMC_Actul_O_DAMP_RR按预期变化'",
+        "J18: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "026_3.2.4_垂向操稳控制_R21",
+      "caseName": "不同减振器模式，不同车速下，0.1s内急加速俯仰姿态控制",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\026_3.2.4_垂向操稳控制_R21_不同减振器模式，不同车速下，0.1s内急加速俯仰姿态控制.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\026_3.2.4_垂向操稳控制_R21_不同减振器模式，不同车速下，0.1s内急加速俯仰姿态控制.seq",
+      "warnings": [
+        "H21: 未知动作已生成占位节点：'VibrationRoadTest'",
+        "J24: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K25: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL按预期变化read#VMC_Actul_O_DAMP_FR按预期变化read#VMC_Actul_O_DAMP_RL按预期变化read#VMC_Actul_O_DAMP_RR按预期变化'",
+        "J26: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "027_3.2.4_垂向操稳控制_R29",
+      "caseName": "不同减振器模式，不同车速下，1s内急加速俯仰姿态控制",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\027_3.2.4_垂向操稳控制_R29_不同减振器模式，不同车速下，1s内急加速俯仰姿态控制.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\027_3.2.4_垂向操稳控制_R29_不同减振器模式，不同车速下，1s内急加速俯仰姿态控制.seq",
+      "warnings": [
+        "H29: 未知动作已生成占位节点：'VibrationRoadTest'",
+        "J32: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K33: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL按预期变化read#VMC_Actul_O_DAMP_FR按预期变化read#VMC_Actul_O_DAMP_RL按预期变化read#VMC_Actul_O_DAMP_RR按预期变化'",
+        "J34: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "028_3.2.4_垂向操稳控制_R37",
+      "caseName": "不同减振器模式，不同车速下(方向盘转角速率），侧倾姿态控制",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\028_3.2.4_垂向操稳控制_R37_不同减振器模式，不同车速下(方向盘转角速率），侧倾姿态控制.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\028_3.2.4_垂向操稳控制_R37_不同减振器模式，不同车速下(方向盘转角速率），侧倾姿态控制.seq",
+      "warnings": [
+        "H37: 未知动作已生成占位节点：'VibrationRoadTest'",
+        "J40: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K41: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL按预期变化read#VMC_Actul_O_DAMP_FR按预期变化read#VMC_Actul_O_DAMP_RL按预期变化read#VMC_Actul_O_DAMP_RR按预期变化'",
+        "K42: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL恢复初始值read#VMC_Actul_O_DAMP_FR恢复初始值read#VMC_Actul_O_DAMP_RL恢复初始值read#VMC_Actul_O_DAMP_RR恢复初始值'",
+        "J43: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'AGRATE'未给出具体值，当前离线框图使用占位值0",
+        "参数'ECDCMODE'未给出具体值，当前离线框图使用占位值0",
+        "参数'SPEED'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "029_3.2.5_脉冲阻尼控制_R5",
+      "caseName": "前轴左车轮簧下加速度大于标定值激活脉冲阻尼控制_凸块",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\029_3.2.5_脉冲阻尼控制_R5_前轴左车轮簧下加速度大于标定值激活脉冲阻尼控制_凸块.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\029_3.2.5_脉冲阻尼控制_R5_前轴左车轮簧下加速度大于标定值激活脉冲阻尼控制_凸块.seq",
+      "warnings": [
+        "H5: 未知动作已生成占位节点：'BumpRoadTest'",
+        "J7: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J9: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'"
+      ]
+    },
+    {
+      "caseId": "030_3.2.5_脉冲阻尼控制_R12",
+      "caseName": "前轴左车轮簧下加速度大于标定值激活脉冲阻尼控制_凹坑",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\030_3.2.5_脉冲阻尼控制_R12_前轴左车轮簧下加速度大于标定值激活脉冲阻尼控制_凹坑.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\030_3.2.5_脉冲阻尼控制_R12_前轴左车轮簧下加速度大于标定值激活脉冲阻尼控制_凹坑.seq",
+      "warnings": [
+        "H12: 未知动作已生成占位节点：'DepressionRoadTest'",
+        "J14: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J16: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'"
+      ]
+    },
+    {
+      "caseId": "031_3.2.5_脉冲阻尼控制_R19",
+      "caseName": "前轴右车轮簧下加速度大于标定值激活脉冲阻尼控制_凸块",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\031_3.2.5_脉冲阻尼控制_R19_前轴右车轮簧下加速度大于标定值激活脉冲阻尼控制_凸块.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\031_3.2.5_脉冲阻尼控制_R19_前轴右车轮簧下加速度大于标定值激活脉冲阻尼控制_凸块.seq",
+      "warnings": [
+        "H19: 未知动作已生成占位节点：'BumpRoadTest'",
+        "J21: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J23: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'"
+      ]
+    },
+    {
+      "caseId": "032_3.2.5_脉冲阻尼控制_R26",
+      "caseName": "前轴右车轮簧下加速度大于标定值激活脉冲阻尼控制_凹坑",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\032_3.2.5_脉冲阻尼控制_R26_前轴右车轮簧下加速度大于标定值激活脉冲阻尼控制_凹坑.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\032_3.2.5_脉冲阻尼控制_R26_前轴右车轮簧下加速度大于标定值激活脉冲阻尼控制_凹坑.seq",
+      "warnings": [
+        "H26: 未知动作已生成占位节点：'DepressionRoadTest'",
+        "J28: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J30: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'"
+      ]
+    },
+    {
+      "caseId": "033_3.2.5_脉冲阻尼控制_R33",
+      "caseName": "左前轮脉冲激励激活，同轴车轮减振器电流取大控制",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\033_3.2.5_脉冲阻尼控制_R33_左前轮脉冲激励激活，同轴车轮减振器电流取大控制.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\033_3.2.5_脉冲阻尼控制_R33_左前轮脉冲激励激活，同轴车轮减振器电流取大控制.seq",
+      "warnings": [
+        "H33: 未知动作已生成占位节点：'BumpRoadTest'",
+        "J35: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J37: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'VMC_Actul_O_DAMP_FL'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "034_3.2.5_脉冲阻尼控制_R40",
+      "caseName": "右前轮脉冲激励激活，同轴车轮减振器电流取大控制",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\034_3.2.5_脉冲阻尼控制_R40_右前轮脉冲激励激活，同轴车轮减振器电流取大控制.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\034_3.2.5_脉冲阻尼控制_R40_右前轮脉冲激励激活，同轴车轮减振器电流取大控制.seq",
+      "warnings": [
+        "H40: 未知动作已生成占位节点：'BumpRoadTest'",
+        "J42: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J44: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'VMC_Actul_O_DAMP_FL'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "035_3.2.6_路况预测_R5",
+      "caseName": "减速带和距离激活预瞄功能",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\035_3.2.6_路况预测_R5_减速带和距离激活预瞄功能.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\035_3.2.6_路况预测_R5_减速带和距离激活预瞄功能.seq",
+      "warnings": [
+        "J6: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K7: Read断言使用单个'='，已按'=='处理",
+        "K8: Read断言使用单个'='，已按'=='处理",
+        "J9: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'"
+      ]
+    },
+    {
+      "caseId": "036_3.2.7_安全控制_R5",
+      "caseName": "ABS激活，不同车速下，电流变化",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\036_3.2.7_安全控制_R5_ABS激活，不同车速下，电流变化.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\036_3.2.7_安全控制_R5_ABS激活，不同车速下，电流变化.seq",
+      "warnings": [
+        "J6: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J8: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K8: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_80'",
+        "K8: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_80'",
+        "K8: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_80'",
+        "K8: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_80'",
+        "J9: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'VMC_Actul_O_DAMP_FL_80'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_FR_80'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_RL_80'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_RR_80'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "037_3.2.7_安全控制_R13",
+      "caseName": "ABS激活，不同模式下，电流变化",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\037_3.2.7_安全控制_R13_ABS激活，不同模式下，电流变化.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\037_3.2.7_安全控制_R13_ABS激活，不同模式下，电流变化.seq",
+      "warnings": [
+        "K15: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_运动模式'",
+        "K15: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_运动模式'",
+        "K15: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_运动模式'",
+        "K15: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_运动模式'",
+        "K16: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_标准模式'",
+        "K16: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_标准模式'",
+        "K16: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_标准模式'",
+        "K16: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_标准模式'",
+        "K17: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_舒适模式，且与其它模式下的电流不想等'",
+        "K17: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_舒适模式，且与其它模式下的电流不想等'",
+        "K17: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_舒适模式，且与其它模式下的电流不想等'",
+        "K17: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_舒适模式，且与其它模式下的电流不想等'"
+      ]
+    },
+    {
+      "caseId": "038_3.2.7_安全控制_R21",
+      "caseName": "TCS激活，不同车速下，电流变化",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\038_3.2.7_安全控制_R21_TCS激活，不同车速下，电流变化.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\038_3.2.7_安全控制_R21_TCS激活，不同车速下，电流变化.seq",
+      "warnings": [
+        "J22: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J24: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K24: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_80'",
+        "K24: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_80'",
+        "K24: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_80'",
+        "K24: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_80'",
+        "J25: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'VMC_Actul_O_DAMP_FL_80'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_FR_80'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_RL_80'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_RR_80'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "039_3.2.7_安全控制_R29",
+      "caseName": "TCS激活，不同模式下，电流变化",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\039_3.2.7_安全控制_R29_TCS激活，不同模式下，电流变化.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\039_3.2.7_安全控制_R29_TCS激活，不同模式下，电流变化.seq",
+      "warnings": [
+        "K31: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_运动模式'",
+        "K31: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_运动模式'",
+        "K31: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_运动模式'",
+        "K31: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_运动模式'",
+        "K32: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_标准模式'",
+        "K32: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_标准模式'",
+        "K32: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_标准模式'",
+        "K32: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_标准模式'",
+        "K33: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_舒适模式，且与其它模式下的电流不想等'",
+        "K33: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_舒适模式，且与其它模式下的电流不想等'",
+        "K33: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_舒适模式，且与其它模式下的电流不想等'",
+        "K33: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_舒适模式，且与其它模式下的电流不想等'"
+      ]
+    },
+    {
+      "caseId": "040_3.2.7_安全控制_R37",
+      "caseName": "ESP激活，不同车速下，电流变化",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\040_3.2.7_安全控制_R37_ESP激活，不同车速下，电流变化.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\040_3.2.7_安全控制_R37_ESP激活，不同车速下，电流变化.seq",
+      "warnings": [
+        "J38: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "J40: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "K40: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_80'",
+        "K40: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_80'",
+        "K40: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_80'",
+        "K40: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_80'",
+        "J41: 信号名 'TargertVehSpd' 已规范为 'TargetVehSpd'",
+        "参数'VMC_Actul_O_DAMP_FL_80'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_FR_80'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_RL_80'未给出具体值，当前离线框图使用占位值0",
+        "参数'VMC_Actul_O_DAMP_RR_80'未给出具体值，当前离线框图使用占位值0"
+      ]
+    },
+    {
+      "caseId": "041_3.2.7_安全控制_R45",
+      "caseName": "ESP激活，不同模式下，电流变化",
+      "status": "success",
+      "sourceJson": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\json\\041_3.2.7_安全控制_R45_ESP激活，不同模式下，电流变化.json",
+      "sequence": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\demo\\generated_cases\\seq\\041_3.2.7_安全控制_R45_ESP激活，不同模式下，电流变化.seq",
+      "warnings": [
+        "K47: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_运动模式'",
+        "K47: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_运动模式'",
+        "K47: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_运动模式'",
+        "K47: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_运动模式'",
+        "K48: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_标准模式'",
+        "K48: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_标准模式'",
+        "K48: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_标准模式'",
+        "K48: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_标准模式'",
+        "K49: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FL_舒适模式，且与其它模式下的电流不想等'",
+        "K49: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_FR_舒适模式，且与其它模式下的电流不想等'",
+        "K49: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RL_舒适模式，且与其它模式下的电流不想等'",
+        "K49: Read缺少标准比较表达式，已生成无断言读取：'read#VMC_Actul_O_DAMP_RR_舒适模式，且与其它模式下的电流不想等'"
+      ]
+    }
+  ]
+}

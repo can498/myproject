@@ -1,0 +1,152 @@
+{
+  "caseId": "124_15控制系统失效模式_R4",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "15控制系统失效模式",
+    "range": "A4:G7",
+    "mode": "text-to-signal"
+  },
+  "caseName": "控制系统失效模式",
+  "testLevel": "P1",
+  "concreteSettings": "/·",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、车辆静止",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "4、ECAS模式为运动",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Placeholder",
+      "name": "请求切换ECAS模式为标准",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "请求切换ECAS模式为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS调节中",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "ECAS调节中\nECAS模式保持为运动"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS模式保持为运动",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "ECAS调节中\nECAS模式保持为运动"
+    },
+    {
+      "action": "Placeholder",
+      "name": "注入控制系统失效,等待3s",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "注入控制系统失效,等待3s"
+    },
+    {
+      "action": "Placeholder",
+      "name": "故障状态相关信号报出",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "故障状态相关信号报出\nECAS停止调节\nECAS模式保持为运动"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS停止调节",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "故障状态相关信号报出\nECAS停止调节\nECAS模式保持为运动"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS模式保持为运动",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "故障状态相关信号报出\nECAS停止调节\nECAS模式保持为运动"
+    },
+    {
+      "action": "Placeholder",
+      "name": "恢复控制系统失效,等待3s",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "恢复控制系统失效,等待3s"
+    },
+    {
+      "action": "Placeholder",
+      "name": "故障状态相关信号恢复",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "故障状态相关信号恢复\nECAS继续调节\nECAS模式切换为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS继续调节",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "故障状态相关信号恢复\nECAS继续调节\nECAS模式切换为标准"
+    },
+    {
+      "action": "Placeholder",
+      "name": "ECAS模式切换为标准",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "故障状态相关信号恢复\nECAS继续调节\nECAS模式切换为标准"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step4",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [],
+  "warnings": [
+    "D4: 未识别文本动作：2、控制器无故障",
+    "D4: 未识别文本动作：3、车辆静止",
+    "D4: 未识别文本动作：4、ECAS模式为运动",
+    "D4: 未知动作已生成占位节点：'2、控制器无故障'",
+    "D4: 未知动作已生成占位节点：'3、车辆静止'",
+    "D4: 未知动作已生成占位节点：'4、ECAS模式为运动'",
+    "F4: 未识别文本动作：请求切换ECAS模式为标准",
+    "G4: 未识别文本动作：ECAS调节中",
+    "G4: 未识别文本动作：ECAS模式保持为运动",
+    "F4: 未知动作已生成占位节点：'请求切换ECAS模式为标准'",
+    "F4: 未知动作已生成占位节点：'ECAS调节中'",
+    "F4: 未知动作已生成占位节点：'ECAS模式保持为运动'",
+    "F5: 未识别文本动作：注入控制系统失效,等待3s",
+    "G5: 未识别文本动作：故障状态相关信号报出",
+    "G5: 未识别文本动作：ECAS停止调节",
+    "G5: 未识别文本动作：ECAS模式保持为运动",
+    "F5: 未知动作已生成占位节点：'注入控制系统失效,等待3s'",
+    "F5: 未知动作已生成占位节点：'故障状态相关信号报出'",
+    "F5: 未知动作已生成占位节点：'ECAS停止调节'",
+    "F5: 未知动作已生成占位节点：'ECAS模式保持为运动'",
+    "F6: 未识别文本动作：恢复控制系统失效,等待3s",
+    "G6: 未识别文本动作：故障状态相关信号恢复",
+    "G6: 未识别文本动作：ECAS继续调节",
+    "G6: 未识别文本动作：ECAS模式切换为标准",
+    "F6: 未知动作已生成占位节点：'恢复控制系统失效,等待3s'",
+    "F6: 未知动作已生成占位节点：'故障状态相关信号恢复'",
+    "F6: 未知动作已生成占位节点：'ECAS继续调节'",
+    "F6: 未知动作已生成占位节点：'ECAS模式切换为标准'"
+  ],
+  "signalCatalogSize": 10
+}

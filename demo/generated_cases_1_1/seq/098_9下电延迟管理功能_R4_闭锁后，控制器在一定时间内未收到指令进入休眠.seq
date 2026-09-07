@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generator="com.hirain.tae.generator" xmi:id="87b6509d-d92d-4ed7-a7d0-1897e9fe3822" name="闭锁后，控制器在一定时间内未收到指令进入休眠" describle="来源：9下电延迟管理功能 A4:K5" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="aa536f56-1d1f-467b-a1e6-e8b3813a72d4"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="c8ce77a8-4bbe-4eb6-ab12-f9513323dcfe"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="eb65e4f8-a500-4e0c-aa71-3d9bfca9379a" name="闭锁后，控制器在一定时间内未收到指令进入休眠">
+    <children xmi:type="tae:Initialization" xmi:id="8a444d22-e8b9-48d5-96d6-b52374279d03" name="Initialization">
+      <children xmi:type="generator:DynamicValueActivity" xmi:id="20be21fb-6870-41f7-a6fb-81844c6c5958" name="powerOn" describle="上下电框图占位，真实HiL平台接入后再启用" toolType="powerControl_EA" functionName="powerOn"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="d5ad912f-f2f4-4dc7-8b31-5d886e488b7c" name="StraightRoadTest" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Group" xmi:id="c50c14d4-07a7-49e7-92a5-3e39ff536a4d" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:ScriptBlock" xmi:id="a837faf2-9b73-415e-89cd-52a7ca3c35c0" name="write#闭锁信号？" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:Wait" xmi:id="40eeba7e-9063-4a79-9512-49dfa8aab088" unit="ms" name="Wait" describle=""/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="97fc0748-fe94-41dd-8b9a-a0e820846ad6" name="未收到指令信号？" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+      <children xmi:type="tae:ScriptBlock" xmi:id="7c7c84d0-271e-4b06-87b4-10451615ecaa" name="控制器报文为空" describle="原Excel中的动作尚未映射到确定的TAE组件" script="" skip="true"/>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="0e39c631-e300-40ba-a292-848c692ee4b7" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

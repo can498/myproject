@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="6d1fe5d3-2dad-45b8-8270-458e58fcd7a0" name="R档，0km/h，悬架模式切换" describle="来源：1模式管理 A76:M87" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="1bb76dbe-89eb-49ff-8d71-b5192d2f6b07"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="65285829-f7d9-4118-b62b-1d420cc5a5e5"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="a1e262bb-9b69-43df-82d7-a63c95660b89" name="R档，0km/h，悬架模式切换">
+    <children xmi:type="tae:Initialization" xmi:id="e87123f7-8bf7-4450-a9b3-3bfda9e06241" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="5b414089-e26f-4a7f-a243-88262d9a487d" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:Write" xmi:id="93a72898-5a90-469d-9ec5-76c970a4e9be" sourceMapping="EcasModeReq" value="指定空簧模式请求1" name="Write EcasModeReq" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="68df5fd6-04e3-40fb-b8b9-7132a8580c3f"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="54ce6b6f-6027-46e5-9743-03e5ddc86e3a" name="Read ECASActLvlFL" describle="@OFFLINE=指定实际空簧对应高度1@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="5a5fd403-4127-4883-84a7-3a6f8630a66c" signal="ECASActLvlFL"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="127254a2-764e-49ca-8586-4759f2244c05"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="4b0ea7bb-145a-4345-b3cd-9292b6199843">
+          <expectation xmi:type="tae:Expectation" xmi:id="83045a92-c802-45ca-8364-c68deefc166f">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="49702e7a-c69a-48e2-9459-6f11d48a7aae" operator="Equal" value="指定实际空簧对应高度1"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="f696ee0b-d632-4149-9e07-345b03e1ca09" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="2fe471c1-e4a2-41c3-9bb5-83e1e4407b9d" name="Read ECASActLvlFR" describle="@OFFLINE=指定实际空簧对应高度1@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="68196aa7-430a-42d0-ad78-b66209cd12ef" signal="ECASActLvlFR"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="f5487a04-bfc8-4a40-be30-6988ca82ee04"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="485fbf95-042e-4ea6-a5a3-050637e640fc">
+          <expectation xmi:type="tae:Expectation" xmi:id="73958e92-2d6f-46da-9ff5-8b08567f7fdf">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="2a185b1f-5eca-4aad-91d4-856768a40d57" operator="Equal" value="指定实际空簧对应高度1"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="6af0fcf5-ec5f-4627-95e1-f0ad9e1fd71f" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="fc681872-49c0-4bf9-953b-9c48a705f92f" name="Read ECASActLvlRL" describle="@OFFLINE=指定实际空簧对应高度1@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="a7861647-4c4a-4f64-a2b5-b74b09593ae6" signal="ECASActLvlRL"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="202f8437-db83-41f4-bea5-64ca107e0857"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="24874e14-88e6-43ef-8ed8-ff1d1e879939">
+          <expectation xmi:type="tae:Expectation" xmi:id="b6b79b80-9bbc-44ee-a682-afaee64ed87b">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="50b46a9f-fd16-498f-a925-d9ebdb815b88" operator="Equal" value="指定实际空簧对应高度1"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="781f9e8f-6318-4170-9c4d-41307560e879" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="65643df8-39ef-4070-a2bd-e06c4e57ea36" name="Read ECASActLvlRR" describle="@OFFLINE=指定实际空簧对应高度1@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="898098a3-44ab-4486-b764-93d8321d1130" signal="ECASActLvlRR"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="76d4e2a6-676b-4842-85c0-7de8165d2bfa"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="7da5a613-3b3f-44f6-bb9d-172fd370b9c4">
+          <expectation xmi:type="tae:Expectation" xmi:id="5376dd56-c900-4abc-bdcb-4067d4628cf3">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="fcee14b6-04e6-4b10-a0c2-0d45a65b9b3f" operator="Equal" value="指定实际空簧对应高度1"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="5d76d369-3829-4e26-904a-0333f4ead044" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="53d71c09-9184-4c28-9001-48ace623d466" name="Read EcasModeFB" describle="@OFFLINE=指定实际空簧模式1@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="60570604-838c-4324-8fae-f2131df1a017" signal="EcasModeFB"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="0d8a079b-2f9e-40e1-bae2-28e6241976a9"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="01b40add-951e-453f-9247-2d0a8216c6a4">
+          <expectation xmi:type="tae:Expectation" xmi:id="7163e0e2-bbfa-4065-a7c1-3aae660b27f6">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="2ca31138-7b70-42cc-8471-a5ad0eb95643" operator="Equal" value="指定实际空簧模式1"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="40325f2d-b36a-46ea-9807-a0ed7a8ee659" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Write" xmi:id="4970e121-446a-4505-a755-deae26e1bcee" sourceMapping="EcasModeReq" value="指定空簧模式请求2" name="Write EcasModeReq" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="ab9f4712-1593-45a1-98d4-94a352ef49c2"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="95c39f18-7113-4cec-af5e-b4ea21dbddfa" name="Read ECASActLvlFL" describle="@OFFLINE=指定实际空簧对应高度2@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="51baaa8c-73b1-4c3f-a2a4-8c6516b5489b" signal="ECASActLvlFL"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="6459af54-b4f9-4a52-9d2a-87872f87a122"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="3b31a77a-1006-4569-8a41-78a143e83abf">
+          <expectation xmi:type="tae:Expectation" xmi:id="070e8670-0ba5-4dae-8c4b-977c20c80bd5">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="8cdea171-8031-44c4-beb8-ed15704ac92b" operator="Equal" value="指定实际空簧对应高度2"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="47bc30e6-6c6f-46e6-b541-35f3165a08de" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="f83412fc-b6c5-47d5-bc6d-e468fb720e6d" name="Read ECASActLvlFR" describle="@OFFLINE=指定实际空簧对应高度2@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="45dd6ee5-4ef9-47a5-b4dd-fe2c0422ab3d" signal="ECASActLvlFR"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="997d9666-b76c-4b6b-9c90-961401026780"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="186cef2b-2e7d-433a-9d0a-8161a7506aaf">
+          <expectation xmi:type="tae:Expectation" xmi:id="67ea747d-3f9e-4e13-bdf4-b02586aa9177">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="d09a5534-48ce-47e0-a343-e1b0dba6222a" operator="Equal" value="指定实际空簧对应高度2"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="09bd3fb7-0fbe-463d-8c3c-f2d103b42c33" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="23513550-6d14-428f-ba41-42098b4def8a" name="Read ECASActLvlRL" describle="@OFFLINE=指定实际空簧对应高度2@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="f4d370d9-f151-4ad6-a2e6-ddbbbe3f3f7c" signal="ECASActLvlRL"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="a94fe083-a7cb-4680-842f-115ceb36c146"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="15e020d1-12d8-4a74-b738-dca55d7f18e9">
+          <expectation xmi:type="tae:Expectation" xmi:id="270ab6c2-bdb3-406b-bfb5-86722ea6081a">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="4de04700-c0d9-4c9f-8f0b-c24edb675f40" operator="Equal" value="指定实际空簧对应高度2"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="16bc6151-d7e4-4c47-b790-0f1256f44ec7" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="c03384e6-040e-48de-b727-693f00b714fd" name="Read ECASActLvlRR" describle="@OFFLINE=指定实际空簧对应高度2@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="fe30af3c-bf29-40ad-a267-8cd2754e0716" signal="ECASActLvlRR"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="755f376d-591f-4eb7-9c37-b01f9350e34e"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="ab518d4c-4fb3-4c04-86e6-1ad3cb156075">
+          <expectation xmi:type="tae:Expectation" xmi:id="c544535f-67ba-481d-8a0b-211569097876">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="040cc1f7-f2bc-4110-a3b5-c967bdd4fa21" operator="Equal" value="指定实际空簧对应高度2"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="8a3a8922-bfbc-4f18-8ea6-77fbd7318321" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="b317d8c8-c4f9-4282-bbd6-f5392704678e" name="Read EcasModeFB" describle="@OFFLINE=指定实际空簧模式2@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="941575a2-55c8-41a3-980f-17a8d06f041c" signal="EcasModeFB"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="849513c3-3661-4657-b443-1ef4d944b787"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="d1b4e722-aa45-46a6-881f-870ecd6cc46a">
+          <expectation xmi:type="tae:Expectation" xmi:id="981088e3-df8e-4d31-8c19-b43c1decc91c">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="0ad301ff-48fc-4dd8-bf30-f5931f60efe7" operator="Equal" value="指定实际空簧模式2"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="99b0a99a-c055-4623-930e-5998b520251c" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="49fb8e37-6ef0-42fb-bbe3-10049b3a2c2c" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

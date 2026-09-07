@@ -1,0 +1,26 @@
+{
+  "caseId": "044_6随速调节_R63",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "6随速调节",
+    "range": "A63:K69"
+  },
+  "caseName": "标准模式，紧急制动时，车速大于等于5kph，高度不变",
+  "testLevel": "1",
+  "concreteSettings": "指定车速",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "挂D挡",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H63: 未知动作已生成占位节点：'挂D挡'"
+  ]
+}

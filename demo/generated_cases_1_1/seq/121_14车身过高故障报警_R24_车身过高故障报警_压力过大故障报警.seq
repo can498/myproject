@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="32ee654f-b21a-460f-9d5f-8fef8d2d277b" name="车身过高故障报警_压力过大故障报警" describle="来源：14车身过高故障报警 A24:K28" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="eb172823-1133-40df-bde4-c5dd13cf74a1"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="8f0dcd63-03be-46e9-a463-e27f0f4bc6ac"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="1daa47b3-31cb-48f6-8232-1fe1cd791245" name="车身过高故障报警_压力过大故障报警">
+    <children xmi:type="tae:Initialization" xmi:id="1c8ae8f0-2949-4d81-9a49-f6bf679eecf6" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="e8ff2fa6-6ec8-4dc4-96b3-c74ef173e791" name="Test Step &amp; Expected Result"/>
+    <children xmi:type="tae:Cleanup" xmi:id="b4b339ae-9496-4a1e-b192-09ca8334faa6" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

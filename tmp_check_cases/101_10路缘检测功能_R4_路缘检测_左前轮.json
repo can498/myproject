@@ -1,0 +1,26 @@
+{
+  "caseId": "101_10路缘检测功能_R4",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "10路缘检测功能",
+    "range": "A4:K6"
+  },
+  "caseName": "路缘检测_左前轮",
+  "testLevel": "1",
+  "concreteSettings": "指定空簧模式请求",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "Placeholder",
+      "name": "设置使左前轮在61mm的路缘上",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H4: 未知动作已生成占位节点：'设置使左前轮在61mm的路缘上'"
+  ]
+}

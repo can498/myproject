@@ -1,0 +1,6714 @@
+{
+  "catalogSize": 320,
+  "cases": [
+    {
+      "sheet": "6随速调节",
+      "range": "4-9",
+      "caseName": "越野模式，加速时，车速大于等于15kph，高度立即调节，下降至10mm",
+      "rows": [
+        {
+          "row": 4,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为越野",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "越野"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧模式为越野",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x2"
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已到达指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "达到指定车速后，检测实际空簧高度立即调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "指定车速后"
+            },
+            {
+              "text": "达到指定车速后，检测实际空簧高度立即调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "指定车速后"
+            },
+            {
+              "text": "达到指定车速后，检测实际空簧高度立即调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "指定车速后"
+            },
+            {
+              "text": "达到指定车速后，检测实际空簧高度立即调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "指定车速后"
+            },
+            {
+              "text": "检测实际空簧高度为10mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "10"
+            },
+            {
+              "text": "检测实际空簧高度为10mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "10"
+            },
+            {
+              "text": "检测实际空簧高度为10mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "10"
+            },
+            {
+              "text": "检测实际空簧高度为10mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "row": 7,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 8,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 9,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "10-15",
+      "caseName": "越野模式，加速时，车速小于15kph，高度不变",
+      "rows": [
+        {
+          "row": 10,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 11,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为越野",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "越野"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧模式为越野",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x2"
+            }
+          ]
+        },
+        {
+          "row": 12,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已到达指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "检测实际空簧高度保持为30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度保持为30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度保持为30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度保持为30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "30"
+            }
+          ]
+        },
+        {
+          "row": 13,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 14,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 15,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "16-22",
+      "caseName": "越野模式，减速时，车速小于5kph，高度2s后调节，恢复至30mm",
+      "rows": [
+        {
+          "row": 16,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 17,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为越野",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "越野"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧模式为越野",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x2"
+            }
+          ]
+        },
+        {
+          "row": 18,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为60kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "60"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至60",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "60"
+            },
+            {
+              "text": "检测实际空簧高度为10mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "10"
+            },
+            {
+              "text": "检测实际空簧高度为10mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "10"
+            },
+            {
+              "text": "检测实际空簧高度为10mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "10"
+            },
+            {
+              "text": "检测实际空簧高度为10mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "row": 19,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "2s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "2s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "2s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "2s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "2s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "AmsCtrlSts",
+              "chineseName": "悬架空簧的调节状态",
+              "value": "开始调节"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "30"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "30"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "30"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "30"
+            }
+          ]
+        },
+        {
+          "row": 20,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 21,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 22,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "23-29",
+      "caseName": "越野模式，减速时，车速大于等于5kph，高度不变",
+      "rows": [
+        {
+          "row": 23,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 24,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为越野",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "越野"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧高度为30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "30"
+            },
+            {
+              "text": "检测实际空簧模式为越野",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x2"
+            }
+          ]
+        },
+        {
+          "row": 25,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为60kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "60"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至60",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "60"
+            },
+            {
+              "text": "检测实际空簧高度为10mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "10"
+            },
+            {
+              "text": "检测实际空簧高度为10mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "10"
+            },
+            {
+              "text": "检测实际空簧高度为10mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "10"
+            },
+            {
+              "text": "检测实际空簧高度为10mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "row": 26,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "2s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "2s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "2s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "2s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "2s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "检测实际空簧高度保持为10mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "10"
+            },
+            {
+              "text": "检测实际空簧高度保持为10mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "10"
+            },
+            {
+              "text": "检测实际空簧高度保持为10mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "10"
+            },
+            {
+              "text": "检测实际空簧高度保持为10mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "row": 27,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 28,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 29,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "30-35",
+      "caseName": "标准模式，加速时，车速大于等于100kph，高度30s后调节，下降至-15mm",
+      "rows": [
+        {
+          "row": 30,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 31,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为标准",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "标准"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为标准",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x0"
+            }
+          ]
+        },
+        {
+          "row": 32,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已到达指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "AmsCtrlSts",
+              "chineseName": "悬架空簧的调节状态",
+              "value": "开始调节"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-15"
+            }
+          ]
+        },
+        {
+          "row": 33,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 34,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 35,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "36-41",
+      "caseName": "标准模式，加速时，车速小于100kph，高度不变",
+      "rows": [
+        {
+          "row": 36,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 37,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为标准",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "标准"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为标准",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x0"
+            }
+          ]
+        },
+        {
+          "row": 38,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已到达指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "检测实际空簧高度保持为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度保持为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度保持为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度保持为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 39,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 40,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 41,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "42-48",
+      "caseName": "标准模式，减速时，车速小于70kph，高度120s后调节，恢复至0mm",
+      "rows": [
+        {
+          "row": 42,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 43,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为标准",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "标准"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为标准",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x0"
+            }
+          ]
+        },
+        {
+          "row": 44,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为120kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "120"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至120",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "120"
+            },
+            {
+              "text": "等待30s",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-15"
+            }
+          ]
+        },
+        {
+          "row": 45,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "AmsCtrlSts",
+              "chineseName": "悬架空簧的调节状态",
+              "value": "开始调节"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 46,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 47,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 48,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "49-55",
+      "caseName": "标准模式，减速时，车速大于等于70kph，高度不变",
+      "rows": [
+        {
+          "row": 49,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 50,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为标准",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "标准"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为标准",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x0"
+            }
+          ]
+        },
+        {
+          "row": 51,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为120kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "120"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至120",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "120"
+            },
+            {
+              "text": "等待30s",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-15"
+            }
+          ]
+        },
+        {
+          "row": 52,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "检测实际空簧高度保持为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "检测实际空簧高度保持为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "检测实际空簧高度保持为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "检测实际空簧高度保持为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-15"
+            }
+          ]
+        },
+        {
+          "row": 53,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 54,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 55,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "56-62",
+      "caseName": "标准模式，紧急制动时，车速小于5kph，高度立即调节，恢复至0mm",
+      "rows": [
+        {
+          "row": 56,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 57,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为标准",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "标准"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为标准",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x0"
+            }
+          ]
+        },
+        {
+          "row": 58,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为120kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "120"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至120",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "120"
+            },
+            {
+              "text": "等待30s",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-15"
+            }
+          ]
+        },
+        {
+          "row": 59,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "立即，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "开始调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "开始调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "开始调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "开始调节"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 60,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 61,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 62,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "63-69",
+      "caseName": "标准模式，紧急制动时，车速大于等于5kph，高度不变",
+      "rows": [
+        {
+          "row": 63,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 64,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为标准",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "标准"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为标准",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x0"
+            }
+          ]
+        },
+        {
+          "row": 65,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为120kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "120"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至120",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "120"
+            },
+            {
+              "text": "等待30s",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-15"
+            }
+          ]
+        },
+        {
+          "row": 66,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "立即，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "未调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "未调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "未调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "未调节"
+            },
+            {
+              "text": "检测实际空簧高度保持为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "检测实际空簧高度保持为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "检测实际空簧高度保持为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "检测实际空簧高度保持为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-15"
+            }
+          ]
+        },
+        {
+          "row": 67,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 68,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 69,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "70-75",
+      "caseName": "运动模式，加速时，车速大于等于120kph，高度20s后调节，下降至-30mm",
+      "rows": [
+        {
+          "row": 70,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 71,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为运动",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "运动"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧模式为运动",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x1"
+            }
+          ]
+        },
+        {
+          "row": 72,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已到达指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "AmsCtrlSts",
+              "chineseName": "悬架空簧的调节状态",
+              "value": "开始调节"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-30"
+            }
+          ]
+        },
+        {
+          "row": 73,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 74,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 75,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "76-81",
+      "caseName": "运动模式，加速时，车速小于120kph，高度不变",
+      "rows": [
+        {
+          "row": 76,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 77,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为运动",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "运动"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧模式为运动",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x1"
+            }
+          ]
+        },
+        {
+          "row": 78,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已到达指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "检测实际空簧高度保持为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度保持为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度保持为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度保持为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-25"
+            }
+          ]
+        },
+        {
+          "row": 79,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 80,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 81,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "82-88",
+      "caseName": "运动模式，减速时，车速小于100kph，高度30s后调节，恢复至-25mm",
+      "rows": [
+        {
+          "row": 82,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 83,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为运动",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "运动"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧模式为运动",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x1"
+            }
+          ]
+        },
+        {
+          "row": 84,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为130kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至130",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            },
+            {
+              "text": "等待20s",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-30"
+            }
+          ]
+        },
+        {
+          "row": 85,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "AmsCtrlSts",
+              "chineseName": "悬架空簧的调节状态",
+              "value": "开始调节"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-25"
+            }
+          ]
+        },
+        {
+          "row": 86,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 87,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 88,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "89-95",
+      "caseName": "运动模式，减速时，车速大于等于100kph，高度不变",
+      "rows": [
+        {
+          "row": 89,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 90,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为运动",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "运动"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧模式为运动",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x1"
+            }
+          ]
+        },
+        {
+          "row": 91,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为130kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至130",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            },
+            {
+              "text": "等待20s",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-30"
+            }
+          ]
+        },
+        {
+          "row": 92,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-30"
+            }
+          ]
+        },
+        {
+          "row": 93,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 94,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 95,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "96-102",
+      "caseName": "运动模式，紧急制动时，车速小于5kph，高度立即调节，恢复至-25mm",
+      "rows": [
+        {
+          "row": 96,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 97,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为运动",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "运动"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧模式为运动",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x1"
+            }
+          ]
+        },
+        {
+          "row": 98,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为130kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至130",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            },
+            {
+              "text": "等待20s",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-30"
+            }
+          ]
+        },
+        {
+          "row": 99,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "立即，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "开始调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "开始调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "开始调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "开始调节"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-25"
+            }
+          ]
+        },
+        {
+          "row": 100,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 101,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 102,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "103-109",
+      "caseName": "运动模式，紧急制动时，车速大于等于5kph，高度不变",
+      "rows": [
+        {
+          "row": 103,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 104,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为运动",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "运动"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧模式为运动",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x1"
+            }
+          ]
+        },
+        {
+          "row": 105,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为130kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至130",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            },
+            {
+              "text": "等待20s",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-30"
+            }
+          ]
+        },
+        {
+          "row": 106,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "立即，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "未调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "未调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "未调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "未调节"
+            },
+            {
+              "text": "检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-30"
+            }
+          ]
+        },
+        {
+          "row": 107,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 108,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 109,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "110-115",
+      "caseName": "自适应模式，加速时，车速大于等于100kph，高度30s后调节，下降至-15mm（小于120kph)",
+      "rows": [
+        {
+          "row": 110,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 111,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为自适应",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "自适应"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为自适应",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x4"
+            }
+          ]
+        },
+        {
+          "row": 112,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已到达指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "AmsCtrlSts",
+              "chineseName": "悬架空簧的调节状态",
+              "value": "开始调节"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-15"
+            }
+          ]
+        },
+        {
+          "row": 113,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 114,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 115,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "116-121",
+      "caseName": "自适应模式，加速时，车速大于等于120kph，高度20s后调节，下降至-30mm",
+      "rows": [
+        {
+          "row": 116,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 117,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为自适应",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "自适应"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧高度为-25mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-25"
+            },
+            {
+              "text": "检测实际空簧模式为自适应",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x4"
+            }
+          ]
+        },
+        {
+          "row": 118,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已到达指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "AmsCtrlSts",
+              "chineseName": "悬架空簧的调节状态",
+              "value": "开始调节"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-30"
+            }
+          ]
+        },
+        {
+          "row": 119,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 120,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 121,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "122-127",
+      "caseName": "自适应模式，加速时，车速小于100kph，持续30s，高度不变",
+      "rows": [
+        {
+          "row": 122,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 123,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为自适应",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "自适应"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为自适应",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x4"
+            }
+          ]
+        },
+        {
+          "row": 124,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已到达指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "检测实际空簧高度保持为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度保持为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度保持为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度保持为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 125,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 126,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 127,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "128-133",
+      "caseName": "自适应模式，加速时，车速小于120kph，持续20s，高度不变",
+      "rows": [
+        {
+          "row": 128,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 129,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为自适应",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "自适应"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为自适应",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x4"
+            }
+          ]
+        },
+        {
+          "row": 130,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已到达指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "20s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "检测实际空簧高度保持为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度保持为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度保持为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度保持为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 131,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 132,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 133,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "134-140",
+      "caseName": "自适应模式，减速时，车速小于100kph，高度30s后调节，恢复至-15mm（初始车速130kph)",
+      "rows": [
+        {
+          "row": 134,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 135,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为自适应",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "自适应"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为自适应",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x4"
+            }
+          ]
+        },
+        {
+          "row": 136,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为130kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至130",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            },
+            {
+              "text": "等待20s",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-30"
+            }
+          ]
+        },
+        {
+          "row": 137,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "AmsCtrlSts",
+              "chineseName": "悬架空簧的调节状态",
+              "value": "开始调节"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-15"
+            }
+          ]
+        },
+        {
+          "row": 138,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 139,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 140,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "141-147",
+      "caseName": "自适应模式，减速时，车速小于70kph，高度120s后调节，恢复至0mm（初始车速110kph）",
+      "rows": [
+        {
+          "row": 141,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 142,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为自适应",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "自适应"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为自适应",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x4"
+            }
+          ]
+        },
+        {
+          "row": 143,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为110kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "110"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至110",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "110"
+            },
+            {
+              "text": "等待30s",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "后，检测实际空簧高度为--15mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为--15mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为--15mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为--15mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-15"
+            }
+          ]
+        },
+        {
+          "row": 144,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "AmsCtrlSts",
+              "chineseName": "悬架空簧的调节状态",
+              "value": "开始调节"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 145,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 146,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 147,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "148-154",
+      "caseName": "自适应模式，减速时，车速大于等于100kph，持续30s，高度不变(初始车速130kph)",
+      "rows": [
+        {
+          "row": 148,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 149,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为自适应",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "自适应"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为自适应",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x4"
+            }
+          ]
+        },
+        {
+          "row": 150,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为130kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至130",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            },
+            {
+              "text": "等待20s",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-30"
+            }
+          ]
+        },
+        {
+          "row": 151,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "30s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-30"
+            }
+          ]
+        },
+        {
+          "row": 152,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 153,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 154,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "155-161",
+      "caseName": "自适应模式，减速时，车速大于等于70kph，持续120s，高度不变（初始车速110kph)",
+      "rows": [
+        {
+          "row": 155,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 156,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为自适应",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "自适应"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为自适应",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x4"
+            }
+          ]
+        },
+        {
+          "row": 157,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为110kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "110"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至110",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "110"
+            },
+            {
+              "text": "等待30s",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "后，检测实际空簧高度为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-15"
+            }
+          ]
+        },
+        {
+          "row": 158,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s内，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "120s后",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": ""
+            },
+            {
+              "text": "，检测实际空簧高度也未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": ""
+            },
+            {
+              "text": "检测实际空簧高度保持为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "检测实际空簧高度保持为-15mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "检测实际空簧高度保持为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-15"
+            },
+            {
+              "text": "检测实际空簧高度保持为-15mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-15"
+            }
+          ]
+        },
+        {
+          "row": 159,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 160,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 161,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "162-168",
+      "caseName": "自适应模式，紧急制动时，车速小于5kph，高度立即调节，恢复至0mm",
+      "rows": [
+        {
+          "row": 162,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 163,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为自适应",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "自适应"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为自适应",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x4"
+            }
+          ]
+        },
+        {
+          "row": 164,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为130kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至130",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            },
+            {
+              "text": "等待20s",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-30"
+            }
+          ]
+        },
+        {
+          "row": 165,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "立即，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "开始调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "开始调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "开始调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度开始调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "开始调节"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "待调节完成后，检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 166,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 167,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 168,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    },
+    {
+      "sheet": "6随速调节",
+      "range": "169-175",
+      "caseName": "自适应模式，紧急制动时，车速大于等于5kph，高度不变（30s内）",
+      "rows": [
+        {
+          "row": 169,
+          "step": "Step1",
+          "initialCommands": [
+            "POWERUP"
+          ],
+          "action": [
+            {
+              "text": "挂D挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已挂入D挡",
+              "role": "read",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "D"
+            }
+          ]
+        },
+        {
+          "row": 170,
+          "step": "Step2",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置空簧模式请求为自适应",
+              "role": "write",
+              "signalName": "AirSpringModeReq",
+              "chineseName": "空气弹簧模式请求",
+              "value": "自适应"
+            }
+          ],
+          "expected": [
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧高度为0mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "0"
+            },
+            {
+              "text": "检测实际空簧模式为自适应",
+              "role": "read",
+              "signalName": "EcasModeFB",
+              "chineseName": "空簧模式当前模式反馈",
+              "value": "0x4"
+            }
+          ]
+        },
+        {
+          "row": 171,
+          "step": "Step3",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为130kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已加速至130",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "130"
+            },
+            {
+              "text": "等待20s",
+              "role": "read",
+              "signalName": "__WAIT__",
+              "chineseName": "",
+              "value": ""
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "后，检测实际空簧高度为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-30"
+            }
+          ]
+        },
+        {
+          "row": 172,
+          "step": "Step4",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置指定车速",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            }
+          ],
+          "expected": [
+            {
+              "text": "达到指定车速",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "指定车速"
+            },
+            {
+              "text": "立即，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "未调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "未调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "未调节"
+            },
+            {
+              "text": "立即，检测实际空簧高度未调节",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "未调节"
+            },
+            {
+              "text": "30s内，检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFL",
+              "chineseName": "FL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "30s内，检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlFR",
+              "chineseName": "FR高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "30s内，检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRL",
+              "chineseName": "RL高度信号",
+              "value": "-30"
+            },
+            {
+              "text": "30s内，检测实际空簧高度保持为-30mm",
+              "role": "read",
+              "signalName": "ActLvlRR",
+              "chineseName": "RR高度信号",
+              "value": "-30"
+            }
+          ]
+        },
+        {
+          "row": 173,
+          "step": "Step5",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "设置车速为0kph",
+              "role": "write",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ],
+          "expected": [
+            {
+              "text": "已减速至0",
+              "role": "read",
+              "signalName": "VehSpd",
+              "chineseName": "车速信号",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "row": 174,
+          "step": "Step6",
+          "initialCommands": [],
+          "action": [
+            {
+              "text": "挂P挡",
+              "role": "write",
+              "signalName": "VcuGearPosn",
+              "chineseName": "整车实际挡位",
+              "value": "P"
+            }
+          ],
+          "expected": []
+        },
+        {
+          "row": 175,
+          "step": "Step7",
+          "initialCommands": [],
+          "action": [],
+          "expected": []
+        }
+      ]
+    }
+  ]
+}

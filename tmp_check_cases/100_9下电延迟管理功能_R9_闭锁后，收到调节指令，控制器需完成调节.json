@@ -1,0 +1,91 @@
+{
+  "caseId": "100_9下电延迟管理功能_R9",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "9下电延迟管理功能",
+    "range": "A9:K11"
+  },
+  "caseName": "闭锁后，收到调节指令，控制器需完成调节",
+  "testLevel": "P3",
+  "concreteSettings": "/",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "StraightRoadTest",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Placeholder",
+      "name": "write#闭锁信号？",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step1"
+    },
+    {
+      "action": "Placeholder",
+      "name": "write#空簧模式请求信号？",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Wait",
+      "time": 100,
+      "unit": "ms",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Placeholder",
+      "name": "read#高度信号？",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Placeholder",
+      "name": "空簧模式信号？",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Placeholder",
+      "name": "控制器有报文",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2"
+    },
+    {
+      "action": "Placeholder",
+      "name": "未收到指令信号？",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3"
+    },
+    {
+      "action": "Placeholder",
+      "name": "控制器报文为空",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3"
+    }
+  ],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": [
+    "H9: 未知动作已生成占位节点：'StraightRoadTest'",
+    "J9: 未知动作已生成占位节点：'write#闭锁信号？'",
+    "J10: 未知动作已生成占位节点：'write#空簧模式请求信号？'",
+    "K10: 未知动作已生成占位节点：'read#高度信号？'",
+    "K10: 未知动作已生成占位节点：'空簧模式信号？'",
+    "K10: 未知动作已生成占位节点：'控制器有报文'",
+    "J11: 未知动作已生成占位节点：'未收到指令信号？'",
+    "K11: 未知动作已生成占位节点：'控制器报文为空'"
+  ]
+}

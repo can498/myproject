@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="6140d420-8026-4e9a-a88c-0a15b1b6cf4b" name="不同车速行驶，横向加速度超阈值，禁止调节" describle="来源：17主动保护 A11:M19" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="cd6268da-a913-4b8c-9952-0ab20766a274"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="fdb464d4-1ec4-4747-88e1-0650d8eb9256"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="3309513e-9a9d-4cd6-8830-d02ef7169b77" name="不同车速行驶，横向加速度超阈值，禁止调节">
+    <children xmi:type="tae:Initialization" xmi:id="41d33b2d-38a1-4231-88a3-96de0605c2c4" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="64dee74f-27cd-40be-96cf-32a91f9a6d73" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:Write" xmi:id="973a0c6f-0999-4696-a66d-65f1250c153f" sourceMapping="ESP_LatAccel" value="指定横向加速度1" name="Write ESP_LatAccel" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="7b0a163c-7252-4a08-b91c-a35096c645c1"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="f1bcccd1-31a5-4d66-ae4a-a59f76468077" name="Read ECAS_LatchReq" describle="@OFFLINE=?@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="ad2e462e-f31e-4c71-894d-1d8c4ab109e7" signal="ECAS_LatchReq"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="f4ab7daa-be5b-43dd-ad12-c54eb5f8d763"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="ffb73a43-69e7-4117-84b1-4152997e95c0">
+          <expectation xmi:type="tae:Expectation" xmi:id="77826392-cffe-4b38-b8c4-4987d3dc2faf">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="b49dc2f1-cb94-4be3-afc1-ed0799ee5bda" operator="Equal" value="?"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="d9799767-1a5e-4f5b-bca1-9d84e0cc2519" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="fced2177-c82e-4208-8cdd-127d599ca950" name="Read ECASActLvlXX" describle="@OFFLINE=0@ 停止变化">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="e0ee9ab9-fda7-4cce-a6b0-53b6bc58e2df" signal="ECASActLvlXX"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="ead29246-a770-4086-acaa-f61b8bc9b6a3"/>
+      </children>
+      <children xmi:type="tae:Read" xmi:id="8b215eaf-5f64-4d82-b821-ccaab259c739" name="Read EcasModeFB" describle="@OFFLINE=0@">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="26d132b1-5039-45d0-83c0-6b2d27fed79e" signal="EcasModeFB"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="7b82b254-46e2-4b9c-aef2-2f6ad2d86a0e"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="2219f681-5555-4408-ad6c-75bcdea8c383">
+          <expectation xmi:type="tae:Expectation" xmi:id="af2788a5-be25-44e4-9615-9c7249fbab9e">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="81add68c-dc77-4dc8-8686-e65e60aad63c" operator="Equal"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="0c91f064-3ff3-42f4-aefa-acf01729f009" mode="WaitUntilTrue" timeout="0"/>
+        </taeAssert>
+      </children>
+      <children xmi:type="tae:Write" xmi:id="c9a031b1-1a7d-4535-a90f-46d4cc5f4bb8" sourceMapping="ESP_LatAccel" value="指定横向加速度2" name="Write ESP_LatAccel" describle="">
+        <accessMode xmi:type="tae:AccessMode" xmi:id="f4f3d671-5af5-4b83-8217-598d19b30ff5"/>
+      </children>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="d0808bb3-5d39-4f86-9170-3dc5d09b557f" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

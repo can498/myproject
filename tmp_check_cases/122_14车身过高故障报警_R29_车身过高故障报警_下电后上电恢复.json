@@ -1,0 +1,18 @@
+{
+  "caseId": "122_14车身过高故障报警_R29",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "14车身过高故障报警",
+    "range": "A29:K33"
+  },
+  "caseName": "车身过高故障报警_下电后上电恢复",
+  "testLevel": "P2",
+  "concreteSettings": "/·",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": []
+}

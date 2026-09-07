@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="e71f281e-bead-48ef-8fce-a6026b1c9a7a" name="信号a读取测试" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="8ec175da-b0f3-473e-a716-a620cfe40b81"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="ffc9c0e3-160b-4d7b-9559-96607ac3e5f3"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="f04c1abc-d921-4bff-bb12-00f51e23a9db">
+    <children xmi:type="tae:Initialization" xmi:id="d7ac40e0-dc12-4e02-952f-a6c22ef5104f" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="58923610-22a4-4f63-93a2-cb0107b2ee69" name="Test Step &amp; Expected Result">
+      <children xmi:type="tae:Wait" xmi:id="2ae82c77-a8fe-41fa-bdd7-6e2782d02557" time="200" unit="ms"/>
+      <children xmi:type="tae:Read" xmi:id="c9ac3f91-c150-4b87-86ce-4c152d71053e" name="Read a">
+        <sourceSignalItem xmi:type="tae:SignalItem" xmi:id="6e0a2203-adab-40b7-a302-800446d60e2a" signal="a"/>
+        <accessMode xmi:type="tae:AccessMode" xmi:id="bab082b0-17c9-4190-9ad2-db3ba057656a"/>
+        <taeAssert xmi:type="tae:IsAssert" xmi:id="bf9d3a74-cdae-43bb-88a8-7219ce381e35">
+          <expectation xmi:type="tae:Expectation" xmi:id="1f28f207-e26d-4854-8fe6-f421774dd743">
+            <expectationInterface xmi:type="tae:ExpectationModeNumeric" xmi:id="c3c1390c-2128-4532-950d-d2c081fa02ea" operator="GreaterThan"/>
+          </expectation>
+          <timeoption xmi:type="tae:ExpectationTimeOption" xmi:id="0e9f323b-cae3-467a-a299-6fdb2862a240" mode="WaitUntilTrue" timeout="1000"/>
+        </taeAssert>
+      </children>
+    </children>
+    <children xmi:type="tae:Cleanup" xmi:id="b48cc7fe-d367-4d07-986f-9de1fd6c5d3e" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

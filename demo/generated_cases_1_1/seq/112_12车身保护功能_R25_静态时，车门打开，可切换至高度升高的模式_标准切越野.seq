@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tae:Process xmlns:xmi="http://www.omg.org/XMI" xmlns:tae="com.hirain.tae.model.testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="de0cc4ae-e82f-4495-b4cc-2c5234611698" name="静态时，车门打开，可切换至高度升高的模式_标准切越野" describle="来源：12车身保护功能 A25:M30" xmi:version="2.0">
+  <startNode xmi:type="tae:StartNode" xmi:id="3f4334e0-b783-42a4-b5e3-4edf227719d9"/>
+  <endNode xmi:type="tae:EndNode" xmi:id="bd7cc714-eab6-4751-b5d0-3ab6d0f09f8f"/>
+  <activitySequence xmi:type="tae:ActivitySequence" xmi:id="ece448e3-9938-4583-bdf7-ed3b53291432" name="静态时，车门打开，可切换至高度升高的模式_标准切越野">
+    <children xmi:type="tae:Initialization" xmi:id="5563ef93-f402-4e71-97ae-41dc3c784dc8" name="Initialization"/>
+    <children xmi:type="tae:Group" xmi:id="062ab3de-e298-44c6-b81f-5ad3cb00851a" name="Test Step &amp; Expected Result"/>
+    <children xmi:type="tae:Cleanup" xmi:id="9a9e8fd6-3a3e-43b7-8db6-ee6b88024355" name="Clean Up"/>
+  </activitySequence>
+</tae:Process>

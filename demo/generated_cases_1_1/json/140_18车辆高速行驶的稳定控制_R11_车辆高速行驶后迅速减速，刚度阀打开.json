@@ -1,0 +1,18 @@
+{
+  "caseId": "140_18车辆高速行驶的稳定控制_R11",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "18车辆高速行驶的稳定控制",
+    "range": "A11:K14"
+  },
+  "caseName": "车辆高速行驶后迅速减速，刚度阀打开",
+  "testLevel": "P2",
+  "concreteSettings": "/·",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [],
+  "steps": [],
+  "cleanup": [],
+  "requiredMappings": [],
+  "warnings": []
+}

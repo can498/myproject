@@ -1,0 +1,195 @@
+{
+  "caseId": "077_7悬架高度调平_R164",
+  "source": {
+    "workbook": "D:\\Downloads\\case_generate_0619-To长安\\case_generate_0619\\用例1-1.xlsx",
+    "sheet": "7悬架高度调平",
+    "range": "A164:I173",
+    "mode": "text-to-signal"
+  },
+  "caseName": "不同模式下，P挡静止，前轴左右高度差超过阈值，开关左前门，3s后调节",
+  "testLevel": "P3",
+  "concreteSettings": "指定空簧模式请求\n指定实际空簧模式对应高度\n指定实际空簧模式\n指定前轴阈值",
+  "offlineMode": true,
+  "variables": [],
+  "initialization": [
+    {
+      "action": "POWERUP"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、控制器无故障",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、车辆静止",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "4、加速度小于0.1g",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    },
+    {
+      "action": "Placeholder",
+      "name": "5、车轮跳动未达到阈值",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件"
+    }
+  ],
+  "steps": [
+    {
+      "action": "Placeholder",
+      "name": "初始状态检测",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step1",
+      "sourceText": "初始状态检测"
+    },
+    {
+      "action": "Read",
+      "signal": "VcuGearPosn",
+      "expectType": "String",
+      "operator": "Equal",
+      "expectValue": "P",
+      "accessMode": "TextValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1",
+      "sourceText": "已挂入P挡\n车速=0km/h"
+    },
+    {
+      "action": "Read",
+      "signal": "EspVehSpd",
+      "expectType": "Number",
+      "operator": "Equal",
+      "expectValue": "0",
+      "accessMode": "PhysicalValue",
+      "timeout": "0",
+      "timeoutUnit": "ms",
+      "sourceStep": "Step1",
+      "sourceText": "已挂入P挡\n车速=0km/h"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置空簧模式请求为指定空簧模式请求",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "设置空簧模式请求为指定空簧模式请求"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度为指定实际空簧对应高度",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "1、检测实际空簧高度为指定实际空簧对应高度\n2、检测实际空簧模式为指定实际空簧模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、检测实际空簧模式为指定实际空簧模式",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step2",
+      "sourceText": "1、检测实际空簧高度为指定实际空簧对应高度\n2、检测实际空簧模式为指定实际空簧模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置前轴左右高度差超过阈值",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "设置前轴左右高度差超过阈值"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测前轴左右实际空簧高度差超过15mm",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测前轴左右实际空簧高度差超过15mm\n2、检测实际空簧模式保持为指定实际空簧模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、检测实际空簧模式保持为指定实际空簧模式",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step3",
+      "sourceText": "1、检测前轴左右实际空簧高度差超过15mm\n2、检测实际空簧模式保持为指定实际空簧模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "开关左前门,3s后调节",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "开关左前门,3s后调节"
+    },
+    {
+      "action": "Placeholder",
+      "name": "1、检测实际空簧高度开始调节",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "1、检测实际空簧高度开始调节\n2、等待调节完成后,检测实际空簧高度为指定实际空簧模式对应高度,且到目标高度±5mm公差范围内调节完成\n3、检测实际空簧模式保持为指定实际空簧模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "2、等待调节完成后,检测实际空簧高度为指定实际空簧模式对应高度,且到目标高度±5mm公差范围内调节完成",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "1、检测实际空簧高度开始调节\n2、等待调节完成后,检测实际空簧高度为指定实际空簧模式对应高度,且到目标高度±5mm公差范围内调节完成\n3、检测实际空簧模式保持为指定实际空簧模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "3、检测实际空簧模式保持为指定实际空簧模式",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step4",
+      "sourceText": "1、检测实际空簧高度开始调节\n2、等待调节完成后,检测实际空簧高度为指定实际空簧模式对应高度,且到目标高度±5mm公差范围内调节完成\n3、检测实际空簧模式保持为指定实际空簧模式"
+    },
+    {
+      "action": "Placeholder",
+      "name": "设置悬架高度为默认标定值",
+      "description": "原Excel中的动作尚未映射到确定的TAE组件",
+      "sourceStep": "Step5",
+      "sourceText": "设置悬架高度为默认标定值"
+    }
+  ],
+  "cleanup": [
+    {
+      "action": "POWERDOWN",
+      "sourceStep": "Step6",
+      "sourceText": "整车下电"
+    }
+  ],
+  "requiredMappings": [
+    "EspVehSpd",
+    "VcuGearPosn"
+  ],
+  "warnings": [
+    "F164: 未识别文本动作：2、控制器无故障",
+    "F164: 未识别文本动作：3、车辆静止",
+    "F164: 未识别文本动作：4、加速度小于0.1g",
+    "F164: 未识别文本动作：5、车轮跳动未达到阈值",
+    "F164: 未知动作已生成占位节点：'2、控制器无故障'",
+    "F164: 未知动作已生成占位节点：'3、车辆静止'",
+    "F164: 未知动作已生成占位节点：'4、加速度小于0.1g'",
+    "F164: 未知动作已生成占位节点：'5、车轮跳动未达到阈值'",
+    "H164: 未识别文本动作：初始状态检测",
+    "H164: 未知动作已生成占位节点：'初始状态检测'",
+    "H166: 未识别文本动作：设置空簧模式请求为指定空簧模式请求",
+    "I166: 未识别文本动作：1、检测实际空簧高度为指定实际空簧对应高度",
+    "I166: 未识别文本动作：2、检测实际空簧模式为指定实际空簧模式",
+    "H166: 未知动作已生成占位节点：'设置空簧模式请求为指定空簧模式请求'",
+    "H166: 未知动作已生成占位节点：'1、检测实际空簧高度为指定实际空簧对应高度'",
+    "H166: 未知动作已生成占位节点：'2、检测实际空簧模式为指定实际空簧模式'",
+    "H168: 未识别文本动作：设置前轴左右高度差超过阈值",
+    "I168: 未识别文本动作：1、检测前轴左右实际空簧高度差超过15mm",
+    "I168: 未识别文本动作：2、检测实际空簧模式保持为指定实际空簧模式",
+    "H168: 未知动作已生成占位节点：'设置前轴左右高度差超过阈值'",
+    "H168: 未知动作已生成占位节点：'1、检测前轴左右实际空簧高度差超过15mm'",
+    "H168: 未知动作已生成占位节点：'2、检测实际空簧模式保持为指定实际空簧模式'",
+    "H170: 未识别文本动作：开关左前门,3s后调节",
+    "I170: 未识别文本动作：1、检测实际空簧高度开始调节",
+    "I170: 未识别文本动作：2、等待调节完成后,检测实际空簧高度为指定实际空簧模式对应高度,且到目标高度±5mm公差范围内调节完成",
+    "I170: 未识别文本动作：3、检测实际空簧模式保持为指定实际空簧模式",
+    "H170: 未知动作已生成占位节点：'开关左前门,3s后调节'",
+    "H170: 未知动作已生成占位节点：'1、检测实际空簧高度开始调节'",
+    "H170: 未知动作已生成占位节点：'2、等待调节完成后,检测实际空簧高度为指定实际空簧模式对应高度,且到目标高度±5mm公差范围内调节完成'",
+    "H170: 未知动作已生成占位节点：'3、检测实际空簧模式保持为指定实际空簧模式'",
+    "H172: 未识别文本动作：设置悬架高度为默认标定值",
+    "H172: 未知动作已生成占位节点：'设置悬架高度为默认标定值'"
+  ],
+  "signalCatalogSize": 10
+}
